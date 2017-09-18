@@ -40,7 +40,7 @@ int main()
     rectColor();
 
     // 3. comvert the image to grayscale
-
+    grayScale();
 
     // Show the images
     cv::imshow("Image", img);

@@ -1,0 +1,3 @@
+/home/student/Desktop/7.semester.git/Vision/Exercise_1/DisplayImage-build/CMakeFiles/edit_cache.dir
+/home/student/Desktop/7.semester.git/Vision/Exercise_1/DisplayImage-build/CMakeFiles/rebuild_cache.dir
+/home/student/Desktop/7.semester.git/Vision/Exercise_1/DisplayImage-build/CMakeFiles/DisplayImage.dir

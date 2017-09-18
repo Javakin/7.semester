@@ -27,11 +27,13 @@ int main()
     // Load image
     cv::Mat img = cv::imread("../color.png");
 
+    // chek for errors
     if (img.empty()) {
         return 1;
     }
 
     // 1. different methods for drawing black rectangles
+    Mat img2 = clone(img);
     rect1();
     rect2();
     rect3();
@@ -43,8 +45,10 @@ int main()
     grayScale();
 
     // Show the images
-    cv::imshow("Image", img);
+    cv::imshow("Image", img2);
     cv::waitKey();
+
+    // save the images
 
     return 0;
 }

@@ -54,17 +54,14 @@ int main(int argc, char* argv[])
  void vIntensityTransform(Mat & anImg, int alpha){
     // increment the intensity by alpha of each pixel
 
-   //for(unsigned int i = anImg.rows(); i )
-
-     cout << "Rows: " << anImg.at<Vec3b>(10,10) << endl;
-
-    namedWindow("Display Example 1", 1);
-    namedWindow("Original Image", 1 );
-
-    imshow("Display Example 1", anImg);
-    imshow("Origunal Image", imread("../Exercise_2/lena.bmp"));
-
-    waitKey();
+    for(unsigned int i = 0; i<anImg.size().width; i++ ){
+        for(unsigned int j = 0; j<anImg.size().height; j++ ){
+            if(anImg.at<uchar>(i, j)<256-alpha)
+                anImg.at<uchar>(i, j) = anImg.at<uchar>(i, j) +alpha;
+            else
+                anImg.at<uchar>(i,j) = 255;
+        }
+    }
 
  }
 

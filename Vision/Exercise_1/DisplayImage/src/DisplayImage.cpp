@@ -46,7 +46,7 @@ int main()
 
         // display image
     cv::imshow("Image", graySC);
-   // cv::waitKey();
+    cv::waitKey();
 
 
 
@@ -61,37 +61,64 @@ int main()
 //function definition
 void rect1(){
     //rectangle drawn using rectangle draw funciton
+    cv::Mat img = cv::imread("../color.png");
+
+    cv::Point p1= cv::Point(350,100);
+    cv::Point p2= Point(440,220);
+
+    rectangle( img, p1, p2, Scalar( 0, 0, 0 ), -1, 8 );
+
+    cv::imshow("ImageRect1",img);
+    cv::waitKey();
+
 }
 
 
 void rect2(){
     // rectangle drawn using line draw function
+    cv::Mat img = cv::imread("../color.png");
+    Point start, end;
+    cv::Point p1= cv::Point(350,100);
+    cv::Point p2= Point(440,220);
 
+    start = p1;
+    end = p2;
+    int thickness = 0;
+    int lineType = 8;
+
+    for (unsigned int i = 100; i<=220; i++ ){
+        start.y = i;
+        end.y = i;
+        line( img, start, end, Scalar( 0, 0, 0 ),
+              thickness,
+              lineType );
+    }
+
+
+        cv::imshow("ImageRect2",img);
+        cv::waitKey();
 }
 
 
 void rect3(){
     // rectangle drawn using point manipulation functions
     cv::Mat img = cv::imread("../color.png");
-    cv::Mat img2 = img.clone();
+    cv::Point p1= cv::Point(350,100);
+    cv::Point p2= Point(440,220);
 
 
-    for (unsigned int i = 7; i<=70; i++){
-        for(unsigned int j = 8; j<=80; j++){
-            cout << i << j<< endl;
-            //img.at<cv::Vec3b>(i, j) = cv::Scalar::all(0);
+    for (unsigned int i = 350; i<=440; i++){
+        for(unsigned int j = 100; j<=220; j++){
+            Vec3b &color = img.at<Vec3b>(Point(i,j));
+            color[0] = 0;
+            color[1] = 0;
+            color[2] = 0;
         }
     }
-    Vec3b intensity = img.at<Vec3b>(10, 10);
-    uchar blue = intensity.val[0];
-    uchar green = intensity.val[1];
-    uchar red = intensity.val[2];
-
-    cout << "blue" << (int)blue << " green" << (int)green << " red" << (int)red << endl;
 
     // save the image in a file
-    cv::imwrite("../Images/rect3.png",img2);
-    cv::imshow("Image58",img);
+    cv::imwrite("../Images/rect3.png",img);
+    cv::imshow("ImageRect3",img);
     cv::waitKey();
 
 
@@ -99,6 +126,15 @@ void rect3(){
 
 void rectColor(){
     // todo
+    cv::Mat img = cv::imread("../color.png");
+
+    cv::Point p1= cv::Point(350,100);
+    cv::Point p2= Point(440,220);
+
+    rectangle( img, p1, p2, Scalar( 0, 255, 0 ), -1, 8 );
+
+    cv::imshow("ImageRectCol",img);
+    cv::waitKey();
 
 }
 

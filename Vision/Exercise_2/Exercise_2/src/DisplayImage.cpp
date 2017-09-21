@@ -38,9 +38,50 @@ int main(int argc, char* argv[])
 
 
     // 1. IntensityTransform the matrix
-    vIntensityTransform(lenaGray, 50);
+    lenaGray50 = lenaGray.clone();
+    vIntensityTransform(lenaGray50, 50);
 
     // 2. Histogram calculation
+
+    // calculate the histogram of the function
+    Mat gray_hist, gray50_hist;
+    int histSize=256;
+    float range[] = { 0, 256 };
+    const float* histRange = { range };
+
+    calcHist(&lenaGray, 1, 0, Mat(), gray_hist, 1, &histSize, &histRange, true, false );
+    calcHist(&lenaGray50, 1, 0, Mat(), gray50_hist, 1, &histSize, &histRange, true, false );
+
+    //normalize the histogram
+
+
+    // plot the histogra
+    int N = 100;
+    Mat plotHist = Mat::zeros(N,256,CV_8U);
+
+
+    // locate the max histogram value
+    double min, max;
+    cv::minMaxLoc(gray_hist, &min, &max);
+
+    cv::waitKey();
+
+    double H = 0;
+    for(unsigned int i = 0; i <256;i++){
+
+        H = N*(gray_hist.at<float>(i))/(max);
+
+
+        line(plotHist, Point(i, N-1), Point(i, N-(int)H),Scalar(255,255,255),1,8,0 );
+    }
+
+    cout << gray_hist.at<double>(0,0) << endl;
+    cout << gray_hist.rows << " " << gray_hist.cols << endl;
+
+
+    imwrite("../Exercise_2/image/Histogram.png",plotHist);
+    cv::imshow("Image", plotHist);
+    cv::waitKey();
 
     // 3. Linear filtering
 
@@ -53,7 +94,6 @@ int main(int argc, char* argv[])
 
  void vIntensityTransform(Mat & anImg, int alpha){
     // increment the intensity by alpha of each pixel
-
     for(unsigned int i = 0; i<anImg.size().width; i++ ){
         for(unsigned int j = 0; j<anImg.size().height; j++ ){
             if(anImg.at<uchar>(i, j)<256-alpha)

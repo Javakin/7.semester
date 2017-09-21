@@ -18,7 +18,6 @@ void rect1();
 void rect2();
 void rect3();
 void rectColor();
-void grayScale();
 
 
 // Main program

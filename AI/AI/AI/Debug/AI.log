@@ -1,3 +1,6 @@
 ﻿  Source.cpp
+  Map.cpp
+d:\smartgit\7.semester\ai\ai\ai\map.cpp(85): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   AI.vcxproj -> D:\Smartgit\7.semester\AI\AI\Debug\AI.exe
   AI.vcxproj -> D:\Smartgit\7.semester\AI\AI\Debug\AI.pdb (Partial PDB)

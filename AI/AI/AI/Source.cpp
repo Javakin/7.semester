@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include "Map.h"
+#include "Point.h"
 
 #include <string>
 
@@ -18,6 +19,11 @@ int main() {
 
 	// Import map
 	Map map("map.txt");
+	map.printMap("Initial Map");
+	
+	map.playerMove(Point(2, 1));
+	map.printMap("Moved Player");
+
 
 
 	// perform dijkstra

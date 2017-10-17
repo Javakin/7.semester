@@ -66,7 +66,7 @@ void Map::printMap(string message)
 	cout << "\n----------------" << message << "----------------\n";
 	for (unsigned int i = 0; i < uiRows; i++) {
 		for (unsigned int j = 0; j < uiCols; j++) {
-			cout << vvMap[i][j];
+			cout << vvMap[i][j] << " ";
 		}
 		cout << endl;
 	}

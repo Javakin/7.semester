@@ -1,2 +1,2 @@
-# Empty dependencies file for DisplayImage.
+# Empty dependencies file for Exercise5_1.
 # This may be replaced when dependencies are built.

@@ -1,0 +1,57 @@
+// ex_acos.nxc
+// Display values of the acos API call.
+// This program runs indefinitely -- press gray button to exit.
+// Reguires enhanced firmware 1.28 or later.
+#define MIN_VAL -1.0
+#define MID_VAL 0.0
+#define MAX_VAL 1.0
+#define INVALID 2.0
+
+task DisplayLightSensor()
+{
+     // set sensor up
+     SetSensorLight(S1);
+     int xPos = 0;
+     int val = Sensor(S1);
+     float ratio =((DISPLAY_HEIGHT)/100);
+   while (true){
+         // normalize the sensor value to the screen height
+         val = ratio*Sensor(S1);
+
+
+         // display the signal
+         PointOut(xPos, val);
+         Wait(20);
+         if (xPos < DISPLAY_WIDTH){
+            xPos +=1;
+         }
+         else{
+            xPos = 0;
+            ResetScreen();
+         }
+   }
+}
+
+task moveLightSensor(){
+     long x = 0;
+     while (true){
+           // get relative motor possition
+           x = MotorRotationCount(OUT_B);
+           // print relative motor possition
+           TextOut(0,LCD_LINE1, NumToStr(x));
+     }
+     
+     // build in rotation function
+     /*while (true){
+          RotateMotor(OUT_B, 40, 90); // forward 45 degrees
+          //Wait(20);
+          RotateMotor(OUT_B, -40, 90); // reverse 45 degrees
+          //Wait(20);
+     } */
+}
+
+task main()
+{
+   Precedes(DisplayLightSensor, moveLightSensor);
+}
+

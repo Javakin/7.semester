@@ -1,0 +1,264 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__DU0SetSensorLight_inline_DisplayLightSensor	5	1	0	4	5
+1	__signed_stack_001DisplayLightSensor	6	1	4	4	6
+2	__D0SetSensorLight_inline_DisplayLightSensor	6	1	8	4	2
+3	__D0DisplayLightSensor	6	1	12	4	18
+4	__D0moveLightSensor	6	1	16	4	7
+5	__float_stack_001DisplayLightSensor	10	1	20	4	2
+6	__Wait_7qG2_ms_7qG2_000_inline_DisplayLightSensor	5	1	24	4	2
+7	__moveLightSensor_7qG2_x_7qG2_000	6	1	28	4	3
+8	__DisplayLightSensor_7qG2_ratio_7qG2_000	10	1	32	4	2
+9	__signed_stack_001moveLightSensor	6	1	36	4	2
+10	__signed_stack_002moveLightSensor	6	1	40	4	2
+11	__SSMArgsMutex	9	0	44	4	2
+12	__TextOutMutex	9	0	48	4	2
+13	__ResetSensorMutex	9	0	52	4	2
+14	__PointOutMutex	9	0	56	4	2
+15	__DisplayLightSensor_7qG2_xPos_7qG2_000	4	1	60	2	6
+16	__DisplayLightSensor_7qG2_val_7qG2_000	4	1	62	2	3
+17	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor	1	1	64	1	2
+18	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor	1	1	65	1	2
+19	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor	1	1	66	1	2
+20	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor	1	1	67	1	2
+21	__constVal0	2	1	68	1	2
+22	__constVal1	2	0	69	1	3
+23	____initialize_global_data_return	1	1	70	1	3
+24	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor	1	1	71	1	2
+25	__ResetSensorTmp	1	1	72	1	2
+26	____ResetSensorSubroutine_return	1	1	73	1	3
+27	__ResetSensorPort	1	1	74	1	3
+28	__SetSensorLight_7qG2_bActive_7qG2_000_inline_DisplayLightSensor	1	1	75	1	2
+29	__SetSensorLight_7qG2_port_7qG2_000_inline_DisplayLightSensor	1	1	76	1	4
+30	__SSMArgs	8	0	2	8	3
+31	__SSMArgs.Result	2	1	80	1	3
+32	__SSMArgs.ScreenMode	5	1	84	4	3
+33	__PointOutArgs	8	0	3	12	5
+34	__PointOutArgs.Result	2	1	88	1	5
+35	__PointOutArgs.Location	8	0	2	4	5
+36	__PointOutArgs.Location.X	4	1	92	2	5
+37	__PointOutArgs.Location.Y	4	1	94	2	5
+38	__PointOutArgs.Options	5	1	96	4	5
+39	__TextOutArgs	8	0	4	16	6
+40	__TextOutArgs.Result	2	1	100	1	6
+41	__TextOutArgs.Location	8	0	2	4	6
+42	__TextOutArgs.Location.X	4	1	104	2	6
+43	__TextOutArgs.Location.Y	4	1	106	2	6
+44	__TextOutArgs.Text	7	0	108	4	6
+45	__TextOutArgs.Text.Text_type	1	0	0	1	0
+46	__TextOutArgs.Options	5	1	112	4	6
+47	__strbufmoveLightSensor	7	0	116	4	2
+48	__strbufmoveLightSensor.__strbufmoveLightSensor_type	1	0	0	1	0
+49	__strretvalmoveLightSensor	7	0	118	4	2
+50	__strretvalmoveLightSensor.__strretvalmoveLightSensor_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	54	0	#line 54 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+0	55	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	54	2	#line 54 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+0	55	2	#line 55 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+0	55	2	#line 55 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+0	56	2		exit 0, 1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	12	0	#line 12 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	13	0		set __SetSensorLight_7qG2_port_7qG2_000_inline_DisplayLightSensor, 0
+2	12	3	#line 12 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	13	3	#line 13 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	14	3		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_DisplayLightSensor, __constVal1
+2	4313	5	#line 4313 "NXCDefs.h"
+2	4314	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor, __SetSensorLight_7qG2_port_7qG2_000_inline_DisplayLightSensor
+2	4313	7	#line 4313 "NXCDefs.h"
+2	4313	7	#line 4313 "NXCDefs.h"
+2	4314	7		mov __DU0SetSensorLight_inline_DisplayLightSensor, __SetSensorLight_7qG2_bActive_7qG2_000_inline_DisplayLightSensor
+2	4313	9	#line 4313 "NXCDefs.h"
+2	4314	9		tst 5, __D0SetSensorLight_inline_DisplayLightSensor, __DU0SetSensorLight_inline_DisplayLightSensor
+2	4313	12	#line 4313 "NXCDefs.h"
+2	4314	12		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_DisplayLightSensor
+2	4313	15	#line 4313 "NXCDefs.h"
+2	4314	15		set __DU0SetSensorLight_inline_DisplayLightSensor, 5
+2	4313	18	#line 4313 "NXCDefs.h"
+2	4313	18	#line 4313 "NXCDefs.h"
+2	4314	18		jmp __001__ASM_Label_5
+2	4313	20	#line 4313 "NXCDefs.h"
+2	4314	20		set __DU0SetSensorLight_inline_DisplayLightSensor, 6
+2	4313	23	#line 4313 "NXCDefs.h"
+2	4313	23	#line 4313 "NXCDefs.h"
+2	4314	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor, __DU0SetSensorLight_inline_DisplayLightSensor
+2	4247	25	#line 4247 "NXCDefs.h"
+2	4248	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor, 0
+2	4247	29	#line 4247 "NXCDefs.h"
+2	4314	29	#line 4314 "NXCDefs.h"
+2	4314	29	#line 4314 "NXCDefs.h"
+2	4315	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor, __SetSensorLight_7qG2_port_7qG2_000_inline_DisplayLightSensor
+2	4314	31	#line 4314 "NXCDefs.h"
+2	4314	31	#line 4314 "NXCDefs.h"
+2	4315	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor, 128
+2	4314	34	#line 4314 "NXCDefs.h"
+2	4260	34	#line 4260 "NXCDefs.h"
+2	4261	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor, 1
+2	4260	38	#line 4260 "NXCDefs.h"
+2	4315	38	#line 4315 "NXCDefs.h"
+2	4315	38	#line 4315 "NXCDefs.h"
+2	4316	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor, __SetSensorLight_7qG2_port_7qG2_000_inline_DisplayLightSensor
+2	4315	40	#line 4315 "NXCDefs.h"
+2	4278	40	#line 4278 "NXCDefs.h"
+2	4279	40	#pragma macro 4
+2	4279	40		acquire __ResetSensorMutex
+2	4279	41		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_DisplayLightSensor
+2	4279	43		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	4279	45		release __ResetSensorMutex
+2	6117	46	#line 6117 "NXCDefs.h"
+2	4278	46	#line 4278 "NXCDefs.h"
+2	4316	46	#line 4316 "NXCDefs.h"
+2	13	46	#line 13 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	14	46	#line 14 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	15	46		set __DisplayLightSensor_7qG2_xPos_7qG2_000, 0
+2	14	49	#line 14 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	14	49	#line 14 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	15	49		getin __DisplayLightSensor_7qG2_val_7qG2_000, __constVal0, 4
+2	14	53	#line 14 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	15	53	#line 15 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	16	53		set __signed_stack_001DisplayLightSensor, 64
+2	15	56	#line 15 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	15	56	#line 15 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	16	56		set __D0DisplayLightSensor, 100
+2	15	59	#line 15 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	16	59		div __DisplayLightSensor_7qG2_ratio_7qG2_000, __signed_stack_001DisplayLightSensor, __D0DisplayLightSensor
+2	16	63	#line 16 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	16	63	#line 16 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	17	63		set __D0DisplayLightSensor, 1
+2	18	66	#line 18 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	19	66		tst 5, __D0DisplayLightSensor, __D0DisplayLightSensor
+2	18	69	#line 18 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	19	69		brtst 4, __ASM_Label_617, __D0DisplayLightSensor
+2	18	72	#line 18 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	19	72		mov __float_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_ratio_7qG2_000
+2	18	74	#line 18 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	18	74	#line 18 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	19	74		getin __D0DisplayLightSensor, __constVal0, 4
+2	18	78	#line 18 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	19	78		mul __DisplayLightSensor_7qG2_val_7qG2_000, __float_stack_001DisplayLightSensor, __D0DisplayLightSensor
+2	18	82	#line 18 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	18	82	#line 18 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	18	82	#line 18 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	22	82	#line 22 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	23	82		mov __signed_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_xPos_7qG2_000
+2	22	84	#line 22 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	22	84	#line 22 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	23	84		mov __D0DisplayLightSensor, __DisplayLightSensor_7qG2_val_7qG2_000
+2	23	86	#line 23 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	24	86		acquire __PointOutMutex
+2	23	87	#line 23 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	24	87		mov __PointOutArgs.Location.X, __signed_stack_001DisplayLightSensor
+2	23	89	#line 23 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	24	89		mov __PointOutArgs.Location.Y, __D0DisplayLightSensor
+2	23	91	#line 23 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	24	91		set __PointOutArgs.Options, 0
+2	23	94	#line 23 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	24	94		syscall 14, __PointOutArgs
+2	23	97	#line 23 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	24	97		mov __D0DisplayLightSensor, __PointOutArgs.Result
+2	23	99	#line 23 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	24	99		release __PointOutMutex
+2	23	100	#line 23 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	23	100	#line 23 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	24	100		set __Wait_7qG2_ms_7qG2_000_inline_DisplayLightSensor, 20
+2	23	103	#line 23 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	8551	103	#line 8551 "NXCDefs.h"
+2	8552	103		waitv __Wait_7qG2_ms_7qG2_000_inline_DisplayLightSensor
+2	8551	105	#line 8551 "NXCDefs.h"
+2	24	105	#line 24 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	24	105	#line 24 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	25	105		mov __signed_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_xPos_7qG2_000
+2	24	107	#line 24 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	24	107	#line 24 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	25	107		set __D0DisplayLightSensor, 100
+2	24	110	#line 24 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	25	110		cmp 0, __D0DisplayLightSensor, __signed_stack_001DisplayLightSensor, __D0DisplayLightSensor
+2	25	114	#line 25 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	26	114		brtst 4, __ASM_Label_630, __D0DisplayLightSensor
+2	26	117	#line 26 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	27	117		set __D0DisplayLightSensor, 1
+2	26	120	#line 26 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	27	120		add __DisplayLightSensor_7qG2_xPos_7qG2_000, __DisplayLightSensor_7qG2_xPos_7qG2_000, __D0DisplayLightSensor
+2	26	124	#line 26 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	28	124	#line 28 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	29	124		jmp __ASM_Label_633
+2	29	126	#line 29 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	30	126		set __DisplayLightSensor_7qG2_xPos_7qG2_000, 0
+2	29	129	#line 29 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	29	129	#line 29 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	30	129	#line 30 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	31	129		acquire __SSMArgsMutex
+2	30	130	#line 30 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	31	130		set __SSMArgs.ScreenMode, 0
+2	30	133	#line 30 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	31	133		syscall 19, __SSMArgs
+2	30	136	#line 30 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	31	136		mov __D0DisplayLightSensor, __SSMArgs.Result
+2	30	138	#line 30 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	31	138		release __SSMArgsMutex
+2	30	139	#line 30 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	32	139	#line 32 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	34	139	#line 34 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	35	139		jmp __ASM_Label_616
+2	34	141	#line 34 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+2	35	141		exit -1, -1
+3	36	0	#line 36 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	37	0		set __moveLightSensor_7qG2_x_7qG2_000, 0
+3	36	3	#line 36 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	36	3	#line 36 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	37	3		set __D0moveLightSensor, 1
+3	38	6	#line 38 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	39	6		tst 5, __D0moveLightSensor, __D0moveLightSensor
+3	38	9	#line 38 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	39	9		brtst 4, __ASM_Label_639, __D0moveLightSensor
+3	40	12	#line 40 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	41	12		getout __moveLightSensor_7qG2_x_7qG2_000, __constVal1, 14
+3	40	16	#line 40 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	40	16	#line 40 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	40	16	#line 40 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	41	16		set __signed_stack_001moveLightSensor, 0
+3	40	19	#line 40 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	40	19	#line 40 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	41	19		set __signed_stack_002moveLightSensor, 56
+3	40	22	#line 40 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	40	22	#line 40 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	41	22		mov __D0moveLightSensor, __moveLightSensor_7qG2_x_7qG2_000
+3	40	24	#line 40 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	41	24		numtostr __strretvalmoveLightSensor, __D0moveLightSensor
+3	40	27	#line 40 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	41	27		strcat __strbufmoveLightSensor, __strretvalmoveLightSensor
+3	41	31	#line 41 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	42	31		acquire __TextOutMutex
+3	41	32	#line 41 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	42	32		mov __TextOutArgs.Location.X, __signed_stack_001moveLightSensor
+3	41	34	#line 41 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	42	34		mov __TextOutArgs.Location.Y, __signed_stack_002moveLightSensor
+3	41	36	#line 41 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	42	36		set __TextOutArgs.Options, 0
+3	41	39	#line 41 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	42	39		mov __TextOutArgs.Text, __strbufmoveLightSensor
+3	41	41	#line 41 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	42	41		syscall 13, __TextOutArgs
+3	41	44	#line 41 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	42	44		mov __D0moveLightSensor, __TextOutArgs.Result
+3	41	46	#line 41 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	42	46		release __TextOutMutex
+3	41	47	#line 41 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	52	47	#line 52 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	53	47		jmp __ASM_Label_638
+3	52	49	#line 52 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+3	53	49		exit -1, -1
+4	58	0	#line 58 "C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc"
+4	59	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc
+1	__ResetSensorSubroutine	5	NXTDefs.h
+2	DisplayLightSensor	18	C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc
+3	moveLightSensor	162	C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc
+4	__initialize_global_data	214	C:\Users\Gamma\Desktop\NXT_Project\displayLightValue.nxc

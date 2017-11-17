@@ -7,21 +7,32 @@
 #define MAX_VAL 1.0
 #define INVALID 2.0
 
+
+#define LIGHTFRONTRIGHT S4
+#define LIGHTFRONTLEFT S1
+#define LIGHTBACK S2
+#define MOTORSENSOR OUT_A
+#define MORORLEFT  OUT_B
+#define MOTORRIGHT OUT_C
+
+#define GRAPHWAIT 20
+#define MAXSENSORANGLE 45
+
 task DisplayLightSensor()
 {
      // set sensor up
-     SetSensorLight(S1);
+     SetSensorLight(LIGHTBACK);
      int xPos = 0;
-     int val = Sensor(S1);
+     int val = Sensor(LIGHTBACK);
      float ratio =((DISPLAY_HEIGHT)/100);
    while (true){
          // normalize the sensor value to the screen height
-         val = ratio*Sensor(S1);
+         val = ratio*Sensor(LIGHTBACK);
 
 
          // display the signal
          PointOut(xPos, val);
-         Wait(20);
+         Wait(GRAPHWAIT);
          if (xPos < DISPLAY_WIDTH){
             xPos +=1;
          }
@@ -32,26 +43,37 @@ task DisplayLightSensor()
    }
 }
 
-task moveLightSensor(){
+task MoveLightSensor(){
      long x = 0;
      while (true){
            // get relative motor possition
-           x = MotorRotationCount(OUT_B);
+           x = MotorRotationCount(OUT_A)%360;
            // print relative motor possition
-           TextOut(0,LCD_LINE1, x);
+           //ResetScreen();
+           //TextOut(0,LCD_LINE1, NumToStr(x));
+           //Wait(100);
+           
+           // move back and forward
+           /*if (x<= 0){
+              OnFwd(MOTORSENSOR, 50 - x);
+              Wait(250);
+           } else {
+              OnRev(MOTORSENSOR, 50);
+           } */
+           double k = 0;
      }
      
      // build in rotation function
      /*while (true){
-          RotateMotor(OUT_B, 40, 90); // forward 45 degrees
+          RotateMotor(OUT_A, 40, 90); // forward 45 degrees
           //Wait(20);
-          RotateMotor(OUT_B, -40, 90); // reverse 45 degrees
+          RotateMotor(OUT_A, -40, 90); // reverse 45 degrees
           //Wait(20);
-     } */
+     }   */
 }
 
 task main()
 {
-   Precedes(DisplayLightSensor, moveLightSensor);
+   Precedes(DisplayLightSensor,MoveLightSensor);
 }
 

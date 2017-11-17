@@ -1,0 +1,107 @@
+#define THRESHOLD 20
+#define MAX_SPEED 75
+#define MID_SPEED 50
+#define LOW_SPEED 25
+
+int pos_sensor = 0;
+
+/* FUNCTIONS TO COMPLETE */
+
+task correct_dir()
+{
+}
+
+/* ----------- TURN RIGHT ---------- */
+
+task turn_right()
+{
+ while((Sensor(IN_1) > THRESHOLD))
+ {
+        RotateMotor(OUT_AC,MID_SPEED,90);
+ }
+}
+
+/* ----------- TURN LEFT ---------- */
+
+task turn_left()
+{
+ while((Sensor(IN_1) > THRESHOLD))
+ {
+      RotateMotor(OUT_AC,MID_SPEED,-90);
+ }
+}
+
+/* ----------- MOVE FRONT SENSOR ---------- */
+
+task movefrontsensor()
+{
+ OnFwd(OUT_B,0);            /* Motor stopped */
+ while ((Sensor(IN_1) > THRESHOLD))    /* If the line is not detected */
+ {
+       while(pos_sensor != 20)         /* Turn the sensor */
+       {
+        if ((Sensor(IN_1) < THRESHOLD))
+        {
+           break ;                      /* If the line is detected, stop the loop */
+        }
+        OnFwd(OUT_B,10);
+        Wait(100);
+        pos_sensor++;
+       }
+
+       while(pos_sensor != 0)          /* Turn the sensor (other dir)*/
+       {
+        if ((Sensor(IN_1) < THRESHOLD))
+        {
+           break ;                     /* If the line is detected, stop the loop */
+        }
+        OnRev(OUT_B,10);
+        Wait(100);
+        pos_sensor--;
+       }
+ }
+}
+
+/* ----------- MOVE FORWARD ---------- */
+
+task moveforward()
+{
+ while((Sensor(IN_2) < THRESHOLD) && (Sensor(IN_3) < THRESHOLD))     /* While no line in front is detected by the side sensors*/
+ {
+   if(pos_sensor == 0)                                               /* If we are in the good orientation */
+   {
+     OnFwdReg(OUT_AC,MAX_SPEED,OUT_REGMODE_SYNC);                                                /* Gas */
+     Wait(100);
+   }
+  }
+}
+
+/* ----------- MOVE BACKWARD ---------- */
+
+task movebackward()
+{
+ while((Sensor(IN_2) < THRESHOLD) && (Sensor(IN_3) < THRESHOLD))     /* While no line in front is detected by the side sensors*/
+ {
+   if(pos_sensor == 0)                                               /* If we are in the good orientation */
+   {
+    OnRevReg(OUT_AC,MAX_SPEED,OUT_REGMODE_SYNC);                                                 /* Gas */
+    Wait(100);
+   }
+  }
+}
+
+/* ----------- INITIALISATION ---------- */
+
+task init()
+{
+ SetSensorLight(IN_1);        /* Initialize the light sensors */
+ SetSensorLight(IN_2);
+ SetSensorLight(IN_3);
+}
+
+/* ----------- MAIN PROGRAM ---------- */
+
+task main()
+{
+
+}

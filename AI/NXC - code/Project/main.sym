@@ -71,23 +71,23 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 68	PLAN.PLAN_type	4	0	0	2	0
 #SOURCES
 Clump	Line	PC	Source
-0	135	0	#line 135 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+0	135	0	#line 135 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 0	136	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	135	2	#line 135 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	138	2	#line 138 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+0	135	2	#line 135 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+0	138	2	#line 138 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 0	139	2		subcall init, __init_return
-0	138	4	#line 138 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	145	4	#line 145 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	145	4	#line 145 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+0	138	4	#line 138 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+0	145	4	#line 145 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+0	145	4	#line 145 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 0	146	4		exit 0, 2
 1	5476	0		setin __constVal1, __ResetSensorPort, 5
 1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
 1	5480	11		subret ____ResetSensorSubroutine_return
-2	47	0	#line 47 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+2	47	0	#line 47 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 2	48	0		set __SetSensorLight_7qG2_port_7qG2_000_inline_init, 1
-2	47	3	#line 47 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-2	48	3	#line 48 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+2	47	3	#line 47 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+2	48	3	#line 48 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 2	49	3		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_init, __constVal1
 2	4313	5	#line 4313 "NXCDefs.h"
 2	4314	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
@@ -132,11 +132,11 @@ Clump	Line	PC	Source
 2	3916	44	#line 3916 "NXCDefs.h"
 2	4278	44	#line 4278 "NXCDefs.h"
 2	4316	44	#line 4316 "NXCDefs.h"
-2	48	44	#line 48 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-2	48	44	#line 48 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+2	48	44	#line 48 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+2	48	44	#line 48 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 2	49	44		set __SetSensorLight_7qG2_port_7qG2_000_inline_init, 0
-2	48	47	#line 48 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-2	49	47	#line 49 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+2	48	47	#line 48 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+2	49	47	#line 49 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 2	50	47		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_init, __constVal1
 2	4313	49	#line 4313 "NXCDefs.h"
 2	4314	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
@@ -181,11 +181,11 @@ Clump	Line	PC	Source
 2	3979	88	#line 3979 "NXCDefs.h"
 2	4278	88	#line 4278 "NXCDefs.h"
 2	4316	88	#line 4316 "NXCDefs.h"
-2	49	88	#line 49 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-2	49	88	#line 49 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+2	49	88	#line 49 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+2	49	88	#line 49 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 2	50	88		set __SetSensorLight_7qG2_port_7qG2_000_inline_init, 3
-2	49	91	#line 49 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-2	52	91	#line 52 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+2	49	91	#line 49 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+2	52	91	#line 52 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 2	53	91		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_init, __constVal1
 2	4313	93	#line 4313 "NXCDefs.h"
 2	4314	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
@@ -230,340 +230,340 @@ Clump	Line	PC	Source
 2	4042	132	#line 4042 "NXCDefs.h"
 2	4278	132	#line 4278 "NXCDefs.h"
 2	4316	132	#line 4316 "NXCDefs.h"
-2	52	132	#line 52 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-2	58	132	#line 58 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+2	52	132	#line 52 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+2	58	132	#line 58 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 2	59	132		subret __init_return
-3	60	0	#line 60 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	60	0	#line 60 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	61	0		set __D0MoveLightSensor, 0
-3	60	3	#line 60 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	60	3	#line 60 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	61	3		mov __MoveLightSensor_7qG2_P_7qG2_000, __D0MoveLightSensor
-3	60	5	#line 60 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	60	5	#line 60 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	61	5		set __D0MoveLightSensor, 0
-3	60	8	#line 60 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	60	8	#line 60 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	61	8		mov __MoveLightSensor_7qG2_I_7qG2_000, __D0MoveLightSensor
-3	60	10	#line 60 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	60	10	#line 60 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	61	10		set __D0MoveLightSensor, 0
-3	60	13	#line 60 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	60	13	#line 60 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	61	13		mov __MoveLightSensor_7qG2_D_7qG2_000, __D0MoveLightSensor
-3	60	15	#line 60 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	60	15	#line 60 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	61	15		set __D0MoveLightSensor, 0
-3	60	18	#line 60 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	60	18	#line 60 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	61	18		mov __MoveLightSensor_7qG2_dif_7qG2_000, __D0MoveLightSensor
-3	61	20	#line 61 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	61	20	#line 61 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	62	20		set __D0MoveLightSensor, 0
-3	61	23	#line 61 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	61	23	#line 61 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	62	23		mov __MoveLightSensor_7qG2_difOld_7qG2_000, __D0MoveLightSensor
-3	62	25	#line 62 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	62	25	#line 62 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	63	25		set __MoveLightSensor_7qG2_Target_7qG2_000, 35
-3	62	28	#line 62 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	65	28	#line 65 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	62	28	#line 62 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	65	28	#line 65 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	66	28		set __MoveLightSensor_7qG2_dir_7qG2_000, 1
-3	65	31	#line 65 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	65	31	#line 65 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	65	31	#line 65 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	65	31	#line 65 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	66	31		set __D0MoveLightSensor, 1
-3	67	34	#line 67 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	67	34	#line 67 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	68	34		tst 5, __D0MoveLightSensor, __D0MoveLightSensor
-3	67	37	#line 67 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	67	37	#line 67 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	68	37		brtst 4, __ASM_Label_510, __D0MoveLightSensor
-3	68	40	#line 68 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	68	40	#line 68 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	69	40		mov __MoveLightSensor_7qG2_difOld_7qG2_000, __MoveLightSensor_7qG2_dif_7qG2_000
-3	68	42	#line 68 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	68	42	#line 68 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	68	42	#line 68 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	68	42	#line 68 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	68	42	#line 68 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	68	42	#line 68 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	69	42		mov __signed_stack_001MoveLightSensor, __MoveLightSensor_7qG2_Target_7qG2_000
-3	68	44	#line 68 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	71	44	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	68	44	#line 68 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	71	44	#line 71 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	72	44		getout __D0MoveLightSensor, __constVal0, 14
-3	71	48	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	71	48	#line 71 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	72	48		sub __MoveLightSensor_7qG2_dif_7qG2_001, __signed_stack_001MoveLightSensor, __D0MoveLightSensor
-3	71	52	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	71	52	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	71	52	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	72	52	#line 72 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	72	52	#line 72 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	71	52	#line 71 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	71	52	#line 71 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	71	52	#line 71 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	72	52	#line 72 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	72	52	#line 72 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	73	52		mul __MoveLightSensor_7qG2_P_7qG2_000, __constValf1P3, __MoveLightSensor_7qG2_dif_7qG2_001
-3	72	56	#line 72 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	72	56	#line 72 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	72	56	#line 72 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	72	56	#line 72 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	72	56	#line 72 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	72	56	#line 72 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	73	56		set __signed_stack_001MoveLightSensor, 0
-3	72	59	#line 72 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	72	59	#line 72 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	72	59	#line 72 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	72	59	#line 72 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	73	59		mov __float_stack_002MoveLightSensor, __constValf0P1
-3	72	61	#line 72 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	72	61	#line 72 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	72	61	#line 72 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	72	61	#line 72 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	72	61	#line 72 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	72	61	#line 72 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	72	61	#line 72 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	72	61	#line 72 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	72	61	#line 72 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	72	61	#line 72 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	73	61		sub __DF0MoveLightSensor, __MoveLightSensor_7qG2_dif_7qG2_001, __MoveLightSensor_7qG2_difOld_7qG2_000
-3	73	65	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	73	65	#line 73 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	74	65		mul __DF0MoveLightSensor, __float_stack_002MoveLightSensor, __DF0MoveLightSensor
-3	73	69	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	73	69	#line 73 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	74	69		sub __MoveLightSensor_7qG2_D_7qG2_000, __signed_stack_001MoveLightSensor, __DF0MoveLightSensor
-3	73	73	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	73	73	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	73	73	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	73	73	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	76	73	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	76	73	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	73	73	#line 73 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	73	73	#line 73 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	73	73	#line 73 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	73	73	#line 73 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	76	73	#line 76 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	76	73	#line 76 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	77	73		mul __DF0MoveLightSensor, __constValf0P02, __MoveLightSensor_7qG2_dif_7qG2_001
-3	76	77	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	76	77	#line 76 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	77	77		add __MoveLightSensor_7qG2_I_7qG2_000, __MoveLightSensor_7qG2_I_7qG2_000, __DF0MoveLightSensor
-3	76	81	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	76	81	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	76	81	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	76	81	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	76	81	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	76	81	#line 76 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	76	81	#line 76 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	76	81	#line 76 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	76	81	#line 76 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	76	81	#line 76 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	77	81		add __float_stack_001MoveLightSensor, __MoveLightSensor_7qG2_P_7qG2_000, __MoveLightSensor_7qG2_D_7qG2_000
-3	76	85	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	77	85	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	77	85	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	76	85	#line 76 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	77	85	#line 77 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	77	85	#line 77 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	78	85		add __MoveLightSensor_7qG2_output_7qG2_001, __float_stack_001MoveLightSensor, __MoveLightSensor_7qG2_I_7qG2_000
-3	77	89	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	77	89	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	77	89	#line 77 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	77	89	#line 77 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	78	89		mov __signed_stack_001MoveLightSensor, __MoveLightSensor_7qG2_output_7qG2_001
-3	77	91	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	77	91	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	77	91	#line 77 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	77	91	#line 77 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	78	91		set __D0MoveLightSensor, 100
-3	77	94	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	77	94	#line 77 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	78	94		cmp 1, __D0MoveLightSensor, __signed_stack_001MoveLightSensor, __D0MoveLightSensor
-3	77	98	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	77	98	#line 77 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	78	98		brtst 4, __ASM_Label_529, __D0MoveLightSensor
-3	77	101	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	77	101	#line 77 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	78	101		set __MoveLightSensor_7qG2_output_7qG2_001, 100
-3	77	104	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	77	104	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	78	104	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	78	104	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	77	104	#line 77 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	77	104	#line 77 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	78	104	#line 78 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	78	104	#line 78 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	79	104		mov __signed_stack_001MoveLightSensor, __MoveLightSensor_7qG2_output_7qG2_001
-3	78	106	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	78	106	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	78	106	#line 78 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	78	106	#line 78 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	79	106		mov __D0MoveLightSensor, __constValNeg100
-3	78	108	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	78	108	#line 78 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	79	108		cmp 0, __D0MoveLightSensor, __signed_stack_001MoveLightSensor, __D0MoveLightSensor
-3	78	112	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	78	112	#line 78 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	79	112		brtst 4, __ASM_Label_534, __D0MoveLightSensor
-3	78	115	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	78	115	#line 78 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	79	115		mov __MoveLightSensor_7qG2_output_7qG2_001, __constValNeg100
-3	78	117	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	78	117	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	80	117	#line 80 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	80	117	#line 80 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	78	117	#line 78 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	78	117	#line 78 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	80	117	#line 80 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	80	117	#line 80 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	81	117		mov __D0MoveLightSensor, __MoveLightSensor_7qG2_output_7qG2_001
-3	83	119	#line 83 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	83	119	#line 83 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	84	119	#pragma macro 7
 3	84	119		setout __constVal0, 2, __D0MoveLightSensor, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	4275	142	#line 4275 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	83	142	#line 83 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	83	142	#line 83 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	4275	142	#line 4275 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	83	142	#line 83 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	83	142	#line 83 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	84	142		mov __float_stack_001MoveLightSensor, __MoveLightSensor_7qG2_dif_7qG2_001
-3	83	144	#line 83 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	83	144	#line 83 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	83	144	#line 83 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	83	144	#line 83 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	84	144		mov __D0MoveLightSensor, __MoveLightSensor_7qG2_dir_7qG2_000
-3	83	146	#line 83 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	83	146	#line 83 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	84	146		mul __float_stack_001MoveLightSensor, __float_stack_001MoveLightSensor, __D0MoveLightSensor
-3	83	150	#line 83 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	83	150	#line 83 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	83	150	#line 83 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	83	150	#line 83 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	84	150		mov __DF0MoveLightSensor, __constVal0
-3	83	152	#line 83 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	83	152	#line 83 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	84	152		cmp 0, __D0MoveLightSensor, __float_stack_001MoveLightSensor, __DF0MoveLightSensor
-3	84	156	#line 84 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	84	156	#line 84 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	85	156		brtst 4, __ASM_Label_541, __D0MoveLightSensor
-3	85	159	#line 85 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	85	159	#line 85 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	86	159		mov __D0MoveLightSensor, __constValNeg1
-3	85	161	#line 85 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	85	161	#line 85 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	86	161		mul __MoveLightSensor_7qG2_dir_7qG2_000, __MoveLightSensor_7qG2_dir_7qG2_000, __D0MoveLightSensor
-3	85	165	#line 85 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	85	165	#line 85 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	85	165	#line 85 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	85	165	#line 85 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	86	165		mov __signed_stack_001MoveLightSensor, CenterP
-3	85	167	#line 85 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	85	167	#line 85 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	85	167	#line 85 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	85	167	#line 85 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	86	167		mov __signed_stack_002MoveLightSensor, Span
-3	85	169	#line 85 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	85	169	#line 85 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	85	169	#line 85 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	85	169	#line 85 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	86	169		mov __D0MoveLightSensor, __MoveLightSensor_7qG2_dir_7qG2_000
-3	85	171	#line 85 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	85	171	#line 85 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	86	171		mul __signed_stack_002MoveLightSensor, __signed_stack_002MoveLightSensor, __D0MoveLightSensor
-3	85	175	#line 85 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	86	175	#line 86 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	85	175	#line 85 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	86	175	#line 86 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	87	175		set __D0MoveLightSensor, 2
-3	86	178	#line 86 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	86	178	#line 86 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	87	178		div __D0MoveLightSensor, __signed_stack_002MoveLightSensor, __D0MoveLightSensor
-3	86	182	#line 86 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	86	182	#line 86 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	87	182		add __MoveLightSensor_7qG2_Target_7qG2_000, __signed_stack_001MoveLightSensor, __D0MoveLightSensor
-3	86	186	#line 86 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	86	186	#line 86 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	89	186	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	89	186	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	86	186	#line 86 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	86	186	#line 86 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	89	186	#line 89 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	89	186	#line 89 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	90	186		set __Wait_7qG2_ms_7qG2_000_inline_MoveLightSensor, 20
-3	89	189	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	89	189	#line 89 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	8551	189	#line 8551 "NXCDefs.h"
 3	8552	189		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_MoveLightSensor
 3	8551	192	#line 8551 "NXCDefs.h"
-3	91	192	#line 91 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-3	94	192	#line 94 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	91	192	#line 91 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+3	94	192	#line 94 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	95	192		jmp __ASM_Label_509
-3	94	194	#line 94 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+3	94	194	#line 94 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 3	95	194		exit -1, -1
-4	97	0	#line 97 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	97	0	#line 97 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	98	0		set __DisplayLightSensor_7qG2_iSensor_7qG2_000, 0
-4	97	3	#line 97 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	98	3	#line 98 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	97	3	#line 97 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	98	3	#line 98 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	99	3		set __DisplayLightSensor_7qG2_iPosition_7qG2_000, 0
-4	98	6	#line 98 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	98	6	#line 98 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	98	6	#line 98 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	98	6	#line 98 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	99	6		set __signed_stack_001DisplayLightSensor, 64
-4	98	9	#line 98 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	98	9	#line 98 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	98	9	#line 98 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	98	9	#line 98 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	99	9		set __D0DisplayLightSensor, 100
-4	98	12	#line 98 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	98	12	#line 98 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	99	12		div __DisplayLightSensor_7qG2_yRatio_7qG2_000, __signed_stack_001DisplayLightSensor, __D0DisplayLightSensor
-4	99	16	#line 99 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	99	16	#line 99 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	99	16	#line 99 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	99	16	#line 99 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	100	16		set __signed_stack_001DisplayLightSensor, 100
-4	99	19	#line 99 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	99	19	#line 99 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	99	19	#line 99 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	99	19	#line 99 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	100	19		mov __D0DisplayLightSensor, Span
-4	99	21	#line 99 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	99	21	#line 99 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	100	21		div __DisplayLightSensor_7qG2_xRatio_7qG2_000, __signed_stack_001DisplayLightSensor, __D0DisplayLightSensor
-4	100	25	#line 100 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	102	25	#line 102 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	100	25	#line 100 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	102	25	#line 102 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	103	25		set __DisplayLightSensor_7qG2_xPos_7qG2_000, 0
-4	102	28	#line 102 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	102	28	#line 102 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	102	28	#line 102 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	102	28	#line 102 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	103	28		set __D0DisplayLightSensor, 1
-4	105	31	#line 105 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	105	31	#line 105 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	106	31		tst 5, __D0DisplayLightSensor, __D0DisplayLightSensor
-4	105	34	#line 105 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	105	34	#line 105 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	106	34		brtst 4, __ASM_Label_567, __D0DisplayLightSensor
-4	105	37	#line 105 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	105	37	#line 105 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	106	37		mov __float_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_yRatio_7qG2_000
-4	105	39	#line 105 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	105	39	#line 105 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	105	39	#line 105 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	105	39	#line 105 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	106	39		getin __D0DisplayLightSensor, __constVal1, 4
-4	105	43	#line 105 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	105	43	#line 105 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	106	43		mul __DisplayLightSensor_7qG2_iSensor_7qG2_000, __float_stack_001DisplayLightSensor, __D0DisplayLightSensor
-4	105	47	#line 105 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	105	47	#line 105 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	105	47	#line 105 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	108	47	#line 108 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	105	47	#line 105 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	105	47	#line 105 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	105	47	#line 105 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	108	47	#line 108 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	109	47		set __signed_stack_001DisplayLightSensor, 100
-4	108	50	#line 108 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	109	50	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	108	50	#line 108 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	109	50	#line 109 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	110	50		mov __D0DisplayLightSensor, Span
-4	109	52	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	109	52	#line 109 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	110	52		div __DisplayLightSensor_7qG2_xRatio_7qG2_000, __signed_stack_001DisplayLightSensor, __D0DisplayLightSensor
-4	109	56	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	109	56	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	109	56	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	109	56	#line 109 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	109	56	#line 109 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	109	56	#line 109 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	110	56		mov __float_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_xRatio_7qG2_000
-4	109	58	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	109	58	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	109	58	#line 109 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	109	58	#line 109 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	110	58		getout __signed_stack_002DisplayLightSensor, __constVal0, 14
-4	109	62	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	109	62	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	109	62	#line 109 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	109	62	#line 109 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	110	62		mov __signed_stack_003DisplayLightSensor, Span
-4	109	64	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	109	64	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	109	64	#line 109 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	109	64	#line 109 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	110	64		set __D0DisplayLightSensor, 2
-4	109	67	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	109	67	#line 109 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	110	67		div __D0DisplayLightSensor, __signed_stack_003DisplayLightSensor, __D0DisplayLightSensor
-4	109	71	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	109	71	#line 109 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	110	71		add __D0DisplayLightSensor, __signed_stack_002DisplayLightSensor, __D0DisplayLightSensor
-4	113	75	#line 113 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	113	75	#line 113 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	114	75		mul __DisplayLightSensor_7qG2_iPosition_7qG2_000, __float_stack_001DisplayLightSensor, __D0DisplayLightSensor
-4	113	79	#line 113 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	113	79	#line 113 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	113	79	#line 113 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	113	79	#line 113 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	113	79	#line 113 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	113	79	#line 113 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	114	79		mov __signed_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_iPosition_7qG2_000
-4	113	81	#line 113 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	113	81	#line 113 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	113	81	#line 113 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	113	81	#line 113 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	114	81		mov __D0DisplayLightSensor, __DisplayLightSensor_7qG2_iSensor_7qG2_000
-4	114	83	#line 114 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	114	83	#line 114 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	115	83		acquire __PointOutMutex
-4	114	84	#line 114 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	114	84	#line 114 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	115	84		mov __PointOutArgs.Location.X, __signed_stack_001DisplayLightSensor
-4	114	86	#line 114 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	114	86	#line 114 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	115	86		mov __PointOutArgs.Location.Y, __D0DisplayLightSensor
-4	114	88	#line 114 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	114	88	#line 114 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	115	88		set __PointOutArgs.Options, 0
-4	114	91	#line 114 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	114	91	#line 114 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	115	91		syscall 14, __PointOutArgs
-4	114	94	#line 114 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	114	94	#line 114 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	115	94		mov __D0DisplayLightSensor, __PointOutArgs.Result
-4	114	96	#line 114 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	114	96	#line 114 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	115	96		release __PointOutMutex
-4	114	97	#line 114 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	114	97	#line 114 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	114	97	#line 114 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	114	97	#line 114 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	115	97		set __Wait_7qG2_ms_7qG2_000_inline_DisplayLightSensor, 1
-4	114	100	#line 114 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	114	100	#line 114 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	8551	100	#line 8551 "NXCDefs.h"
 4	8552	100		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_DisplayLightSensor
 4	8551	103	#line 8551 "NXCDefs.h"
-4	116	103	#line 116 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	116	103	#line 116 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	116	103	#line 116 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	116	103	#line 116 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	117	103		mov __signed_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_xPos_7qG2_000
-4	116	105	#line 116 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	116	105	#line 116 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	116	105	#line 116 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	116	105	#line 116 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	117	105		set __D0DisplayLightSensor, 500
-4	116	108	#line 116 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	116	108	#line 116 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	117	108		cmp 0, __D0DisplayLightSensor, __signed_stack_001DisplayLightSensor, __D0DisplayLightSensor
-4	117	112	#line 117 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	117	112	#line 117 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	118	112		brtst 4, __ASM_Label_586, __D0DisplayLightSensor
-4	118	115	#line 118 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	118	115	#line 118 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	119	115		set __D0DisplayLightSensor, 1
-4	118	118	#line 118 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	118	118	#line 118 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	119	118		add __DisplayLightSensor_7qG2_xPos_7qG2_000, __DisplayLightSensor_7qG2_xPos_7qG2_000, __D0DisplayLightSensor
-4	118	122	#line 118 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	120	122	#line 120 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	118	122	#line 118 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	120	122	#line 120 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	121	122		jmp __ASM_Label_589
-4	121	124	#line 121 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	121	124	#line 121 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	122	124		set __DisplayLightSensor_7qG2_xPos_7qG2_000, 0
-4	121	127	#line 121 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	121	127	#line 121 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	122	127	#line 122 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	121	127	#line 121 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	121	127	#line 121 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	122	127	#line 122 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	123	127		acquire __SSMArgsMutex
-4	122	128	#line 122 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	122	128	#line 122 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	123	128		set __SSMArgs.ScreenMode, 0
-4	122	131	#line 122 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	122	131	#line 122 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	123	131		syscall 19, __SSMArgs
-4	122	134	#line 122 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	122	134	#line 122 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	123	134		mov __D0DisplayLightSensor, __SSMArgs.Result
-4	122	136	#line 122 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	122	136	#line 122 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	123	136		release __SSMArgsMutex
-4	122	137	#line 122 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	124	137	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	126	137	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	122	137	#line 122 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	124	137	#line 124 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+4	126	137	#line 126 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	127	137		jmp __ASM_Label_566
-4	126	139	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	126	139	#line 126 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 4	127	139		exit -1, -1
-5	129	0	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	129	0	#line 129 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 5	130	0		acquire __SSMArgsMutex
-5	129	1	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	129	1	#line 129 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 5	130	1		set __SSMArgs.ScreenMode, 0
-5	129	4	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	129	4	#line 129 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 5	130	4		syscall 19, __SSMArgs
-5	129	7	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	129	7	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	129	7	#line 129 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+5	129	7	#line 129 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 5	130	7		release __SSMArgsMutex
-5	129	8	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	129	8	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	129	8	#line 129 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
+5	129	8	#line 129 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 5	130	8		set __Wait_7qG2_ms_7qG2_000_inline_displayHandle, 100
-5	129	11	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	129	11	#line 129 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 5	8551	11	#line 8551 "NXCDefs.h"
 5	8552	11		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_displayHandle
 5	8551	14	#line 8551 "NXCDefs.h"
-5	130	14	#line 130 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	130	14	#line 130 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 5	131	14		exit -1, -1
-6	148	0	#line 148 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+6	148	0	#line 148 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 6	149	0		arrinit PLAN, __constVal0, __constVal3
-6	148	4	#line 148 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+6	148	4	#line 148 "C:\Users\JARVIS\AppData\Local\Temp\temp.nxc"
 6	149	4		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
+0	main	0	C:\Users\JARVIS\AppData\Local\Temp\temp.nxc
 1	__ResetSensorSubroutine	7	NXTDefs.h
-2	init	20	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
-3	MoveLightSensor	154	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
-4	DisplayLightSensor	351	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
-5	displayHandle	493	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
-6	__initialize_global_data	510	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
+2	init	20	C:\Users\JARVIS\AppData\Local\Temp\temp.nxc
+3	MoveLightSensor	154	C:\Users\JARVIS\AppData\Local\Temp\temp.nxc
+4	DisplayLightSensor	351	C:\Users\JARVIS\AppData\Local\Temp\temp.nxc
+5	displayHandle	493	C:\Users\JARVIS\AppData\Local\Temp\temp.nxc
+6	__initialize_global_data	510	C:\Users\JARVIS\AppData\Local\Temp\temp.nxc

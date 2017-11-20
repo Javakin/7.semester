@@ -1,0 +1,146 @@
+// Name: main.nxc       Date: 19-11-17
+// Written by: Daniel Haraldson
+//
+// Description: This code is ment to controll the socoban solving
+// robot based on a predefined list of commands called the plan.
+
+
+
+
+// includes
+
+
+
+// **************************** Defines *******************************
+// Define motions
+#define MVFW    0
+#define MVBX    1
+#define MVRR    2
+#define MVRL    3
+
+// Define external components
+#define LIGHTFRONTRIGHT  S4
+#define LIGHTFRONTLEFT   S1
+#define LIGHTBACK        S2
+#define MOTORSENSOR      OUT_A
+#define MORORLEFT        OUT_B
+#define MOTORRIGHT       OUT_C
+
+#define GRAPHWAIT        20
+#define MAXSENSORANGLE   70
+
+#define PC               1.3
+#define IC               0.02
+#define DC               -0.1
+#define PDI_THRESHHOLD   0
+
+// ************************************ Global variables ********************
+const int PLAN[3] = {MVFW, MVRR, MVRR};
+
+// Lightsensor controlls
+int Span = MAXSENSORANGLE;
+int CenterP = 0;
+     
+// ************************************ Functions ***************************
+void init()
+{
+     // setup light sensor
+     SetSensorLight(LIGHTBACK);
+     SetSensorLight(LIGHTFRONTLEFT);
+     SetSensorLight(LIGHTFRONTRIGHT);
+     
+     // setup global variables
+}
+
+// ************************************ Tasks *******************************
+
+
+
+task MoveLightSensor(){
+    // Set up variables
+    float P=0 , I=0, D=0, dif=0,difOld=0;
+    int Target = MAXSENSORANGLE/2;
+    int dir = 1;
+
+    // Run pdi controller
+    while (true){
+         // update pdi controller values
+         difOld = dif;
+         float dif = Target-MotorRotationCount(MOTORSENSOR);
+         
+         //  update pdi constants
+         P = PC*dif;
+         D = DC*(dif-difOld);
+         I +=IC*dif;
+
+         // Output to motor
+         int output =  P+D+I;
+         if(output > 100){output = 100;}      // Prevent clamping
+         if (output <-100){output = -100;}    // Prevent clamping
+
+         OnFwd(MOTORSENSOR, output);
+
+         // for swinging back and forward
+         if (dif*dir < PDI_THRESHHOLD){
+            dir *=-1;
+            Target = CenterP + Span*dir/2;
+         }
+
+         // wait some time
+         Wait(20);
+
+    }
+}
+
+task DisplayLightSensor(){
+     // read the data and plot it on screen
+     int iSensor = 0;
+     int iPosition =0;
+     float yRatio = ((DISPLAY_HEIGHT)/100);
+     float xRatio = ((DISPLAY_WIDTH)/Span);
+     int xPos = 0;
+     
+     while (true){
+            // normalize the sensor value and position
+            //to the screen height and with
+            iSensor = yRatio*Sensor(LIGHTBACK);
+
+            
+            xRatio = DISPLAY_WIDTH/Span;
+            iPosition = xRatio*(MotorRotationCount(MOTORSENSOR)+Span/2);
+            //TextOut(0,LCD_LINE1, NumToStr(iPosition));
+            
+            // display the signal
+            PointOut(iPosition, iSensor);
+            Wait(1);
+            
+            if (xPos < DISPLAY_WIDTH){
+               xPos +=1;
+            }
+            else{
+                 xPos = 0;
+                 ResetScreen();
+            }
+     }
+}
+
+task displayHandle(){
+     // clear screen every now and then
+     ResetScreen();
+     Wait(100);
+}
+
+task main()
+{
+     // inisiate all the sensorts
+     init();
+     
+     // setup program tasks/behaviors
+     Precedes(MoveLightSensor, displayHandle, DisplayLightSensor);
+     
+     // Execute commands
+     
+     // end program play completed sound
+     
+     
+}

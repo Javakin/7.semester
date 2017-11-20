@@ -50,17 +50,17 @@ task MoveLightSensor(){
            x = MotorRotationCount(OUT_A)%360;
            // print relative motor possition
            //ResetScreen();
-           //TextOut(0,LCD_LINE1, NumToStr(x));
-           //Wait(100);
+           TextOut(0,LCD_LINE1, NumToStr(x));
+           Wait(100);
            
            // move back and forward
-           /*if (x<= 0){
-              OnFwd(MOTORSENSOR, 50 - x);
+           if (x<= 0){
+              OnFwd(MOTORSENSOR, 50);
               Wait(250);
-           } else {
-              OnRev(MOTORSENSOR, 50);
-           } */
-           double k = 0;
+           } //else {
+              //OnFwd(MOTORSENSOR, -50);
+           //}
+
            
      }
      

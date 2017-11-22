@@ -28,5 +28,19 @@
 #define DC               -0.1
 #define PDI_THRESHHOLD   0
 
-#define PLANLENGTH       3;
+#define PLANLENGTH       3
+#define READITERATIONS   5
 
+// ************************************ Global variables ********************
+const int PLAN[PLANLENGTH] = {MVFW, MVRR, MVRR};
+
+//sensor memory
+int sensorBack[100]        = {0};
+int sensorRight[100]       = {0};
+int sensorLeft[100]        = {0};
+int motorSensor[100]       = {0;}
+int frontPointer = 0;
+
+// Lightsensor controlls
+int Span = MAXSENSORANGLE;
+int CenterP = 0;

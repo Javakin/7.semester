@@ -55,7 +55,7 @@ task MoveLightSensor(){
 }
 
 task DisplayLightSensor(){
-     // read the data and plot it on screen
+     // read the data from memory and plot it on screen
      int iSensor = 0;
      int iPosition =0;
      float yRatio = ((DISPLAY_HEIGHT)/100);
@@ -65,32 +65,24 @@ task DisplayLightSensor(){
      while (true){
             // normalize the sensor value and position
             //to the screen height and with
-            iSensor = yRatio*Sensor(LIGHTBACK);
-
-
             xRatio = DISPLAY_WIDTH/Span;
-            iPosition = xRatio*(MotorRotationCount(MOTORSENSOR)+Span/2);
-            //TextOut(0,LCD_LINE1, NumToStr(iPosition));
+            ResetScreen();
+            
+            for (int i = 0; i<100; i++){
+                iSensor = yRatio*sensorBack[i];
+                
+                iPosition = xRatio*(motorSensor[i]+Span/2);
+                //TextOut(0,LCD_LINE1, NumToStr(iPosition));
 
-            // display the signal
-            PointOut(iPosition, iSensor);
-            Wait(1);
+                // display the signal
+                PointOut(iPosition, iSensor);
+            }
+            Wait(1000);
 
-            if (xPos < DISPLAY_WIDTH*10){
-               xPos +=1;
-            }
-            else{
-                 xPos = 0;
-                 ResetScreen();
-            }
      }
 }
 
-task displayHandle(){
-     // clear screen every now and then
-     //ResetScreen();
-     //Wait(3000);
-}
+
 
 task ExecutePath(){
      // Execute commands
@@ -123,7 +115,28 @@ task ExecutePath(){
      //StopAllTasks(); // stop the program
 }
 
+task LightSensors(){
+     // take the mesured data and put it in the aray
+     int iSBack,iSLeft, iSRight;
 
+     
+     while (true){
+           // read value five times and place average in memory
+           for (int i = 0; i<READITERATIONS; i++){
+               // add value
+               iSBack += Sensor(LIGHTBACK);
+               iSLeft += Sensor(LIGHTLEFT);
+               iSRight += Sensor(LIGHTRIGHT);
+           }
+           
+           // add to memory
+           sensorBack[frontPointer] = iSBack/READITERATIONS;
+           sensorRight[frontPointer] = iSRight/READITERATIONS;
+           sensorLeft[frontPointer] = iSLeft/READITERATIONS;
+           motorSensor[frontPointer] = MotorRotationCount(MOTORSENSOR);
+           frontPointer =(frontPointer + 1)%100;
+     }
+}
 
 task main()
 {
@@ -131,8 +144,10 @@ task main()
      init();
 
      // setup program tasks/behaviors
-     Precedes(MoveLightSensor, displayHandle, DisplayLightSensor, ExecutePath);
-
+     Precedes(MoveLightSensor);
+     Precedes(DisplayLightSensor);
+     Precedes(LightSensors);
+     Precedes(ExecutePath);
 
 
      

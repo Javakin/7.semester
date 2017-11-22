@@ -62,22 +62,25 @@ task DisplayLightSensor(){
      float xRatio = ((DISPLAY_WIDTH)/Span);
      int xPos = 0;
 
+
+
      while (true){
             // normalize the sensor value and position
             //to the screen height and with
             xRatio = DISPLAY_WIDTH/Span;
             ResetScreen();
+            Wait(10);
             
             for (int i = 0; i<100; i++){
                 iSensor = yRatio*sensorBack[i];
                 
                 iPosition = xRatio*(motorSensor[i]+Span/2);
-                //TextOut(0,LCD_LINE1, NumToStr(iPosition));
+
 
                 // display the signal
                 PointOut(iPosition, iSensor);
             }
-            Wait(3000);
+            Wait(1000);
 
      }
 }
@@ -91,7 +94,7 @@ task ExecutePath(){
          // perform switch case
          switch(PLAN[i]){
              case(MVFW):   // Move forward one block
-                 Wait(1000);
+                 //Wait(1000);
                  break;
 
              case(MVBX):   // Move the boxe one block
@@ -121,6 +124,8 @@ task LightSensors(){
 
      
      while (true){
+           iSBack = 0; iSLeft = 0; iSRight = 0;
+           
            // read value five times and place average in memory
            for (int i = 0; i<READITERATIONS; i++){
                // add value
@@ -130,11 +135,15 @@ task LightSensors(){
            }
            
            // add to memory
-           sensorBack[frontPointer] = iSBack/READITERATIONS;
-           sensorRight[frontPointer] = iSRight/READITERATIONS;
-           sensorLeft[frontPointer] = iSLeft/READITERATIONS;
+           sensorBack[frontPointer] = iSBack/(READITERATIONS);
+           sensorRight[frontPointer] = iSRight/(READITERATIONS);
+           sensorLeft[frontPointer] = iSLeft/(READITERATIONS);
            motorSensor[frontPointer] = MotorRotationCount(MOTORSENSOR);
-           frontPointer =(frontPointer + 1)%100;
+
+           frontPointer =(frontPointer + 1)%MEMORYDEBTH;
+
+           Wait(1);
+
      }
 }
 
@@ -147,7 +156,9 @@ task main()
      Precedes(MoveLightSensor);
      Precedes(DisplayLightSensor);
      Precedes(LightSensors);
-     Precedes(ExecutePath);
+     //Precedes(ExecutePath);
+
+
 
 
      

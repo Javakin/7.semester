@@ -1,112 +1,105 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__signed_stack_002LightSensors	6	1	0	4	6
-1	__signed_stack_001LightSensors	6	1	4	4	14
-2	__signed_stack_001MoveLightSensor	6	1	8	4	10
-3	__float_stack_001MoveLightSensor	10	1	12	4	6
-4	__signed_stack_002MoveLightSensor	6	1	16	4	4
-5	__signed_stack_002DisplayLightSensor	6	1	20	4	6
-6	__signed_stack_001DisplayLightSensor	6	1	24	4	10
-7	__signed_stack_003DisplayLightSensor	6	1	28	4	2
-8	__signed_stack_001ExecutePath	6	1	32	4	4
-9	__float_stack_001DisplayLightSensor	10	1	36	4	4
-10	__float_stack_002MoveLightSensor	10	1	40	4	2
-11	__MoveLightSensor_7qG2_dif_7qG2_000	10	1	44	4	2
+0	__float_stack_001MoveLightSensor	10	1	0	4	6
+1	__signed_stack_002MoveLightSensor	6	1	4	4	4
+2	__DisplayLightSensor_7qG2_yRatio_7qG2_000	10	1	8	4	2
+3	__float_stack_002MoveLightSensor	10	1	12	4	2
+4	__signed_stack_001MoveLightSensor	6	1	16	4	10
+5	__float_stack_001DisplayLightSensor	10	1	20	4	4
+6	__signed_stack_003DisplayLightSensor	6	1	24	4	2
+7	__signed_stack_002LightSensors	6	1	28	4	6
+8	__signed_stack_001LightSensors	6	1	32	4	14
+9	__Wait_7qG2_ms_7qG2_000_inline_MoveLightSensor	5	1	36	4	2
+10	__MoveLightSensor_7qG2_D_7qG2_000	10	1	40	4	3
+11	__MoveLightSensor_7qG2_I_7qG2_000	10	1	44	4	4
 12	__MoveLightSensor_7qG2_difOld_7qG2_000	10	1	48	4	3
-13	__MoveLightSensor_7qG2_D_7qG2_000	10	1	52	4	3
+13	__MoveLightSensor_7qG2_dif_7qG2_000	10	1	52	4	2
 14	__MoveLightSensor_7qG2_P_7qG2_000	10	1	56	4	3
-15	__MoveLightSensor_7qG2_I_7qG2_000	10	1	60	4	4
+15	__constValf0P1	10	0	60	4	1
 16	__constValf0P02	10	0	64	4	1
-17	__Wait_7qG2_ms_7qG2_000_inline_MoveLightSensor	5	1	68	4	2
-18	__constValf0P1	10	0	72	4	1
-19	__MoveLightSensor_7qG2_dif_7qG2_001	10	1	76	4	5
-20	__constValf1P3	10	0	80	4	1
-21	__DisplayLightSensor_7qG2_xRatio_7qG2_000	10	1	84	4	3
-22	__DisplayLightSensor_7qG2_yRatio_7qG2_000	10	1	88	4	2
-23	__SSMArgsMutex	9	0	92	4	2
-24	__PointOutMutex	9	0	96	4	2
-25	__Wait_7qG2_ms_7qG2_000_inline_DisplayLightSensor	5	1	100	4	2
-26	__Wait_7qG2_ms_7qG2_000_inline_ExecutePath	5	1	104	4	2
-27	__D0DisplayLightSensor	6	1	108	4	26
-28	__DF0MoveLightSensor	10	1	112	4	8
-29	__D0SetSensorLight_inline_init	6	1	116	4	6
-30	__DU0SetSensorLight_inline_init	5	1	120	4	15
-31	__D0MoveLightSensor	6	1	124	4	38
-32	__D0ExecutePath	6	1	128	4	9
-33	__D0LightSensors	6	1	132	4	32
-34	__MoveLightSensor_7qG2_Target_7qG2_000	4	1	136	2	3
-35	__LightSensors_7qG2_iSRight_7qG2_000	4	1	138	2	3
-36	__LightSensors_7qG2_i_7qG2_002	4	1	140	2	4
-37	__LightSensors_7qG2_iSBack_7qG2_000	4	1	142	2	3
-38	__LightSensors_7qG2_iSLeft_7qG2_000	4	1	144	2	3
-39	__MoveLightSensor_7qG2_dir_7qG2_000	4	1	146	2	5
-40	__DisplayLightSensor_7qG2_i_7qG2_002	4	1	148	2	6
-41	__DisplayLightSensor_7qG2_iSensor_7qG2_000	4	1	150	2	3
-42	__DisplayLightSensor_7qG2_iPosition_7qG2_000	4	1	152	2	3
-43	__ExecutePath_7qG2_i_7qG2_001	4	1	154	2	5
-44	__ExecutePath_7qG2_pl_7qG2_000	4	1	156	2	2
-45	__MoveLightSensor_7qG2_output_7qG2_001	4	1	158	2	6
-46	frontPointer	4	1	160	2	6
-47	Span	4	0	162	2	4
-48	CenterP	4	1	164	2	1
-49	__constVal2	2	0	166	1	1
-50	__constValNeg1	2	0	167	1	1
-51	__constValNeg100	2	0	168	1	2
-52	__constVal100	2	0	169	1	4
-53	____ResetSensorSubroutine_return	1	1	170	1	5
-54	__constVal1	2	0	171	1	9
-55	__constVal32	2	0	172	1	3
-56	____initialize_global_data_return	1	1	173	1	3
-57	__constVal0	2	1	174	1	14
-58	__ResetSensorTmp	1	1	175	1	2
-59	__ResetSensorPort	1	1	176	1	5
-60	__constVal3	2	0	177	1	4
-61	__constVal63	2	0	178	1	1
-62	__SetSensorLight_7qG2_bActive_7qG2_000_inline_init	1	1	179	1	6
-63	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	180	1	6
-64	__init_return	1	1	181	1	3
-65	__SetSensorLight_7qG2_port_7qG2_000_inline_init	1	1	182	1	15
-66	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init	1	1	183	1	6
-67	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init	1	1	184	1	6
-68	__constVal96	2	0	185	1	1
-69	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	186	1	6
-70	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	187	1	3
-71	__SSMArgs	8	0	2	8	3
-72	__SSMArgs.Result	2	1	188	1	3
-73	__SSMArgs.ScreenMode	5	1	192	4	3
-74	__PointOutArgs	8	0	3	12	5
-75	__PointOutArgs.Result	2	1	196	1	5
-76	__PointOutArgs.Location	8	0	2	4	5
-77	__PointOutArgs.Location.X	4	1	200	2	5
-78	__PointOutArgs.Location.Y	4	1	202	2	5
-79	__PointOutArgs.Options	5	1	204	4	5
-80	PLAN	7	0	208	4	2
-81	PLAN.PLAN_type	4	0	0	2	0
-82	sensorBack	7	0	210	4	4
-83	sensorBack.sensorBack_type	4	0	0	2	0
-84	motorSensor	7	0	212	4	4
-85	motorSensor.motorSensor_type	4	0	0	2	0
-86	sensorLeft	7	0	214	4	3
-87	sensorLeft.sensorLeft_type	4	0	0	2	0
-88	sensorRight	7	0	216	4	3
-89	sensorRight.sensorRight_type	4	0	0	2	0
+17	__MoveLightSensor_7qG2_dif_7qG2_001	10	1	68	4	5
+18	__constValf1P3	10	0	72	4	1
+19	__signed_stack_002DisplayLightSensor	6	1	76	4	6
+20	__DisplayLightSensor_7qG2_xRatio_7qG2_000	10	1	80	4	3
+21	__SSMArgsMutex	9	0	84	4	2
+22	__D0DisplayLightSensor	6	1	88	4	26
+23	__Wait_7qG2_ms_7qG2_000_inline_LightSensors	5	1	92	4	2
+24	__Wait_7qG2_ms_7qG2_000_inline_DisplayLightSensor	5	1	96	4	4
+25	__PointOutMutex	9	0	100	4	2
+26	__D0SetSensorLight_inline_init	6	1	104	4	6
+27	__DU0SetSensorLight_inline_init	5	1	108	4	15
+28	__signed_stack_001DisplayLightSensor	6	1	112	4	10
+29	__D0MoveLightSensor	6	1	116	4	38
+30	__D0LightSensors	6	1	120	4	32
+31	__DF0MoveLightSensor	10	1	124	4	8
+32	__LightSensors_7qG2_iSLeft_7qG2_000	4	1	128	2	4
+33	__LightSensors_7qG2_iSBack_7qG2_000	4	1	130	2	4
+34	__DisplayLightSensor_7qG2_i_7qG2_002	4	1	132	2	6
+35	__MoveLightSensor_7qG2_dir_7qG2_000	4	1	134	2	5
+36	__constVal250	4	0	136	2	4
+37	__MoveLightSensor_7qG2_Target_7qG2_000	4	1	138	2	3
+38	__LightSensors_7qG2_iSRight_7qG2_000	4	1	140	2	4
+39	__LightSensors_7qG2_i_7qG2_002	4	1	142	2	4
+40	frontPointer	4	1	144	2	6
+41	Span	4	0	146	2	4
+42	__DisplayLightSensor_7qG2_iPosition_7qG2_000	4	1	148	2	3
+43	__DisplayLightSensor_7qG2_iSensor_7qG2_000	4	1	150	2	3
+44	__MoveLightSensor_7qG2_output_7qG2_001	4	1	152	2	6
+45	CenterP	4	1	154	2	1
+46	__constVal96	2	0	156	1	1
+47	____initialize_global_data_return	1	1	157	1	3
+48	__constVal63	2	0	158	1	1
+49	__constValNeg1	2	0	159	1	1
+50	__constVal0	2	1	160	1	13
+51	__constVal3	2	0	161	1	3
+52	__constVal32	2	0	162	1	3
+53	__constVal1	2	0	163	1	7
+54	____ResetSensorSubroutine_return	1	1	164	1	5
+55	__ResetSensorTmp	1	1	165	1	2
+56	__ResetSensorPort	1	1	166	1	5
+57	__constValNeg100	2	0	167	1	2
+58	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	168	1	6
+59	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init	1	1	169	1	6
+60	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	170	1	3
+61	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init	1	1	171	1	6
+62	__SetSensorLight_7qG2_port_7qG2_000_inline_init	1	1	172	1	15
+63	__init_return	1	1	173	1	3
+64	__SetSensorLight_7qG2_bActive_7qG2_000_inline_init	1	1	174	1	6
+65	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	175	1	6
+66	__SSMArgs	8	0	2	8	3
+67	__SSMArgs.Result	2	1	176	1	3
+68	__SSMArgs.ScreenMode	5	1	180	4	3
+69	__PointOutArgs	8	0	3	12	5
+70	__PointOutArgs.Result	2	1	184	1	5
+71	__PointOutArgs.Location	8	0	2	4	5
+72	__PointOutArgs.Location.X	4	1	188	2	5
+73	__PointOutArgs.Location.Y	4	1	190	2	5
+74	__PointOutArgs.Options	5	1	192	4	5
+75	sensorLeft	7	0	196	4	3
+76	sensorLeft.sensorLeft_type	4	0	0	2	0
+77	motorSensor	7	0	198	4	4
+78	motorSensor.motorSensor_type	4	0	0	2	0
+79	sensorRight	7	0	200	4	3
+80	sensorRight.sensorRight_type	4	0	0	2	0
+81	PLAN	7	0	202	4	1
+82	PLAN.PLAN_type	4	0	0	2	0
+83	sensorBack	7	0	204	4	4
+84	sensorBack.sensorBack_type	4	0	0	2	0
 #SOURCES
 Clump	Line	PC	Source
-0	143	0	#line 143 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	144	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	143	2	#line 143 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	146	2	#line 146 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	147	2		subcall init, __init_return
-0	146	4	#line 146 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	147	4	#line 147 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	147	4	#line 147 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	148	4	#line 148 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	148	4	#line 148 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	149	4	#line 149 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	149	4	#line 149 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	153	4	#line 153 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	153	4	#line 153 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	154	4		exit 0, 3
+0	152	0	#line 152 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+0	153	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	152	2	#line 152 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+0	155	2	#line 155 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+0	156	2		subcall init, __init_return
+0	155	4	#line 155 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+0	156	4	#line 156 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+0	156	4	#line 156 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+0	157	4	#line 157 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+0	157	4	#line 157 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+0	164	4	#line 164 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+0	164	4	#line 164 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+0	165	4		exit 0, 2
 1	5476	0		setin __constVal1, __ResetSensorPort, 5
 1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
@@ -453,303 +446,270 @@ Clump	Line	PC	Source
 4	61	21	#line 61 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
 4	62	21		div __DisplayLightSensor_7qG2_xRatio_7qG2_000, __signed_stack_001DisplayLightSensor, __D0DisplayLightSensor
 4	62	25	#line 62 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	64	25	#line 64 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	64	25	#line 64 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	64	25	#line 64 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	65	25		set __D0DisplayLightSensor, 1
-4	67	28	#line 67 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	68	28		tst 5, __D0DisplayLightSensor, __D0DisplayLightSensor
-4	67	31	#line 67 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	68	31		brtst 4, __ASM_Label_682, __D0DisplayLightSensor
-4	67	34	#line 67 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	68	34		set __signed_stack_001DisplayLightSensor, 100
-4	67	37	#line 67 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	68	37	#line 68 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	69	37		mov __D0DisplayLightSensor, Span
-4	68	39	#line 68 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	69	39		div __DisplayLightSensor_7qG2_xRatio_7qG2_000, __signed_stack_001DisplayLightSensor, __D0DisplayLightSensor
-4	68	43	#line 68 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	68	43	#line 68 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	66	25	#line 66 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	66	25	#line 66 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	66	25	#line 66 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	67	25		set __D0DisplayLightSensor, 1
+4	69	28	#line 69 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	70	28		tst 5, __D0DisplayLightSensor, __D0DisplayLightSensor
+4	69	31	#line 69 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	70	31		brtst 4, __ASM_Label_682, __D0DisplayLightSensor
+4	69	34	#line 69 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	70	34		set __signed_stack_001DisplayLightSensor, 100
+4	69	37	#line 69 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	70	37	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	71	37		mov __D0DisplayLightSensor, Span
+4	70	39	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	71	39		div __DisplayLightSensor_7qG2_xRatio_7qG2_000, __signed_stack_001DisplayLightSensor, __D0DisplayLightSensor
 4	70	43	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	71	43		acquire __SSMArgsMutex
-4	70	44	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	71	44		set __SSMArgs.ScreenMode, 0
-4	70	47	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	71	47		syscall 19, __SSMArgs
-4	70	50	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	71	50		mov __D0DisplayLightSensor, __SSMArgs.Result
-4	70	52	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	71	52		release __SSMArgsMutex
-4	70	53	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	70	53	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	71	53		set __DisplayLightSensor_7qG2_i_7qG2_002, 0
-4	70	56	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	70	56	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	71	56		mov __signed_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_i_7qG2_002
-4	70	58	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	70	58	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	71	58		set __D0DisplayLightSensor, 100
-4	70	61	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	71	61		cmp 0, __D0DisplayLightSensor, __signed_stack_001DisplayLightSensor, __D0DisplayLightSensor
-4	70	65	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	71	65		brtst 4, __ASM_Label_688, __D0DisplayLightSensor
-4	70	68	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	71	68		jmp __ASM_Label_689
-4	70	70	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	71	70		add __DisplayLightSensor_7qG2_i_7qG2_002, __DisplayLightSensor_7qG2_i_7qG2_002, __constVal1
-4	71	74	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	72	74		jmp __ASM_Label_687
-4	71	76	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	72	76		mov __float_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_yRatio_7qG2_000
-4	71	78	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	71	78	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	72	78		mov __signed_stack_002DisplayLightSensor, __DisplayLightSensor_7qG2_i_7qG2_002
-4	71	80	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	71	80	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	72	80		index __D0DisplayLightSensor, sensorBack, __signed_stack_002DisplayLightSensor
-4	71	84	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	73	84	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	74	84		mul __DisplayLightSensor_7qG2_iSensor_7qG2_000, __float_stack_001DisplayLightSensor, __D0DisplayLightSensor
-4	73	88	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	73	88	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	73	88	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	74	88		mov __float_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_xRatio_7qG2_000
-4	73	90	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	73	90	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	74	90		mov __signed_stack_002DisplayLightSensor, __DisplayLightSensor_7qG2_i_7qG2_002
-4	73	92	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	73	92	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	74	92		index __signed_stack_002DisplayLightSensor, motorSensor, __signed_stack_002DisplayLightSensor
-4	73	96	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	73	96	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	73	96	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	74	96		mov __signed_stack_003DisplayLightSensor, Span
-4	73	98	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	73	98	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	74	98		set __D0DisplayLightSensor, 2
-4	73	101	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	74	101		div __D0DisplayLightSensor, __signed_stack_003DisplayLightSensor, __D0DisplayLightSensor
-4	73	105	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	74	105		add __D0DisplayLightSensor, __signed_stack_002DisplayLightSensor, __D0DisplayLightSensor
-4	77	109	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	78	109		mul __DisplayLightSensor_7qG2_iPosition_7qG2_000, __float_stack_001DisplayLightSensor, __D0DisplayLightSensor
-4	77	113	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	77	113	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	77	113	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	78	113		mov __signed_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_iPosition_7qG2_000
-4	77	115	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	77	115	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	78	115		mov __D0DisplayLightSensor, __DisplayLightSensor_7qG2_iSensor_7qG2_000
-4	78	117	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	79	117		acquire __PointOutMutex
-4	78	118	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	79	118		mov __PointOutArgs.Location.X, __signed_stack_001DisplayLightSensor
-4	78	120	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	79	120		mov __PointOutArgs.Location.Y, __D0DisplayLightSensor
-4	78	122	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	79	122		set __PointOutArgs.Options, 0
-4	78	125	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	79	125		syscall 14, __PointOutArgs
-4	78	128	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	79	128		mov __D0DisplayLightSensor, __PointOutArgs.Result
-4	78	130	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	79	130		release __PointOutMutex
-4	78	131	#line 78 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	79	131	#line 79 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	80	131		jmp __ASM_Label_690
-4	79	133	#line 79 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	79	133	#line 79 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	80	133		set __Wait_7qG2_ms_7qG2_000_inline_DisplayLightSensor, 1000
-4	79	136	#line 79 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	8551	136	#line 8551 "NXCDefs.h"
-4	8552	136		waitv __Wait_7qG2_ms_7qG2_000_inline_DisplayLightSensor
-4	8551	138	#line 8551 "NXCDefs.h"
-4	81	138	#line 81 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	86	138	#line 86 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	87	138		jmp __ASM_Label_681
-4	86	140	#line 86 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-4	87	140		exit -1, -1
-5	89	0	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	90	0		set __ExecutePath_7qG2_pl_7qG2_000, 3
-5	89	3	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	89	3	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	90	3		set __ExecutePath_7qG2_i_7qG2_001, 0
-5	89	6	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	89	6	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	90	6		mov __signed_stack_001ExecutePath, __ExecutePath_7qG2_i_7qG2_001
-5	89	8	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	89	8	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	90	8		mov __D0ExecutePath, __ExecutePath_7qG2_pl_7qG2_000
-5	89	10	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	90	10		cmp 0, __D0ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
-5	89	14	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	90	14		brtst 4, __ASM_Label_714, __D0ExecutePath
-5	89	17	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	90	17		jmp __ASM_Label_715
-5	89	19	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	90	19		add __ExecutePath_7qG2_i_7qG2_001, __ExecutePath_7qG2_i_7qG2_001, __constVal1
-5	91	23	#line 91 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	92	23		jmp __ASM_Label_713
-5	91	25	#line 91 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	92	25		mov __signed_stack_001ExecutePath, __ExecutePath_7qG2_i_7qG2_001
-5	91	27	#line 91 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	91	27	#line 91 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	92	27		index __D0ExecutePath, PLAN, __signed_stack_001ExecutePath
-5	91	31	#line 91 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	97	31		brcmp 4, __ASM_Label_726, __constVal0, __D0ExecutePath
-5	98	35		brcmp 4, __ASM_Label_729, __constVal1, __D0ExecutePath
-5	99	39		brcmp 4, __ASM_Label_730, __constVal2, __D0ExecutePath
-5	100	43		brcmp 4, __ASM_Label_731, __constVal3, __D0ExecutePath
-5	101	47		jmp __ASM_Label_725
-5	93	49	#line 93 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	93	49	#line 93 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	94	49		set __Wait_7qG2_ms_7qG2_000_inline_ExecutePath, 1000
-5	93	52	#line 93 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	8551	52	#line 8551 "NXCDefs.h"
-5	8552	52		waitv __Wait_7qG2_ms_7qG2_000_inline_ExecutePath
-5	8551	54	#line 8551 "NXCDefs.h"
-5	94	54	#line 94 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	96	54	#line 96 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	97	54		jmp __ASM_Label_725
-5	96	56	#line 96 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	97	56	#line 97 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	99	56	#line 99 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	100	56		jmp __ASM_Label_725
-5	99	58	#line 99 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	100	58	#line 100 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	102	58	#line 102 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	103	58		jmp __ASM_Label_725
-5	102	60	#line 102 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	103	60	#line 103 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	104	60	#line 104 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	104	60	#line 104 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	115	60	#line 115 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	117	60	#line 117 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	118	60		jmp __ASM_Label_716
-5	117	62	#line 117 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-5	118	62		exit -1, -1
-6	122	0	#line 122 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	123	0		set __D0LightSensors, 1
-6	124	3	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	125	3		tst 5, __D0LightSensors, __D0LightSensors
-6	124	6	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	125	6		brtst 4, __ASM_Label_733, __D0LightSensors
-6	124	9	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	125	9		set __LightSensors_7qG2_i_7qG2_002, 0
-6	124	12	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	124	12	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	125	12		mov __signed_stack_001LightSensors, __LightSensors_7qG2_i_7qG2_002
-6	124	14	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	124	14	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	125	14		set __D0LightSensors, 5
-6	124	17	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	125	17		cmp 0, __D0LightSensors, __signed_stack_001LightSensors, __D0LightSensors
-6	124	21	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	125	21		brtst 4, __ASM_Label_737, __D0LightSensors
-6	124	24	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	125	24		jmp __ASM_Label_738
-6	124	26	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	125	26		add __LightSensors_7qG2_i_7qG2_002, __LightSensors_7qG2_i_7qG2_002, __constVal1
-6	126	30	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	127	30		jmp __ASM_Label_736
-6	126	32	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	127	32		getin __D0LightSensors, __constVal1, 4
-6	126	36	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	127	36		add __LightSensors_7qG2_iSBack_7qG2_000, __LightSensors_7qG2_iSBack_7qG2_000, __D0LightSensors
-6	126	40	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	126	40	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	127	40	#line 127 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	128	40		getin __D0LightSensors, __constVal0, 4
-6	127	44	#line 127 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	128	44		add __LightSensors_7qG2_iSLeft_7qG2_000, __LightSensors_7qG2_iSLeft_7qG2_000, __D0LightSensors
-6	127	48	#line 127 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	127	48	#line 127 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	128	48	#line 128 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	129	48		getin __D0LightSensors, __constVal3, 4
-6	128	52	#line 128 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	129	52		add __LightSensors_7qG2_iSRight_7qG2_000, __LightSensors_7qG2_iSRight_7qG2_000, __D0LightSensors
-6	128	56	#line 128 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	128	56	#line 128 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	132	56	#line 132 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	133	56		jmp __ASM_Label_739
-6	132	58	#line 132 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	132	58	#line 132 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	133	58		mov __signed_stack_001LightSensors, frontPointer
-6	132	60	#line 132 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	132	60	#line 132 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	133	60		mov __signed_stack_002LightSensors, __LightSensors_7qG2_iSBack_7qG2_000
-6	132	62	#line 132 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	133	62	#line 133 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	134	62		set __D0LightSensors, 5
-6	133	65	#line 133 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	134	65		div __D0LightSensors, __signed_stack_002LightSensors, __D0LightSensors
-6	133	69	#line 133 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	134	69		replace sensorBack, sensorBack, __signed_stack_001LightSensors, __D0LightSensors
-6	133	74	#line 133 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	133	74	#line 133 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	134	74		mov __signed_stack_001LightSensors, frontPointer
-6	133	76	#line 133 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	133	76	#line 133 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	134	76		mov __signed_stack_002LightSensors, __LightSensors_7qG2_iSRight_7qG2_000
-6	133	78	#line 133 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	134	78	#line 134 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	135	78		set __D0LightSensors, 5
-6	134	81	#line 134 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	135	81		div __D0LightSensors, __signed_stack_002LightSensors, __D0LightSensors
-6	134	85	#line 134 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	135	85		replace sensorRight, sensorRight, __signed_stack_001LightSensors, __D0LightSensors
-6	134	90	#line 134 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	134	90	#line 134 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	135	90		mov __signed_stack_001LightSensors, frontPointer
-6	134	92	#line 134 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	134	92	#line 134 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	135	92		mov __signed_stack_002LightSensors, __LightSensors_7qG2_iSLeft_7qG2_000
-6	134	94	#line 134 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	135	94	#line 135 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	136	94		set __D0LightSensors, 5
-6	135	97	#line 135 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	136	97		div __D0LightSensors, __signed_stack_002LightSensors, __D0LightSensors
-6	135	101	#line 135 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	136	101		replace sensorLeft, sensorLeft, __signed_stack_001LightSensors, __D0LightSensors
-6	135	106	#line 135 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	135	106	#line 135 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	136	106		mov __signed_stack_001LightSensors, frontPointer
-6	135	108	#line 135 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	136	108	#line 136 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	137	108		getout __D0LightSensors, __constVal0, 14
-6	136	112	#line 136 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	137	112		replace motorSensor, motorSensor, __signed_stack_001LightSensors, __D0LightSensors
-6	136	117	#line 136 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	136	117	#line 136 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	137	117		mov __signed_stack_001LightSensors, frontPointer
-6	136	119	#line 136 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	136	119	#line 136 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	137	119		set __D0LightSensors, 1
-6	136	122	#line 136 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	137	122		add __signed_stack_001LightSensors, __signed_stack_001LightSensors, __D0LightSensors
-6	136	126	#line 136 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	137	126	#line 137 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	138	126		set __D0LightSensors, 100
-6	137	129	#line 137 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	138	129		mod frontPointer, __signed_stack_001LightSensors, __D0LightSensors
-6	137	133	#line 137 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	137	133	#line 137 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	140	133	#line 140 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	141	133		jmp __ASM_Label_732
-6	140	135	#line 140 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-6	141	135		exit -1, -1
-7	156	0	#line 156 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-7	157	0		arrinit PLAN, __constVal0, __constVal3
-7	156	4	#line 156 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-7	157	4		arrinit sensorBack, __constVal0, __constVal100
-7	156	8	#line 156 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-7	157	8		arrinit sensorRight, __constVal0, __constVal100
-7	156	12	#line 156 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-7	157	12		arrinit sensorLeft, __constVal0, __constVal100
-7	156	16	#line 156 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-7	157	16		arrinit motorSensor, __constVal0, __constVal100
-7	156	20	#line 156 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-7	157	20		subret ____initialize_global_data_return
+4	70	43	#line 70 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	71	43	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	72	43		acquire __SSMArgsMutex
+4	71	44	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	72	44		set __SSMArgs.ScreenMode, 0
+4	71	47	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	72	47		syscall 19, __SSMArgs
+4	71	50	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	72	50		mov __D0DisplayLightSensor, __SSMArgs.Result
+4	71	52	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	72	52		release __SSMArgsMutex
+4	71	53	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	71	53	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	72	53		set __Wait_7qG2_ms_7qG2_000_inline_DisplayLightSensor, 10
+4	71	56	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	8551	56	#line 8551 "NXCDefs.h"
+4	8552	56		waitv __Wait_7qG2_ms_7qG2_000_inline_DisplayLightSensor
+4	8551	58	#line 8551 "NXCDefs.h"
+4	73	58	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	73	58	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	74	58		set __DisplayLightSensor_7qG2_i_7qG2_002, 0
+4	73	61	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	73	61	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	74	61		mov __signed_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_i_7qG2_002
+4	73	63	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	73	63	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	74	63		set __D0DisplayLightSensor, 250
+4	73	66	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	74	66		cmp 0, __D0DisplayLightSensor, __signed_stack_001DisplayLightSensor, __D0DisplayLightSensor
+4	73	70	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	74	70		brtst 4, __ASM_Label_690, __D0DisplayLightSensor
+4	73	73	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	74	73		jmp __ASM_Label_691
+4	73	75	#line 73 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	74	75		add __DisplayLightSensor_7qG2_i_7qG2_002, __DisplayLightSensor_7qG2_i_7qG2_002, __constVal1
+4	74	79	#line 74 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	75	79		jmp __ASM_Label_689
+4	74	81	#line 74 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	75	81		mov __float_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_yRatio_7qG2_000
+4	74	83	#line 74 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	74	83	#line 74 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	75	83		mov __signed_stack_002DisplayLightSensor, __DisplayLightSensor_7qG2_i_7qG2_002
+4	74	85	#line 74 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	74	85	#line 74 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	75	85		index __D0DisplayLightSensor, sensorBack, __signed_stack_002DisplayLightSensor
+4	74	89	#line 74 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	76	89	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	77	89		mul __DisplayLightSensor_7qG2_iSensor_7qG2_000, __float_stack_001DisplayLightSensor, __D0DisplayLightSensor
+4	76	93	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	76	93	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	76	93	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	77	93		mov __float_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_xRatio_7qG2_000
+4	76	95	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	76	95	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	77	95		mov __signed_stack_002DisplayLightSensor, __DisplayLightSensor_7qG2_i_7qG2_002
+4	76	97	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	76	97	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	77	97		index __signed_stack_002DisplayLightSensor, motorSensor, __signed_stack_002DisplayLightSensor
+4	76	101	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	76	101	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	76	101	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	77	101		mov __signed_stack_003DisplayLightSensor, Span
+4	76	103	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	76	103	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	77	103		set __D0DisplayLightSensor, 2
+4	76	106	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	77	106		div __D0DisplayLightSensor, __signed_stack_003DisplayLightSensor, __D0DisplayLightSensor
+4	76	110	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	77	110		add __D0DisplayLightSensor, __signed_stack_002DisplayLightSensor, __D0DisplayLightSensor
+4	80	114	#line 80 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	81	114		mul __DisplayLightSensor_7qG2_iPosition_7qG2_000, __float_stack_001DisplayLightSensor, __D0DisplayLightSensor
+4	80	118	#line 80 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	80	118	#line 80 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	80	118	#line 80 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	81	118		mov __signed_stack_001DisplayLightSensor, __DisplayLightSensor_7qG2_iPosition_7qG2_000
+4	80	120	#line 80 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	80	120	#line 80 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	81	120		mov __D0DisplayLightSensor, __DisplayLightSensor_7qG2_iSensor_7qG2_000
+4	81	122	#line 81 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	82	122		acquire __PointOutMutex
+4	81	123	#line 81 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	82	123		mov __PointOutArgs.Location.X, __signed_stack_001DisplayLightSensor
+4	81	125	#line 81 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	82	125		mov __PointOutArgs.Location.Y, __D0DisplayLightSensor
+4	81	127	#line 81 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	82	127		set __PointOutArgs.Options, 0
+4	81	130	#line 81 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	82	130		syscall 14, __PointOutArgs
+4	81	133	#line 81 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	82	133		mov __D0DisplayLightSensor, __PointOutArgs.Result
+4	81	135	#line 81 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	82	135		release __PointOutMutex
+4	81	136	#line 81 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	82	136	#line 82 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	83	136		jmp __ASM_Label_692
+4	82	138	#line 82 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	82	138	#line 82 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	83	138		set __Wait_7qG2_ms_7qG2_000_inline_DisplayLightSensor, 1000
+4	82	141	#line 82 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	8551	141	#line 8551 "NXCDefs.h"
+4	8552	141		waitv __Wait_7qG2_ms_7qG2_000_inline_DisplayLightSensor
+4	8551	143	#line 8551 "NXCDefs.h"
+4	84	143	#line 84 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	89	143	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	90	143		jmp __ASM_Label_681
+4	89	145	#line 89 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+4	90	145		exit -1, -1
+5	125	0	#line 125 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	126	0		set __D0LightSensors, 1
+5	126	3	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	127	3		tst 5, __D0LightSensors, __D0LightSensors
+5	126	6	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	127	6		brtst 4, __ASM_Label_735, __D0LightSensors
+5	126	9	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	127	9		set __LightSensors_7qG2_iSBack_7qG2_000, 0
+5	126	12	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	126	12	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	126	12	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	127	12		set __LightSensors_7qG2_iSLeft_7qG2_000, 0
+5	126	15	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	126	15	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	129	15	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	130	15		set __LightSensors_7qG2_iSRight_7qG2_000, 0
+5	129	18	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	129	18	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	129	18	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	130	18		set __LightSensors_7qG2_i_7qG2_002, 0
+5	129	21	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	129	21	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	130	21		mov __signed_stack_001LightSensors, __LightSensors_7qG2_i_7qG2_002
+5	129	23	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	129	23	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	130	23		set __D0LightSensors, 5
+5	129	26	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	130	26		cmp 0, __D0LightSensors, __signed_stack_001LightSensors, __D0LightSensors
+5	129	30	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	130	30		brtst 4, __ASM_Label_745, __D0LightSensors
+5	129	33	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	130	33		jmp __ASM_Label_746
+5	129	35	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	130	35		add __LightSensors_7qG2_i_7qG2_002, __LightSensors_7qG2_i_7qG2_002, __constVal1
+5	131	39	#line 131 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	132	39		jmp __ASM_Label_744
+5	131	41	#line 131 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	132	41		getin __D0LightSensors, __constVal1, 4
+5	131	45	#line 131 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	132	45		add __LightSensors_7qG2_iSBack_7qG2_000, __LightSensors_7qG2_iSBack_7qG2_000, __D0LightSensors
+5	131	49	#line 131 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	131	49	#line 131 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	132	49	#line 132 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	133	49		getin __D0LightSensors, __constVal0, 4
+5	132	53	#line 132 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	133	53		add __LightSensors_7qG2_iSLeft_7qG2_000, __LightSensors_7qG2_iSLeft_7qG2_000, __D0LightSensors
+5	132	57	#line 132 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	132	57	#line 132 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	133	57	#line 133 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	134	57		getin __D0LightSensors, __constVal3, 4
+5	133	61	#line 133 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	134	61		add __LightSensors_7qG2_iSRight_7qG2_000, __LightSensors_7qG2_iSRight_7qG2_000, __D0LightSensors
+5	133	65	#line 133 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	133	65	#line 133 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	137	65	#line 137 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	138	65		jmp __ASM_Label_747
+5	137	67	#line 137 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	137	67	#line 137 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	138	67		mov __signed_stack_001LightSensors, frontPointer
+5	137	69	#line 137 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	137	69	#line 137 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	138	69		mov __signed_stack_002LightSensors, __LightSensors_7qG2_iSBack_7qG2_000
+5	137	71	#line 137 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	137	71	#line 137 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	138	71		set __D0LightSensors, 5
+5	138	74	#line 138 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	139	74		div __D0LightSensors, __signed_stack_002LightSensors, __D0LightSensors
+5	138	78	#line 138 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	139	78		replace sensorBack, sensorBack, __signed_stack_001LightSensors, __D0LightSensors
+5	138	83	#line 138 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	138	83	#line 138 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	139	83		mov __signed_stack_001LightSensors, frontPointer
+5	138	85	#line 138 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	138	85	#line 138 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	139	85		mov __signed_stack_002LightSensors, __LightSensors_7qG2_iSRight_7qG2_000
+5	138	87	#line 138 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	138	87	#line 138 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	139	87		set __D0LightSensors, 5
+5	139	90	#line 139 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	140	90		div __D0LightSensors, __signed_stack_002LightSensors, __D0LightSensors
+5	139	94	#line 139 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	140	94		replace sensorRight, sensorRight, __signed_stack_001LightSensors, __D0LightSensors
+5	139	99	#line 139 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	139	99	#line 139 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	140	99		mov __signed_stack_001LightSensors, frontPointer
+5	139	101	#line 139 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	139	101	#line 139 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	140	101		mov __signed_stack_002LightSensors, __LightSensors_7qG2_iSLeft_7qG2_000
+5	139	103	#line 139 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	139	103	#line 139 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	140	103		set __D0LightSensors, 5
+5	140	106	#line 140 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	141	106		div __D0LightSensors, __signed_stack_002LightSensors, __D0LightSensors
+5	140	110	#line 140 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	141	110		replace sensorLeft, sensorLeft, __signed_stack_001LightSensors, __D0LightSensors
+5	140	115	#line 140 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	140	115	#line 140 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	141	115		mov __signed_stack_001LightSensors, frontPointer
+5	140	117	#line 140 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	142	117	#line 142 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	143	117		getout __D0LightSensors, __constVal0, 14
+5	142	121	#line 142 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	143	121		replace motorSensor, motorSensor, __signed_stack_001LightSensors, __D0LightSensors
+5	142	126	#line 142 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	142	126	#line 142 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	143	126		mov __signed_stack_001LightSensors, frontPointer
+5	142	128	#line 142 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	142	128	#line 142 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	143	128		set __D0LightSensors, 1
+5	142	131	#line 142 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	143	131		add __signed_stack_001LightSensors, __signed_stack_001LightSensors, __D0LightSensors
+5	142	135	#line 142 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	144	135	#line 144 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	145	135		set __D0LightSensors, 250
+5	144	138	#line 144 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	145	138		mod frontPointer, __signed_stack_001LightSensors, __D0LightSensors
+5	144	142	#line 144 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	144	142	#line 144 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	144	142	#line 144 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	145	142		set __Wait_7qG2_ms_7qG2_000_inline_LightSensors, 1
+5	144	145	#line 144 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	8551	145	#line 8551 "NXCDefs.h"
+5	8552	145		waitv __Wait_7qG2_ms_7qG2_000_inline_LightSensors
+5	8551	147	#line 8551 "NXCDefs.h"
+5	146	147	#line 146 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	149	147	#line 149 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	150	147		jmp __ASM_Label_734
+5	149	149	#line 149 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+5	150	149		exit -1, -1
+6	167	0	#line 167 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+6	168	0		arrinit PLAN, __constVal0, __constVal3
+6	167	4	#line 167 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+6	168	4		arrinit sensorBack, __constVal0, __constVal250
+6	167	8	#line 167 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+6	168	8		arrinit sensorRight, __constVal0, __constVal250
+6	167	12	#line 167 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+6	168	12		arrinit sensorLeft, __constVal0, __constVal250
+6	167	16	#line 167 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+6	168	16		arrinit motorSensor, __constVal0, __constVal250
+6	167	20	#line 167 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+6	168	20		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
@@ -757,6 +717,5 @@ Clump	Name	Offset	File
 2	init	20	D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc
 3	MoveLightSensor	154	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
 4	DisplayLightSensor	350	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
-5	ExecutePath	493	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
-6	LightSensors	558	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
-7	__initialize_global_data	696	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
+5	LightSensors	498	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
+6	__initialize_global_data	650	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc

@@ -1,2 +1,17 @@
 
 
+// ************************************ Functions ***************************
+void init()
+{
+     // setup light sensor
+     SetSensorLight(LIGHTBACK);
+     SetSensorLight(LIGHTLEFT);
+     SetSensorLight(LIGHTRIGHT);
+
+
+}
+
+void moveFwd(){
+     // move the sensor forward one block
+
+}

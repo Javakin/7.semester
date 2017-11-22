@@ -71,7 +71,7 @@ task DisplayLightSensor(){
             ResetScreen();
             Wait(10);
             
-            for (int i = 0; i<100; i++){
+            for (int i = 0; i<(MEMORYDEBTH); i++){
                 iSensor = yRatio*sensorBack[i];
                 
                 iPosition = xRatio*(motorSensor[i]+Span/2);
@@ -94,7 +94,7 @@ task ExecutePath(){
          // perform switch case
          switch(PLAN[i]){
              case(MVFW):   // Move forward one block
-                 //Wait(1000);
+                 Wait(1000);
                  break;
 
              case(MVBX):   // Move the boxe one block
@@ -110,12 +110,14 @@ task ExecutePath(){
      }
 
      // End program play silly sound
-     //StopTask(MoveLightSensor);
-     //OnFwd(MOTORSENSOR, 0);         // stop the motor sensor
+     CenterP = 0; Span = 0;
+     Wait(500);
+     StopTask(MoveLightSensor);
+     OnFwd(MOTORSENSOR, 0);         // stop the motor sensor
 
-     //PlayFile("NO_ONE_HAS_EVER.rso");
-     //Wait(7000);
-     //StopAllTasks(); // stop the program
+     PlayFile("NO_ONE_HAS_EVER.rso");
+     Wait(7000);
+     StopAllTasks(); // stop the program
 }
 
 task LightSensors(){
@@ -156,7 +158,7 @@ task main()
      Precedes(MoveLightSensor);
      Precedes(DisplayLightSensor);
      Precedes(LightSensors);
-     //Precedes(ExecutePath);
+     Precedes(ExecutePath);
 
 
 

@@ -30,7 +30,7 @@
 
 #define PLANLENGTH       3
 #define READITERATIONS   5
-#define MEMORYDEBTH      200
+#define MEMORYDEBTH      250
 
 // ************************************ Global variables ********************
 const int PLAN[PLANLENGTH] = {MVFW, MVRR, MVRR};

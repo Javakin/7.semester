@@ -8,53 +8,15 @@
 
 
 // includes
+#include "defines.nxc"
+#include "functions.nxc"
 
 
 
-// **************************** Defines *******************************
-// Define motions
-#define MVFW    0
-#define MVBX    1
-#define MVRR    2
-#define MVRL    3
-
-// Define external components
-#define LIGHTFRONTRIGHT  S4
-#define LIGHTFRONTLEFT   S1
-#define LIGHTBACK        S2
-#define MOTORSENSOR      OUT_A
-#define MORORLEFT        OUT_B
-#define MOTORRIGHT       OUT_C
-
-#define GRAPHWAIT        20
-#define MAXSENSORANGLE   70
-
-#define PC               1.3
-#define IC               0.02
-#define DC               -0.1
-#define PDI_THRESHHOLD   0
-
-// ************************************ Global variables ********************
-const int PLAN[3] = {MVFW, MVRR, MVRR};
-
-// Lightsensor controlls
-int Span = MAXSENSORANGLE;
-int CenterP = 0;
      
-// ************************************ Functions ***************************
-void init()
-{
-     // setup light sensor
-     SetSensorLight(LIGHTBACK);
-     SetSensorLight(LIGHTFRONTLEFT);
-     SetSensorLight(LIGHTFRONTRIGHT);
-     
-     // setup global variables
-}
+
 
 // ************************************ Tasks *******************************
-
-
 
 task MoveLightSensor(){
     // Set up variables
@@ -67,7 +29,7 @@ task MoveLightSensor(){
          // update pdi controller values
          difOld = dif;
          float dif = Target-MotorRotationCount(MOTORSENSOR);
-         
+
          //  update pdi constants
          P = PC*dif;
          D = DC*(dif-difOld);
@@ -99,22 +61,22 @@ task DisplayLightSensor(){
      float yRatio = ((DISPLAY_HEIGHT)/100);
      float xRatio = ((DISPLAY_WIDTH)/Span);
      int xPos = 0;
-     
+
      while (true){
             // normalize the sensor value and position
             //to the screen height and with
             iSensor = yRatio*Sensor(LIGHTBACK);
 
-            
+
             xRatio = DISPLAY_WIDTH/Span;
             iPosition = xRatio*(MotorRotationCount(MOTORSENSOR)+Span/2);
             //TextOut(0,LCD_LINE1, NumToStr(iPosition));
-            
+
             // display the signal
             PointOut(iPosition, iSensor);
             Wait(1);
-            
-            if (xPos < DISPLAY_WIDTH*5){
+
+            if (xPos < DISPLAY_WIDTH*10){
                xPos +=1;
             }
             else{
@@ -126,21 +88,52 @@ task DisplayLightSensor(){
 
 task displayHandle(){
      // clear screen every now and then
-     ResetScreen();
-     Wait(100);
+     //ResetScreen();
+     //Wait(3000);
 }
+
+task ExecutePath(){
+     // Execute commands
+     int pl = PLANLENGTH;
+     for (int i=0; i<pl; i++){
+         // perform switch case
+         switch(PLAN[i]){
+             case(MVFW):   // Move forward one block
+                 Wait(1000);
+                 break;
+
+             case(MVBX):   // Move the boxe one block
+                 break;
+
+             case(MVRR):   // Move the boxe one block
+                 break;
+
+             case(MVRL):   // Move the boxe one block
+                 break;
+         }
+
+     }
+
+     // End program play silly sound
+     //StopTask(MoveLightSensor);
+     //OnFwd(MOTORSENSOR, 0);         // stop the motor sensor
+
+     //PlayFile("NO_ONE_HAS_EVER.rso");
+     //Wait(7000);
+     //StopAllTasks(); // stop the program
+}
+
+
 
 task main()
 {
      // inisiate all the sensorts
      init();
-     
+
      // setup program tasks/behaviors
-     Precedes(MoveLightSensor, displayHandle, DisplayLightSensor);
-     
-     // Execute commands
-     
-     // end program play completed sound
-     
+     Precedes(MoveLightSensor, displayHandle, DisplayLightSensor, ExecutePath);
+
+
+
      
 }

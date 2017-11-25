@@ -1,5 +1,3 @@
-
-
 // ************************************ Functions ***************************
 void init()
 {
@@ -13,7 +11,25 @@ void init()
 
 void moveFwd(){
      // move the sensor forward one block
+     while (Sensor(LIGHTLEFT) < LIGHTTHESH && Sensor(LIGHTRIGHT) < LIGHTTHESH){
+           // drive forward
+           OnFwd(MOTORLEFT,50);
+           OnFwd(MOTORRIGHT,50);
+     }
 
 }
 
-void
+void moveBox(){
+     // move the box one block forward
+     
+}
+
+void rotateRight(){
+     // rotate the robot 90 degrees to the right
+     
+}
+
+void rotateLeft(){
+     // rotate the robot 90 degrees left
+     
+}

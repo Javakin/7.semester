@@ -17,21 +17,30 @@
 #define LIGHTLEFT   S1
 #define LIGHTBACK        S2
 #define MOTORSENSOR      OUT_A
-#define MORORLEFT        OUT_B
+#define MOTORLEFT        OUT_B
 #define MOTORRIGHT       OUT_C
 
+// task specific defines
 #define GRAPHWAIT        20
 #define MAXSENSORANGLE   70
 
-#define PC               1.3
+#define PC               1.8
 #define IC               0.02
-#define DC               -0.1
+#define DC               -0.3
 #define PDI_THRESHHOLD   0
 
 #define PLANLENGTH       3
 #define READITERATIONS   5
 #define MEMORYDEBTH      250
 
+#define DETECTLINEFREQ   50
+#define LIGHTSENSORFREQ  1
+#define DISPSENSORFREQ   100
+#define MOVESENSORFREQ   20
+#define TIMETOLIVE       100000          // for debugging
+
+#define SENSORTHRESHHOLD 10
+#define LIGHTTHESH       50
 // ************************************ Global variables ********************
 const int PLAN[PLANLENGTH] = {MVFW, MVRR, MVRR};
 
@@ -39,9 +48,14 @@ const int PLAN[PLANLENGTH] = {MVFW, MVRR, MVRR};
 int sensorBack[MEMORYDEBTH];
 int sensorRight[MEMORYDEBTH];
 int sensorLeft[MEMORYDEBTH];
-int motorSensor[MEMORYDEBTH];
+int motorSensorB[MEMORYDEBTH];
+int motorSensorR[MEMORYDEBTH];
+int motorSensorL[MEMORYDEBTH];
 int frontPointer = 0;
 
 // Lightsensor controlls
 int Span = MAXSENSORANGLE;
 int CenterP = 0;
+
+// line detection
+int mean = 0;

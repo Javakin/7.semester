@@ -46,10 +46,16 @@ task MoveLightSensor(){
          if (dif*dir < PDI_THRESHHOLD){
             dir *=-1;
             Target = CenterP + Span*dir/2;
+            if (Target > (MAXSENSORANGLE)/2){
+               Target = (MAXSENSORANGLE)/2;
+            }
+            if (Target < -(MAXSENSORANGLE)/2){
+               Target = -(MAXSENSORANGLE)/2;
+            }
          }
 
-         // wait some time
-         Wait(20);
+         // Update frequency
+         Wait(MOVESENSORFREQ);
 
     }
 }
@@ -70,17 +76,19 @@ task DisplayLightSensor(){
             xRatio = DISPLAY_WIDTH/Span;
             ResetScreen();
             Wait(10);
+            int iMean = yRatio*mean;
             
             for (int i = 0; i<(MEMORYDEBTH); i++){
                 iSensor = yRatio*sensorBack[i];
                 
-                iPosition = xRatio*(motorSensor[i]+Span/2);
+                iPosition = xRatio*(motorSensorB[i]+Span/2);
 
 
                 // display the signal
                 PointOut(iPosition, iSensor);
+                PointOut(iPosition, iMean);
             }
-            Wait(1000);
+            Wait(DISPSENSORFREQ);
 
      }
 }
@@ -94,30 +102,35 @@ task ExecutePath(){
          // perform switch case
          switch(PLAN[i]){
              case(MVFW):   // Move forward one block
-                 Wait(1000);
+                 moveFwd();
                  break;
 
              case(MVBX):   // Move the boxe one block
+                 moveBox();
                  break;
 
              case(MVRR):   // Move the boxe one block
+                 rotateRight();
                  break;
 
              case(MVRL):   // Move the boxe one block
+                 rotateLeft();
                  break;
          }
 
      }
-
+     //Wait(TIMETOLIVE);
      // End program play silly sound
      CenterP = 0; Span = 0;
      Wait(800);
      StopTask(MoveLightSensor);
      OnFwd(MOTORSENSOR, 0);         // stop the motor sensor
 
-     PlayFile("NO_ONE_HAS_EVER.rso");
+
+     // the final surprise
+     /*PlayFile("NO_ONE_HAS_EVER.rso");
      Wait(7000);
-     StopAllTasks(); // stop the program
+     StopAllTasks(); // stop the program */
 }
 
 task LightSensors(){
@@ -140,12 +153,64 @@ task LightSensors(){
            sensorBack[frontPointer] = iSBack/(READITERATIONS);
            sensorRight[frontPointer] = iSRight/(READITERATIONS);
            sensorLeft[frontPointer] = iSLeft/(READITERATIONS);
-           motorSensor[frontPointer] = MotorRotationCount(MOTORSENSOR);
-
+           motorSensorB[frontPointer] = MotorRotationCount(MOTORSENSOR);
+           motorSensorR[frontPointer] = MotorRotationCount(MOTORRIGHT);
+           motorSensorL[frontPointer] = MotorRotationCount(MOTORLEFT);
+           
            frontPointer =(frontPointer + 1)%MEMORYDEBTH;
 
-           Wait(1);
+           Wait(LIGHTSENSORFREQ);
 
+     }
+}
+
+task DetectLines(){
+     while (true){
+         // In all the sesor data detect all the lines
+
+
+         // Detect the line in the back sensor
+
+         // calculate the mean
+         int min = sensorBack[0], max = sensorBack[0];
+         for (int i = 0; i <MEMORYDEBTH; i++){
+             if (sensorBack[i] < min){
+                min = sensorBack[i];  }
+             if (sensorBack[i] > max){
+                max = sensorBack[i];  }
+         }
+         mean = (max-min)/2 + min;
+
+         // if bellow mean line detected
+         int aLine = 0;
+         int lStart = 0, lStop = 0;
+         for (int i = 0; i<MEMORYDEBTH; i++){
+             if (sensorBack[i] < mean){
+                sensorBack[i] = min;
+                if (aLine == 0)
+                   lStart = motorSensorB[i];
+                aLine = 1;
+             } else{
+                sensorBack[i] = max;
+                if (aLine == 1) {
+                   lStop = motorSensorB[i];
+                   //CenterP = (lStop-lStart)/2 + lStart;
+                   //Span = MAXSENSORANGLE/4;
+                }
+                aLine = 0;
+             }
+         }
+         
+
+         // Detect lines in the right sensor
+
+
+         // Detect lines in the left sensor
+
+
+
+         // Detection frequency
+         Wait(DETECTLINEFREQ);
      }
 }
 
@@ -158,6 +223,7 @@ task main()
      Precedes(MoveLightSensor);
      Precedes(DisplayLightSensor);
      Precedes(LightSensors);
+     Precedes(DetectLines);
      Precedes(ExecutePath);
 
 

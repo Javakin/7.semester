@@ -25,7 +25,6 @@ task DisplayLightSensor(){
      int iPosition =0;
      float yRatio = ((DISPLAY_HEIGHT)/100);
      float xRatio = ((DISPLAY_WIDTH)/Span);
-     int xPos = 0;
 
 
      while (true){
@@ -34,44 +33,23 @@ task DisplayLightSensor(){
             xRatio = DISPLAY_WIDTH/Span;
             ResetScreen();
             Wait(10);
-            
-            //int iMean = yRatio*meanBack;
-            
             for (int i = 0; i<(MEMORYDEBTH); i++){
                 iSensor = yRatio*sensorBack[i];
-                
                 iPosition = xRatio*(motorSensorB[i]+Span/2);
 
 
                 // display the signal
                 PointOut(iPosition, iSensor);
-                //PointOut(iPosition, iMean);
+
             }
+            
+            LineOut((midPoint+Span/2)*xRatio, 0, (midPoint+Span/2)*xRatio, DISPLAY_HEIGHT);
             Wait(DISPSENSORFREQ);
 
      }
 }
 
 
-
-/*task UpdateGlobalMean(){
-     // update the global mean value
-     int SensorMean[3] = {0,0,0};
-     
-     while (true){
-         int min = sensorBack[0], max = sensorBack[0];
-         for (int i = 0; i <MEMORYDEBTH; i++){
-             SensorMean[0] += sensorBack[i];
-             SensorMean[1] += sensorRight[i];
-             SensorMean[2] += sensorLeft[i];
-         }
-         meanBack  /= MEMORYDEBTH;
-         meanLeft  /= MEMORYDEBTH;
-         meanRight /= MEMORYDEBTH;
-         
-         Wait(UPDATEGLOBALMEANFREQ);
-     }
-}*/
 
 
 
@@ -86,7 +64,6 @@ task main()
      Precedes(LightSensors);
      //Precedes(FindeLines);
      //Precedes(ExecutePath);
-     //Precedes(UpdateGlobalMean);
 
 
 

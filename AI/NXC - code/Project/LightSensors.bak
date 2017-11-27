@@ -2,58 +2,65 @@
 
 task LightSensors(){
      // take the mesured data and put it in the aray
-     int iSBack, iSLeft, iSRight;
-
+     int iSensor[3];
+     int  OldDir = 1;
+     char min = 100, max = 0;
+     int validMin, validMax;
+     char treshold;
+     bool toggle = true;
 
      while (true){
-           iSBack = 0; iSLeft = 0; iSRight = 0;
 
-           // read value five times and place average in memory
-           for (int i = 0; i<READITERATIONS; i++){
-               // add value
-               iSBack += Sensor(LIGHTBACK);
-               iSLeft += Sensor(LIGHTLEFT);
-               iSRight += Sensor(LIGHTRIGHT);
+           // read value place in memory
+           iSensor[BACK] = Sensor(LIGHTBACK);
+           iSensor[LEFT] = Sensor(LIGHTLEFT);
+           iSensor[RIGHT] = Sensor(LIGHTRIGHT);
+          
+           // Reset min, max
+
+           if (dir != OldDir){
+              // find min and max
+              OldDir = dir;
+              toggle = true;
+              // transfere data to holder
+              if(max-min> TRESHOLD_MAX_MIN_DIF){
+                if(min>validMin+TRESHOLD_MRC) validMin +=TRESHOLD_MRC;
+                else if(min<validMin-TRESHOLD_MRC) validMin -=TRESHOLD_MRC;
+                else validMin = min;
+
+                if(max>validMax+TRESHOLD_MRC) validMax +=TRESHOLD_MRC;
+                else if(max<validMax-TRESHOLD_MRC) validMax -=TRESHOLD_MRC;
+                else validMax = max;
+
+                treshold = (validMax+validMin)/2;
+              }
+
+              min = 101;  max = -1;
            }
-           iSBack /= (READITERATIONS);
-           iSRight /= (READITERATIONS);
-           iSLeft /= (READITERATIONS);
 
-           // remove DC comoponent by subtracting global mean
-           iSBack -= (meanBack);
-           iSRight-= (meanRight);
-           iSLeft -= (meanLeft);
-
-
-           // Average over the older values
-           int Pointer = frontPointer;
-           for (int i = 0; i < MEANDEBTH; i++){
-               Pointer--;
-               if (Pointer < 0){
-                  Pointer= MEMORYDEBTH - 1;
-               }
-
-               iSBack  += sensorBack[Pointer];
-               iSRight += sensorRight[Pointer];
-               iSLeft  += sensorLeft[Pointer];
-
-           }
-           iSBack /=  (MEANDEBTH);
-           iSRight /= (MEANDEBTH);
-           iSLeft /=  (MEANDEBTH);
            
+           // Look for new max, min values
+           if(min>iSensor[BACK]) min = iSensor[BACK];
+           if(max<iSensor[BACK]) max = iSensor[BACK];
+
+
+           // look for falling edge
+           if (iSensor[BACK] < treshold && toggle){
+              // falling edge detected update midpoint
+              toggle = false;
+              midPoint = MotorRotationCount(MOTORSENSOR) + dir*MOTOR_SLAG;
+           }
+
 
            // add to memory
-           frontPointer =(frontPointer + 1)%MEMORYDEBTH;
+           //frontPointer =(frontPointer + 1)%MEMORYDEBTH;
            
            sensorBack[frontPointer] = iSBack;
-           sensorRight[frontPointer] = iSRight;
-           sensorLeft[frontPointer] = iSLeft;
+           //sensorRight[frontPointer] = iSRight;
+           //sensorLeft[frontPointer] = iSLeft;
            motorSensorB[frontPointer] = MotorRotationCount(MOTORSENSOR);
-           motorSensorR[frontPointer] = MotorRotationCount(MOTORRIGHT);
-           motorSensorL[frontPointer] = MotorRotationCount(MOTORLEFT);
-
-
+           //motorSensorR[frontPointer] = MotorRotationCount(MOTORRIGHT);
+           //motorSensorL[frontPointer] = MotorRotationCount(MOTORLEFT);
 
 
            Wait(LIGHTSENSORFREQ);

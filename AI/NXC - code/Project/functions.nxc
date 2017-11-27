@@ -16,7 +16,11 @@ void moveFwd(){
 
 
      while (Sensor(LIGHTRIGHT) > sRight - (SENSORTHRESHHOLD)/2 
-     || Sensor(LIGHTLEFT) > sLeft - (SENSORTHRESHHOLD)/2);
+     || Sensor(LIGHTLEFT) > sLeft - (SENSORTHRESHHOLD)/2){
+          // follow the line
+          
+
+     }
      
      // move the robot in possition for the next command
      

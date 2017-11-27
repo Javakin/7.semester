@@ -14,26 +14,20 @@ task ExecutePath(){
      for (int i=0; i<pl; i++){
          // perform switch case
          int command = PLAN[i];
-         ResetScreen();
-         TextOut(0, LCD_LINE1, NumToStr(command));
          switch(command){
              case(MVFW):   // Move forward one block
-                TextOut(0, LCD_LINE2, "MVFW");
                 moveFwd();
                 break;
 
              case(MVBX):   // Move the box one block
-                TextOut(0, LCD_LINE2, "MVBX");
                 moveBox();
                 break;
 
              case(MVRR):   // Rotate Right
-                TextOut(0, LCD_LINE2, "MVRR");
                 rotateRight();
                 break;
 
              case(MVRL):   // Rotate Left
-                 TextOut(0, LCD_LINE2, "MVRL");
                  rotateLeft();
                  break;
          }

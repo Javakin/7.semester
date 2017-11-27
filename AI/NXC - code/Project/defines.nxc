@@ -67,3 +67,6 @@ int meanRight = 0;
 
 int sLeft = 0;
 int sRight = 0;
+
+// for pid controller
+int dir = 1;

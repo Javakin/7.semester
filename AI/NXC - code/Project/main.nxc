@@ -54,7 +54,7 @@ task DisplayLightSensor(){
 
 
 
-task UpdateGlobalMean(){
+/*task UpdateGlobalMean(){
      // update the global mean value
      int SensorMean[3] = {0,0,0};
      
@@ -71,7 +71,7 @@ task UpdateGlobalMean(){
          
          Wait(UPDATEGLOBALMEANFREQ);
      }
-}
+}*/
 
 
 
@@ -82,10 +82,10 @@ task main()
 
      // setup program tasks/behaviors
      Precedes(MoveLightSensor);
-     //Precedes(DisplayLightSensor);
-     //Precedes(LightSensors);
+     Precedes(DisplayLightSensor);
+     Precedes(LightSensors);
      //Precedes(FindeLines);
-     Precedes(ExecutePath);
+     //Precedes(ExecutePath);
      //Precedes(UpdateGlobalMean);
 
 

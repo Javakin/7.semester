@@ -4,7 +4,7 @@ task MoveLightSensor(){
     // Set up variables
     float P=0 , I=0, D=0, dif=0,difOld=0;
     int Target = MAXSENSORANGLE/2;
-    int dir = 1;
+    dir = 1;
 
     // Run pdi controller
     while (true){

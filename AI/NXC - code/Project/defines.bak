@@ -6,8 +6,9 @@
 
 
 // **************************** Defines *******************************
+
 // Define motions
-#define MVFW    0
+#define MVFW    10
 #define MVBX    1
 #define MVRR    2
 #define MVRL    3
@@ -29,7 +30,7 @@
 #define DC               -0.1
 #define PDI_THRESHHOLD   0
 
-#define PLANLENGTH       3
+//#define PLANLENGTH       3
 #define READITERATIONS   5
 #define MEANDEBTH        5
 #define MEMORYDEBTH      250
@@ -39,12 +40,12 @@
 #define LIGHTSENSORFREQ  1
 #define DISPSENSORFREQ   100
 #define MOVESENSORFREQ   20
-#defien UPDATEGLOBALMEANFREQ 1000
-#define TIMETOLIVE       1          // for debugging
+#define UPDATEGLOBALMEANFREQ 1000
+#define TIMETOLIVE       4000          // for debugging
 
 #define SENSORTHRESHHOLD 10
 // ************************************ Global variables ********************
-const int PLAN[PLANLENGTH] = {MVFW, MVRR, MVRR};
+const int PLAN[] = {MVFW, MVRR, MVRR, MVFW};
 
 //sensor memory
 int sensorBack[MEMORYDEBTH];
@@ -63,3 +64,6 @@ int CenterP = 0;
 int meanBack = 0;
 int meanLeft = 0;
 int meanRight = 0;
+
+int sLeft = Sensor(LIGHTLEFT);
+int sRight = Sensor(LIGHTRIGHT);

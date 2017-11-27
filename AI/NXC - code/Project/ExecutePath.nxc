@@ -1,28 +1,47 @@
+
+
+
 // Execute path
 task ExecutePath(){
+     
+     
      // Execute commands
-     int pl = PLANLENGTH;
+     sLeft = Sensor(LIGHTLEFT);
+     sRight = Sensor(LIGHTRIGHT);
+
+     int pl = SizeOf(PLAN)/2;
+
      for (int i=0; i<pl; i++){
          // perform switch case
-         switch(PLAN[i]){
+         int command = PLAN[i];
+         ResetScreen();
+         TextOut(0, LCD_LINE1, NumToStr(command));
+         switch(command){
              case(MVFW):   // Move forward one block
-                 moveFwd();
-                 break;
+                TextOut(0, LCD_LINE2, "MVFW");
+                moveFwd();
+                break;
 
-             case(MVBX):   // Move the boxe one block
-                 moveBox();
-                 break;
+             case(MVBX):   // Move the box one block
+                TextOut(0, LCD_LINE2, "MVBX");
+                moveBox();
+                break;
 
-             case(MVRR):   // Move the boxe one block
-                 rotateRight();
-                 break;
+             case(MVRR):   // Rotate Right
+                TextOut(0, LCD_LINE2, "MVRR");
+                rotateRight();
+                break;
 
-             case(MVRL):   // Move the boxe one block
+             case(MVRL):   // Rotate Left
+                 TextOut(0, LCD_LINE2, "MVRL");
                  rotateLeft();
                  break;
          }
 
      }
+
+  
+
      Wait(TIMETOLIVE);
      // End program play silly sound
      CenterP = 0; Span = 0;
@@ -32,7 +51,7 @@ task ExecutePath(){
 
 
      // the final surprise
-     /*PlayFile("NO_ONE_HAS_EVER.rso");
-     Wait(7000);
-     StopAllTasks(); // stop the program */
+     //PlayFile("NO_ONE_HAS_EVER.rso");
+     //Wait(7000);
+     StopAllTasks(); // stop the program 
 }

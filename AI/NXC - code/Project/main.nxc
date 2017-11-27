@@ -81,7 +81,7 @@ task main()
      init();
 
      // setup program tasks/behaviors
-     //Precedes(MoveLightSensor);
+     Precedes(MoveLightSensor);
      //Precedes(DisplayLightSensor);
      //Precedes(LightSensors);
      //Precedes(FindeLines);

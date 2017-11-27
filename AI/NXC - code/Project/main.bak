@@ -82,9 +82,9 @@ task main()
 
      // setup program tasks/behaviors
      Precedes(MoveLightSensor);
-     Precedes(DisplayLightSensor);
+     //Precedes(DisplayLightSensor);
      Precedes(LightSensors);
-     Precedes(FindeLines);
+     //Precedes(FindeLines);
      Precedes(ExecutePath);
      Precedes(UpdateGlobalMean);
 

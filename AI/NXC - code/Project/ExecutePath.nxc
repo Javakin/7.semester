@@ -1,0 +1,38 @@
+// Execute path
+task ExecutePath(){
+     // Execute commands
+     int pl = PLANLENGTH;
+     for (int i=0; i<pl; i++){
+         // perform switch case
+         switch(PLAN[i]){
+             case(MVFW):   // Move forward one block
+                 moveFwd();
+                 break;
+
+             case(MVBX):   // Move the boxe one block
+                 moveBox();
+                 break;
+
+             case(MVRR):   // Move the boxe one block
+                 rotateRight();
+                 break;
+
+             case(MVRL):   // Move the boxe one block
+                 rotateLeft();
+                 break;
+         }
+
+     }
+     Wait(TIMETOLIVE);
+     // End program play silly sound
+     CenterP = 0; Span = 0;
+     Wait(800);
+     StopTask(MoveLightSensor);
+     OnFwd(MOTORSENSOR, 0);         // stop the motor sensor
+
+
+     // the final surprise
+     /*PlayFile("NO_ONE_HAS_EVER.rso");
+     Wait(7000);
+     StopAllTasks(); // stop the program */
+}

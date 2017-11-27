@@ -10,12 +10,27 @@ void init()
 }
 
 void moveFwd(){
+
+     Wait(1000);
      // move the sensor forward one block
-     while (Sensor(LIGHTLEFT) < LIGHTTHESH && Sensor(LIGHTRIGHT) < LIGHTTHESH){
+     int sLeft = Sensor(LIGHTLEFT);
+     int sRight = Sensor(LIGHTRIGHT);
+     //while (true){
+     while ( Sensor(LIGHTLEFT) > sLeft - (SENSORTHRESHHOLD)/2){
            // drive forward
+           TextOut(0, LCD_LINE1, NumToStr(sensorBack[frontPointer]));
+           //TextOut(0, LCD_LINE2, NumToStr(Sensor(LIGHTLEFT)));
+
            OnFwd(MOTORLEFT,50);
            OnFwd(MOTORRIGHT,50);
      }
+     
+     // move the robot in possition for the next command
+     
+     Wait(100);
+     // hold still
+     OnFwd(MOTORLEFT,0);
+     OnFwd(MOTORRIGHT,0);
 
 }
 

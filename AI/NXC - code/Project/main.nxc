@@ -10,55 +10,14 @@
 // includes
 #include "defines.nxc"
 #include "functions.nxc"
-
-
-
+#include "MoveLightSensor.nxc"
+#include "ExecutePath.nxc"
+#include "LightSensors.nxc"
+#include "FindeLines.nxc"
      
 
 
 // ************************************ Tasks *******************************
-
-task MoveLightSensor(){
-    // Set up variables
-    float P=0 , I=0, D=0, dif=0,difOld=0;
-    int Target = MAXSENSORANGLE/2;
-    int dir = 1;
-
-    // Run pdi controller
-    while (true){
-         // update pdi controller values
-         difOld = dif;
-         float dif = Target-MotorRotationCount(MOTORSENSOR);
-
-         //  update pdi constants
-         P = PC*dif;
-         D = DC*(dif-difOld);
-         I +=IC*dif;
-
-         // Output to motor
-         int output =  P+D+I;
-         if(output > 100){output = 100;}      // Prevent clamping
-         if (output <-100){output = -100;}    // Prevent clamping
-
-         OnFwd(MOTORSENSOR, output);
-
-         // for swinging back and forward
-         if (dif*dir < PDI_THRESHHOLD){
-            dir *=-1;
-            Target = CenterP + Span*dir/2;
-            if (Target > (MAXSENSORANGLE)/2){
-               Target = (MAXSENSORANGLE)/2;
-            }
-            if (Target < -(MAXSENSORANGLE)/2){
-               Target = -(MAXSENSORANGLE)/2;
-            }
-         }
-
-         // Update frequency
-         Wait(MOVESENSORFREQ);
-
-    }
-}
 
 task DisplayLightSensor(){
      // read the data from memory and plot it on screen
@@ -69,14 +28,14 @@ task DisplayLightSensor(){
      int xPos = 0;
 
 
-
      while (true){
             // normalize the sensor value and position
             //to the screen height and with
             xRatio = DISPLAY_WIDTH/Span;
             ResetScreen();
             Wait(10);
-            int iMean = yRatio*mean;
+            
+            //int iMean = yRatio*meanBack;
             
             for (int i = 0; i<(MEMORYDEBTH); i++){
                 iSensor = yRatio*sensorBack[i];
@@ -86,7 +45,7 @@ task DisplayLightSensor(){
 
                 // display the signal
                 PointOut(iPosition, iSensor);
-                PointOut(iPosition, iMean);
+                //PointOut(iPosition, iMean);
             }
             Wait(DISPSENSORFREQ);
 
@@ -95,124 +54,26 @@ task DisplayLightSensor(){
 
 
 
-task ExecutePath(){
-     // Execute commands
-     int pl = PLANLENGTH;
-     for (int i=0; i<pl; i++){
-         // perform switch case
-         switch(PLAN[i]){
-             case(MVFW):   // Move forward one block
-                 moveFwd();
-                 break;
-
-             case(MVBX):   // Move the boxe one block
-                 moveBox();
-                 break;
-
-             case(MVRR):   // Move the boxe one block
-                 rotateRight();
-                 break;
-
-             case(MVRL):   // Move the boxe one block
-                 rotateLeft();
-                 break;
-         }
-
-     }
-     //Wait(TIMETOLIVE);
-     // End program play silly sound
-     CenterP = 0; Span = 0;
-     Wait(800);
-     StopTask(MoveLightSensor);
-     OnFwd(MOTORSENSOR, 0);         // stop the motor sensor
-
-
-     // the final surprise
-     /*PlayFile("NO_ONE_HAS_EVER.rso");
-     Wait(7000);
-     StopAllTasks(); // stop the program */
-}
-
-task LightSensors(){
-     // take the mesured data and put it in the aray
-     int iSBack,iSLeft, iSRight;
-
+task UpdateGlobalMean(){
+     // update the global mean value
+     int SensorMean[3] = {0,0,0};
      
      while (true){
-           iSBack = 0; iSLeft = 0; iSRight = 0;
-           
-           // read value five times and place average in memory
-           for (int i = 0; i<READITERATIONS; i++){
-               // add value
-               iSBack += Sensor(LIGHTBACK);
-               iSLeft += Sensor(LIGHTLEFT);
-               iSRight += Sensor(LIGHTRIGHT);
-           }
-           
-           // add to memory
-           sensorBack[frontPointer] = iSBack/(READITERATIONS);
-           sensorRight[frontPointer] = iSRight/(READITERATIONS);
-           sensorLeft[frontPointer] = iSLeft/(READITERATIONS);
-           motorSensorB[frontPointer] = MotorRotationCount(MOTORSENSOR);
-           motorSensorR[frontPointer] = MotorRotationCount(MOTORRIGHT);
-           motorSensorL[frontPointer] = MotorRotationCount(MOTORLEFT);
-           
-           frontPointer =(frontPointer + 1)%MEMORYDEBTH;
-
-           Wait(LIGHTSENSORFREQ);
-
-     }
-}
-
-task DetectLines(){
-     while (true){
-         // In all the sesor data detect all the lines
-
-
-         // Detect the line in the back sensor
-
-         // calculate the mean
          int min = sensorBack[0], max = sensorBack[0];
          for (int i = 0; i <MEMORYDEBTH; i++){
-             if (sensorBack[i] < min){
-                min = sensorBack[i];  }
-             if (sensorBack[i] > max){
-                max = sensorBack[i];  }
+             SensorMean[0] += sensorBack[i];
+             SensorMean[1] += sensorRight[i];
+             SensorMean[2] += sensorLeft[i];
          }
-         mean = (max-min)/2 + min;
-
-         // if bellow mean line detected
-         int aLine = 0;
-         int lStart = 0, lStop = 0;
-         for (int i = 0; i<MEMORYDEBTH; i++){
-             if (sensorBack[i] < mean){
-                sensorBack[i] = min;
-                if (aLine == 0)
-                   lStart = motorSensorB[i];
-                aLine = 1;
-             } else{
-                sensorBack[i] = max;
-                if (aLine == 1) {
-                   lStop = motorSensorB[i];
-                   //CenterP = (lStop-lStart)/2 + lStart;
-                   //Span = MAXSENSORANGLE/4;
-                }
-                aLine = 0;
-             }
-         }
+         meanBack  /= MEMORYDEBTH;
+         meanLeft  /= MEMORYDEBTH;
+         meanRight /= MEMORYDEBTH;
          
-
-         // Detect lines in the right sensor
-
-
-         // Detect lines in the left sensor
-
-
-
-         // Detection frequency
-         Wait(DETECTLINEFREQ);
+         Wait(UPDATEGLOBALMEANFREQ);
      }
 }
+
+
 
 task main()
 {
@@ -220,11 +81,12 @@ task main()
      init();
 
      // setup program tasks/behaviors
-     Precedes(MoveLightSensor);
-     Precedes(DisplayLightSensor);
-     Precedes(LightSensors);
-     Precedes(DetectLines);
+     //Precedes(MoveLightSensor);
+     //Precedes(DisplayLightSensor);
+     //Precedes(LightSensors);
+     //Precedes(FindeLines);
      Precedes(ExecutePath);
+     //Precedes(UpdateGlobalMean);
 
 
 

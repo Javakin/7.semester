@@ -1,0 +1,62 @@
+// LightSensors task
+
+task LightSensors(){
+     // take the mesured data and put it in the aray
+     int iSBack, iSLeft, iSRight;
+
+
+     while (true){
+           iSBack = 0; iSLeft = 0; iSRight = 0;
+
+           // read value five times and place average in memory
+           for (int i = 0; i<READITERATIONS; i++){
+               // add value
+               iSBack += Sensor(LIGHTBACK);
+               iSLeft += Sensor(LIGHTLEFT);
+               iSRight += Sensor(LIGHTRIGHT);
+           }
+           iSBack /= (READITERATIONS);
+           iSRight /= (READITERATIONS);
+           iSLeft /= (READITERATIONS);
+
+           // remove DC comoponent by subtracting global mean
+           iSBack -= (meanBack);
+           iSRight-= (meanRight);
+           iSLeft -= (meanLeft);
+
+
+           // Average over the older values
+           int Pointer = frontPointer;
+           for (int i = 0; i < MEANDEBTH; i++){
+               iSBack  += sensorBack[Pointer];
+               iSRight += sensorRight[Pointer];
+               iSLeft  += sensorLeft[Pointer];
+               
+               Pointer--;
+               if (Pointer < 0){
+                  Pointer= MEMORYDEBTH - 1;
+               }
+
+           }
+           iSBack /=  (MEANDEBTH);
+           iSRight /= (MEANDEBTH);
+           iSLeft /=  (MEANDEBTH);
+           
+
+           // add to memory
+           frontPointer =(frontPointer + 1)%MEMORYDEBTH;
+           
+           sensorBack[frontPointer] = iSBack;
+           sensorRight[frontPointer] = iSRight;
+           sensorLeft[frontPointer] = iSLeft;
+           motorSensorB[frontPointer] = MotorRotationCount(MOTORSENSOR);
+           motorSensorR[frontPointer] = MotorRotationCount(MOTORRIGHT);
+           motorSensorL[frontPointer] = MotorRotationCount(MOTORLEFT);
+
+
+
+
+           Wait(LIGHTSENSORFREQ);
+
+     }
+}

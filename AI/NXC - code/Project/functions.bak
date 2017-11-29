@@ -10,24 +10,31 @@ void init()
 }
 
 void moveFwd(){
-
-     Wait(1000);
      // move the sensor forward one block
-     int sLeft = Sensor(LIGHTLEFT);
-     int sRight = Sensor(LIGHTRIGHT);
-     //while (true){
-     while ( Sensor(LIGHTLEFT) > sLeft - (SENSORTHRESHHOLD)/2){
-           // drive forward
-           TextOut(0, LCD_LINE1, NumToStr(sensorBack[frontPointer]));
-           //TextOut(0, LCD_LINE2, NumToStr(Sensor(LIGHTLEFT)));
+     OnFwd(MOTORLEFT,50);
+     OnFwd(MOTORRIGHT,50);
 
-           OnFwd(MOTORLEFT,50);
-           OnFwd(MOTORRIGHT,50);
+     //Sensor(LIGHTRIGHT) > sRight - (SENSORTHRESHHOLD)/2 || Sensor(LIGHTLEFT) > sLeft - (SENSORTHRESHHOLD)/2
+     while (Sensor(LIGHTRIGHT) > sRight - (SENSORTHRESHHOLD)/2 || Sensor(LIGHTLEFT) > sLeft - (SENSORTHRESHHOLD)/2){
+          // follow the line
+          int rightgain = (Sensor(LIGHTRIGHT)-sRight)*(GAIN);
+          int leftgain = (Sensor(LIGHTLEFT)-sLeft)*(GAIN);
+
+          // add the mean spead
+          int vLeft = SPEED + rightgain-leftgain;
+          int vRight = SPEED + leftgain-rightgain;
+
+          if(vLeft > 100) vLeft = 100;
+          if(vRight > 100) vRight = 100;
+
+          OnFwd(MOTORLEFT,vLeft);
+          OnFwd(MOTORRIGHT,vRight);
+
      }
      
      // move the robot in possition for the next command
      
-     
+     Wait(100);
      // hold still
      OnFwd(MOTORLEFT,0);
      OnFwd(MOTORRIGHT,0);
@@ -36,15 +43,52 @@ void moveFwd(){
 
 void moveBox(){
      // move the box one block forward
-     
+     Wait(2000);
+
+
 }
 
 void rotateRight(){
      // rotate the robot 90 degrees to the right
-     
+
+     OnFwd(MOTORLEFT,ROTATION_SPEED);
+     OnFwd(MOTORRIGHT,-ROTATION_SPEED);
+     Wait(500);
+     bool state = false;
+
+     while ( sRight - Sensor(LIGHTRIGHT) + SENSORTHRESHHOLD < sLeft - Sensor(LIGHTLEFT)){
+        if(Sensor(LIGHTBACK) < sBack+SENSORTHRESHHOLD) break;
+     }
+     wait(100);
+     // hold still
+     OnFwd(MOTORLEFT,0);
+     OnFwd(MOTORRIGHT,0);
+
 }
 
 void rotateLeft(){
      // rotate the robot 90 degrees left
+     Span = 0;
+     OnFwd(MOTORLEFT,-50);
+     OnFwd(MOTORRIGHT,50);
+     Wait(300);
+
      
+     int sBack = Sensor(LIGHTBACK);
+     
+
+
+     while ( Sensor(LIGHTBACK) > sBack - (SENSORTHRESHHOLD)/2){
+           
+           //TextOut(0, LCD_LINE1, NumToStr(sensorBack[frontPointer]));
+           //TextOut(0, LCD_LINE2, NumToStr(Sensor(LIGHTLEFT)));
+            OnFwd(MOTORLEFT,-50);
+            OnFwd(MOTORRIGHT,50);
+           
+     }
+     
+     // hold still
+     Span = MAXSENSORANGLE;
+     OnFwd(MOTORLEFT,0);
+     OnFwd(MOTORRIGHT,0);
 }

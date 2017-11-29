@@ -4,10 +4,10 @@
 // Execute path
 task ExecutePath(){
      
-     
      // Execute commands
      sLeft = Sensor(LIGHTLEFT);
      sRight = Sensor(LIGHTRIGHT);
+     sBack = Sensor(LIGHTBACK);
 
      int pl = SizeOf(PLAN)/2;
 
@@ -34,14 +34,7 @@ task ExecutePath(){
 
      }
 
-  
 
-     Wait(TIMETOLIVE);
-     // End program play silly sound
-     CenterP = 0; Span = 0;
-     Wait(800);
-     StopTask(MoveLightSensor);
-     OnFwd(MOTORSENSOR, 0);         // stop the motor sensor
 
 
      // the final surprise

@@ -18,7 +18,7 @@ task LightSensors(){
           
            // Reset min, max
 
-           if (dir != OldDir){
+           /*if (dir != OldDir){
               // find min and max
               OldDir = dir;
               toggle = true;
@@ -48,8 +48,8 @@ task LightSensors(){
            if (iSensor[BACK] < treshold && toggle){
               // falling edge detected update midpoint
               toggle = false;
-              midPoint = MotorRotationCount(MOTORSENSOR) + dir*MOTOR_SLAG;
-           }
+              midPoint = MotorRotationCount(MOTORSENSOR);
+           } */
 
 
            // add to memory
@@ -58,7 +58,7 @@ task LightSensors(){
            sensorBack[frontPointer] = iSensor[BACK];
            //sensorRight[frontPointer] = iSRight;
            //sensorLeft[frontPointer] = iSLeft;
-           motorSensorB[frontPointer] = MotorRotationCount(MOTORSENSOR);
+           //motorSensorB[frontPointer] = MotorRotationCount(MOTORSENSOR);
            //motorSensorR[frontPointer] = MotorRotationCount(MOTORRIGHT);
            //motorSensorL[frontPointer] = MotorRotationCount(MOTORLEFT);
 

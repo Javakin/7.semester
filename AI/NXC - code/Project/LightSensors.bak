@@ -48,14 +48,14 @@ task LightSensors(){
            if (iSensor[BACK] < treshold && toggle){
               // falling edge detected update midpoint
               toggle = false;
-              midPoint = MotorRotationCount(MOTORSENSOR) + dir*MOTOR_SLAG;
+              midPoint = MotorRotationCount(MOTORSENSOR);
            }
 
 
            // add to memory
-           //frontPointer =(frontPointer + 1)%MEMORYDEBTH;
+           frontPointer =(frontPointer + 1)%MEMORYDEBTH;
            
-           sensorBack[frontPointer] = iSBack;
+           sensorBack[frontPointer] = iSensor[BACK];
            //sensorRight[frontPointer] = iSRight;
            //sensorLeft[frontPointer] = iSLeft;
            motorSensorB[frontPointer] = MotorRotationCount(MOTORSENSOR);

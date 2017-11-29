@@ -10,47 +10,11 @@
 // includes
 #include "defines.nxc"
 #include "functions.nxc"
-#include "MoveLightSensor.nxc"
 #include "ExecutePath.nxc"
-#include "LightSensors.nxc"
-#include "FindeLines.nxc"
      
 
 
 // ************************************ Tasks *******************************
-
-task DisplayLightSensor(){
-     // read the data from memory and plot it on screen
-     int iSensor = 0;
-     int iPosition =0;
-     float yRatio = ((DISPLAY_HEIGHT)/100);
-     float xRatio = ((DISPLAY_WIDTH)/Span);
-
-
-     while (true){
-            // normalize the sensor value and position
-            //to the screen height and with
-            xRatio = DISPLAY_WIDTH/Span;
-            ResetScreen();
-            Wait(10);
-            for (int i = 0; i<(MEMORYDEBTH); i++){
-                iSensor = yRatio*sensorBack[i];
-                iPosition = xRatio*(motorSensorB[i]+Span/2);
-
-
-                // display the signal
-                PointOut(iPosition, iSensor);
-
-            }
-            
-            LineOut((midPoint+Span/2)*xRatio, 0, (midPoint+Span/2)*xRatio, DISPLAY_HEIGHT);
-            Wait(DISPSENSORFREQ);
-
-     }
-}
-
-
-
 
 
 task main()
@@ -59,11 +23,8 @@ task main()
      init();
 
      // setup program tasks/behaviors
-     Precedes(MoveLightSensor);
-     Precedes(DisplayLightSensor);
-     Precedes(LightSensors);
-     //Precedes(FindeLines);
-     //Precedes(ExecutePath);
+
+     Precedes(ExecutePath);
 
 
 

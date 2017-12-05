@@ -16,6 +16,10 @@ task ExecutePath(){
          NumOut(8*6, 2*8, sBack);
          TextOut(0, 2*8, "sBack");
      }
+     TextOut(0, 3*8, "Rightgain");
+     TextOut(0, 4*8, "leftgain");
+     TextOut(0, 5*8, "vRight");
+     TextOut(0, 6*8, "vLeft");
      ClearScreen();
      
 
@@ -49,7 +53,7 @@ task ExecutePath(){
                  rotate(-1);
                  break;
          }
-         //while(!ButtonPressed(BTNCENTER,true));
+         while(!ButtonPressed(BTNCENTER,true));
 
      }
 

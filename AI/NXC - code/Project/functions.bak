@@ -5,20 +5,52 @@ void init()
      SetSensorLight(LIGHTBACK);
      SetSensorLight(LIGHTLEFT);
      SetSensorLight(LIGHTRIGHT);
-
-
 }
 
-void moveFwd(){
-     // move the sensor forward one block
-     OnFwd(MOTORLEFT,50);
-     OnFwd(MOTORRIGHT,50);
 
-     //Sensor(LIGHTRIGHT) > sRight - (SENSORTHRESHHOLD)/2 || Sensor(LIGHTLEFT) > sLeft - (SENSORTHRESHHOLD)/2
-     while (Sensor(LIGHTRIGHT) > sRight - (SENSORTHRESHHOLD)/2 || Sensor(LIGHTLEFT) > sLeft - (SENSORTHRESHHOLD)/2){
-          // follow the line
-          int rightgain = (Sensor(LIGHTRIGHT)-sRight)*(GAIN);
-          int leftgain = (Sensor(LIGHTLEFT)-sLeft)*(GAIN);
+void angleFollow(int dir, long RightMotor, long LeftMotor, int speed ){
+     int vLeft;
+     int vRight;
+
+     int dif = (MotorRotationCount(MOTORLEFT) - LeftMotor)+(MotorRotationCount(MOTORRIGHT)-RightMotor);
+     if(dir == 1){
+             vLeft = speed - dif*3;
+             vRight = -speed + dif*3;
+
+             if (vLeft > 100) vLeft = 100;
+             else if(vLeft< 0) vLeft = 0;
+             if (vRight < -100) vRight = -100;
+             else if(vRight> 0) vRight = 0;
+     }else{
+             vRight = speed + dif*3;
+             vLeft = -speed - dif*3;
+
+             if (vRight > 100) vRight = 100;
+             else if(vRight < 0) vRight = 0;
+             if (vLeft < -100) vLeft = -100;
+             else if(vLeft> 0) vLeft = 0;
+
+      }
+      NumOut(0, 0*8, dif);
+      NumOut(0, 1*8, vLeft);
+      NumOut(0, 2*8, vRight);
+      if(vLeft == 0 && vRight == 0){
+    		OnFwd(MOTORLEFT,  dir*speed);
+        OnFwd(MOTORRIGHT, -speed*dir);
+      }else{
+        OnFwd(MOTORLEFT,vLeft);
+        OnFwd(MOTORRIGHT,vRight);
+      }
+}
+
+void lineFollow(bool dir){
+     int rightgain = 0;
+     int leftgain = 0;
+     // follow the line
+     if (dir){
+          // move forward
+          leftgain = (Sensor(LIGHTRIGHT)-sRight);//*(GAIN);
+          rightgain = (Sensor(LIGHTLEFT)-sLeft);//*(GAIN);
 
           // add the mean spead
           int vLeft = SPEED + rightgain-leftgain;
@@ -29,8 +61,22 @@ void moveFwd(){
 
           OnFwd(MOTORLEFT,vLeft);
           OnFwd(MOTORRIGHT,vRight);
-
      }
+     else{
+          // move backwards
+     }     
+}
+
+void moveFwd(){
+     // move the robot forward one block
+
+     unsigned long int StartTime = CurrentTick();
+
+     while (!onLine(LIGHTLEFT) || !onLine(LIGHTRIGHT) || (StartTime+560 > CurrentTick())){
+          if(onLine(LIGHTBACK) && (StartTime+560 < CurrentTick())) break;
+          lineFollow(FARWARD);
+     }
+     
      
      // move the robot in possition for the next command
      
@@ -43,52 +89,57 @@ void moveFwd(){
 
 void moveBox(){
      // move the box one block forward
-     Wait(2000);
+     moveFwd();
 
-
-}
-
-void rotateRight(){
-     // rotate the robot 90 degrees to the right
-
-     OnFwd(MOTORLEFT,ROTATION_SPEED);
-     OnFwd(MOTORRIGHT,-ROTATION_SPEED);
-     Wait(500);
-     bool state = false;
-
-     while ( sRight - Sensor(LIGHTRIGHT) + SENSORTHRESHHOLD < sLeft - Sensor(LIGHTLEFT)){
-        if(Sensor(LIGHTBACK) < sBack+SENSORTHRESHHOLD) break;
+     OnFwd(MOTORLEFT,SPEED);
+     OnFwd(MOTORRIGHT,SPEED);
+     long motorAngle = MotorRotationCount(MOTORLEFT);
+     while (motorAngle + 400 > MotorRotationCount(MOTORLEFT)){
+           // move forward
+           lineFollow(FARWARD);
      }
-     wait(100);
-     // hold still
-     OnFwd(MOTORLEFT,0);
-     OnFwd(MOTORRIGHT,0);
-
-}
-
-void rotateLeft(){
-     // rotate the robot 90 degrees left
-     Span = 0;
-     OnFwd(MOTORLEFT,-50);
-     OnFwd(MOTORRIGHT,50);
-     Wait(300);
-
-     
-     int sBack = Sensor(LIGHTBACK);
-     
 
 
-     while ( Sensor(LIGHTBACK) > sBack - (SENSORTHRESHHOLD)/2){
-           
-           //TextOut(0, LCD_LINE1, NumToStr(sensorBack[frontPointer]));
-           //TextOut(0, LCD_LINE2, NumToStr(Sensor(LIGHTLEFT)));
-            OnFwd(MOTORLEFT,-50);
-            OnFwd(MOTORRIGHT,50);
-           
+     while (!onLine(LIGHTBACK) && (motorAngle + 20 < MotorRotationCount(MOTORLEFT))){
+           OnFwd(MOTORLEFT,-SPEED);
+           OnFwd(MOTORRIGHT,-SPEED);
      }
      
-     // hold still
-     Span = MAXSENSORANGLE;
+     // move the robot in possition for the next command
      OnFwd(MOTORLEFT,0);
      OnFwd(MOTORRIGHT,0);
+     Wait(150);
+
 }
+void rotate(int dir){
+  // Rotate right = 1, Rotate left = -1
+  long RightMotor = MotorRotationCount(MOTORRIGHT);
+  long LeftMotor = MotorRotationCount(MOTORLEFT);
+
+  // Move away from the lines
+  while(dir*(MotorRotationCount(MOTORLEFT) - LeftMotor) < 175){
+      angleFollow(dir, RightMotor, LeftMotor, ROTATION_SPEED);
+   }
+  // Let the front sensor se the new line
+  int sensor= (dir==1)*LIGHTRIGHT+(dir==-1)*LIGHTLEFT;
+  while (!onLine(sensor)){
+      if(onLine(LIGHTBACK)) break;
+      angleFollow(dir, RightMotor, LeftMotor, ROTATION_SPEED);
+  }
+     
+
+  // Allin the back sensor with the black line
+  
+  sensor= (dir==-1)*LIGHTRIGHT+(dir==1)*LIGHTLEFT;
+  while(!onLine(LIGHTBACK) && !onLine(sensor)){
+      //angleFollow(dir, RightMotor, LeftMotor, ROTATION_SPEED/2);
+  		OnFwd(MOTORLEFT,  dir*ROTATION_SPEED/2);
+      OnFwd(MOTORRIGHT, -ROTATION_SPEED/2*dir);
+  }
+
+  OnFwd(MOTORLEFT,0);
+  OnFwd(MOTORRIGHT,0);
+}
+
+
+

@@ -6,64 +6,39 @@
 
 
 // **************************** Defines *******************************
-
+#define LINT	long int
 // Define motions
-#define MVFW    10
+#define MVFW    0
 #define MVBX    1
 #define MVRR    2
 #define MVRL    3
 
 // Define external components
-#define LIGHTRIGHT  S4
-#define LIGHTLEFT   S1
-#define LIGHTBACK        S2
-#define MOTORSENSOR      OUT_A
-#define MOTORLEFT        OUT_B
-#define MOTORRIGHT       OUT_C
-
-// task specific defines
-#define GRAPHWAIT        20
-#define MAXSENSORANGLE   70
-
-#define PC               1.3
-#define IC               0.02
-#define DC               -0.1
-#define PDI_THRESHHOLD   0
-
-//#define PLANLENGTH       3
-#define READITERATIONS   5
-#define MEANDEBTH        5
-#define MEMORYDEBTH      250
+#define LIGHTRIGHT  	S4
+#define LIGHTLEFT   	S1
+#define LIGHTBACK       S2
+#define MOTORLEFT       OUT_A
+#define MOTORRIGHT      OUT_B
 
 // task execution periodtimes
-#define DETECTLINEFREQ   50
-#define LIGHTSENSORFREQ  1
-#define DISPSENSORFREQ   100
-#define MOVESENSORFREQ   20
-#define UPDATEGLOBALMEANFREQ 1000
-#define TIMETOLIVE       4000          // for debugging
+#define GAIN			 -1
+#define GAIN_REVERS	     -0.2 
+#define SPEED    100
+#define ROTATION_SPEED  100
+#define ROTATION_GAIN   15.4
+#define FARWARD			 1
+#define BACKWARDS		 0
 
+#define PARTY_PROTOCOL 1
 #define SENSORTHRESHHOLD 10
 // ************************************ Global variables ********************
-const int PLAN[] = {MVFW, MVRR, MVRR, MVFW};
+const int PLAN[] = {MVBX,MVRR,MVRR,MVFW,MVFW,MVRR,MVFW,MVFW,MVRR,MVFW,MVFW,MVRR,MVBX,MVBX,MVRR,MVFW,MVRL,MVFW,MVFW,MVRL,MVFW,MVFW,MVFW,MVFW,MVRL,MVFW,MVRR,MVFW,MVFW,MVRL,MVFW,MVFW,MVFW,MVRL,MVFW,MVFW,MVRL,MVBX,MVBX,MVRR,MVFW,MVBX,MVBX,MVRR,MVFW,MVFW,MVRL,MVFW,MVFW,MVRL,MVFW,MVRL,MVBX,MVRR,MVRR,MVFW,MVRL,MVFW,MVRL,MVBX,MVBX,MVBX,MVBX,MVRR,MVRR,MVFW,MVFW,MVFW,MVRL,MVFW,MVFW,MVRL,MVFW,MVFW,MVFW,MVRL,MVBX,MVRR,MVBX,MVBX,MVBX,MVRR,MVFW,MVRL,MVFW,MVRL,MVBX,MVBX,MVRL,MVFW,MVRR,MVFW,MVRL,MVFW,MVFW,MVRL,MVBX,MVRR,MVBX,MVRL,MVFW,MVFW,MVRR,MVFW,MVFW,MVFW,MVRR,MVFW,MVFW,MVRR,MVFW,MVBX,MVBX,MVRR,MVFW,MVRL,MVBX,MVBX,MVBX,MVRR,MVFW,MVRL,MVFW,MVRL,MVBX,MVRR,MVFW,MVRL,MVFW,MVFW,MVRL,MVBX,MVRR,MVFW,MVRL,MVFW,MVFW,MVFW,MVRL,MVFW,MVBX,MVRR,MVFW,MVFW,MVFW,MVFW,MVRR,MVFW,MVFW,MVRR,MVFW,MVRR,MVBX,MVRR,MVFW,MVRL,MVFW,MVRL,MVBX,MVBX,MVBX,MVRR,MVFW,MVRL,MVBX,MVBX,MVBX,MVRL,MVFW,MVBX,MVRL,MVFW,MVFW,MVRL,MVBX,MVRR,MVFW,MVRL,MVFW,MVRL,MVBX,MVBX,MVRR,MVRR,MVFW,MVRR,MVFW,MVFW,MVRR,MVFW,MVFW,MVRR,MVFW,MVBX,MVRL,MVBX,MVRR,MVRR,MVFW,MVFW,MVFW,MVFW,MVRL,MVFW,MVRR,MVFW,MVFW,MVRR,MVBX,MVRL,MVFW,MVRR,MVFW,MVRR,MVBX,MVBX,MVBX,MVRR,MVFW,MVRL,MVFW,MVFW,MVFW,MVRL,MVFW,MVFW,MVRR,MVFW,MVFW,MVRR,MVFW,MVRR,MVBX};
 
-//sensor memory
-int sensorBack[MEMORYDEBTH];
-int sensorRight[MEMORYDEBTH];
-int sensorLeft[MEMORYDEBTH];
-int motorSensorB[MEMORYDEBTH];
-int motorSensorR[MEMORYDEBTH];
-int motorSensorL[MEMORYDEBTH];
-int frontPointer = 0;
+//const int PLAN[] = {MVFW};
+// Execute path variables
+int sLeft = 0;
+int sRight = 0;
+int sBack = 0;
 
-// Lightsensor controlls
-int Span = MAXSENSORANGLE;
-int CenterP = 0;
+int lineFound = 0;
 
-// line detection
-int meanBack = 0;
-int meanLeft = 0;
-int meanRight = 0;
-
-int sLeft = Sensor(LIGHTLEFT);
-int sRight = Sensor(LIGHTRIGHT);

@@ -7,10 +7,9 @@ void init()
      SetSensorLight(LIGHTRIGHT);
 }
 
-
+int vLeft;
+int vRight;
 void angleFollow(int dir, long RightMotor, long LeftMotor, int speed ){
-     int vLeft;
-     int vRight;
 
      int dif = (MotorRotationCount(MOTORLEFT) - LeftMotor)+(MotorRotationCount(MOTORRIGHT)-RightMotor);
      if(dir == 1){
@@ -42,15 +41,45 @@ void angleFollow(int dir, long RightMotor, long LeftMotor, int speed ){
         OnFwd(MOTORRIGHT,vRight);
       }
 }
-
+int rightgain = 0;
+int leftgain = 0;
 void lineFollow(bool dir){
-     int rightgain = 0;
-     int leftgain = 0;
      // follow the line
      if (dir){
           // move forward
           leftgain = (Sensor(LIGHTRIGHT)-sRight);//*(GAIN);
           rightgain = (Sensor(LIGHTLEFT)-sLeft);//*(GAIN);
+          /*TextOut(12*6, 3*8, "     ");
+          TextOut(12*6, 4*8, "     ");
+           NumOut(12*6, 4*8, rightgain);
+           NumOut(12*6, 3*8, leftgain);
+           
+         TextOut(12*6, 0*8, "     ");
+         TextOut(12*6, 1*8, "     ");
+         TextOut(12*6, 20*8, "     ");
+         NumOut(12*6, 0, Sensor(LIGHTRIGHT)-sRight);
+         NumOut(12*6, 1*8, Sensor(LIGHTLEFT)-sLeft);
+         NumOut(12*6, 2*8, Sensor(LIGHTBACK)-sBack);*/
+
+          // add the mean spead
+          int vLeft = SPEED + rightgain-leftgain;
+          int vRight = SPEED + leftgain-rightgain;
+
+          if(vLeft > 100) vLeft = 100;
+          if(vRight > 100) vRight = 100;
+          /*TextOut(12*6, 5*8, "     ");
+          TextOut(12*6, 6*8, "     ");
+           NumOut(12*6, 5*8, vRight);
+           NumOut(12*6, 6*8, vLeft); */
+
+          OnFwd(MOTORLEFT,vLeft);
+          OnFwd(MOTORRIGHT,vRight);
+     }
+     else{
+          // move backwards
+
+         /* int rightgain = (Sensor(LIGHTRIGHT)-sRight)*(GAIN_REVERS);
+          int leftgain = (Sensor(LIGHTLEFT)-sLeft)*(GAIN_REVERS);
 
           // add the mean spead
           int vLeft = SPEED + rightgain-leftgain;
@@ -59,11 +88,13 @@ void lineFollow(bool dir){
           if(vLeft > 100) vLeft = 100;
           if(vRight > 100) vRight = 100;
 
-          OnFwd(MOTORLEFT,vLeft);
-          OnFwd(MOTORRIGHT,vRight);
-     }
-     else{
-          // move backwards
+          if((Sensor(LIGHTBACK) > sBack + (SENSORTHRESHHOLD))){
+               OnFwd(MOTORLEFT,-vLeft);
+               OnFwd(MOTORRIGHT,-vRight);
+          }else{
+               OnFwd(MOTORLEFT,-SPEED);
+               OnFwd(MOTORRIGHT,-SPEED);
+          }  */
      }     
 }
 
@@ -72,11 +103,9 @@ void moveFwd(){
 
      unsigned long int StartTime = CurrentTick();
 
-     while (!onLine(LIGHTLEFT) || !onLine(LIGHTRIGHT) || (StartTime+560 > CurrentTick())){
-          if(onLine(LIGHTBACK) && (StartTime+560 < CurrentTick())) break;
+     while (!onLine(LIGHTRIGHT) || !onLine(LIGHTLEFT) || (StartTime+560 > CurrentTick())){
           lineFollow(FARWARD);
      }
-     
      
      // move the robot in possition for the next command
      
@@ -93,28 +122,31 @@ void moveBox(){
 
      OnFwd(MOTORLEFT,SPEED);
      OnFwd(MOTORRIGHT,SPEED);
-     long motorAngle = MotorRotationCount(MOTORLEFT);
-     while (motorAngle + 400 > MotorRotationCount(MOTORLEFT)){
+     unsigned long int StartTime = CurrentTick();
+     while (StartTime+560 > CurrentTick()){
            // move forward
            lineFollow(FARWARD);
      }
 
-
-     while (!onLine(LIGHTBACK) && (motorAngle + 100 < MotorRotationCount(MOTORLEFT))){
-           OnFwd(MOTORLEFT,-SPEED);
-           OnFwd(MOTORRIGHT,-SPEED);
-     }
+// todo use back sensor , add the tack value as parameter
+     OnFwd(MOTORLEFT,-SPEED);
+     OnFwd(MOTORRIGHT,-SPEED);
+     Wait(600);
      
      // move the robot in possition for the next command
+
      OnFwd(MOTORLEFT,0);
      OnFwd(MOTORRIGHT,0);
-     Wait(150);
+     Wait(120);
 
 }
 void rotate(int dir){
   // Rotate right = 1, Rotate left = -1
   long RightMotor = MotorRotationCount(MOTORRIGHT);
   long LeftMotor = MotorRotationCount(MOTORLEFT);
+  
+  NumOut(0, 4*8, LeftMotor);
+  NumOut(0, 3*8, RightMotor);
 
   // Move away from the lines
   while(dir*(MotorRotationCount(MOTORLEFT) - LeftMotor) < 175){
@@ -139,6 +171,7 @@ void rotate(int dir){
 
   OnFwd(MOTORLEFT,0);
   OnFwd(MOTORRIGHT,0);
+  //Wait(100);
 }
 
 

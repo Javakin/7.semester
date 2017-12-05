@@ -1,0 +1,39 @@
+task FindeLines(){
+     while (true){
+         // In all the sesor data detect all the lines
+
+
+         // Detect the line in the back sensor
+
+         // if bellow mean line detected
+         /*int aLine = 0;
+         int lStart = 0, lStop = 0;
+         for (int i = 0; i<MEMORYDEBTH; i++){
+             if (sensorBack[i] < meanBack){
+                sensorBack[i] = min;
+                if (aLine == 0)
+                   lStart = motorSensorB[i];
+                aLine = 1;
+             } else{
+                sensorBack[i] = max;
+                if (aLine == 1) {
+                   lStop = motorSensorB[i];
+                   //CenterP = (lStop-lStart)/2 + lStart;
+                   //Span = MAXSENSORANGLE/4;
+                }
+                aLine = 0;
+             }
+         }*/
+
+
+         // Detect lines in the right sensor
+
+
+         // Detect lines in the left sensor
+
+
+
+         // Detection frequency
+         Wait(DETECTLINEFREQ);
+     }
+}

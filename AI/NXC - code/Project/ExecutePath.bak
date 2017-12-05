@@ -4,10 +4,20 @@
 // Execute path
 task ExecutePath(){
      
-     
      // Execute commands
-     sLeft = Sensor(LIGHTLEFT);
-     sRight = Sensor(LIGHTRIGHT);
+     while(!ButtonPressed(BTNCENTER,true)){
+         sLeft = Sensor(LIGHTLEFT);
+         sRight = Sensor(LIGHTRIGHT);
+         sBack = Sensor(LIGHTBACK);
+         NumOut(8*6, 0, sRight);
+         TextOut(0, 0, "sRight");
+         NumOut(8*6, 1*8, sLeft);
+         TextOut(0, 1*8, "sLeft");
+         NumOut(8*6, 2*8, sBack);
+         TextOut(0, 2*8, "sBack");
+     }
+     ClearScreen();
+     
 
      int pl = SizeOf(PLAN)/2;
 
@@ -19,33 +29,39 @@ task ExecutePath(){
                 moveFwd();
                 break;
 
+
              case(MVBX):   // Move the box one block
-                moveBox();
+                if((i+1) < pl){
+                   if (PLAN[i+1] == MVBX){
+                      moveFwd();
+                   }
+                   else {
+                moveBox();}
+                } else{
+                moveBox();}
                 break;
 
              case(MVRR):   // Rotate Right
-                rotateRight();
+                rotate(1);
                 break;
 
              case(MVRL):   // Rotate Left
-                 rotateLeft();
+                 rotate(-1);
                  break;
          }
+         while(!ButtonPressed(BTNCENTER,true));
 
      }
 
-  
 
-     Wait(TIMETOLIVE);
-     // End program play silly sound
-     CenterP = 0; Span = 0;
-     Wait(800);
-     StopTask(MoveLightSensor);
-     OnFwd(MOTORSENSOR, 0);         // stop the motor sensor
 
 
      // the final surprise
-     //PlayFile("NO_ONE_HAS_EVER.rso");
-     //Wait(7000);
+     if (PARTY_PROTOCOL){
+        PlayFile("NO_ONE_HAS_EVER.rso");
+        Wait(7000);
+     }
+     Wait(10000);
+     while(true);
      StopAllTasks(); // stop the program 
 }

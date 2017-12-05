@@ -1,902 +1,1677 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__signed_stack_001ExecutePath	6	1	0	4	6
-1	__D0StopAllTasks_inline_ExecutePath	6	1	4	4	2
-2	__signed_stack_002lineFollow	6	1	8	4	2
-3	__signed_stack_001lineFollow	6	1	12	4	38
-4	__D0rotateRight	6	1	16	4	24
-5	__D0rotateLeft	6	1	20	4	24
-6	__DU0SetSensorLight_inline_init	5	1	24	4	15
-7	__D0SetSensorLight_inline_init	6	1	28	4	6
-8	__signed_stack_002rotateLeft	6	1	32	4	6
-9	__signed_stack_001rotateLeft	6	1	36	4	6
-10	__signed_stack_002rotateRight	6	1	40	4	4
-11	__signed_stack_001rotateRight	6	1	44	4	8
-12	__signed_stack_001moveFwd	6	1	48	4	4
-13	__float_stack_001lineFollow	10	1	52	4	8
-14	__signed_stack_003moveFwd	6	1	56	4	4
-15	__signed_stack_002moveFwd	6	1	60	4	4
-16	__D0moveFwd	6	1	64	4	20
-17	__Wait_7qG2_ms_7qG2_000_inline_moveFwd	5	1	68	4	2
-18	__constValNegf0P2	10	0	72	4	2
-19	__soMutex	9	0	76	4	2
-20	__Wait_7qG2_ms_7qG2_000_inline_rotateLeft	5	1	80	4	4
-21	__Wait_7qG2_ms_7qG2_000_inline_rotateRight	5	1	84	4	4
-22	__Wait_7qG2_ms_7qG2_000_inline_moveBox	5	1	88	4	4
-23	__D0lineFollow	6	1	92	4	68
-24	__DU0lineFollow	5	1	96	4	2
-25	__D0moveBox	6	1	100	4	12
-26	__D0ExecutePath	6	1	104	4	15
-27	__ExecutePath_7qG2_command_7qG2_002	4	1	108	2	2
-28	__ExecutePath_7qG2_i_7qG2_001	4	1	110	2	5
-29	sBack	4	1	112	2	4
-30	__lineFollow_7qG2_rightgain_7qG2_001	4	1	114	2	6
-31	__lineFollow_7qG2_vRight_7qG2_001	4	1	116	2	8
-32	__lineFollow_7qG2_leftgain_7qG2_001	4	1	118	2	6
-33	__ExecutePath_7qG2_pl_7qG2_000	4	1	120	2	2
-34	__lineFollow_7qG2_vLeft_7qG2_001	4	1	122	2	8
-35	sRight	4	1	124	2	6
-36	sLeft	4	1	126	2	6
-37	__ResetSensorTmp	1	1	128	1	2
-38	__moveBox_return	1	1	129	1	3
-39	__rotateRight_return	1	1	130	1	3
-40	__constValNeg95	2	0	131	1	1
-41	__constVal2	2	0	132	1	1
-42	__constVal63	2	0	133	1	22
-43	____ResetSensorSubroutine_return	1	1	134	1	5
-44	__moveFwd_return	1	1	135	1	4
-45	__constVal1	2	0	136	1	22
-46	__constVal0	2	1	137	1	84
-47	____initialize_global_data_return	1	1	138	1	3
-48	__constVal32	2	0	139	1	66
-49	__ResetSensorPort	1	1	140	1	5
-50	__constValNeg75	2	0	141	1	2
-51	__constVal3	2	0	142	1	29
-52	__rotateLeft_return	1	1	143	1	3
-53	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	144	1	6
-54	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init	1	1	145	1	6
-55	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	146	1	3
-56	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init	1	1	147	1	6
-57	__SetSensorLight_7qG2_port_7qG2_000_inline_init	1	1	148	1	15
-58	__init_return	1	1	149	1	3
-59	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	150	1	6
-60	__SetSensorLight_7qG2_bActive_7qG2_000_inline_init	1	1	151	1	6
-61	__constValNeg100	2	0	152	1	3
-62	__constVal100	2	0	153	1	2
-63	__constVal96	2	0	154	1	22
-64	__constValNeg2	2	0	155	1	2
-65	__lineFollow_7qG2_dir_7qG2_000	1	1	156	1	2
-66	__lineFollow_return	1	1	157	1	3
-67	PLAN	7	0	158	4	2
-68	PLAN.PLAN_type	4	0	0	2	0
-69	__soTmpBuf	7	0	160	4	2
-70	__soTmpBuf.__soTmpBuf_type	1	0	0	1	0
+0	__D0SetSensorLight_inline_init	6	1	0	4	6
+1	__DU0rotate	5	1	4	4	8
+2	__D0rotate	6	1	8	4	60
+3	__signed_stack_001angleFollow	6	1	12	4	48
+4	__D0StopAllTasks_inline_ExecutePath	6	1	16	4	2
+5	__DU0SetSensorLight_inline_init	5	1	20	4	15
+6	__D0moveFwd	6	1	24	4	18
+7	__DU0moveBox	5	1	28	4	2
+8	__D0moveBox	6	1	32	4	26
+9	__DU0onLine	5	1	36	4	15
+10	__D0onLine	6	1	40	4	22
+11	__DU0moveFwd	5	1	44	4	10
+12	__signed_stack_002angleFollow	6	1	48	4	18
+13	__signed_stack_001rotate	6	1	52	4	22
+14	__signed_stack_002onLine	6	1	56	4	6
+15	__signed_stack_001onLine	6	1	60	4	6
+16	__angleFollow_7qG2_RightMotor_7qG2_000	6	1	64	4	3
+17	__angleFollow_7qG2_LeftMotor_7qG2_000	6	1	68	4	3
+18	__signed_stack_002rotate	6	1	72	4	14
+19	__signed_stack_001lineFollow	6	1	76	4	16
+20	__signed_stack_002ExecutePath	6	1	80	4	12
+21	__signed_stack_001ExecutePath	6	1	84	4	32
+22	__unsigned_stack_001moveFwd	5	1	88	4	4
+23	__signed_stack_001moveFwd	6	1	92	4	4
+24	__signed_stack_001moveBox	6	1	96	4	8
+25	__moveBox_7qG2_motorAngle_7qG2_000	6	1	100	4	3
+26	__PointOutMutex	9	0	104	4	2
+27	__RBtnMutex	9	0	108	4	2
+28	__moveFwd_7qG2_StartTime_7qG2_000	5	1	112	4	3
+29	__Wait_7qG2_ms_7qG2_000_inline_moveFwd	5	1	116	4	2
+30	__rotate_7qG2_LeftMotor_7qG2_000	6	1	120	4	4
+31	__Wait_7qG2_ms_7qG2_000_inline_ExecutePath	5	1	124	4	4
+32	__rotate_7qG2_RightMotor_7qG2_000	6	1	128	4	3
+33	__Wait_7qG2_ms_7qG2_000_inline_moveBox	5	1	132	4	2
+34	__TextOutMutex	9	0	136	4	18
+35	__D0ExecutePath	6	1	140	4	58
+36	__D0angleFollow	6	1	144	4	89
+37	__DU0lineFollow	5	1	148	4	2
+38	__D0lineFollow	6	1	152	4	26
+39	__SPFArgsMutex	9	0	156	4	2
+40	__soMutex	9	0	160	4	2
+41	__angleFollow_7qG2_vLeft_7qG2_000	4	1	164	2	13
+42	__angleFollow_7qG2_vRight_7qG2_000	4	1	166	2	13
+43	__angleFollow_7qG2_dif_7qG2_000	4	1	168	2	6
+44	__angleFollow_7qG2_dir_7qG2_000	4	1	170	2	5
+45	__ExecutePath_7qG2_command_7qG2_002	4	1	172	2	2
+46	__angleFollow_7qG2_speed_7qG2_000	4	1	174	2	8
+47	__ExecutePath_7qG2_i_7qG2_001	4	1	176	2	7
+48	__lineFollow_7qG2_vLeft_7qG2_001	4	1	178	2	4
+49	__rotate_7qG2_dir_7qG2_000	4	1	180	2	11
+50	__lineFollow_7qG2_leftgain_7qG2_000	4	1	182	2	4
+51	__lineFollow_7qG2_rightgain_7qG2_000	4	1	184	2	4
+52	__ExecutePath_7qG2_pl_7qG2_000	4	1	186	2	3
+53	__rotate_7qG2_sensor_7qG2_000	4	1	188	2	4
+54	__lineFollow_7qG2_vRight_7qG2_001	4	1	190	2	4
+55	sBack	4	1	192	2	3
+56	__onLine_7qG2_sensor_7qG2_000	4	1	194	2	9
+57	sRight	4	1	196	2	4
+58	__constVal200	4	0	198	2	2
+59	sLeft	4	1	200	2	4
+60	__constVal2	2	0	202	1	1
+61	__rotate_return	1	1	203	1	4
+62	____ResetSensorSubroutine_return	1	1	204	1	5
+63	__moveBox_return	1	1	205	1	4
+64	__init_return	1	1	206	1	3
+65	__constValNeg100	2	0	207	1	6
+66	__moveFwd_return	1	1	208	1	5
+67	__ResetSensorTmp	1	1	209	1	2
+68	__constVal1	2	0	210	1	22
+69	__constVal32	2	0	211	1	54
+70	____initialize_global_data_return	1	1	212	1	3
+71	__constVal0	2	1	213	1	74
+72	__ResetSensorPort	1	1	214	1	5
+73	__constValNeg1	2	0	215	1	3
+74	__constVal3	2	0	216	1	23
+75	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	217	1	6
+76	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init	1	1	218	1	6
+77	__angleFollow_return	1	1	219	1	4
+78	__SetSensorLight_7qG2_port_7qG2_000_inline_init	1	1	220	1	15
+79	__SetSensorLight_7qG2_bActive_7qG2_000_inline_init	1	1	221	1	6
+80	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init	1	1	222	1	6
+81	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	223	1	6
+82	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	224	1	3
+83	__onLine_return	1	1	225	1	11
+84	__onLine_7qG2_output_7qG2_000	1	1	226	1	5
+85	__lineFollow_return	1	1	227	1	4
+86	__constVal96	2	0	228	1	18
+87	__constVal63	2	0	229	1	18
+88	__lineFollow_7qG2_dir_7qG2_000	1	1	230	1	3
+89	__SPFArgs	8	0	4	12	5
+90	__SPFArgs.Result	2	1	232	1	5
+91	__SPFArgs.Filename	7	0	234	4	5
+92	__SPFArgs.Filename.Filename_type	1	0	0	1	0
+93	__SPFArgs.Loop	1	1	236	1	5
+94	__SPFArgs.Volume	1	1	237	1	5
+95	__PointOutArgs	8	0	3	12	4
+96	__PointOutArgs.Result	2	1	240	1	4
+97	__PointOutArgs.Location	8	0	2	4	4
+98	__PointOutArgs.Location.X	4	1	244	2	4
+99	__PointOutArgs.Location.Y	4	1	246	2	4
+100	__PointOutArgs.Options	5	1	248	4	4
+101	__TextOutArgs	8	0	4	16	54
+102	__TextOutArgs.Result	2	1	252	1	54
+103	__TextOutArgs.Location	8	0	2	4	54
+104	__TextOutArgs.Location.X	4	1	256	2	54
+105	__TextOutArgs.Location.Y	4	1	258	2	54
+106	__TextOutArgs.Text	7	0	260	4	54
+107	__TextOutArgs.Text.Text_type	1	0	0	1	0
+108	__TextOutArgs.Options	5	1	264	4	54
+109	__RBtnArgs	8	0	5	8	4
+110	__RBtnArgs.Result	2	1	268	1	4
+111	__RBtnArgs.Index	1	1	269	1	4
+112	__RBtnArgs.Pressed	1	1	270	1	4
+113	__RBtnArgs.Count	1	1	271	1	4
+114	__RBtnArgs.Reset	1	1	272	1	4
+115	__constStr0012	7	0	274	4	1
+116	__constStr0012.__constStr0012_type	1	1	0	1	0
+117	__strbufExecutePath	7	0	276	4	8
+118	__strbufExecutePath.__strbufExecutePath_type	1	0	0	1	0
+119	__soTmpBuf	7	0	278	4	2
+120	__soTmpBuf.__soTmpBuf_type	1	0	0	1	0
+121	PLAN	7	0	280	4	3
+122	PLAN.PLAN_type	4	0	0	2	0
+123	__constStr0009	7	0	282	4	1
+124	__constStr0009.__constStr0009_type	1	1	0	1	0
+125	__constStr0011	7	0	284	4	1
+126	__constStr0011.__constStr0011_type	1	1	0	1	0
+127	__constStr0010	7	0	286	4	1
+128	__constStr0010.__constStr0010_type	1	1	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	22	0	#line 22 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	23	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	22	2	#line 22 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	26	2	#line 26 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
+0	23	0	#line 23 "D:\NXC - code\Project\main.nxc"
+0	24	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	23	2	#line 23 "D:\NXC - code\Project\main.nxc"
+0	26	2	#line 26 "D:\NXC - code\Project\main.nxc"
 0	27	2		subcall init, __init_return
-0	26	4	#line 26 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	32	4	#line 32 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	32	4	#line 32 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-0	33	4		exit 0, 0
+0	26	4	#line 26 "D:\NXC - code\Project\main.nxc"
+0	33	4	#line 33 "D:\NXC - code\Project\main.nxc"
+0	33	4	#line 33 "D:\NXC - code\Project\main.nxc"
+0	34	4		exit 0, 0
 1	5476	0		setin __constVal1, __ResetSensorPort, 5
 1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
 1	5480	11		subret ____ResetSensorSubroutine_return
-2	4	0	#line 4 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-2	5	0		set __SetSensorLight_7qG2_port_7qG2_000_inline_init, 1
-2	4	3	#line 4 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-2	5	3	#line 5 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-2	6	3		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_init, __constVal1
-2	4313	5	#line 4313 "NXCDefs.h"
-2	4314	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
-2	4313	7	#line 4313 "NXCDefs.h"
-2	4313	7	#line 4313 "NXCDefs.h"
-2	4314	7		mov __DU0SetSensorLight_inline_init, __SetSensorLight_7qG2_bActive_7qG2_000_inline_init
-2	4313	9	#line 4313 "NXCDefs.h"
-2	4314	9		tst 5, __D0SetSensorLight_inline_init, __DU0SetSensorLight_inline_init
-2	4313	12	#line 4313 "NXCDefs.h"
-2	4314	12		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_init
-2	4313	15	#line 4313 "NXCDefs.h"
-2	4314	15		set __DU0SetSensorLight_inline_init, 5
-2	4313	18	#line 4313 "NXCDefs.h"
-2	4313	18	#line 4313 "NXCDefs.h"
-2	4314	18		jmp __001__ASM_Label_5
-2	4313	20	#line 4313 "NXCDefs.h"
-2	4314	20		set __DU0SetSensorLight_inline_init, 6
-2	4313	23	#line 4313 "NXCDefs.h"
-2	4313	23	#line 4313 "NXCDefs.h"
-2	4314	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init, __DU0SetSensorLight_inline_init
-2	4247	25	#line 4247 "NXCDefs.h"
-2	4248	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, 0
-2	4247	29	#line 4247 "NXCDefs.h"
-2	4314	29	#line 4314 "NXCDefs.h"
-2	4314	29	#line 4314 "NXCDefs.h"
-2	4315	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
-2	4314	31	#line 4314 "NXCDefs.h"
-2	4314	31	#line 4314 "NXCDefs.h"
-2	4315	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init, 128
-2	4314	34	#line 4314 "NXCDefs.h"
-2	4260	34	#line 4260 "NXCDefs.h"
-2	4261	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, 1
-2	4260	38	#line 4260 "NXCDefs.h"
-2	4315	38	#line 4315 "NXCDefs.h"
-2	4315	38	#line 4315 "NXCDefs.h"
-2	4316	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
-2	4315	40	#line 4315 "NXCDefs.h"
-2	4278	40	#line 4278 "NXCDefs.h"
-2	4279	40	#pragma macro 4
-2	4279	40		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_init
-2	4279	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-2	6851	44	#line 6851 "NXCDefs.h"
-2	4278	44	#line 4278 "NXCDefs.h"
-2	4316	44	#line 4316 "NXCDefs.h"
-2	5	44	#line 5 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-2	5	44	#line 5 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-2	6	44		set __SetSensorLight_7qG2_port_7qG2_000_inline_init, 0
-2	5	47	#line 5 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-2	6	47	#line 6 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-2	7	47		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_init, __constVal1
-2	4313	49	#line 4313 "NXCDefs.h"
-2	4314	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
-2	4313	51	#line 4313 "NXCDefs.h"
-2	4313	51	#line 4313 "NXCDefs.h"
-2	4314	51		mov __DU0SetSensorLight_inline_init, __SetSensorLight_7qG2_bActive_7qG2_000_inline_init
-2	4313	53	#line 4313 "NXCDefs.h"
-2	4314	53		tst 5, __D0SetSensorLight_inline_init, __DU0SetSensorLight_inline_init
-2	4313	56	#line 4313 "NXCDefs.h"
-2	4314	56		brtst 4, __002__ASM_Label_4, __D0SetSensorLight_inline_init
-2	4313	59	#line 4313 "NXCDefs.h"
-2	4314	59		set __DU0SetSensorLight_inline_init, 5
-2	4313	62	#line 4313 "NXCDefs.h"
-2	4313	62	#line 4313 "NXCDefs.h"
-2	4314	62		jmp __002__ASM_Label_5
-2	4313	64	#line 4313 "NXCDefs.h"
-2	4314	64		set __DU0SetSensorLight_inline_init, 6
-2	4313	67	#line 4313 "NXCDefs.h"
-2	4313	67	#line 4313 "NXCDefs.h"
-2	4314	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init, __DU0SetSensorLight_inline_init
-2	4247	69	#line 4247 "NXCDefs.h"
-2	4248	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, 0
-2	4247	73	#line 4247 "NXCDefs.h"
-2	4314	73	#line 4314 "NXCDefs.h"
-2	4314	73	#line 4314 "NXCDefs.h"
-2	4315	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
-2	4314	75	#line 4314 "NXCDefs.h"
-2	4314	75	#line 4314 "NXCDefs.h"
-2	4315	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init, 128
-2	4314	78	#line 4314 "NXCDefs.h"
-2	4260	78	#line 4260 "NXCDefs.h"
-2	4261	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, 1
-2	4260	82	#line 4260 "NXCDefs.h"
-2	4315	82	#line 4315 "NXCDefs.h"
-2	4315	82	#line 4315 "NXCDefs.h"
-2	4316	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
-2	4315	84	#line 4315 "NXCDefs.h"
-2	4278	84	#line 4278 "NXCDefs.h"
-2	4279	84	#pragma macro 4
-2	4279	84		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_init
-2	4279	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-2	6914	88	#line 6914 "NXCDefs.h"
-2	4278	88	#line 4278 "NXCDefs.h"
-2	4316	88	#line 4316 "NXCDefs.h"
-2	6	88	#line 6 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-2	6	88	#line 6 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-2	7	88		set __SetSensorLight_7qG2_port_7qG2_000_inline_init, 3
-2	6	91	#line 6 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-2	9	91	#line 9 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-2	10	91		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_init, __constVal1
-2	4313	93	#line 4313 "NXCDefs.h"
-2	4314	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
-2	4313	95	#line 4313 "NXCDefs.h"
-2	4313	95	#line 4313 "NXCDefs.h"
-2	4314	95		mov __DU0SetSensorLight_inline_init, __SetSensorLight_7qG2_bActive_7qG2_000_inline_init
-2	4313	97	#line 4313 "NXCDefs.h"
-2	4314	97		tst 5, __D0SetSensorLight_inline_init, __DU0SetSensorLight_inline_init
-2	4313	100	#line 4313 "NXCDefs.h"
-2	4314	100		brtst 4, __003__ASM_Label_4, __D0SetSensorLight_inline_init
-2	4313	103	#line 4313 "NXCDefs.h"
-2	4314	103		set __DU0SetSensorLight_inline_init, 5
-2	4313	106	#line 4313 "NXCDefs.h"
-2	4313	106	#line 4313 "NXCDefs.h"
-2	4314	106		jmp __003__ASM_Label_5
-2	4313	108	#line 4313 "NXCDefs.h"
-2	4314	108		set __DU0SetSensorLight_inline_init, 6
-2	4313	111	#line 4313 "NXCDefs.h"
-2	4313	111	#line 4313 "NXCDefs.h"
-2	4314	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init, __DU0SetSensorLight_inline_init
-2	4247	113	#line 4247 "NXCDefs.h"
-2	4248	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, 0
-2	4247	117	#line 4247 "NXCDefs.h"
-2	4314	117	#line 4314 "NXCDefs.h"
-2	4314	117	#line 4314 "NXCDefs.h"
-2	4315	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
-2	4314	119	#line 4314 "NXCDefs.h"
-2	4314	119	#line 4314 "NXCDefs.h"
-2	4315	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init, 128
-2	4314	122	#line 4314 "NXCDefs.h"
-2	4260	122	#line 4260 "NXCDefs.h"
-2	4261	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, 1
-2	4260	126	#line 4260 "NXCDefs.h"
-2	4315	126	#line 4315 "NXCDefs.h"
-2	4315	126	#line 4315 "NXCDefs.h"
-2	4316	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
-2	4315	128	#line 4315 "NXCDefs.h"
-2	4278	128	#line 4278 "NXCDefs.h"
-2	4279	128	#pragma macro 4
-2	4279	128		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_init
-2	4279	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-2	6977	132	#line 6977 "NXCDefs.h"
-2	4278	132	#line 4278 "NXCDefs.h"
-2	4316	132	#line 4316 "NXCDefs.h"
-2	9	132	#line 9 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-2	11	132	#line 11 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-2	12	132		subret __init_return
-3	13	0	#line 13 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	14	0		mov __DU0lineFollow, __lineFollow_7qG2_dir_7qG2_000
-3	15	2	#line 15 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	16	2		tst 5, __D0lineFollow, __DU0lineFollow
-3	15	5	#line 15 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	16	5		brtst 4, __ASM_Label_612, __D0lineFollow
-3	15	8	#line 15 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	16	8		getin __signed_stack_001lineFollow, __constVal3, 4
-3	15	12	#line 15 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	15	12	#line 15 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	16	12		mov __D0lineFollow, sRight
-3	15	14	#line 15 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	16	14		sub __signed_stack_001lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-3	15	18	#line 15 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	15	18	#line 15 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	16	18		mov __D0lineFollow, __constValNeg2
-3	16	20	#line 16 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	17	20		mul __lineFollow_7qG2_rightgain_7qG2_001, __signed_stack_001lineFollow, __D0lineFollow
-3	16	24	#line 16 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	16	24	#line 16 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	17	24		getin __signed_stack_001lineFollow, __constVal0, 4
-3	16	28	#line 16 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	16	28	#line 16 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	17	28		mov __D0lineFollow, sLeft
-3	16	30	#line 16 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	17	30		sub __signed_stack_001lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-3	16	34	#line 16 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	16	34	#line 16 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	17	34		mov __D0lineFollow, __constValNeg2
-3	19	36	#line 19 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	20	36		mul __lineFollow_7qG2_leftgain_7qG2_001, __signed_stack_001lineFollow, __D0lineFollow
-3	19	40	#line 19 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	19	40	#line 19 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	20	40		set __signed_stack_001lineFollow, 100
-3	19	43	#line 19 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	19	43	#line 19 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	20	43		mov __D0lineFollow, __lineFollow_7qG2_rightgain_7qG2_001
-3	19	45	#line 19 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	20	45		add __signed_stack_001lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-3	19	49	#line 19 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	20	49	#line 20 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	21	49		mov __D0lineFollow, __lineFollow_7qG2_leftgain_7qG2_001
-3	20	51	#line 20 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	21	51		sub __lineFollow_7qG2_vLeft_7qG2_001, __signed_stack_001lineFollow, __D0lineFollow
-3	20	55	#line 20 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	20	55	#line 20 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	21	55		set __signed_stack_001lineFollow, 100
-3	20	58	#line 20 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	20	58	#line 20 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	21	58		mov __D0lineFollow, __lineFollow_7qG2_leftgain_7qG2_001
-3	20	60	#line 20 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	21	60		add __signed_stack_001lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-3	20	64	#line 20 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	22	64	#line 22 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	23	64		mov __D0lineFollow, __lineFollow_7qG2_rightgain_7qG2_001
-3	22	66	#line 22 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	23	66		sub __lineFollow_7qG2_vRight_7qG2_001, __signed_stack_001lineFollow, __D0lineFollow
-3	22	70	#line 22 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	22	70	#line 22 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	23	70		mov __signed_stack_001lineFollow, __lineFollow_7qG2_vLeft_7qG2_001
-3	22	72	#line 22 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	22	72	#line 22 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	23	72		set __D0lineFollow, 100
-3	22	75	#line 22 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	23	75		cmp 1, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-3	22	79	#line 22 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	23	79		brtst 4, __ASM_Label_631, __D0lineFollow
-3	23	82	#line 23 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	24	82		set __lineFollow_7qG2_vLeft_7qG2_001, 100
-3	23	85	#line 23 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	23	85	#line 23 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	23	85	#line 23 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	23	85	#line 23 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	24	85		mov __signed_stack_001lineFollow, __lineFollow_7qG2_vRight_7qG2_001
-3	23	87	#line 23 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	23	87	#line 23 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	24	87		set __D0lineFollow, 100
-3	23	90	#line 23 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	24	90		cmp 1, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-3	23	94	#line 23 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	24	94		brtst 4, __ASM_Label_636, __D0lineFollow
-3	25	97	#line 25 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	26	97		set __lineFollow_7qG2_vRight_7qG2_001, 100
-3	25	100	#line 25 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	25	100	#line 25 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	25	100	#line 25 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	25	100	#line 25 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	26	100		mov __D0lineFollow, __lineFollow_7qG2_vLeft_7qG2_001
-3	26	102	#line 26 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	27	102	#pragma macro 7
-3	27	102		setout __constVal0, 2, __D0lineFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	7153	125	#line 7153 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	26	125	#line 26 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	26	125	#line 26 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	27	125		mov __D0lineFollow, __lineFollow_7qG2_vRight_7qG2_001
-3	27	127	#line 27 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	28	127	#pragma macro 7
-3	28	127		setout __constVal1, 2, __D0lineFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	7160	150	#line 7160 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	27	150	#line 27 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	31	150	#line 31 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	32	150		jmp __ASM_Label_643
-3	31	152	#line 31 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	32	152		getin __signed_stack_001lineFollow, __constVal3, 4
-3	31	156	#line 31 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	31	156	#line 31 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	32	156		mov __D0lineFollow, sRight
-3	31	158	#line 31 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	32	158		sub __signed_stack_001lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-3	31	162	#line 31 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	31	162	#line 31 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	32	162	#line 32 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	33	162		mul __lineFollow_7qG2_rightgain_7qG2_001, __signed_stack_001lineFollow, __constValNegf0P2
-3	32	166	#line 32 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	32	166	#line 32 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	33	166		getin __signed_stack_001lineFollow, __constVal0, 4
-3	32	170	#line 32 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	32	170	#line 32 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	33	170		mov __D0lineFollow, sLeft
-3	32	172	#line 32 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	33	172		sub __signed_stack_001lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-3	32	176	#line 32 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	32	176	#line 32 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	35	176	#line 35 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	36	176		mul __lineFollow_7qG2_leftgain_7qG2_001, __signed_stack_001lineFollow, __constValNegf0P2
-3	35	180	#line 35 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	35	180	#line 35 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	36	180		mov __float_stack_001lineFollow, __constVal100
-3	35	182	#line 35 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	35	182	#line 35 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	36	182		mov __D0lineFollow, __lineFollow_7qG2_rightgain_7qG2_001
-3	35	184	#line 35 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	36	184		add __float_stack_001lineFollow, __float_stack_001lineFollow, __D0lineFollow
-3	35	188	#line 35 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	36	188	#line 36 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	37	188		mov __D0lineFollow, __lineFollow_7qG2_leftgain_7qG2_001
-3	36	190	#line 36 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	37	190		sub __lineFollow_7qG2_vLeft_7qG2_001, __float_stack_001lineFollow, __D0lineFollow
-3	36	194	#line 36 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	36	194	#line 36 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	37	194		mov __float_stack_001lineFollow, __constVal100
-3	36	196	#line 36 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	36	196	#line 36 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	37	196		mov __D0lineFollow, __lineFollow_7qG2_leftgain_7qG2_001
-3	36	198	#line 36 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	37	198		add __float_stack_001lineFollow, __float_stack_001lineFollow, __D0lineFollow
-3	36	202	#line 36 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	38	202	#line 38 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	39	202		mov __D0lineFollow, __lineFollow_7qG2_rightgain_7qG2_001
-3	38	204	#line 38 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	39	204		sub __lineFollow_7qG2_vRight_7qG2_001, __float_stack_001lineFollow, __D0lineFollow
-3	38	208	#line 38 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	38	208	#line 38 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	39	208		mov __signed_stack_001lineFollow, __lineFollow_7qG2_vLeft_7qG2_001
-3	38	210	#line 38 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	38	210	#line 38 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	39	210		set __D0lineFollow, 100
-3	38	213	#line 38 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	39	213		cmp 1, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-3	38	217	#line 38 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	39	217		brtst 4, __ASM_Label_662, __D0lineFollow
-3	39	220	#line 39 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	40	220		set __lineFollow_7qG2_vLeft_7qG2_001, 100
-3	39	223	#line 39 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	39	223	#line 39 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	39	223	#line 39 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	39	223	#line 39 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	40	223		mov __signed_stack_001lineFollow, __lineFollow_7qG2_vRight_7qG2_001
-3	39	225	#line 39 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	39	225	#line 39 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	40	225		set __D0lineFollow, 100
-3	39	228	#line 39 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	40	228		cmp 1, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-3	39	232	#line 39 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	40	232		brtst 4, __ASM_Label_667, __D0lineFollow
-3	41	235	#line 41 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	42	235		set __lineFollow_7qG2_vRight_7qG2_001, 100
-3	41	238	#line 41 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	41	238	#line 41 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	41	238	#line 41 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	41	238	#line 41 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	42	238		getin __signed_stack_001lineFollow, __constVal1, 4
-3	41	242	#line 41 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	41	242	#line 41 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	42	242		mov __signed_stack_002lineFollow, sBack
-3	41	244	#line 41 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	41	244	#line 41 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	42	244		set __D0lineFollow, 10
-3	41	247	#line 41 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	42	247		add __D0lineFollow, __signed_stack_002lineFollow, __D0lineFollow
-3	41	251	#line 41 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	42	251		cmp 1, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-3	42	255	#line 42 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	43	255		brtst 4, __ASM_Label_676, __D0lineFollow
-3	42	258	#line 42 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	43	258		set __signed_stack_001lineFollow, 0
-3	42	261	#line 42 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	42	261	#line 42 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	43	261		mov __D0lineFollow, __lineFollow_7qG2_vLeft_7qG2_001
-3	42	263	#line 42 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	43	263		sub __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-3	43	267	#line 43 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	44	267	#pragma macro 7
-3	44	267		setout __constVal0, 2, __D0lineFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	7336	290	#line 7336 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	43	290	#line 43 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	43	290	#line 43 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	44	290		set __signed_stack_001lineFollow, 0
-3	43	293	#line 43 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	43	293	#line 43 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	44	293		mov __D0lineFollow, __lineFollow_7qG2_vRight_7qG2_001
-3	43	295	#line 43 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	44	295		sub __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-3	44	299	#line 44 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	45	299	#pragma macro 7
-3	45	299		setout __constVal1, 2, __D0lineFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	7351	322	#line 7351 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	44	322	#line 44 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	45	322	#line 45 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	46	322		jmp __ASM_Label_681
-3	45	324	#line 45 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	46	324		mov __D0lineFollow, __constValNeg100
-3	46	326	#line 46 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	47	326	#pragma macro 7
-3	47	326		setout __constVal0, 2, __D0lineFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	7359	349	#line 7359 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	46	349	#line 46 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	46	349	#line 46 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	47	349		mov __D0lineFollow, __constValNeg100
-3	47	351	#line 47 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	48	351	#pragma macro 7
-3	48	351		setout __constVal1, 2, __D0lineFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	7364	374	#line 7364 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	47	374	#line 47 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	51	374	#line 51 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	53	374	#line 53 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	53	374	#line 53 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-3	54	374		subret __lineFollow_return
-4	57	0	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	0		getin __signed_stack_001moveFwd, __constVal3, 4
-4	57	4	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	57	4	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	4		mov __signed_stack_002moveFwd, sRight
-4	57	6	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	57	6	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	6		set __signed_stack_003moveFwd, 10
-4	57	9	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	57	9	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	9		set __D0moveFwd, 2
-4	57	12	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	12		div __D0moveFwd, __signed_stack_003moveFwd, __D0moveFwd
-4	57	16	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	16		sub __D0moveFwd, __signed_stack_002moveFwd, __D0moveFwd
-4	57	20	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	20		cmp 1, __D0moveFwd, __signed_stack_001moveFwd, __D0moveFwd
-4	57	24	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	24		brtst 5, __ASM_Label_688, __D0moveFwd
-4	57	27	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	27		getin __signed_stack_001moveFwd, __constVal0, 4
-4	57	31	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	57	31	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	31		mov __signed_stack_002moveFwd, sLeft
-4	57	33	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	57	33	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	33		set __signed_stack_003moveFwd, 10
-4	57	36	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	57	36	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	36		set __D0moveFwd, 2
-4	57	39	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	39		div __D0moveFwd, __signed_stack_003moveFwd, __D0moveFwd
-4	57	43	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	43		sub __D0moveFwd, __signed_stack_002moveFwd, __D0moveFwd
-4	57	47	#line 57 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	58	47		cmp 1, __D0moveFwd, __signed_stack_001moveFwd, __D0moveFwd
-4	58	51	#line 58 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	59	51		brtst 4, __ASM_Label_687, __D0moveFwd
-4	58	54	#line 58 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	59	54		set __lineFollow_7qG2_dir_7qG2_000, 1
-4	58	57	#line 58 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	60	57	#line 60 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	61	57		subcall lineFollow, __lineFollow_return
-4	60	59	#line 60 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	64	59	#line 64 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	65	59		jmp __ASM_Label_686
-4	64	61	#line 64 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	64	61	#line 64 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	65	61		set __Wait_7qG2_ms_7qG2_000_inline_moveFwd, 100
-4	64	64	#line 64 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	8551	64	#line 8551 "NXCDefs.h"
-4	8552	64		waitv __Wait_7qG2_ms_7qG2_000_inline_moveFwd
-4	8551	66	#line 8551 "NXCDefs.h"
-4	66	66	#line 66 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	66	66	#line 66 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	67	66		set __D0moveFwd, 0
-4	67	69	#line 67 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	68	69	#pragma macro 7
-4	68	69		setout __constVal0, 2, __D0moveFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	7461	92	#line 7461 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	67	92	#line 67 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	67	92	#line 67 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	68	92		set __D0moveFwd, 0
-4	69	95	#line 69 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	70	95	#pragma macro 7
-4	70	95		setout __constVal1, 2, __D0moveFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	7466	118	#line 7466 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	69	118	#line 69 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	71	118	#line 71 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-4	72	118		subret __moveFwd_return
-5	75	0	#line 75 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	76	0		subcall moveFwd, __moveFwd_return
-5	75	2	#line 75 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	75	2	#line 75 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	76	2		set __D0moveBox, 100
-5	76	5	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	77	5	#pragma macro 7
-5	77	5		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	7479	28	#line 7479 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	76	28	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	76	28	#line 76 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	77	28		set __D0moveBox, 100
-5	77	31	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	78	31	#pragma macro 7
-5	78	31		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	7484	54	#line 7484 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	77	54	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	77	54	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	78	54		set __Wait_7qG2_ms_7qG2_000_inline_moveBox, 550
-5	77	57	#line 77 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	8551	57	#line 8551 "NXCDefs.h"
-5	8552	57		waitv __Wait_7qG2_ms_7qG2_000_inline_moveBox
-5	8551	59	#line 8551 "NXCDefs.h"
-5	79	59	#line 79 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	79	59	#line 79 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	80	59		mov __D0moveBox, __constValNeg100
-5	80	61	#line 80 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	81	61	#pragma macro 7
-5	81	61		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	7501	84	#line 7501 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	80	84	#line 80 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	80	84	#line 80 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	81	84		mov __D0moveBox, __constValNeg95
-5	81	86	#line 81 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	82	86	#pragma macro 7
-5	82	86		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	7506	109	#line 7506 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	81	109	#line 81 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	81	109	#line 81 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	82	109		set __Wait_7qG2_ms_7qG2_000_inline_moveBox, 650
-5	81	112	#line 81 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	8551	112	#line 8551 "NXCDefs.h"
-5	8552	112		waitv __Wait_7qG2_ms_7qG2_000_inline_moveBox
-5	8551	114	#line 8551 "NXCDefs.h"
-5	93	114	#line 93 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	93	114	#line 93 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	94	114		set __D0moveBox, 0
-5	94	117	#line 94 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	95	117	#pragma macro 7
-5	95	117		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	7519	140	#line 7519 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	94	140	#line 94 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	94	140	#line 94 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	95	140		set __D0moveBox, 0
-5	96	143	#line 96 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	97	143	#pragma macro 7
-5	97	143		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	7524	166	#line 7524 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	96	166	#line 96 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	98	166	#line 98 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	99	166		subret __moveBox_return
-6	101	0	#line 101 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	102	0		set __D0rotateRight, 75
-6	102	3	#line 102 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	103	3	#pragma macro 7
-6	103	3		setout __constVal0, 2, __D0rotateRight, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-6	7534	26	#line 7534 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	102	26	#line 102 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	102	26	#line 102 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	103	26		mov __D0rotateRight, __constValNeg75
-6	103	28	#line 103 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	104	28	#pragma macro 7
-6	104	28		setout __constVal1, 2, __D0rotateRight, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-6	7539	51	#line 7539 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	103	51	#line 103 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	103	51	#line 103 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	104	51		set __Wait_7qG2_ms_7qG2_000_inline_rotateRight, 500
-6	103	54	#line 103 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	8551	54	#line 8551 "NXCDefs.h"
-6	8552	54		waitv __Wait_7qG2_ms_7qG2_000_inline_rotateRight
-6	8551	56	#line 8551 "NXCDefs.h"
-6	104	56	#line 104 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	106	56	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	106	56	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	106	56	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	107	56		mov __signed_stack_001rotateRight, sRight
-6	106	58	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	106	58	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	107	58		getin __D0rotateRight, __constVal3, 4
-6	106	62	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	107	62		sub __signed_stack_001rotateRight, __signed_stack_001rotateRight, __D0rotateRight
-6	106	66	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	106	66	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	107	66		set __D0rotateRight, 10
-6	106	69	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	107	69		add __signed_stack_001rotateRight, __signed_stack_001rotateRight, __D0rotateRight
-6	106	73	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	106	73	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	107	73		mov __signed_stack_002rotateRight, sLeft
-6	106	75	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	106	75	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	107	75		getin __D0rotateRight, __constVal0, 4
-6	106	79	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	107	79		sub __D0rotateRight, __signed_stack_002rotateRight, __D0rotateRight
-6	106	83	#line 106 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	107	83		cmp 0, __D0rotateRight, __signed_stack_001rotateRight, __D0rotateRight
-6	107	87	#line 107 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	108	87		brtst 4, __ASM_Label_728, __D0rotateRight
-6	107	90	#line 107 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	108	90		getin __signed_stack_001rotateRight, __constVal1, 4
-6	107	94	#line 107 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	107	94	#line 107 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	108	94		mov __signed_stack_002rotateRight, sBack
-6	107	96	#line 107 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	107	96	#line 107 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	108	96		set __D0rotateRight, 10
-6	107	99	#line 107 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	108	99		add __D0rotateRight, __signed_stack_002rotateRight, __D0rotateRight
-6	107	103	#line 107 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	108	103		cmp 0, __D0rotateRight, __signed_stack_001rotateRight, __D0rotateRight
-6	107	107	#line 107 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	108	107		brtst 4, __ASM_Label_733, __D0rotateRight
-6	108	110	#line 108 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	109	110		jmp __ASM_Label_728
-6	108	112	#line 108 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	109	112	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	109	112	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	110	112		jmp __ASM_Label_727
-6	109	114	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	109	114	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	110	114		set __Wait_7qG2_ms_7qG2_000_inline_rotateRight, 50
-6	109	117	#line 109 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	8551	117	#line 8551 "NXCDefs.h"
-6	8552	117		waitv __Wait_7qG2_ms_7qG2_000_inline_rotateRight
-6	8551	119	#line 8551 "NXCDefs.h"
-6	111	119	#line 111 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	111	119	#line 111 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	112	119		set __D0rotateRight, 0
-6	112	122	#line 112 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	113	122	#pragma macro 7
-6	113	122		setout __constVal0, 2, __D0rotateRight, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-6	7642	145	#line 7642 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	112	145	#line 112 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	112	145	#line 112 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	113	145		set __D0rotateRight, 0
-6	114	148	#line 114 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	115	148	#pragma macro 7
-6	115	148		setout __constVal1, 2, __D0rotateRight, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-6	7647	171	#line 7647 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	114	171	#line 114 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	116	171	#line 116 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	117	171		subret __rotateRight_return
-7	118	0	#line 118 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	119	0		mov __D0rotateLeft, __constValNeg75
-7	119	2	#line 119 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	120	2	#pragma macro 7
-7	120	2		setout __constVal0, 2, __D0rotateLeft, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	7657	25	#line 7657 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	119	25	#line 119 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	119	25	#line 119 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	120	25		set __D0rotateLeft, 75
-7	120	28	#line 120 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	121	28	#pragma macro 7
-7	121	28		setout __constVal1, 2, __D0rotateLeft, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	7662	51	#line 7662 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	120	51	#line 120 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	120	51	#line 120 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	121	51		set __Wait_7qG2_ms_7qG2_000_inline_rotateLeft, 500
-7	120	54	#line 120 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	8551	54	#line 8551 "NXCDefs.h"
-7	8552	54		waitv __Wait_7qG2_ms_7qG2_000_inline_rotateLeft
-7	8551	56	#line 8551 "NXCDefs.h"
-7	121	56	#line 121 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	123	56	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	123	56	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	123	56	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	124	56		mov __signed_stack_001rotateLeft, sRight
-7	123	58	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	123	58	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	124	58		getin __D0rotateLeft, __constVal3, 4
-7	123	62	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	124	62		sub __signed_stack_001rotateLeft, __signed_stack_001rotateLeft, __D0rotateLeft
-7	123	66	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	123	66	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	124	66		mov __signed_stack_002rotateLeft, sLeft
-7	123	68	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	123	68	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	124	68		getin __D0rotateLeft, __constVal0, 4
-7	123	72	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	124	72		sub __signed_stack_002rotateLeft, __signed_stack_002rotateLeft, __D0rotateLeft
-7	123	76	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	123	76	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	124	76		set __D0rotateLeft, 10
-7	123	79	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	124	79		add __D0rotateLeft, __signed_stack_002rotateLeft, __D0rotateLeft
-7	123	83	#line 123 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	124	83		cmp 1, __D0rotateLeft, __signed_stack_001rotateLeft, __D0rotateLeft
-7	124	87	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	125	87		brtst 4, __ASM_Label_749, __D0rotateLeft
-7	124	90	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	125	90		getin __signed_stack_001rotateLeft, __constVal1, 4
-7	124	94	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	124	94	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	125	94		mov __signed_stack_002rotateLeft, sBack
-7	124	96	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	124	96	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	125	96		set __D0rotateLeft, 10
-7	124	99	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	125	99		add __D0rotateLeft, __signed_stack_002rotateLeft, __D0rotateLeft
-7	124	103	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	125	103		cmp 0, __D0rotateLeft, __signed_stack_001rotateLeft, __D0rotateLeft
-7	124	107	#line 124 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	125	107		brtst 4, __ASM_Label_754, __D0rotateLeft
-7	125	110	#line 125 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	126	110		jmp __ASM_Label_749
-7	125	112	#line 125 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	126	112	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	126	112	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	127	112		jmp __ASM_Label_748
-7	126	114	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	126	114	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	127	114		set __Wait_7qG2_ms_7qG2_000_inline_rotateLeft, 50
-7	126	117	#line 126 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	8551	117	#line 8551 "NXCDefs.h"
-7	8552	117		waitv __Wait_7qG2_ms_7qG2_000_inline_rotateLeft
-7	8551	119	#line 8551 "NXCDefs.h"
-7	129	119	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	129	119	#line 129 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	130	119		set __D0rotateLeft, 0
-7	130	122	#line 130 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	131	122	#pragma macro 7
-7	131	122		setout __constVal0, 2, __D0rotateLeft, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	7765	145	#line 7765 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	130	145	#line 130 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	130	145	#line 130 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	131	145		set __D0rotateLeft, 0
-7	131	148	#line 131 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	132	148	#pragma macro 7
-7	132	148		setout __constVal1, 2, __D0rotateLeft, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	7770	171	#line 7770 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	131	171	#line 131 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	133	171	#line 133 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	134	171		subret __rotateLeft_return
-8	7	0	#line 7 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	8	0		getin sLeft, __constVal0, 4
-8	7	4	#line 7 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	7	4	#line 7 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	7	4	#line 7 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	8	4	#line 8 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	9	4		getin sRight, __constVal3, 4
-8	8	8	#line 8 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	8	8	#line 8 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	8	8	#line 8 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	9	8	#line 9 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	10	8		getin sBack, __constVal1, 4
-8	9	12	#line 9 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	9	12	#line 9 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	9	12	#line 9 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	11	12	#line 11 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	12	12	#pragma macro 9
-8	12	12		acquire __soMutex
-8	12	13		flatten __soTmpBuf, PLAN
-8	12	16		arrsize __D0ExecutePath, __soTmpBuf
-8	12	19		sub __D0ExecutePath, __D0ExecutePath, __constVal1
-8	12	23		release __soMutex
-8	7810	24	#line 7810 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	11	24	#line 11 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	12	24		mov __signed_stack_001ExecutePath, __D0ExecutePath
-8	13	26	#line 13 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	14	26		set __D0ExecutePath, 2
-8	13	29	#line 13 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	14	29		div __ExecutePath_7qG2_pl_7qG2_000, __signed_stack_001ExecutePath, __D0ExecutePath
-8	13	33	#line 13 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	13	33	#line 13 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	14	33		set __ExecutePath_7qG2_i_7qG2_001, 0
-8	13	36	#line 13 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	13	36	#line 13 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	14	36		mov __signed_stack_001ExecutePath, __ExecutePath_7qG2_i_7qG2_001
-8	13	38	#line 13 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	13	38	#line 13 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	14	38		mov __D0ExecutePath, __ExecutePath_7qG2_pl_7qG2_000
-8	13	40	#line 13 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	14	40		cmp 0, __D0ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
-8	13	44	#line 13 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	14	44		brtst 4, __ASM_Label_770, __D0ExecutePath
-8	13	47	#line 13 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	14	47		jmp __ASM_Label_771
-8	13	49	#line 13 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	14	49		add __ExecutePath_7qG2_i_7qG2_001, __ExecutePath_7qG2_i_7qG2_001, __constVal1
-8	15	53	#line 15 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	16	53		jmp __ASM_Label_769
-8	15	55	#line 15 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	16	55		mov __signed_stack_001ExecutePath, __ExecutePath_7qG2_i_7qG2_001
-8	15	57	#line 15 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	15	57	#line 15 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	16	57		index __ExecutePath_7qG2_command_7qG2_002, PLAN, __signed_stack_001ExecutePath
-8	15	61	#line 15 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	16	61	#line 16 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	16	61	#line 16 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	17	61		mov __D0ExecutePath, __ExecutePath_7qG2_command_7qG2_002
-8	20	63		brcmp 4, __ASM_Label_784, __constVal0, __D0ExecutePath
-8	21	67		brcmp 4, __ASM_Label_785, __constVal1, __D0ExecutePath
-8	22	71		brcmp 4, __ASM_Label_786, __constVal2, __D0ExecutePath
-8	23	75		brcmp 4, __ASM_Label_787, __constVal3, __D0ExecutePath
-8	24	79		jmp __ASM_Label_783
-8	18	81	#line 18 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	19	81	#line 19 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	20	81		subcall moveFwd, __moveFwd_return
-8	19	83	#line 19 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	21	83	#line 21 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	22	83		jmp __ASM_Label_783
-8	21	85	#line 21 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	22	85	#line 22 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	23	85	#line 23 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	24	85		subcall moveBox, __moveBox_return
-8	23	87	#line 23 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	25	87	#line 25 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	26	87		jmp __ASM_Label_783
-8	25	89	#line 25 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	26	89	#line 26 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	27	89	#line 27 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	28	89		subcall rotateRight, __rotateRight_return
-8	27	91	#line 27 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	29	91	#line 29 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	30	91		jmp __ASM_Label_783
-8	29	93	#line 29 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	30	93	#line 30 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	31	93	#line 31 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	32	93		subcall rotateLeft, __rotateLeft_return
-8	31	95	#line 31 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	32	95	#line 32 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	32	95	#line 32 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	42	95	#line 42 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	42	95	#line 42 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	43	95		jmp __ASM_Label_772
-8	42	97	#line 42 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	8564	97	#line 8564 "NXCDefs.h"
-8	8565	97		set __D0StopAllTasks_inline_ExecutePath, 1
-8	8564	100	#line 8564 "NXCDefs.h"
-8	8565	100		stop __D0StopAllTasks_inline_ExecutePath
-8	8564	102	#line 8564 "NXCDefs.h"
-8	43	102	#line 43 "D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-8	44	102		exit -1, -1
-9	35	0	#line 35 "D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc"
-9	36	0		subret ____initialize_global_data_return
+2	6	0	#line 6 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	7	0		set __onLine_7qG2_output_7qG2_000, 0
+2	6	3	#line 6 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	6	3	#line 6 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	7	3		mov __D0onLine, __onLine_7qG2_sensor_7qG2_000
+2	10	5		brcmp 4, __ASM_Label_609, __constVal1, __D0onLine
+2	11	9		brcmp 4, __ASM_Label_612, __constVal3, __D0onLine
+2	12	13		brcmp 4, __ASM_Label_615, __constVal0, __D0onLine
+2	13	17		jmp __ASM_Label_608
+2	8	19	#line 8 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	8	19	#line 8 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	9	19		getin __signed_stack_001onLine, __constVal1, 4
+2	8	23	#line 8 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	8	23	#line 8 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	9	23		mov __signed_stack_002onLine, sBack
+2	8	25	#line 8 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	9	25	#line 9 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	10	25		set __D0onLine, 10
+2	9	28	#line 9 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	10	28		add __D0onLine, __signed_stack_002onLine, __D0onLine
+2	9	32	#line 9 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	10	32		cmp 0, __D0onLine, __signed_stack_001onLine, __D0onLine
+2	9	36	#line 9 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	10	36		mov __onLine_7qG2_output_7qG2_000, __D0onLine
+2	9	38	#line 9 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	9	38	#line 9 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	10	38	#line 10 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	11	38		jmp __ASM_Label_608
+2	10	40	#line 10 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	11	40	#line 11 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	11	40	#line 11 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	12	40		getin __signed_stack_001onLine, __constVal3, 4
+2	11	44	#line 11 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	11	44	#line 11 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	12	44		mov __signed_stack_002onLine, sRight
+2	11	46	#line 11 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	12	46	#line 12 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	13	46		set __D0onLine, 10
+2	12	49	#line 12 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	13	49		sub __D0onLine, __signed_stack_002onLine, __D0onLine
+2	12	53	#line 12 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	13	53		cmp 0, __D0onLine, __signed_stack_001onLine, __D0onLine
+2	12	57	#line 12 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	13	57		mov __onLine_7qG2_output_7qG2_000, __D0onLine
+2	12	59	#line 12 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	12	59	#line 12 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	13	59	#line 13 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	14	59		jmp __ASM_Label_608
+2	13	61	#line 13 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	14	61	#line 14 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	14	61	#line 14 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	15	61		getin __signed_stack_001onLine, __constVal0, 4
+2	14	65	#line 14 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	14	65	#line 14 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	15	65		mov __signed_stack_002onLine, sLeft
+2	14	67	#line 14 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	15	67	#line 15 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	16	67		set __D0onLine, 10
+2	15	70	#line 15 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	16	70		sub __D0onLine, __signed_stack_002onLine, __D0onLine
+2	15	74	#line 15 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	16	74		cmp 0, __D0onLine, __signed_stack_001onLine, __D0onLine
+2	15	78	#line 15 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	16	78		mov __onLine_7qG2_output_7qG2_000, __D0onLine
+2	15	80	#line 15 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	15	80	#line 15 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	16	80	#line 16 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	16	80	#line 16 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	18	80	#line 18 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	20	80	#line 20 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	21	80		mov __DU0onLine, __onLine_7qG2_output_7qG2_000
+2	20	82	#line 20 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	21	82		subret __onLine_return
+2	20	84	#line 20 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	22	84	#line 22 "D:\NXC - code\Project\.\LightSensors.nxc"
+2	23	84		subret __onLine_return
+3	4	0	#line 4 "D:\NXC - code\Project\.\functions.nxc"
+3	5	0		set __SetSensorLight_7qG2_port_7qG2_000_inline_init, 1
+3	4	3	#line 4 "D:\NXC - code\Project\.\functions.nxc"
+3	5	3	#line 5 "D:\NXC - code\Project\.\functions.nxc"
+3	6	3		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_init, __constVal1
+3	4313	5	#line 4313 "NXCDefs.h"
+3	4314	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
+3	4313	7	#line 4313 "NXCDefs.h"
+3	4313	7	#line 4313 "NXCDefs.h"
+3	4314	7		mov __DU0SetSensorLight_inline_init, __SetSensorLight_7qG2_bActive_7qG2_000_inline_init
+3	4313	9	#line 4313 "NXCDefs.h"
+3	4314	9		tst 5, __D0SetSensorLight_inline_init, __DU0SetSensorLight_inline_init
+3	4313	12	#line 4313 "NXCDefs.h"
+3	4314	12		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_init
+3	4313	15	#line 4313 "NXCDefs.h"
+3	4314	15		set __DU0SetSensorLight_inline_init, 5
+3	4313	18	#line 4313 "NXCDefs.h"
+3	4313	18	#line 4313 "NXCDefs.h"
+3	4314	18		jmp __001__ASM_Label_5
+3	4313	20	#line 4313 "NXCDefs.h"
+3	4314	20		set __DU0SetSensorLight_inline_init, 6
+3	4313	23	#line 4313 "NXCDefs.h"
+3	4313	23	#line 4313 "NXCDefs.h"
+3	4314	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init, __DU0SetSensorLight_inline_init
+3	4247	25	#line 4247 "NXCDefs.h"
+3	4248	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, 0
+3	4247	29	#line 4247 "NXCDefs.h"
+3	4314	29	#line 4314 "NXCDefs.h"
+3	4314	29	#line 4314 "NXCDefs.h"
+3	4315	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
+3	4314	31	#line 4314 "NXCDefs.h"
+3	4314	31	#line 4314 "NXCDefs.h"
+3	4315	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init, 128
+3	4314	34	#line 4314 "NXCDefs.h"
+3	4260	34	#line 4260 "NXCDefs.h"
+3	4261	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, 1
+3	4260	38	#line 4260 "NXCDefs.h"
+3	4315	38	#line 4315 "NXCDefs.h"
+3	4315	38	#line 4315 "NXCDefs.h"
+3	4316	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
+3	4315	40	#line 4315 "NXCDefs.h"
+3	4278	40	#line 4278 "NXCDefs.h"
+3	4279	40	#pragma macro 4
+3	4279	40		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_init
+3	4279	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	7169	44	#line 7169 "NXCDefs.h"
+3	4278	44	#line 4278 "NXCDefs.h"
+3	4316	44	#line 4316 "NXCDefs.h"
+3	5	44	#line 5 "D:\NXC - code\Project\.\functions.nxc"
+3	5	44	#line 5 "D:\NXC - code\Project\.\functions.nxc"
+3	6	44		set __SetSensorLight_7qG2_port_7qG2_000_inline_init, 0
+3	5	47	#line 5 "D:\NXC - code\Project\.\functions.nxc"
+3	6	47	#line 6 "D:\NXC - code\Project\.\functions.nxc"
+3	7	47		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_init, __constVal1
+3	4313	49	#line 4313 "NXCDefs.h"
+3	4314	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
+3	4313	51	#line 4313 "NXCDefs.h"
+3	4313	51	#line 4313 "NXCDefs.h"
+3	4314	51		mov __DU0SetSensorLight_inline_init, __SetSensorLight_7qG2_bActive_7qG2_000_inline_init
+3	4313	53	#line 4313 "NXCDefs.h"
+3	4314	53		tst 5, __D0SetSensorLight_inline_init, __DU0SetSensorLight_inline_init
+3	4313	56	#line 4313 "NXCDefs.h"
+3	4314	56		brtst 4, __002__ASM_Label_4, __D0SetSensorLight_inline_init
+3	4313	59	#line 4313 "NXCDefs.h"
+3	4314	59		set __DU0SetSensorLight_inline_init, 5
+3	4313	62	#line 4313 "NXCDefs.h"
+3	4313	62	#line 4313 "NXCDefs.h"
+3	4314	62		jmp __002__ASM_Label_5
+3	4313	64	#line 4313 "NXCDefs.h"
+3	4314	64		set __DU0SetSensorLight_inline_init, 6
+3	4313	67	#line 4313 "NXCDefs.h"
+3	4313	67	#line 4313 "NXCDefs.h"
+3	4314	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init, __DU0SetSensorLight_inline_init
+3	4247	69	#line 4247 "NXCDefs.h"
+3	4248	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, 0
+3	4247	73	#line 4247 "NXCDefs.h"
+3	4314	73	#line 4314 "NXCDefs.h"
+3	4314	73	#line 4314 "NXCDefs.h"
+3	4315	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
+3	4314	75	#line 4314 "NXCDefs.h"
+3	4314	75	#line 4314 "NXCDefs.h"
+3	4315	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init, 128
+3	4314	78	#line 4314 "NXCDefs.h"
+3	4260	78	#line 4260 "NXCDefs.h"
+3	4261	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, 1
+3	4260	82	#line 4260 "NXCDefs.h"
+3	4315	82	#line 4315 "NXCDefs.h"
+3	4315	82	#line 4315 "NXCDefs.h"
+3	4316	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
+3	4315	84	#line 4315 "NXCDefs.h"
+3	4278	84	#line 4278 "NXCDefs.h"
+3	4279	84	#pragma macro 4
+3	4279	84		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_init
+3	4279	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	7232	88	#line 7232 "NXCDefs.h"
+3	4278	88	#line 4278 "NXCDefs.h"
+3	4316	88	#line 4316 "NXCDefs.h"
+3	6	88	#line 6 "D:\NXC - code\Project\.\functions.nxc"
+3	6	88	#line 6 "D:\NXC - code\Project\.\functions.nxc"
+3	7	88		set __SetSensorLight_7qG2_port_7qG2_000_inline_init, 3
+3	6	91	#line 6 "D:\NXC - code\Project\.\functions.nxc"
+3	7	91	#line 7 "D:\NXC - code\Project\.\functions.nxc"
+3	8	91		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_init, __constVal1
+3	4313	93	#line 4313 "NXCDefs.h"
+3	4314	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
+3	4313	95	#line 4313 "NXCDefs.h"
+3	4313	95	#line 4313 "NXCDefs.h"
+3	4314	95		mov __DU0SetSensorLight_inline_init, __SetSensorLight_7qG2_bActive_7qG2_000_inline_init
+3	4313	97	#line 4313 "NXCDefs.h"
+3	4314	97		tst 5, __D0SetSensorLight_inline_init, __DU0SetSensorLight_inline_init
+3	4313	100	#line 4313 "NXCDefs.h"
+3	4314	100		brtst 4, __003__ASM_Label_4, __D0SetSensorLight_inline_init
+3	4313	103	#line 4313 "NXCDefs.h"
+3	4314	103		set __DU0SetSensorLight_inline_init, 5
+3	4313	106	#line 4313 "NXCDefs.h"
+3	4313	106	#line 4313 "NXCDefs.h"
+3	4314	106		jmp __003__ASM_Label_5
+3	4313	108	#line 4313 "NXCDefs.h"
+3	4314	108		set __DU0SetSensorLight_inline_init, 6
+3	4313	111	#line 4313 "NXCDefs.h"
+3	4313	111	#line 4313 "NXCDefs.h"
+3	4314	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init, __DU0SetSensorLight_inline_init
+3	4247	113	#line 4247 "NXCDefs.h"
+3	4248	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, 0
+3	4247	117	#line 4247 "NXCDefs.h"
+3	4314	117	#line 4314 "NXCDefs.h"
+3	4314	117	#line 4314 "NXCDefs.h"
+3	4315	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
+3	4314	119	#line 4314 "NXCDefs.h"
+3	4314	119	#line 4314 "NXCDefs.h"
+3	4315	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init, 128
+3	4314	122	#line 4314 "NXCDefs.h"
+3	4260	122	#line 4260 "NXCDefs.h"
+3	4261	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, 1
+3	4260	126	#line 4260 "NXCDefs.h"
+3	4315	126	#line 4315 "NXCDefs.h"
+3	4315	126	#line 4315 "NXCDefs.h"
+3	4316	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
+3	4315	128	#line 4315 "NXCDefs.h"
+3	4278	128	#line 4278 "NXCDefs.h"
+3	4279	128	#pragma macro 4
+3	4279	128		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_init
+3	4279	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	7295	132	#line 7295 "NXCDefs.h"
+3	4278	132	#line 4278 "NXCDefs.h"
+3	4316	132	#line 4316 "NXCDefs.h"
+3	7	132	#line 7 "D:\NXC - code\Project\.\functions.nxc"
+3	10	132	#line 10 "D:\NXC - code\Project\.\functions.nxc"
+3	11	132		subret __init_return
+4	14	0	#line 14 "D:\NXC - code\Project\.\functions.nxc"
+4	15	0		getout __signed_stack_001angleFollow, __constVal0, 14
+4	14	4	#line 14 "D:\NXC - code\Project\.\functions.nxc"
+4	14	4	#line 14 "D:\NXC - code\Project\.\functions.nxc"
+4	14	4	#line 14 "D:\NXC - code\Project\.\functions.nxc"
+4	15	4		sub __signed_stack_001angleFollow, __signed_stack_001angleFollow, __angleFollow_7qG2_LeftMotor_7qG2_000
+4	14	8	#line 14 "D:\NXC - code\Project\.\functions.nxc"
+4	14	8	#line 14 "D:\NXC - code\Project\.\functions.nxc"
+4	15	8		getout __signed_stack_002angleFollow, __constVal1, 14
+4	14	12	#line 14 "D:\NXC - code\Project\.\functions.nxc"
+4	14	12	#line 14 "D:\NXC - code\Project\.\functions.nxc"
+4	14	12	#line 14 "D:\NXC - code\Project\.\functions.nxc"
+4	15	12		sub __D0angleFollow, __signed_stack_002angleFollow, __angleFollow_7qG2_RightMotor_7qG2_000
+4	15	16	#line 15 "D:\NXC - code\Project\.\functions.nxc"
+4	16	16		add __angleFollow_7qG2_dif_7qG2_000, __signed_stack_001angleFollow, __D0angleFollow
+4	15	20	#line 15 "D:\NXC - code\Project\.\functions.nxc"
+4	15	20	#line 15 "D:\NXC - code\Project\.\functions.nxc"
+4	16	20		mov __signed_stack_001angleFollow, __angleFollow_7qG2_dir_7qG2_000
+4	15	22	#line 15 "D:\NXC - code\Project\.\functions.nxc"
+4	15	22	#line 15 "D:\NXC - code\Project\.\functions.nxc"
+4	16	22		set __D0angleFollow, 1
+4	15	25	#line 15 "D:\NXC - code\Project\.\functions.nxc"
+4	16	25		cmp 4, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	16	29	#line 16 "D:\NXC - code\Project\.\functions.nxc"
+4	17	29		brtst 4, __ASM_Label_646, __D0angleFollow
+4	16	32	#line 16 "D:\NXC - code\Project\.\functions.nxc"
+4	17	32		mov __signed_stack_001angleFollow, __angleFollow_7qG2_speed_7qG2_000
+4	16	34	#line 16 "D:\NXC - code\Project\.\functions.nxc"
+4	16	34	#line 16 "D:\NXC - code\Project\.\functions.nxc"
+4	17	34		mov __signed_stack_002angleFollow, __angleFollow_7qG2_dif_7qG2_000
+4	16	36	#line 16 "D:\NXC - code\Project\.\functions.nxc"
+4	17	36	#line 17 "D:\NXC - code\Project\.\functions.nxc"
+4	18	36		set __D0angleFollow, 3
+4	17	39	#line 17 "D:\NXC - code\Project\.\functions.nxc"
+4	18	39		mul __D0angleFollow, __signed_stack_002angleFollow, __D0angleFollow
+4	17	43	#line 17 "D:\NXC - code\Project\.\functions.nxc"
+4	18	43		sub __angleFollow_7qG2_vLeft_7qG2_000, __signed_stack_001angleFollow, __D0angleFollow
+4	17	47	#line 17 "D:\NXC - code\Project\.\functions.nxc"
+4	17	47	#line 17 "D:\NXC - code\Project\.\functions.nxc"
+4	17	47	#line 17 "D:\NXC - code\Project\.\functions.nxc"
+4	18	47		set __signed_stack_001angleFollow, 0
+4	17	50	#line 17 "D:\NXC - code\Project\.\functions.nxc"
+4	17	50	#line 17 "D:\NXC - code\Project\.\functions.nxc"
+4	18	50		mov __D0angleFollow, __angleFollow_7qG2_speed_7qG2_000
+4	17	52	#line 17 "D:\NXC - code\Project\.\functions.nxc"
+4	18	52		sub __signed_stack_001angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	17	56	#line 17 "D:\NXC - code\Project\.\functions.nxc"
+4	17	56	#line 17 "D:\NXC - code\Project\.\functions.nxc"
+4	18	56		mov __signed_stack_002angleFollow, __angleFollow_7qG2_dif_7qG2_000
+4	17	58	#line 17 "D:\NXC - code\Project\.\functions.nxc"
+4	19	58	#line 19 "D:\NXC - code\Project\.\functions.nxc"
+4	20	58		set __D0angleFollow, 3
+4	19	61	#line 19 "D:\NXC - code\Project\.\functions.nxc"
+4	20	61		mul __D0angleFollow, __signed_stack_002angleFollow, __D0angleFollow
+4	19	65	#line 19 "D:\NXC - code\Project\.\functions.nxc"
+4	20	65		add __angleFollow_7qG2_vRight_7qG2_000, __signed_stack_001angleFollow, __D0angleFollow
+4	19	69	#line 19 "D:\NXC - code\Project\.\functions.nxc"
+4	19	69	#line 19 "D:\NXC - code\Project\.\functions.nxc"
+4	19	69	#line 19 "D:\NXC - code\Project\.\functions.nxc"
+4	20	69		mov __signed_stack_001angleFollow, __angleFollow_7qG2_vLeft_7qG2_000
+4	19	71	#line 19 "D:\NXC - code\Project\.\functions.nxc"
+4	19	71	#line 19 "D:\NXC - code\Project\.\functions.nxc"
+4	20	71		set __D0angleFollow, 100
+4	19	74	#line 19 "D:\NXC - code\Project\.\functions.nxc"
+4	20	74		cmp 1, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	19	78	#line 19 "D:\NXC - code\Project\.\functions.nxc"
+4	20	78		brtst 4, __ASM_Label_653, __D0angleFollow
+4	20	81	#line 20 "D:\NXC - code\Project\.\functions.nxc"
+4	21	81		set __angleFollow_7qG2_vLeft_7qG2_000, 100
+4	20	84	#line 20 "D:\NXC - code\Project\.\functions.nxc"
+4	20	84	#line 20 "D:\NXC - code\Project\.\functions.nxc"
+4	20	84	#line 20 "D:\NXC - code\Project\.\functions.nxc"
+4	21	84		jmp __ASM_Label_656
+4	20	86	#line 20 "D:\NXC - code\Project\.\functions.nxc"
+4	21	86		mov __signed_stack_001angleFollow, __angleFollow_7qG2_vLeft_7qG2_000
+4	20	88	#line 20 "D:\NXC - code\Project\.\functions.nxc"
+4	20	88	#line 20 "D:\NXC - code\Project\.\functions.nxc"
+4	21	88		set __D0angleFollow, 0
+4	20	91	#line 20 "D:\NXC - code\Project\.\functions.nxc"
+4	21	91		cmp 0, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	20	95	#line 20 "D:\NXC - code\Project\.\functions.nxc"
+4	21	95		brtst 4, __ASM_Label_659, __D0angleFollow
+4	21	98	#line 21 "D:\NXC - code\Project\.\functions.nxc"
+4	22	98		set __angleFollow_7qG2_vLeft_7qG2_000, 0
+4	21	101	#line 21 "D:\NXC - code\Project\.\functions.nxc"
+4	21	101	#line 21 "D:\NXC - code\Project\.\functions.nxc"
+4	21	101	#line 21 "D:\NXC - code\Project\.\functions.nxc"
+4	21	101	#line 21 "D:\NXC - code\Project\.\functions.nxc"
+4	21	101	#line 21 "D:\NXC - code\Project\.\functions.nxc"
+4	22	101		mov __signed_stack_001angleFollow, __angleFollow_7qG2_vRight_7qG2_000
+4	21	103	#line 21 "D:\NXC - code\Project\.\functions.nxc"
+4	21	103	#line 21 "D:\NXC - code\Project\.\functions.nxc"
+4	22	103		mov __D0angleFollow, __constValNeg100
+4	21	105	#line 21 "D:\NXC - code\Project\.\functions.nxc"
+4	22	105		cmp 0, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	21	109	#line 21 "D:\NXC - code\Project\.\functions.nxc"
+4	22	109		brtst 4, __ASM_Label_664, __D0angleFollow
+4	22	112	#line 22 "D:\NXC - code\Project\.\functions.nxc"
+4	23	112		mov __angleFollow_7qG2_vRight_7qG2_000, __constValNeg100
+4	22	114	#line 22 "D:\NXC - code\Project\.\functions.nxc"
+4	22	114	#line 22 "D:\NXC - code\Project\.\functions.nxc"
+4	22	114	#line 22 "D:\NXC - code\Project\.\functions.nxc"
+4	23	114		jmp __ASM_Label_667
+4	22	116	#line 22 "D:\NXC - code\Project\.\functions.nxc"
+4	23	116		mov __signed_stack_001angleFollow, __angleFollow_7qG2_vRight_7qG2_000
+4	22	118	#line 22 "D:\NXC - code\Project\.\functions.nxc"
+4	22	118	#line 22 "D:\NXC - code\Project\.\functions.nxc"
+4	23	118		set __D0angleFollow, 0
+4	22	121	#line 22 "D:\NXC - code\Project\.\functions.nxc"
+4	23	121		cmp 1, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	22	125	#line 22 "D:\NXC - code\Project\.\functions.nxc"
+4	23	125		brtst 4, __ASM_Label_670, __D0angleFollow
+4	23	128	#line 23 "D:\NXC - code\Project\.\functions.nxc"
+4	24	128		set __angleFollow_7qG2_vRight_7qG2_000, 0
+4	23	131	#line 23 "D:\NXC - code\Project\.\functions.nxc"
+4	23	131	#line 23 "D:\NXC - code\Project\.\functions.nxc"
+4	23	131	#line 23 "D:\NXC - code\Project\.\functions.nxc"
+4	23	131	#line 23 "D:\NXC - code\Project\.\functions.nxc"
+4	24	131	#line 24 "D:\NXC - code\Project\.\functions.nxc"
+4	25	131		jmp __ASM_Label_673
+4	24	133	#line 24 "D:\NXC - code\Project\.\functions.nxc"
+4	25	133		mov __signed_stack_001angleFollow, __angleFollow_7qG2_speed_7qG2_000
+4	24	135	#line 24 "D:\NXC - code\Project\.\functions.nxc"
+4	24	135	#line 24 "D:\NXC - code\Project\.\functions.nxc"
+4	25	135		mov __signed_stack_002angleFollow, __angleFollow_7qG2_dif_7qG2_000
+4	24	137	#line 24 "D:\NXC - code\Project\.\functions.nxc"
+4	25	137	#line 25 "D:\NXC - code\Project\.\functions.nxc"
+4	26	137		set __D0angleFollow, 3
+4	25	140	#line 25 "D:\NXC - code\Project\.\functions.nxc"
+4	26	140		mul __D0angleFollow, __signed_stack_002angleFollow, __D0angleFollow
+4	25	144	#line 25 "D:\NXC - code\Project\.\functions.nxc"
+4	26	144		add __angleFollow_7qG2_vRight_7qG2_000, __signed_stack_001angleFollow, __D0angleFollow
+4	25	148	#line 25 "D:\NXC - code\Project\.\functions.nxc"
+4	25	148	#line 25 "D:\NXC - code\Project\.\functions.nxc"
+4	25	148	#line 25 "D:\NXC - code\Project\.\functions.nxc"
+4	26	148		set __signed_stack_001angleFollow, 0
+4	25	151	#line 25 "D:\NXC - code\Project\.\functions.nxc"
+4	25	151	#line 25 "D:\NXC - code\Project\.\functions.nxc"
+4	26	151		mov __D0angleFollow, __angleFollow_7qG2_speed_7qG2_000
+4	25	153	#line 25 "D:\NXC - code\Project\.\functions.nxc"
+4	26	153		sub __signed_stack_001angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	25	157	#line 25 "D:\NXC - code\Project\.\functions.nxc"
+4	25	157	#line 25 "D:\NXC - code\Project\.\functions.nxc"
+4	26	157		mov __signed_stack_002angleFollow, __angleFollow_7qG2_dif_7qG2_000
+4	25	159	#line 25 "D:\NXC - code\Project\.\functions.nxc"
+4	27	159	#line 27 "D:\NXC - code\Project\.\functions.nxc"
+4	28	159		set __D0angleFollow, 3
+4	27	162	#line 27 "D:\NXC - code\Project\.\functions.nxc"
+4	28	162		mul __D0angleFollow, __signed_stack_002angleFollow, __D0angleFollow
+4	27	166	#line 27 "D:\NXC - code\Project\.\functions.nxc"
+4	28	166		sub __angleFollow_7qG2_vLeft_7qG2_000, __signed_stack_001angleFollow, __D0angleFollow
+4	27	170	#line 27 "D:\NXC - code\Project\.\functions.nxc"
+4	27	170	#line 27 "D:\NXC - code\Project\.\functions.nxc"
+4	27	170	#line 27 "D:\NXC - code\Project\.\functions.nxc"
+4	28	170		mov __signed_stack_001angleFollow, __angleFollow_7qG2_vRight_7qG2_000
+4	27	172	#line 27 "D:\NXC - code\Project\.\functions.nxc"
+4	27	172	#line 27 "D:\NXC - code\Project\.\functions.nxc"
+4	28	172		set __D0angleFollow, 100
+4	27	175	#line 27 "D:\NXC - code\Project\.\functions.nxc"
+4	28	175		cmp 1, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	27	179	#line 27 "D:\NXC - code\Project\.\functions.nxc"
+4	28	179		brtst 4, __ASM_Label_680, __D0angleFollow
+4	28	182	#line 28 "D:\NXC - code\Project\.\functions.nxc"
+4	29	182		set __angleFollow_7qG2_vRight_7qG2_000, 100
+4	28	185	#line 28 "D:\NXC - code\Project\.\functions.nxc"
+4	28	185	#line 28 "D:\NXC - code\Project\.\functions.nxc"
+4	28	185	#line 28 "D:\NXC - code\Project\.\functions.nxc"
+4	29	185		jmp __ASM_Label_683
+4	28	187	#line 28 "D:\NXC - code\Project\.\functions.nxc"
+4	29	187		mov __signed_stack_001angleFollow, __angleFollow_7qG2_vRight_7qG2_000
+4	28	189	#line 28 "D:\NXC - code\Project\.\functions.nxc"
+4	28	189	#line 28 "D:\NXC - code\Project\.\functions.nxc"
+4	29	189		set __D0angleFollow, 0
+4	28	192	#line 28 "D:\NXC - code\Project\.\functions.nxc"
+4	29	192		cmp 0, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	28	196	#line 28 "D:\NXC - code\Project\.\functions.nxc"
+4	29	196		brtst 4, __ASM_Label_686, __D0angleFollow
+4	29	199	#line 29 "D:\NXC - code\Project\.\functions.nxc"
+4	30	199		set __angleFollow_7qG2_vRight_7qG2_000, 0
+4	29	202	#line 29 "D:\NXC - code\Project\.\functions.nxc"
+4	29	202	#line 29 "D:\NXC - code\Project\.\functions.nxc"
+4	29	202	#line 29 "D:\NXC - code\Project\.\functions.nxc"
+4	29	202	#line 29 "D:\NXC - code\Project\.\functions.nxc"
+4	29	202	#line 29 "D:\NXC - code\Project\.\functions.nxc"
+4	30	202		mov __signed_stack_001angleFollow, __angleFollow_7qG2_vLeft_7qG2_000
+4	29	204	#line 29 "D:\NXC - code\Project\.\functions.nxc"
+4	29	204	#line 29 "D:\NXC - code\Project\.\functions.nxc"
+4	30	204		mov __D0angleFollow, __constValNeg100
+4	29	206	#line 29 "D:\NXC - code\Project\.\functions.nxc"
+4	30	206		cmp 0, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	29	210	#line 29 "D:\NXC - code\Project\.\functions.nxc"
+4	30	210		brtst 4, __ASM_Label_691, __D0angleFollow
+4	30	213	#line 30 "D:\NXC - code\Project\.\functions.nxc"
+4	31	213		mov __angleFollow_7qG2_vLeft_7qG2_000, __constValNeg100
+4	30	215	#line 30 "D:\NXC - code\Project\.\functions.nxc"
+4	30	215	#line 30 "D:\NXC - code\Project\.\functions.nxc"
+4	30	215	#line 30 "D:\NXC - code\Project\.\functions.nxc"
+4	31	215		jmp __ASM_Label_694
+4	30	217	#line 30 "D:\NXC - code\Project\.\functions.nxc"
+4	31	217		mov __signed_stack_001angleFollow, __angleFollow_7qG2_vLeft_7qG2_000
+4	30	219	#line 30 "D:\NXC - code\Project\.\functions.nxc"
+4	30	219	#line 30 "D:\NXC - code\Project\.\functions.nxc"
+4	31	219		set __D0angleFollow, 0
+4	30	222	#line 30 "D:\NXC - code\Project\.\functions.nxc"
+4	31	222		cmp 1, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	30	226	#line 30 "D:\NXC - code\Project\.\functions.nxc"
+4	31	226		brtst 4, __ASM_Label_697, __D0angleFollow
+4	32	229	#line 32 "D:\NXC - code\Project\.\functions.nxc"
+4	33	229		set __angleFollow_7qG2_vLeft_7qG2_000, 0
+4	32	232	#line 32 "D:\NXC - code\Project\.\functions.nxc"
+4	32	232	#line 32 "D:\NXC - code\Project\.\functions.nxc"
+4	33	232	#line 33 "D:\NXC - code\Project\.\functions.nxc"
+4	33	232	#line 33 "D:\NXC - code\Project\.\functions.nxc"
+4	33	232	#line 33 "D:\NXC - code\Project\.\functions.nxc"
+4	33	232	#line 33 "D:\NXC - code\Project\.\functions.nxc"
+4	34	232		set __signed_stack_001angleFollow, 0
+4	33	235	#line 33 "D:\NXC - code\Project\.\functions.nxc"
+4	33	235	#line 33 "D:\NXC - code\Project\.\functions.nxc"
+4	34	235		set __signed_stack_002angleFollow, 0
+4	33	238	#line 33 "D:\NXC - code\Project\.\functions.nxc"
+4	33	238	#line 33 "D:\NXC - code\Project\.\functions.nxc"
+4	34	238		mov __D0angleFollow, __angleFollow_7qG2_dif_7qG2_000
+4	34	240	#line 34 "D:\NXC - code\Project\.\functions.nxc"
+4	35	240		acquire __TextOutMutex
+4	34	241	#line 34 "D:\NXC - code\Project\.\functions.nxc"
+4	35	241		mov __TextOutArgs.Location.X, __signed_stack_001angleFollow
+4	34	243	#line 34 "D:\NXC - code\Project\.\functions.nxc"
+4	35	243		mov __TextOutArgs.Location.Y, __signed_stack_002angleFollow
+4	34	245	#line 34 "D:\NXC - code\Project\.\functions.nxc"
+4	35	245		set __TextOutArgs.Options, 0
+4	34	248	#line 34 "D:\NXC - code\Project\.\functions.nxc"
+4	35	248		numtostr __TextOutArgs.Text, __D0angleFollow
+4	34	251	#line 34 "D:\NXC - code\Project\.\functions.nxc"
+4	35	251		syscall 13, __TextOutArgs
+4	34	254	#line 34 "D:\NXC - code\Project\.\functions.nxc"
+4	35	254		mov __D0angleFollow, __TextOutArgs.Result
+4	34	256	#line 34 "D:\NXC - code\Project\.\functions.nxc"
+4	35	256		release __TextOutMutex
+4	34	257	#line 34 "D:\NXC - code\Project\.\functions.nxc"
+4	34	257	#line 34 "D:\NXC - code\Project\.\functions.nxc"
+4	35	257		set __signed_stack_001angleFollow, 0
+4	34	260	#line 34 "D:\NXC - code\Project\.\functions.nxc"
+4	34	260	#line 34 "D:\NXC - code\Project\.\functions.nxc"
+4	35	260		set __signed_stack_002angleFollow, 8
+4	34	263	#line 34 "D:\NXC - code\Project\.\functions.nxc"
+4	34	263	#line 34 "D:\NXC - code\Project\.\functions.nxc"
+4	35	263		mov __D0angleFollow, __angleFollow_7qG2_vLeft_7qG2_000
+4	35	265	#line 35 "D:\NXC - code\Project\.\functions.nxc"
+4	36	265		acquire __TextOutMutex
+4	35	266	#line 35 "D:\NXC - code\Project\.\functions.nxc"
+4	36	266		mov __TextOutArgs.Location.X, __signed_stack_001angleFollow
+4	35	268	#line 35 "D:\NXC - code\Project\.\functions.nxc"
+4	36	268		mov __TextOutArgs.Location.Y, __signed_stack_002angleFollow
+4	35	270	#line 35 "D:\NXC - code\Project\.\functions.nxc"
+4	36	270		set __TextOutArgs.Options, 0
+4	35	273	#line 35 "D:\NXC - code\Project\.\functions.nxc"
+4	36	273		numtostr __TextOutArgs.Text, __D0angleFollow
+4	35	276	#line 35 "D:\NXC - code\Project\.\functions.nxc"
+4	36	276		syscall 13, __TextOutArgs
+4	35	279	#line 35 "D:\NXC - code\Project\.\functions.nxc"
+4	36	279		mov __D0angleFollow, __TextOutArgs.Result
+4	35	281	#line 35 "D:\NXC - code\Project\.\functions.nxc"
+4	36	281		release __TextOutMutex
+4	35	282	#line 35 "D:\NXC - code\Project\.\functions.nxc"
+4	35	282	#line 35 "D:\NXC - code\Project\.\functions.nxc"
+4	36	282		set __signed_stack_001angleFollow, 0
+4	35	285	#line 35 "D:\NXC - code\Project\.\functions.nxc"
+4	35	285	#line 35 "D:\NXC - code\Project\.\functions.nxc"
+4	36	285		set __signed_stack_002angleFollow, 16
+4	35	288	#line 35 "D:\NXC - code\Project\.\functions.nxc"
+4	35	288	#line 35 "D:\NXC - code\Project\.\functions.nxc"
+4	36	288		mov __D0angleFollow, __angleFollow_7qG2_vRight_7qG2_000
+4	36	290	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	290		acquire __TextOutMutex
+4	36	291	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	291		mov __TextOutArgs.Location.X, __signed_stack_001angleFollow
+4	36	293	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	293		mov __TextOutArgs.Location.Y, __signed_stack_002angleFollow
+4	36	295	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	295		set __TextOutArgs.Options, 0
+4	36	298	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	298		numtostr __TextOutArgs.Text, __D0angleFollow
+4	36	301	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	301		syscall 13, __TextOutArgs
+4	36	304	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	304		mov __D0angleFollow, __TextOutArgs.Result
+4	36	306	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	306		release __TextOutMutex
+4	36	307	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	36	307	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	307		mov __signed_stack_001angleFollow, __angleFollow_7qG2_vLeft_7qG2_000
+4	36	309	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	36	309	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	309		set __D0angleFollow, 0
+4	36	312	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	312		cmp 4, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	36	316	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	316		brtst 4, __ASM_Label_719, __D0angleFollow
+4	36	319	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	319		mov __signed_stack_001angleFollow, __angleFollow_7qG2_vRight_7qG2_000
+4	36	321	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	36	321	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	321		set __D0angleFollow, 0
+4	36	324	#line 36 "D:\NXC - code\Project\.\functions.nxc"
+4	37	324		cmp 4, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	37	328	#line 37 "D:\NXC - code\Project\.\functions.nxc"
+4	38	328		brtst 4, __ASM_Label_720, __D0angleFollow
+4	37	331	#line 37 "D:\NXC - code\Project\.\functions.nxc"
+4	38	331		mov __signed_stack_001angleFollow, __angleFollow_7qG2_dir_7qG2_000
+4	37	333	#line 37 "D:\NXC - code\Project\.\functions.nxc"
+4	37	333	#line 37 "D:\NXC - code\Project\.\functions.nxc"
+4	38	333		mov __D0angleFollow, __angleFollow_7qG2_speed_7qG2_000
+4	37	335	#line 37 "D:\NXC - code\Project\.\functions.nxc"
+4	38	335		mul __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	38	339	#line 38 "D:\NXC - code\Project\.\functions.nxc"
+4	39	339	#pragma macro 7
+4	39	339		setout __constVal0, 2, __D0angleFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	7811	362	#line 7811 "D:\NXC - code\Project\.\functions.nxc"
+4	38	362	#line 38 "D:\NXC - code\Project\.\functions.nxc"
+4	38	362	#line 38 "D:\NXC - code\Project\.\functions.nxc"
+4	39	362		set __signed_stack_001angleFollow, 0
+4	38	365	#line 38 "D:\NXC - code\Project\.\functions.nxc"
+4	38	365	#line 38 "D:\NXC - code\Project\.\functions.nxc"
+4	39	365		mov __signed_stack_002angleFollow, __angleFollow_7qG2_speed_7qG2_000
+4	38	367	#line 38 "D:\NXC - code\Project\.\functions.nxc"
+4	38	367	#line 38 "D:\NXC - code\Project\.\functions.nxc"
+4	39	367		mov __D0angleFollow, __angleFollow_7qG2_dir_7qG2_000
+4	38	369	#line 38 "D:\NXC - code\Project\.\functions.nxc"
+4	39	369		mul __D0angleFollow, __signed_stack_002angleFollow, __D0angleFollow
+4	38	373	#line 38 "D:\NXC - code\Project\.\functions.nxc"
+4	39	373		sub __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
+4	39	377	#line 39 "D:\NXC - code\Project\.\functions.nxc"
+4	40	377	#pragma macro 7
+4	40	377		setout __constVal1, 2, __D0angleFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	7834	400	#line 7834 "D:\NXC - code\Project\.\functions.nxc"
+4	39	400	#line 39 "D:\NXC - code\Project\.\functions.nxc"
+4	40	400	#line 40 "D:\NXC - code\Project\.\functions.nxc"
+4	41	400		jmp __ASM_Label_725
+4	40	402	#line 40 "D:\NXC - code\Project\.\functions.nxc"
+4	41	402		mov __D0angleFollow, __angleFollow_7qG2_vLeft_7qG2_000
+4	41	404	#line 41 "D:\NXC - code\Project\.\functions.nxc"
+4	42	404	#pragma macro 7
+4	42	404		setout __constVal0, 2, __D0angleFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	7844	427	#line 7844 "D:\NXC - code\Project\.\functions.nxc"
+4	41	427	#line 41 "D:\NXC - code\Project\.\functions.nxc"
+4	41	427	#line 41 "D:\NXC - code\Project\.\functions.nxc"
+4	42	427		mov __D0angleFollow, __angleFollow_7qG2_vRight_7qG2_000
+4	42	429	#line 42 "D:\NXC - code\Project\.\functions.nxc"
+4	43	429	#pragma macro 7
+4	43	429		setout __constVal1, 2, __D0angleFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	7851	452	#line 7851 "D:\NXC - code\Project\.\functions.nxc"
+4	42	452	#line 42 "D:\NXC - code\Project\.\functions.nxc"
+4	45	452	#line 45 "D:\NXC - code\Project\.\functions.nxc"
+4	45	452	#line 45 "D:\NXC - code\Project\.\functions.nxc"
+4	46	452		subret __angleFollow_return
+5	47	0	#line 47 "D:\NXC - code\Project\.\functions.nxc"
+5	48	0		set __lineFollow_7qG2_rightgain_7qG2_000, 0
+5	47	3	#line 47 "D:\NXC - code\Project\.\functions.nxc"
+5	49	3	#line 49 "D:\NXC - code\Project\.\functions.nxc"
+5	50	3		set __lineFollow_7qG2_leftgain_7qG2_000, 0
+5	49	6	#line 49 "D:\NXC - code\Project\.\functions.nxc"
+5	49	6	#line 49 "D:\NXC - code\Project\.\functions.nxc"
+5	50	6		mov __DU0lineFollow, __lineFollow_7qG2_dir_7qG2_000
+5	51	8	#line 51 "D:\NXC - code\Project\.\functions.nxc"
+5	52	8		tst 5, __D0lineFollow, __DU0lineFollow
+5	51	11	#line 51 "D:\NXC - code\Project\.\functions.nxc"
+5	52	11		brtst 4, __ASM_Label_736, __D0lineFollow
+5	51	14	#line 51 "D:\NXC - code\Project\.\functions.nxc"
+5	52	14		getin __signed_stack_001lineFollow, __constVal3, 4
+5	51	18	#line 51 "D:\NXC - code\Project\.\functions.nxc"
+5	51	18	#line 51 "D:\NXC - code\Project\.\functions.nxc"
+5	52	18		mov __D0lineFollow, sRight
+5	51	20	#line 51 "D:\NXC - code\Project\.\functions.nxc"
+5	52	20		sub __lineFollow_7qG2_leftgain_7qG2_000, __signed_stack_001lineFollow, __D0lineFollow
+5	52	24	#line 52 "D:\NXC - code\Project\.\functions.nxc"
+5	52	24	#line 52 "D:\NXC - code\Project\.\functions.nxc"
+5	52	24	#line 52 "D:\NXC - code\Project\.\functions.nxc"
+5	52	24	#line 52 "D:\NXC - code\Project\.\functions.nxc"
+5	53	24		getin __signed_stack_001lineFollow, __constVal0, 4
+5	52	28	#line 52 "D:\NXC - code\Project\.\functions.nxc"
+5	52	28	#line 52 "D:\NXC - code\Project\.\functions.nxc"
+5	53	28		mov __D0lineFollow, sLeft
+5	52	30	#line 52 "D:\NXC - code\Project\.\functions.nxc"
+5	53	30		sub __lineFollow_7qG2_rightgain_7qG2_000, __signed_stack_001lineFollow, __D0lineFollow
+5	55	34	#line 55 "D:\NXC - code\Project\.\functions.nxc"
+5	55	34	#line 55 "D:\NXC - code\Project\.\functions.nxc"
+5	55	34	#line 55 "D:\NXC - code\Project\.\functions.nxc"
+5	55	34	#line 55 "D:\NXC - code\Project\.\functions.nxc"
+5	56	34		set __signed_stack_001lineFollow, 100
+5	55	37	#line 55 "D:\NXC - code\Project\.\functions.nxc"
+5	55	37	#line 55 "D:\NXC - code\Project\.\functions.nxc"
+5	56	37		mov __D0lineFollow, __lineFollow_7qG2_rightgain_7qG2_000
+5	55	39	#line 55 "D:\NXC - code\Project\.\functions.nxc"
+5	56	39		add __signed_stack_001lineFollow, __signed_stack_001lineFollow, __D0lineFollow
+5	55	43	#line 55 "D:\NXC - code\Project\.\functions.nxc"
+5	56	43	#line 56 "D:\NXC - code\Project\.\functions.nxc"
+5	57	43		mov __D0lineFollow, __lineFollow_7qG2_leftgain_7qG2_000
+5	56	45	#line 56 "D:\NXC - code\Project\.\functions.nxc"
+5	57	45		sub __lineFollow_7qG2_vLeft_7qG2_001, __signed_stack_001lineFollow, __D0lineFollow
+5	56	49	#line 56 "D:\NXC - code\Project\.\functions.nxc"
+5	56	49	#line 56 "D:\NXC - code\Project\.\functions.nxc"
+5	57	49		set __signed_stack_001lineFollow, 100
+5	56	52	#line 56 "D:\NXC - code\Project\.\functions.nxc"
+5	56	52	#line 56 "D:\NXC - code\Project\.\functions.nxc"
+5	57	52		mov __D0lineFollow, __lineFollow_7qG2_leftgain_7qG2_000
+5	56	54	#line 56 "D:\NXC - code\Project\.\functions.nxc"
+5	57	54		add __signed_stack_001lineFollow, __signed_stack_001lineFollow, __D0lineFollow
+5	56	58	#line 56 "D:\NXC - code\Project\.\functions.nxc"
+5	58	58	#line 58 "D:\NXC - code\Project\.\functions.nxc"
+5	59	58		mov __D0lineFollow, __lineFollow_7qG2_rightgain_7qG2_000
+5	58	60	#line 58 "D:\NXC - code\Project\.\functions.nxc"
+5	59	60		sub __lineFollow_7qG2_vRight_7qG2_001, __signed_stack_001lineFollow, __D0lineFollow
+5	58	64	#line 58 "D:\NXC - code\Project\.\functions.nxc"
+5	58	64	#line 58 "D:\NXC - code\Project\.\functions.nxc"
+5	59	64		mov __signed_stack_001lineFollow, __lineFollow_7qG2_vLeft_7qG2_001
+5	58	66	#line 58 "D:\NXC - code\Project\.\functions.nxc"
+5	58	66	#line 58 "D:\NXC - code\Project\.\functions.nxc"
+5	59	66		set __D0lineFollow, 100
+5	58	69	#line 58 "D:\NXC - code\Project\.\functions.nxc"
+5	59	69		cmp 1, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
+5	58	73	#line 58 "D:\NXC - code\Project\.\functions.nxc"
+5	59	73		brtst 4, __ASM_Label_751, __D0lineFollow
+5	59	76	#line 59 "D:\NXC - code\Project\.\functions.nxc"
+5	60	76		set __lineFollow_7qG2_vLeft_7qG2_001, 100
+5	59	79	#line 59 "D:\NXC - code\Project\.\functions.nxc"
+5	59	79	#line 59 "D:\NXC - code\Project\.\functions.nxc"
+5	59	79	#line 59 "D:\NXC - code\Project\.\functions.nxc"
+5	59	79	#line 59 "D:\NXC - code\Project\.\functions.nxc"
+5	60	79		mov __signed_stack_001lineFollow, __lineFollow_7qG2_vRight_7qG2_001
+5	59	81	#line 59 "D:\NXC - code\Project\.\functions.nxc"
+5	59	81	#line 59 "D:\NXC - code\Project\.\functions.nxc"
+5	60	81		set __D0lineFollow, 100
+5	59	84	#line 59 "D:\NXC - code\Project\.\functions.nxc"
+5	60	84		cmp 1, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
+5	59	88	#line 59 "D:\NXC - code\Project\.\functions.nxc"
+5	60	88		brtst 4, __ASM_Label_756, __D0lineFollow
+5	61	91	#line 61 "D:\NXC - code\Project\.\functions.nxc"
+5	62	91		set __lineFollow_7qG2_vRight_7qG2_001, 100
+5	61	94	#line 61 "D:\NXC - code\Project\.\functions.nxc"
+5	61	94	#line 61 "D:\NXC - code\Project\.\functions.nxc"
+5	61	94	#line 61 "D:\NXC - code\Project\.\functions.nxc"
+5	61	94	#line 61 "D:\NXC - code\Project\.\functions.nxc"
+5	62	94		mov __D0lineFollow, __lineFollow_7qG2_vLeft_7qG2_001
+5	62	96	#line 62 "D:\NXC - code\Project\.\functions.nxc"
+5	63	96	#pragma macro 7
+5	63	96		setout __constVal0, 2, __D0lineFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	8023	119	#line 8023 "D:\NXC - code\Project\.\functions.nxc"
+5	62	119	#line 62 "D:\NXC - code\Project\.\functions.nxc"
+5	62	119	#line 62 "D:\NXC - code\Project\.\functions.nxc"
+5	63	119		mov __D0lineFollow, __lineFollow_7qG2_vRight_7qG2_001
+5	63	121	#line 63 "D:\NXC - code\Project\.\functions.nxc"
+5	64	121	#pragma macro 7
+5	64	121		setout __constVal1, 2, __D0lineFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	8030	144	#line 8030 "D:\NXC - code\Project\.\functions.nxc"
+5	63	144	#line 63 "D:\NXC - code\Project\.\functions.nxc"
+5	66	144	#line 66 "D:\NXC - code\Project\.\functions.nxc"
+5	67	144		jmp __ASM_Label_763
+5	69	146	#line 69 "D:\NXC - code\Project\.\functions.nxc"
+5	69	146	#line 69 "D:\NXC - code\Project\.\functions.nxc"
+5	70	146		subret __lineFollow_return
+6	72	0	#line 72 "D:\NXC - code\Project\.\functions.nxc"
+6	73	0		gettick __moveFwd_7qG2_StartTime_7qG2_000
+6	72	2	#line 72 "D:\NXC - code\Project\.\functions.nxc"
+6	74	2	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	2		set __onLine_7qG2_sensor_7qG2_000, 0
+6	74	5	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	74	5	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	5		subcall onLine, __onLine_return
+6	74	7	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	74	7	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	7		not __DU0moveFwd, __DU0onLine
+6	74	10	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	10		tst 5, __D0moveFwd, __DU0moveFwd
+6	74	13	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	13		brtst 5, __ASM_Label_768, __D0moveFwd
+6	74	16	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	16		set __onLine_7qG2_sensor_7qG2_000, 3
+6	74	19	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	74	19	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	19		subcall onLine, __onLine_return
+6	74	21	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	74	21	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	21		not __DU0moveFwd, __DU0onLine
+6	74	24	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	24		tst 5, __D0moveFwd, __DU0moveFwd
+6	74	27	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	27		brtst 5, __ASM_Label_768, __D0moveFwd
+6	74	30	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	30		mov __unsigned_stack_001moveFwd, __moveFwd_7qG2_StartTime_7qG2_000
+6	74	32	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	74	32	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	32		set __D0moveFwd, 560
+6	74	35	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	35		add __signed_stack_001moveFwd, __unsigned_stack_001moveFwd, __D0moveFwd
+6	74	39	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	74	39	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	39		gettick __DU0moveFwd
+6	74	41	#line 74 "D:\NXC - code\Project\.\functions.nxc"
+6	75	41		cmp 1, __D0moveFwd, __signed_stack_001moveFwd, __DU0moveFwd
+6	75	45	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	76	45		brtst 4, __ASM_Label_767, __D0moveFwd
+6	75	48	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	76	48		set __onLine_7qG2_sensor_7qG2_000, 1
+6	75	51	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	75	51	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	76	51		subcall onLine, __onLine_return
+6	75	53	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	76	53		mov __DU0moveFwd, __DU0onLine
+6	75	55	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	76	55		tst 5, __D0moveFwd, __DU0moveFwd
+6	75	58	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	76	58		brtst 4, __ASM_Label_779, __D0moveFwd
+6	75	61	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	76	61		mov __unsigned_stack_001moveFwd, __moveFwd_7qG2_StartTime_7qG2_000
+6	75	63	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	75	63	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	76	63		set __D0moveFwd, 560
+6	75	66	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	76	66		add __signed_stack_001moveFwd, __unsigned_stack_001moveFwd, __D0moveFwd
+6	75	70	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	75	70	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	76	70		gettick __DU0moveFwd
+6	75	72	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	76	72		cmp 0, __D0moveFwd, __signed_stack_001moveFwd, __DU0moveFwd
+6	75	76	#line 75 "D:\NXC - code\Project\.\functions.nxc"
+6	76	76		brtst 4, __ASM_Label_784, __D0moveFwd
+6	76	79	#line 76 "D:\NXC - code\Project\.\functions.nxc"
+6	77	79		jmp __ASM_Label_767
+6	76	81	#line 76 "D:\NXC - code\Project\.\functions.nxc"
+6	76	81	#line 76 "D:\NXC - code\Project\.\functions.nxc"
+6	76	81	#line 76 "D:\NXC - code\Project\.\functions.nxc"
+6	77	81		set __lineFollow_7qG2_dir_7qG2_000, 1
+6	76	84	#line 76 "D:\NXC - code\Project\.\functions.nxc"
+6	77	84	#line 77 "D:\NXC - code\Project\.\functions.nxc"
+6	78	84		subcall lineFollow, __lineFollow_return
+6	77	86	#line 77 "D:\NXC - code\Project\.\functions.nxc"
+6	82	86	#line 82 "D:\NXC - code\Project\.\functions.nxc"
+6	83	86		jmp __ASM_Label_766
+6	82	88	#line 82 "D:\NXC - code\Project\.\functions.nxc"
+6	82	88	#line 82 "D:\NXC - code\Project\.\functions.nxc"
+6	83	88		set __Wait_7qG2_ms_7qG2_000_inline_moveFwd, 100
+6	82	91	#line 82 "D:\NXC - code\Project\.\functions.nxc"
+6	8551	91	#line 8551 "NXCDefs.h"
+6	8552	91		waitv __Wait_7qG2_ms_7qG2_000_inline_moveFwd
+6	8551	93	#line 8551 "NXCDefs.h"
+6	84	93	#line 84 "D:\NXC - code\Project\.\functions.nxc"
+6	84	93	#line 84 "D:\NXC - code\Project\.\functions.nxc"
+6	85	93		set __D0moveFwd, 0
+6	85	96	#line 85 "D:\NXC - code\Project\.\functions.nxc"
+6	86	96	#pragma macro 7
+6	86	96		setout __constVal0, 2, __D0moveFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	8174	119	#line 8174 "D:\NXC - code\Project\.\functions.nxc"
+6	85	119	#line 85 "D:\NXC - code\Project\.\functions.nxc"
+6	85	119	#line 85 "D:\NXC - code\Project\.\functions.nxc"
+6	86	119		set __D0moveFwd, 0
+6	87	122	#line 87 "D:\NXC - code\Project\.\functions.nxc"
+6	88	122	#pragma macro 7
+6	88	122		setout __constVal1, 2, __D0moveFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	8179	145	#line 8179 "D:\NXC - code\Project\.\functions.nxc"
+6	87	145	#line 87 "D:\NXC - code\Project\.\functions.nxc"
+6	89	145	#line 89 "D:\NXC - code\Project\.\functions.nxc"
+6	90	145		subret __moveFwd_return
+7	93	0	#line 93 "D:\NXC - code\Project\.\functions.nxc"
+7	94	0		subcall moveFwd, __moveFwd_return
+7	93	2	#line 93 "D:\NXC - code\Project\.\functions.nxc"
+7	93	2	#line 93 "D:\NXC - code\Project\.\functions.nxc"
+7	94	2		set __D0moveBox, 100
+7	94	5	#line 94 "D:\NXC - code\Project\.\functions.nxc"
+7	95	5	#pragma macro 7
+7	95	5		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	8192	28	#line 8192 "D:\NXC - code\Project\.\functions.nxc"
+7	94	28	#line 94 "D:\NXC - code\Project\.\functions.nxc"
+7	94	28	#line 94 "D:\NXC - code\Project\.\functions.nxc"
+7	95	28		set __D0moveBox, 100
+7	95	31	#line 95 "D:\NXC - code\Project\.\functions.nxc"
+7	96	31	#pragma macro 7
+7	96	31		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	8197	54	#line 8197 "D:\NXC - code\Project\.\functions.nxc"
+7	95	54	#line 95 "D:\NXC - code\Project\.\functions.nxc"
+7	96	54	#line 96 "D:\NXC - code\Project\.\functions.nxc"
+7	97	54		getout __moveBox_7qG2_motorAngle_7qG2_000, __constVal0, 14
+7	96	58	#line 96 "D:\NXC - code\Project\.\functions.nxc"
+7	96	58	#line 96 "D:\NXC - code\Project\.\functions.nxc"
+7	97	58		mov __signed_stack_001moveBox, __moveBox_7qG2_motorAngle_7qG2_000
+7	96	60	#line 96 "D:\NXC - code\Project\.\functions.nxc"
+7	96	60	#line 96 "D:\NXC - code\Project\.\functions.nxc"
+7	97	60		set __D0moveBox, 400
+7	96	63	#line 96 "D:\NXC - code\Project\.\functions.nxc"
+7	97	63		add __signed_stack_001moveBox, __signed_stack_001moveBox, __D0moveBox
+7	96	67	#line 96 "D:\NXC - code\Project\.\functions.nxc"
+7	96	67	#line 96 "D:\NXC - code\Project\.\functions.nxc"
+7	97	67		getout __D0moveBox, __constVal0, 14
+7	96	71	#line 96 "D:\NXC - code\Project\.\functions.nxc"
+7	97	71		cmp 1, __D0moveBox, __signed_stack_001moveBox, __D0moveBox
+7	98	75	#line 98 "D:\NXC - code\Project\.\functions.nxc"
+7	99	75		brtst 4, __ASM_Label_800, __D0moveBox
+7	98	78	#line 98 "D:\NXC - code\Project\.\functions.nxc"
+7	99	78		set __lineFollow_7qG2_dir_7qG2_000, 1
+7	98	81	#line 98 "D:\NXC - code\Project\.\functions.nxc"
+7	99	81	#line 99 "D:\NXC - code\Project\.\functions.nxc"
+7	100	81		subcall lineFollow, __lineFollow_return
+7	99	83	#line 99 "D:\NXC - code\Project\.\functions.nxc"
+7	102	83	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	103	83		jmp __ASM_Label_799
+7	102	85	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	102	85	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	103	85		set __onLine_7qG2_sensor_7qG2_000, 1
+7	102	88	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	102	88	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	103	88		subcall onLine, __onLine_return
+7	102	90	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	102	90	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	103	90		not __DU0moveBox, __DU0onLine
+7	102	93	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	103	93		tst 5, __D0moveBox, __DU0moveBox
+7	102	96	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	103	96		brtst 4, __ASM_Label_808, __D0moveBox
+7	102	99	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	103	99		mov __signed_stack_001moveBox, __moveBox_7qG2_motorAngle_7qG2_000
+7	102	101	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	102	101	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	103	101		set __D0moveBox, 100
+7	102	104	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	103	104		add __signed_stack_001moveBox, __signed_stack_001moveBox, __D0moveBox
+7	102	108	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	102	108	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	103	108		getout __D0moveBox, __constVal0, 14
+7	102	112	#line 102 "D:\NXC - code\Project\.\functions.nxc"
+7	103	112		cmp 0, __D0moveBox, __signed_stack_001moveBox, __D0moveBox
+7	103	116	#line 103 "D:\NXC - code\Project\.\functions.nxc"
+7	104	116		brtst 4, __ASM_Label_806, __D0moveBox
+7	103	119	#line 103 "D:\NXC - code\Project\.\functions.nxc"
+7	104	119		mov __D0moveBox, __constValNeg100
+7	104	121	#line 104 "D:\NXC - code\Project\.\functions.nxc"
+7	105	121	#pragma macro 7
+7	105	121		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	8285	144	#line 8285 "D:\NXC - code\Project\.\functions.nxc"
+7	104	144	#line 104 "D:\NXC - code\Project\.\functions.nxc"
+7	104	144	#line 104 "D:\NXC - code\Project\.\functions.nxc"
+7	105	144		mov __D0moveBox, __constValNeg100
+7	105	146	#line 105 "D:\NXC - code\Project\.\functions.nxc"
+7	106	146	#pragma macro 7
+7	106	146		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	8290	169	#line 8290 "D:\NXC - code\Project\.\functions.nxc"
+7	105	169	#line 105 "D:\NXC - code\Project\.\functions.nxc"
+7	108	169	#line 108 "D:\NXC - code\Project\.\functions.nxc"
+7	109	169		jmp __ASM_Label_805
+7	108	171	#line 108 "D:\NXC - code\Project\.\functions.nxc"
+7	108	171	#line 108 "D:\NXC - code\Project\.\functions.nxc"
+7	109	171		set __D0moveBox, 0
+7	109	174	#line 109 "D:\NXC - code\Project\.\functions.nxc"
+7	110	174	#pragma macro 7
+7	110	174		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	8299	197	#line 8299 "D:\NXC - code\Project\.\functions.nxc"
+7	109	197	#line 109 "D:\NXC - code\Project\.\functions.nxc"
+7	109	197	#line 109 "D:\NXC - code\Project\.\functions.nxc"
+7	110	197		set __D0moveBox, 0
+7	110	200	#line 110 "D:\NXC - code\Project\.\functions.nxc"
+7	111	200	#pragma macro 7
+7	111	200		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	8304	223	#line 8304 "D:\NXC - code\Project\.\functions.nxc"
+7	110	223	#line 110 "D:\NXC - code\Project\.\functions.nxc"
+7	110	223	#line 110 "D:\NXC - code\Project\.\functions.nxc"
+7	111	223		set __Wait_7qG2_ms_7qG2_000_inline_moveBox, 150
+7	110	226	#line 110 "D:\NXC - code\Project\.\functions.nxc"
+7	8551	226	#line 8551 "NXCDefs.h"
+7	8552	226		waitv __Wait_7qG2_ms_7qG2_000_inline_moveBox
+7	8551	228	#line 8551 "NXCDefs.h"
+7	112	228	#line 112 "D:\NXC - code\Project\.\functions.nxc"
+7	113	228	#line 113 "D:\NXC - code\Project\.\functions.nxc"
+7	114	228		subret __moveBox_return
+8	116	0	#line 116 "D:\NXC - code\Project\.\functions.nxc"
+8	117	0		getout __rotate_7qG2_RightMotor_7qG2_000, __constVal1, 14
+8	116	4	#line 116 "D:\NXC - code\Project\.\functions.nxc"
+8	119	4	#line 119 "D:\NXC - code\Project\.\functions.nxc"
+8	120	4		getout __rotate_7qG2_LeftMotor_7qG2_000, __constVal0, 14
+8	119	8	#line 119 "D:\NXC - code\Project\.\functions.nxc"
+8	119	8	#line 119 "D:\NXC - code\Project\.\functions.nxc"
+8	120	8		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
+8	119	10	#line 119 "D:\NXC - code\Project\.\functions.nxc"
+8	119	10	#line 119 "D:\NXC - code\Project\.\functions.nxc"
+8	120	10		getout __signed_stack_002rotate, __constVal0, 14
+8	119	14	#line 119 "D:\NXC - code\Project\.\functions.nxc"
+8	119	14	#line 119 "D:\NXC - code\Project\.\functions.nxc"
+8	119	14	#line 119 "D:\NXC - code\Project\.\functions.nxc"
+8	120	14		sub __D0rotate, __signed_stack_002rotate, __rotate_7qG2_LeftMotor_7qG2_000
+8	119	18	#line 119 "D:\NXC - code\Project\.\functions.nxc"
+8	120	18		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
+8	119	22	#line 119 "D:\NXC - code\Project\.\functions.nxc"
+8	119	22	#line 119 "D:\NXC - code\Project\.\functions.nxc"
+8	120	22		set __D0rotate, 175
+8	119	25	#line 119 "D:\NXC - code\Project\.\functions.nxc"
+8	120	25		cmp 0, __D0rotate, __signed_stack_001rotate, __D0rotate
+8	120	29	#line 120 "D:\NXC - code\Project\.\functions.nxc"
+8	121	29		brtst 4, __ASM_Label_828, __D0rotate
+8	120	32	#line 120 "D:\NXC - code\Project\.\functions.nxc"
+8	121	32		mov __angleFollow_7qG2_dir_7qG2_000, __rotate_7qG2_dir_7qG2_000
+8	120	34	#line 120 "D:\NXC - code\Project\.\functions.nxc"
+8	120	34	#line 120 "D:\NXC - code\Project\.\functions.nxc"
+8	121	34		mov __angleFollow_7qG2_RightMotor_7qG2_000, __rotate_7qG2_RightMotor_7qG2_000
+8	120	36	#line 120 "D:\NXC - code\Project\.\functions.nxc"
+8	120	36	#line 120 "D:\NXC - code\Project\.\functions.nxc"
+8	121	36		mov __angleFollow_7qG2_LeftMotor_7qG2_000, __rotate_7qG2_LeftMotor_7qG2_000
+8	120	38	#line 120 "D:\NXC - code\Project\.\functions.nxc"
+8	120	38	#line 120 "D:\NXC - code\Project\.\functions.nxc"
+8	121	38		set __angleFollow_7qG2_speed_7qG2_000, 100
+8	120	41	#line 120 "D:\NXC - code\Project\.\functions.nxc"
+8	121	41	#line 121 "D:\NXC - code\Project\.\functions.nxc"
+8	122	41		subcall angleFollow, __angleFollow_return
+8	121	43	#line 121 "D:\NXC - code\Project\.\functions.nxc"
+8	123	43	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	124	43		jmp __ASM_Label_827
+8	123	45	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	123	45	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	124	45		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
+8	123	47	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	123	47	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	124	47		set __D0rotate, 1
+8	123	50	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	124	50		cmp 4, __D0rotate, __signed_stack_001rotate, __D0rotate
+8	123	54	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	124	54		mov __signed_stack_001rotate, __D0rotate
+8	123	56	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	124	56		set __D0rotate, 3
+8	123	59	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	124	59		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
+8	123	63	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	123	63	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	124	63		mov __signed_stack_002rotate, __rotate_7qG2_dir_7qG2_000
+8	123	65	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	123	65	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	124	65		mov __D0rotate, __constValNeg1
+8	123	67	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	124	67		cmp 4, __D0rotate, __signed_stack_002rotate, __D0rotate
+8	123	71	#line 123 "D:\NXC - code\Project\.\functions.nxc"
+8	124	71		mov __signed_stack_002rotate, __D0rotate
+8	124	73	#line 124 "D:\NXC - code\Project\.\functions.nxc"
+8	125	73		set __D0rotate, 0
+8	124	76	#line 124 "D:\NXC - code\Project\.\functions.nxc"
+8	125	76		mul __D0rotate, __signed_stack_002rotate, __D0rotate
+8	124	80	#line 124 "D:\NXC - code\Project\.\functions.nxc"
+8	125	80		add __rotate_7qG2_sensor_7qG2_000, __signed_stack_001rotate, __D0rotate
+8	124	84	#line 124 "D:\NXC - code\Project\.\functions.nxc"
+8	124	84	#line 124 "D:\NXC - code\Project\.\functions.nxc"
+8	125	84		mov __onLine_7qG2_sensor_7qG2_000, __rotate_7qG2_sensor_7qG2_000
+8	124	86	#line 124 "D:\NXC - code\Project\.\functions.nxc"
+8	124	86	#line 124 "D:\NXC - code\Project\.\functions.nxc"
+8	125	86		subcall onLine, __onLine_return
+8	124	88	#line 124 "D:\NXC - code\Project\.\functions.nxc"
+8	124	88	#line 124 "D:\NXC - code\Project\.\functions.nxc"
+8	125	88		not __DU0rotate, __DU0onLine
+8	125	91	#line 125 "D:\NXC - code\Project\.\functions.nxc"
+8	126	91		tst 5, __D0rotate, __DU0rotate
+8	125	94	#line 125 "D:\NXC - code\Project\.\functions.nxc"
+8	126	94		brtst 4, __ASM_Label_848, __D0rotate
+8	125	97	#line 125 "D:\NXC - code\Project\.\functions.nxc"
+8	126	97		set __onLine_7qG2_sensor_7qG2_000, 1
+8	125	100	#line 125 "D:\NXC - code\Project\.\functions.nxc"
+8	125	100	#line 125 "D:\NXC - code\Project\.\functions.nxc"
+8	126	100		subcall onLine, __onLine_return
+8	125	102	#line 125 "D:\NXC - code\Project\.\functions.nxc"
+8	126	102		mov __DU0rotate, __DU0onLine
+8	125	104	#line 125 "D:\NXC - code\Project\.\functions.nxc"
+8	126	104		tst 5, __D0rotate, __DU0rotate
+8	125	107	#line 125 "D:\NXC - code\Project\.\functions.nxc"
+8	126	107		brtst 4, __ASM_Label_857, __D0rotate
+8	126	110	#line 126 "D:\NXC - code\Project\.\functions.nxc"
+8	127	110		jmp __ASM_Label_848
+8	126	112	#line 126 "D:\NXC - code\Project\.\functions.nxc"
+8	126	112	#line 126 "D:\NXC - code\Project\.\functions.nxc"
+8	126	112	#line 126 "D:\NXC - code\Project\.\functions.nxc"
+8	127	112		mov __angleFollow_7qG2_dir_7qG2_000, __rotate_7qG2_dir_7qG2_000
+8	126	114	#line 126 "D:\NXC - code\Project\.\functions.nxc"
+8	126	114	#line 126 "D:\NXC - code\Project\.\functions.nxc"
+8	127	114		mov __angleFollow_7qG2_RightMotor_7qG2_000, __rotate_7qG2_RightMotor_7qG2_000
+8	126	116	#line 126 "D:\NXC - code\Project\.\functions.nxc"
+8	126	116	#line 126 "D:\NXC - code\Project\.\functions.nxc"
+8	127	116		mov __angleFollow_7qG2_LeftMotor_7qG2_000, __rotate_7qG2_LeftMotor_7qG2_000
+8	126	118	#line 126 "D:\NXC - code\Project\.\functions.nxc"
+8	126	118	#line 126 "D:\NXC - code\Project\.\functions.nxc"
+8	127	118		set __angleFollow_7qG2_speed_7qG2_000, 100
+8	126	121	#line 126 "D:\NXC - code\Project\.\functions.nxc"
+8	127	121	#line 127 "D:\NXC - code\Project\.\functions.nxc"
+8	128	121		subcall angleFollow, __angleFollow_return
+8	127	123	#line 127 "D:\NXC - code\Project\.\functions.nxc"
+8	132	123	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	133	123		jmp __ASM_Label_847
+8	132	125	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	132	125	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	133	125		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
+8	132	127	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	132	127	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	133	127		mov __D0rotate, __constValNeg1
+8	132	129	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	133	129		cmp 4, __D0rotate, __signed_stack_001rotate, __D0rotate
+8	132	133	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	133	133		mov __signed_stack_001rotate, __D0rotate
+8	132	135	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	133	135		set __D0rotate, 3
+8	132	138	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	133	138		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
+8	132	142	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	132	142	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	133	142		mov __signed_stack_002rotate, __rotate_7qG2_dir_7qG2_000
+8	132	144	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	132	144	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	133	144		set __D0rotate, 1
+8	132	147	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	133	147		cmp 4, __D0rotate, __signed_stack_002rotate, __D0rotate
+8	132	151	#line 132 "D:\NXC - code\Project\.\functions.nxc"
+8	133	151		mov __signed_stack_002rotate, __D0rotate
+8	133	153	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	134	153		set __D0rotate, 0
+8	133	156	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	134	156		mul __D0rotate, __signed_stack_002rotate, __D0rotate
+8	133	160	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	134	160		add __rotate_7qG2_sensor_7qG2_000, __signed_stack_001rotate, __D0rotate
+8	133	164	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	133	164	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	133	164	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	134	164		set __onLine_7qG2_sensor_7qG2_000, 1
+8	133	167	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	133	167	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	134	167		subcall onLine, __onLine_return
+8	133	169	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	133	169	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	134	169		not __DU0rotate, __DU0onLine
+8	133	172	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	134	172		tst 5, __D0rotate, __DU0rotate
+8	133	175	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	134	175		brtst 4, __ASM_Label_875, __D0rotate
+8	133	178	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	134	178		mov __onLine_7qG2_sensor_7qG2_000, __rotate_7qG2_sensor_7qG2_000
+8	133	180	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	133	180	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	134	180		subcall onLine, __onLine_return
+8	133	182	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	133	182	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	134	182		not __DU0rotate, __DU0onLine
+8	133	185	#line 133 "D:\NXC - code\Project\.\functions.nxc"
+8	134	185		tst 5, __D0rotate, __DU0rotate
+8	135	188	#line 135 "D:\NXC - code\Project\.\functions.nxc"
+8	136	188		brtst 4, __ASM_Label_873, __D0rotate
+8	135	191	#line 135 "D:\NXC - code\Project\.\functions.nxc"
+8	136	191		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
+8	135	193	#line 135 "D:\NXC - code\Project\.\functions.nxc"
+8	135	193	#line 135 "D:\NXC - code\Project\.\functions.nxc"
+8	136	193		set __D0rotate, 100
+8	135	196	#line 135 "D:\NXC - code\Project\.\functions.nxc"
+8	136	196		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
+8	135	200	#line 135 "D:\NXC - code\Project\.\functions.nxc"
+8	135	200	#line 135 "D:\NXC - code\Project\.\functions.nxc"
+8	136	200		set __D0rotate, 2
+8	135	203	#line 135 "D:\NXC - code\Project\.\functions.nxc"
+8	136	203		div __D0rotate, __signed_stack_001rotate, __D0rotate
+8	136	207	#line 136 "D:\NXC - code\Project\.\functions.nxc"
+8	137	207	#pragma macro 7
+8	137	207		setout __constVal0, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	8635	230	#line 8635 "D:\NXC - code\Project\.\functions.nxc"
+8	136	230	#line 136 "D:\NXC - code\Project\.\functions.nxc"
+8	136	230	#line 136 "D:\NXC - code\Project\.\functions.nxc"
+8	137	230		set __signed_stack_001rotate, 0
+8	136	233	#line 136 "D:\NXC - code\Project\.\functions.nxc"
+8	136	233	#line 136 "D:\NXC - code\Project\.\functions.nxc"
+8	137	233		set __signed_stack_002rotate, 100
+8	136	236	#line 136 "D:\NXC - code\Project\.\functions.nxc"
+8	136	236	#line 136 "D:\NXC - code\Project\.\functions.nxc"
+8	137	236		set __D0rotate, 2
+8	136	239	#line 136 "D:\NXC - code\Project\.\functions.nxc"
+8	137	239		div __signed_stack_002rotate, __signed_stack_002rotate, __D0rotate
+8	136	243	#line 136 "D:\NXC - code\Project\.\functions.nxc"
+8	136	243	#line 136 "D:\NXC - code\Project\.\functions.nxc"
+8	137	243		mov __D0rotate, __rotate_7qG2_dir_7qG2_000
+8	136	245	#line 136 "D:\NXC - code\Project\.\functions.nxc"
+8	137	245		mul __D0rotate, __signed_stack_002rotate, __D0rotate
+8	136	249	#line 136 "D:\NXC - code\Project\.\functions.nxc"
+8	137	249		sub __D0rotate, __signed_stack_001rotate, __D0rotate
+8	137	253	#line 137 "D:\NXC - code\Project\.\functions.nxc"
+8	138	253	#pragma macro 7
+8	138	253		setout __constVal1, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	8666	276	#line 8666 "D:\NXC - code\Project\.\functions.nxc"
+8	137	276	#line 137 "D:\NXC - code\Project\.\functions.nxc"
+8	139	276	#line 139 "D:\NXC - code\Project\.\functions.nxc"
+8	140	276		jmp __ASM_Label_872
+8	139	278	#line 139 "D:\NXC - code\Project\.\functions.nxc"
+8	139	278	#line 139 "D:\NXC - code\Project\.\functions.nxc"
+8	140	278		set __D0rotate, 0
+8	140	281	#line 140 "D:\NXC - code\Project\.\functions.nxc"
+8	141	281	#pragma macro 7
+8	141	281		setout __constVal0, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	8675	304	#line 8675 "D:\NXC - code\Project\.\functions.nxc"
+8	140	304	#line 140 "D:\NXC - code\Project\.\functions.nxc"
+8	140	304	#line 140 "D:\NXC - code\Project\.\functions.nxc"
+8	141	304		set __D0rotate, 0
+8	141	307	#line 141 "D:\NXC - code\Project\.\functions.nxc"
+8	142	307	#pragma macro 7
+8	142	307		setout __constVal1, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	8680	330	#line 8680 "D:\NXC - code\Project\.\functions.nxc"
+8	141	330	#line 141 "D:\NXC - code\Project\.\functions.nxc"
+8	144	330	#line 144 "D:\NXC - code\Project\.\functions.nxc"
+8	145	330		subret __rotate_return
+9	7	0	#line 7 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	8	0		set __signed_stack_001ExecutePath, 3
+9	7	3	#line 7 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	7	3	#line 7 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	8	3		set __D0ExecutePath, 1
+9	7	6	#line 7 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	8	6		acquire __RBtnMutex
+9	7	7	#line 7 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	8	7		mov __RBtnArgs.Index, __signed_stack_001ExecutePath
+9	7	9	#line 7 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	8	9		mov __RBtnArgs.Reset, __D0ExecutePath
+9	7	11	#line 7 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	8	11		syscall 20, __RBtnArgs
+9	7	14	#line 7 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	8	14		mov __D0ExecutePath, __RBtnArgs.Pressed
+9	7	16	#line 7 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	8	16		release __RBtnMutex
+9	7	17	#line 7 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	8	17		not __D0ExecutePath, __D0ExecutePath
+9	8	20	#line 8 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	9	20		tst 5, __D0ExecutePath, __D0ExecutePath
+9	8	23	#line 8 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	9	23		brtst 4, __ASM_Label_889, __D0ExecutePath
+9	8	26	#line 8 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	9	26		getin sLeft, __constVal0, 4
+9	8	30	#line 8 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	8	30	#line 8 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	8	30	#line 8 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	9	30	#line 9 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	10	30		getin sRight, __constVal3, 4
+9	9	34	#line 9 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	9	34	#line 9 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	9	34	#line 9 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	10	34	#line 10 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	11	34		getin sBack, __constVal1, 4
+9	10	38	#line 10 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	10	38	#line 10 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	10	38	#line 10 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	11	38	#line 11 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	12	38		set __signed_stack_001ExecutePath, 48
+9	11	41	#line 11 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	11	41	#line 11 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	12	41		set __signed_stack_002ExecutePath, 0
+9	11	44	#line 11 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	11	44	#line 11 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	12	44		mov __D0ExecutePath, sRight
+9	12	46	#line 12 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	13	46		acquire __TextOutMutex
+9	12	47	#line 12 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	13	47		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
+9	12	49	#line 12 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	13	49		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
+9	12	51	#line 12 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	13	51		set __TextOutArgs.Options, 0
+9	12	54	#line 12 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	13	54		numtostr __TextOutArgs.Text, __D0ExecutePath
+9	12	57	#line 12 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	13	57		syscall 13, __TextOutArgs
+9	12	60	#line 12 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	13	60		mov __D0ExecutePath, __TextOutArgs.Result
+9	12	62	#line 12 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	13	62		release __TextOutMutex
+9	12	63	#line 12 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	12	63	#line 12 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	13	63		set __signed_stack_001ExecutePath, 0
+9	12	66	#line 12 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	12	66	#line 12 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	13	66		set __signed_stack_002ExecutePath, 0
+9	12	69	#line 12 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	12	69	#line 12 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	13	69		strcat __strbufExecutePath, __constStr0009
+9	13	73	#line 13 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	14	73		acquire __TextOutMutex
+9	13	74	#line 13 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	14	74		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
+9	13	76	#line 13 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	14	76		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
+9	13	78	#line 13 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	14	78		set __TextOutArgs.Options, 0
+9	13	81	#line 13 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	14	81		mov __TextOutArgs.Text, __strbufExecutePath
+9	13	83	#line 13 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	14	83		syscall 13, __TextOutArgs
+9	13	86	#line 13 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	14	86		mov __D0ExecutePath, __TextOutArgs.Result
+9	13	88	#line 13 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	14	88		release __TextOutMutex
+9	13	89	#line 13 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	13	89	#line 13 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	14	89		set __signed_stack_001ExecutePath, 48
+9	13	92	#line 13 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	13	92	#line 13 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	14	92		set __signed_stack_002ExecutePath, 8
+9	13	95	#line 13 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	13	95	#line 13 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	14	95		mov __D0ExecutePath, sLeft
+9	14	97	#line 14 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	15	97		acquire __TextOutMutex
+9	14	98	#line 14 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	15	98		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
+9	14	100	#line 14 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	15	100		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
+9	14	102	#line 14 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	15	102		set __TextOutArgs.Options, 0
+9	14	105	#line 14 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	15	105		numtostr __TextOutArgs.Text, __D0ExecutePath
+9	14	108	#line 14 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	15	108		syscall 13, __TextOutArgs
+9	14	111	#line 14 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	15	111		mov __D0ExecutePath, __TextOutArgs.Result
+9	14	113	#line 14 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	15	113		release __TextOutMutex
+9	14	114	#line 14 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	14	114	#line 14 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	15	114		set __signed_stack_001ExecutePath, 0
+9	14	117	#line 14 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	14	117	#line 14 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	15	117		set __signed_stack_002ExecutePath, 8
+9	14	120	#line 14 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	14	120	#line 14 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	15	120		strcat __strbufExecutePath, __constStr0010
+9	15	124	#line 15 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	16	124		acquire __TextOutMutex
+9	15	125	#line 15 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	16	125		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
+9	15	127	#line 15 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	16	127		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
+9	15	129	#line 15 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	16	129		set __TextOutArgs.Options, 0
+9	15	132	#line 15 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	16	132		mov __TextOutArgs.Text, __strbufExecutePath
+9	15	134	#line 15 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	16	134		syscall 13, __TextOutArgs
+9	15	137	#line 15 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	16	137		mov __D0ExecutePath, __TextOutArgs.Result
+9	15	139	#line 15 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	16	139		release __TextOutMutex
+9	15	140	#line 15 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	15	140	#line 15 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	16	140		set __signed_stack_001ExecutePath, 48
+9	15	143	#line 15 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	15	143	#line 15 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	16	143		set __signed_stack_002ExecutePath, 16
+9	15	146	#line 15 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	15	146	#line 15 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	16	146		mov __D0ExecutePath, sBack
+9	16	148	#line 16 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	17	148		acquire __TextOutMutex
+9	16	149	#line 16 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	17	149		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
+9	16	151	#line 16 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	17	151		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
+9	16	153	#line 16 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	17	153		set __TextOutArgs.Options, 0
+9	16	156	#line 16 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	17	156		numtostr __TextOutArgs.Text, __D0ExecutePath
+9	16	159	#line 16 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	17	159		syscall 13, __TextOutArgs
+9	16	162	#line 16 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	17	162		mov __D0ExecutePath, __TextOutArgs.Result
+9	16	164	#line 16 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	17	164		release __TextOutMutex
+9	16	165	#line 16 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	16	165	#line 16 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	17	165		set __signed_stack_001ExecutePath, 0
+9	16	168	#line 16 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	16	168	#line 16 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	17	168		set __signed_stack_002ExecutePath, 16
+9	16	171	#line 16 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	16	171	#line 16 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	17	171		strcat __strbufExecutePath, __constStr0011
+9	17	175	#line 17 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	18	175		acquire __TextOutMutex
+9	17	176	#line 17 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	18	176		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
+9	17	178	#line 17 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	18	178		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
+9	17	180	#line 17 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	18	180		set __TextOutArgs.Options, 0
+9	17	183	#line 17 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	18	183		mov __TextOutArgs.Text, __strbufExecutePath
+9	17	185	#line 17 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	18	185		syscall 13, __TextOutArgs
+9	17	188	#line 17 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	18	188		mov __D0ExecutePath, __TextOutArgs.Result
+9	17	190	#line 17 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	18	190		release __TextOutMutex
+9	17	191	#line 17 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	18	191	#line 18 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	19	191		jmp __ASM_Label_888
+9	18	193	#line 18 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	6678	193	#line 6678 "NXCDefs.h"
+9	6679	193	#pragma macro 6
+9	6679	193		acquire __PointOutMutex
+9	6679	194		mov __PointOutArgs.Location.X, __constVal200
+9	6679	196		mov __PointOutArgs.Location.Y, __constVal200
+9	6679	198		mov __PointOutArgs.Options, __constVal1
+9	6679	200		syscall 14, __PointOutArgs
+9	6679	203		release __PointOutMutex
+9	8941	204	#line 8941 "NXCDefs.h"
+9	6678	204	#line 6678 "NXCDefs.h"
+9	21	204	#line 21 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	21	204	#line 21 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	22	204	#pragma macro 9
+9	22	204		acquire __soMutex
+9	22	205		flatten __soTmpBuf, PLAN
+9	22	208		arrsize __D0ExecutePath, __soTmpBuf
+9	22	211		sub __D0ExecutePath, __D0ExecutePath, __constVal1
+9	22	215		release __soMutex
+9	8949	216	#line 8949 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	21	216	#line 21 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	22	216		mov __signed_stack_001ExecutePath, __D0ExecutePath
+9	23	218	#line 23 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	24	218		set __D0ExecutePath, 2
+9	23	221	#line 23 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	24	221		div __ExecutePath_7qG2_pl_7qG2_000, __signed_stack_001ExecutePath, __D0ExecutePath
+9	23	225	#line 23 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	23	225	#line 23 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	24	225		set __ExecutePath_7qG2_i_7qG2_001, 0
+9	23	228	#line 23 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	23	228	#line 23 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	24	228		mov __signed_stack_001ExecutePath, __ExecutePath_7qG2_i_7qG2_001
+9	23	230	#line 23 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	23	230	#line 23 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	24	230		mov __D0ExecutePath, __ExecutePath_7qG2_pl_7qG2_000
+9	23	232	#line 23 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	24	232		cmp 0, __D0ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
+9	23	236	#line 23 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	24	236		brtst 4, __ASM_Label_935, __D0ExecutePath
+9	23	239	#line 23 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	24	239		jmp __ASM_Label_936
+9	23	241	#line 23 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	24	241		add __ExecutePath_7qG2_i_7qG2_001, __ExecutePath_7qG2_i_7qG2_001, __constVal1
+9	25	245	#line 25 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	26	245		jmp __ASM_Label_934
+9	25	247	#line 25 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	26	247		mov __signed_stack_001ExecutePath, __ExecutePath_7qG2_i_7qG2_001
+9	25	249	#line 25 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	25	249	#line 25 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	26	249		index __ExecutePath_7qG2_command_7qG2_002, PLAN, __signed_stack_001ExecutePath
+9	25	253	#line 25 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	26	253	#line 26 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	26	253	#line 26 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	27	253		mov __D0ExecutePath, __ExecutePath_7qG2_command_7qG2_002
+9	30	255		brcmp 4, __ASM_Label_949, __constVal0, __D0ExecutePath
+9	31	259		brcmp 4, __ASM_Label_950, __constVal1, __D0ExecutePath
+9	32	263		brcmp 4, __ASM_Label_963, __constVal2, __D0ExecutePath
+9	33	267		brcmp 4, __ASM_Label_966, __constVal3, __D0ExecutePath
+9	34	271		jmp __ASM_Label_948
+9	28	273	#line 28 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	29	273	#line 29 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	30	273		subcall moveFwd, __moveFwd_return
+9	29	275	#line 29 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	32	275	#line 32 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	33	275		jmp __ASM_Label_948
+9	32	277	#line 32 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	33	277	#line 33 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	33	277	#line 33 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	34	277		mov __signed_stack_001ExecutePath, __ExecutePath_7qG2_i_7qG2_001
+9	33	279	#line 33 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	33	279	#line 33 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	34	279		set __D0ExecutePath, 1
+9	33	282	#line 33 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	34	282		add __signed_stack_001ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
+9	33	286	#line 33 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	33	286	#line 33 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	34	286		mov __D0ExecutePath, __ExecutePath_7qG2_pl_7qG2_000
+9	33	288	#line 33 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	34	288		cmp 0, __D0ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
+9	34	292	#line 34 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	35	292		brtst 4, __ASM_Label_955, __D0ExecutePath
+9	34	295	#line 34 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	35	295		mov __signed_stack_001ExecutePath, __ExecutePath_7qG2_i_7qG2_001
+9	34	297	#line 34 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	34	297	#line 34 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	35	297		set __D0ExecutePath, 1
+9	34	300	#line 34 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	35	300		add __signed_stack_001ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
+9	34	304	#line 34 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	34	304	#line 34 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	35	304		index __signed_stack_001ExecutePath, PLAN, __signed_stack_001ExecutePath
+9	34	308	#line 34 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	34	308	#line 34 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	34	308	#line 34 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	35	308		set __D0ExecutePath, 1
+9	34	311	#line 34 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	35	311		cmp 4, __D0ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
+9	35	315	#line 35 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	36	315		brtst 4, __ASM_Label_960, __D0ExecutePath
+9	36	318	#line 36 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	37	318		subcall moveFwd, __moveFwd_return
+9	36	320	#line 36 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	38	320	#line 38 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	39	320		jmp __ASM_Label_961
+9	38	322	#line 38 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	39	322		subcall moveBox, __moveBox_return
+9	38	324	#line 38 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	39	324	#line 39 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	40	324	#line 40 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	41	324		jmp __ASM_Label_962
+9	40	326	#line 40 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	41	326		subcall moveBox, __moveBox_return
+9	40	328	#line 40 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	41	328	#line 41 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	43	328	#line 43 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	44	328		jmp __ASM_Label_948
+9	43	330	#line 43 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	44	330	#line 44 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	44	330	#line 44 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	45	330		set __rotate_7qG2_dir_7qG2_000, 1
+9	44	333	#line 44 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	45	333	#line 45 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	46	333		subcall rotate, __rotate_return
+9	45	335	#line 45 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	47	335	#line 47 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	48	335		jmp __ASM_Label_948
+9	47	337	#line 47 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	48	337	#line 48 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	48	337	#line 48 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	49	337		mov __rotate_7qG2_dir_7qG2_000, __constValNeg1
+9	48	339	#line 48 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	49	339	#line 49 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	50	339		subcall rotate, __rotate_return
+9	49	341	#line 49 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	50	341	#line 50 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	50	341	#line 50 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	59	341	#line 59 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	59	341	#line 59 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	60	341		jmp __ASM_Label_937
+9	59	343	#line 59 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	59	343	#line 59 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	60	343		set __D0ExecutePath, 1
+9	60	346	#line 60 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	61	346		tst 5, __D0ExecutePath, __D0ExecutePath
+9	60	349	#line 60 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	61	349		brtst 4, __ASM_Label_971, __D0ExecutePath
+9	60	352	#line 60 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	61	352		strcat __strbufExecutePath, __constStr0012
+9	60	356	#line 60 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	61	356		set __signed_stack_001ExecutePath, 4
+9	60	359	#line 60 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	60	359	#line 60 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	61	359		set __D0ExecutePath, 0
+9	61	362	#line 61 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	62	362		acquire __SPFArgsMutex
+9	61	363	#line 61 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	62	363		mov __SPFArgs.Filename, __strbufExecutePath
+9	61	365	#line 61 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	62	365		mov __SPFArgs.Volume, __signed_stack_001ExecutePath
+9	61	367	#line 61 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	62	367		mov __SPFArgs.Loop, __D0ExecutePath
+9	61	369	#line 61 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	62	369		syscall 9, __SPFArgs
+9	61	372	#line 61 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	62	372		mov __D0ExecutePath, __SPFArgs.Result
+9	61	374	#line 61 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	62	374		release __SPFArgsMutex
+9	61	375	#line 61 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	61	375	#line 61 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	62	375		set __Wait_7qG2_ms_7qG2_000_inline_ExecutePath, 7000
+9	61	378	#line 61 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	8551	378	#line 8551 "NXCDefs.h"
+9	8552	378		waitv __Wait_7qG2_ms_7qG2_000_inline_ExecutePath
+9	8551	380	#line 8551 "NXCDefs.h"
+9	62	380	#line 62 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	63	380	#line 63 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	63	380	#line 63 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	64	380		set __Wait_7qG2_ms_7qG2_000_inline_ExecutePath, 10000
+9	63	383	#line 63 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	8551	383	#line 8551 "NXCDefs.h"
+9	8552	383		waitv __Wait_7qG2_ms_7qG2_000_inline_ExecutePath
+9	8551	385	#line 8551 "NXCDefs.h"
+9	64	385	#line 64 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	64	385	#line 64 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	65	385		set __D0ExecutePath, 1
+9	65	388	#line 65 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	66	388		tst 5, __D0ExecutePath, __D0ExecutePath
+9	65	391	#line 65 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	66	391		brtst 4, __ASM_Label_981, __D0ExecutePath
+9	65	394	#line 65 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	65	394	#line 65 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	66	394		jmp __ASM_Label_980
+9	65	396	#line 65 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	8564	396	#line 8564 "NXCDefs.h"
+9	8565	396		set __D0StopAllTasks_inline_ExecutePath, 1
+9	8564	399	#line 8564 "NXCDefs.h"
+9	8565	399		stop __D0StopAllTasks_inline_ExecutePath
+9	8564	401	#line 8564 "NXCDefs.h"
+9	66	401	#line 66 "D:\NXC - code\Project\.\ExecutePath.nxc"
+9	67	401		exit -1, -1
+10	36	0	#line 36 "D:\NXC - code\Project\main.nxc"
+10	37	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
+0	main	0	D:\NXC - code\Project\main.nxc
 1	__ResetSensorSubroutine	7	NXTDefs.h
-2	init	20	D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc
-3	lineFollow	154	D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc
-4	moveFwd	530	D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc
-5	moveBox	650	D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc
-6	rotateRight	818	D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc
-7	rotateLeft	991	D:\Smartgit\7.semester\AI\NXC - code\Project\.\functions.nxc
-8	ExecutePath	1164	D:\Smartgit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc
-9	__initialize_global_data	1269	D:\Smartgit\7.semester\AI\NXC - code\Project\main.nxc
+2	onLine	20	D:\NXC - code\Project\.\LightSensors.nxc
+3	init	106	D:\NXC - code\Project\.\functions.nxc
+4	angleFollow	240	D:\NXC - code\Project\.\functions.nxc
+5	lineFollow	694	D:\NXC - code\Project\.\functions.nxc
+6	moveFwd	842	D:\NXC - code\Project\.\functions.nxc
+7	moveBox	989	D:\NXC - code\Project\.\functions.nxc
+8	rotate	1219	D:\NXC - code\Project\.\functions.nxc
+9	ExecutePath	1551	D:\NXC - code\Project\.\ExecutePath.nxc
+10	__initialize_global_data	1955	D:\NXC - code\Project\main.nxc

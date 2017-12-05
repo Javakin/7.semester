@@ -54,8 +54,8 @@ void lineFollow(bool dir){
 void moveFwd(){
      // move the sensor forward one block
 
-     //Sensor(LIGHTRIGHT) > sRight - (SENSORTHRESHHOLD)/2 || Sensor(LIGHTLEFT) > sLeft - (SENSORTHRESHHOLD)/2
-     while (Sensor(LIGHTRIGHT) > sRight - (SENSORTHRESHHOLD)/2 || Sensor(LIGHTLEFT) > sLeft - (SENSORTHRESHHOLD)/2){
+     
+     while (!onLine(LIGHTRIGHT) || !onLine(LIGHTLEFT)){
           lineFollow(FARWARD);
 
      }

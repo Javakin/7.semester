@@ -9,7 +9,7 @@ Markers::Markers() {
 
 }
 
-void Markers::gitMarker(cv::Mat &mOutput, int iMarkerType, int iDif, int iNumber) {
+void Markers::getMarker(cv::Mat &mOutput, int iMarkerType, int iDif, int iNumber) {
     // Select the propper marker type
     string file = "../../Markers/";
     switch(iMarkerType){
@@ -51,5 +51,37 @@ void Markers::gitMarker(cv::Mat &mOutput, int iMarkerType, int iDif, int iNumber
 
     return;
 
+
+}
+
+void Markers::getReference(Mat& mOutput, int iMarkerType) {
+    string file = "../../Markers/markers/";
+    switch(iMarkerType){
+        case(MARKER1):
+            file += "Marker1.ppm";
+            break;
+        case(MARKER2A):
+            file += "Marker2a.ppm";
+            break;
+        case(MARKER2B):
+            file += "Marker2b.ppm";
+            break;
+        case(MARKER3):
+            file += "Marker3.ppm";
+            break;
+        default:
+            cout << "Invalid MarkerType value:" << iMarkerType << "returns marker 1";
+            file += "Marker1.ppm";
+            break;
+    }
+
+    mOutput = cv::imread(file);
+    cout << "test";
+    if (mOutput.empty()) {
+        std::cout << "Input image not found at '" << file << "'\n";
+        return;
+    }
+
+    return;
 
 }

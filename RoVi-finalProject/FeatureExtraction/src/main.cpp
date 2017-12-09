@@ -17,14 +17,28 @@ int main()
     Mat img;
     Markers NewMarker;
 
-    // display all the markers at a given location
+    // Display all the markers
+    /*
     for(int i = 1; i<=52; i++) {
-        NewMarker.gitMarker(img, MARKER3, HARD, i);
+        NewMarker.getMarker(img, MARKER3, HARD, i);
 
         // Show the image
         cv::imshow("Image" + to_string(i), img);
         cv::waitKey();
-    }
+    }*/
+
+    // Get the marker true marker
+    Mat Marker;
+    NewMarker.getReference(Marker, MARKER3);
+
+    // Show the image
+    cv::imshow("Marker3", Marker);
+    cv::waitKey();
+
+    // extract the feachures of the marker
+
+
+    // extract the feachures of the image marker
 
     return 0;
 }

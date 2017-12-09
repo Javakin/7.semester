@@ -28,7 +28,8 @@ using namespace cv;
 class Markers {
 public:
     Markers();
-    void gitMarker(cv::Mat& mOutput, int iMarkerType, int iDif, int iNumber);
+    void getMarker(cv::Mat& mOutput, int iMarkerType, int iDif, int iNumber);
+    void getReference(Mat& mOutput, int iMarkerType);
 
 };
 

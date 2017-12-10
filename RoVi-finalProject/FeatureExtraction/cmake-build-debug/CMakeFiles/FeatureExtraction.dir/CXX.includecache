@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/FeatureExtraction.cpp
+FeatureExtraction.h
+/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/FeatureExtraction.h
+
+/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/FeatureExtraction.h
+opencv2/xfeatures2d.hpp
+/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/opencv2/xfeatures2d.hpp
+stdio.h
+-
+iostream
+-
+opencv2/core.hpp
+/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/opencv2/core.hpp
+opencv2/features2d.hpp
+/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/opencv2/features2d.hpp
+opencv2/highgui.hpp
+/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/opencv2/highgui.hpp
+
 /home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/Markers.cpp
 Markers.h
 /home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/Markers.h
@@ -27,20 +45,8 @@ iostream
 -
 Markers.h
 /home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/Markers.h
-stdio.h
--
-iostream
--
-opencv2/core.hpp
-/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/opencv2/core.hpp
-opencv2/core.hpp
-/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/opencv2/core.hpp
-opencv2/features2d.hpp
-/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/opencv2/features2d.hpp
-opencv2/xfeatures2d.hpp
-/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/opencv2/xfeatures2d.hpp
-opencv2/highgui.hpp
-/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/opencv2/highgui.hpp
+FeatureExtraction.h
+/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/FeatureExtraction.h
 
 /opt/ros/kinetic/include/opencv-3.2.0-dev/opencv/cxcore.h
 opencv2/core/core_c.h

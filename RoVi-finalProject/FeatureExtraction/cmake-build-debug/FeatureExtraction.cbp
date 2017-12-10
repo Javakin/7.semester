@@ -88,6 +88,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/FeatureExtraction.cpp">
+			<Option target="FeatureExtraction"/>
+		</Unit>
+		<Unit filename="/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/FeatureExtraction.h">
+			<Option target="FeatureExtraction"/>
+		</Unit>
 		<Unit filename="/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/src/Markers.cpp">
 			<Option target="FeatureExtraction"/>
 		</Unit>

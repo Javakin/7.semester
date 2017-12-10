@@ -123,6 +123,33 @@ FeatureExtraction/fast:
 	$(MAKE) -f CMakeFiles/FeatureExtraction.dir/build.make CMakeFiles/FeatureExtraction.dir/build
 .PHONY : FeatureExtraction/fast
 
+src/FeatureExtraction.o: src/FeatureExtraction.cpp.o
+
+.PHONY : src/FeatureExtraction.o
+
+# target to build an object file
+src/FeatureExtraction.cpp.o:
+	$(MAKE) -f CMakeFiles/FeatureExtraction.dir/build.make CMakeFiles/FeatureExtraction.dir/src/FeatureExtraction.cpp.o
+.PHONY : src/FeatureExtraction.cpp.o
+
+src/FeatureExtraction.i: src/FeatureExtraction.cpp.i
+
+.PHONY : src/FeatureExtraction.i
+
+# target to preprocess a source file
+src/FeatureExtraction.cpp.i:
+	$(MAKE) -f CMakeFiles/FeatureExtraction.dir/build.make CMakeFiles/FeatureExtraction.dir/src/FeatureExtraction.cpp.i
+.PHONY : src/FeatureExtraction.cpp.i
+
+src/FeatureExtraction.s: src/FeatureExtraction.cpp.s
+
+.PHONY : src/FeatureExtraction.s
+
+# target to generate assembly for a file
+src/FeatureExtraction.cpp.s:
+	$(MAKE) -f CMakeFiles/FeatureExtraction.dir/build.make CMakeFiles/FeatureExtraction.dir/src/FeatureExtraction.cpp.s
+.PHONY : src/FeatureExtraction.cpp.s
+
 src/Markers.o: src/Markers.cpp.o
 
 .PHONY : src/Markers.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... FeatureExtraction"
+	@echo "... src/FeatureExtraction.o"
+	@echo "... src/FeatureExtraction.i"
+	@echo "... src/FeatureExtraction.s"
 	@echo "... src/Markers.o"
 	@echo "... src/Markers.i"
 	@echo "... src/Markers.s"

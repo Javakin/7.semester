@@ -1,4 +1,4 @@
-# Install script for directory: /home/tera/Desktop/7.semester.git/RoVi-finalProject/FeatureExtraction
+# Install script for directory: /home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tera/Desktop/7.semester.git/RoVi-finalProject/FeatureExtraction/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/student/Desktop/7.semester/RoVi-finalProject/FeatureExtraction/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

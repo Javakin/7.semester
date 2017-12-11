@@ -35,14 +35,14 @@ int main()
     FeatureExtraction SURFObj(400);     // setup the feachure extraciton class
     SURFObj.setMarker(Marker);
 
-    for(int i = 47; i<=52; i++) {
+    for(int i = 1; i<=52; i++) {
         NewMarker.getMarker(img, MARKER3, HARD, i);
 
         vector<Point2f> test = SURFObj.matchfeachures(img);
 
         // Show the image
-        /*cv::imshow("Image" + to_string(i), img);*/
-        cv::waitKey();
+        /*cv::imshow("Image" + to_string(i), img);
+        cv::waitKey();*/
     }
 
 

@@ -41,10 +41,10 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
 
 
     // draw matches - for debugging
-    Mat img_matches5;
+    /*Mat img_matches5;
     drawMatches( mMarker, vKeyPointsMarker, mImage, vKeyPointImage, matches, img_matches5 );
     imshow("All matches", img_matches5);
-    cv::waitKey();
+    cv::waitKey();*/
 
 
     double max_dist = 0; double min_dist = 100;
@@ -55,8 +55,8 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
         if( dist < min_dist ) min_dist = dist;
         if( dist > max_dist ) max_dist = dist;
     }
-    printf("-- Max dist : %f \n", max_dist );
-    printf("-- Min dist : %f \n", min_dist );
+    /*printf("-- Max dist : %f \n", max_dist );
+    printf("-- Min dist : %f \n", min_dist );*/
     //-- Draw only "good" matches (i.e. whose distance is less than 2*min_dist,
     //-- or a small arbitary value ( 0.02 ) in the event that min_dist is very
     //-- small)
@@ -76,11 +76,16 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
 
 
     //-- Show detected matches
-    imshow( "Good Matches", img_matches );
-    waitKey(10);
+    //imshow( "Good Matches", img_matches );
+    //waitKey(10);
 
-    /*for( int i = 0; i < (int)good_matches.size(); i++ )
-    { printf( "-- Good Match [%d] Keypoint 1: %d  -- Keypoint 2: %d  \n", i, good_matches[i].queryIdx, good_matches[i].trainIdx ); }
+/*    for( int i = 0; i < (int)matches.size(); i++ )
+    { printf( "-- Good Match [%d] Keypoint 1: %d  -- Keypoint 2: %d -- distance: %f \n", i, matches[i].queryIdx, matches[i].trainIdx, matches[i].distance ); }
+
+    cout << "**********************good matches************************" << endl;
+
+    for( int i = 0; i < (int)good_matches.size(); i++ )
+    { printf( "-- Good Match [%d] Keypoint 1: %d  -- Keypoint 2: %d -- distance: %f \n", i, good_matches[i].queryIdx, good_matches[i].trainIdx, good_matches[i].distance ); }
 */
 
 
@@ -117,7 +122,7 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
 
     //-- Show detected matches
     imshow( "Good Matches & Object detection", img_matches );
-    waitKey();
+    waitKey(10);
 
     return scene;
 

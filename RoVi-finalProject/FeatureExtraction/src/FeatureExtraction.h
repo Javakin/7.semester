@@ -5,12 +5,17 @@
 #ifndef FEATUREEXTRACTION_FEATUREEXTRACTION_H
 #define FEATUREEXTRACTION_FEATUREEXTRACTION_H
 
-#include "opencv2/xfeatures2d.hpp"
+
 #include <stdio.h>
 #include <iostream>
 #include "opencv2/core.hpp"
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include "opencv2/xfeatures2d.hpp"
 #include "opencv2/features2d.hpp"
 #include "opencv2/highgui.hpp"
+
+#include "opencv2/calib3d/calib3d.hpp"
 
 using namespace cv;
 using namespace std;
@@ -23,7 +28,7 @@ public:
 
     // generate the feachures
     void setMarker(Mat mMarker);
-    void matchfeachures(Mat mImage);
+    vector<Point2f> matchfeachures(Mat mImage);
 
 private:
     Ptr<SURF> detector;

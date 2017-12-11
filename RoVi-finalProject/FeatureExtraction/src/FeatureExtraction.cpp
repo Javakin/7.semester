@@ -2,6 +2,7 @@
 // Created by student on 12/10/17.
 //
 
+#include <opencv2/imgproc.hpp>
 #include "FeatureExtraction.h"
 
 
@@ -25,7 +26,7 @@ void FeatureExtraction::setMarker(Mat aMarker) {
     aMarker.copyTo(mMarker);
 }
 
-void FeatureExtraction::matchfeachures(Mat mImage) {
+vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
     // solution based on source: https://docs.opencv.org/master/d5/d6f/tutorial_feature_flann_matcher.html
 
     //-- Setep 1 set up descriptors and keypoints for the target image
@@ -40,10 +41,10 @@ void FeatureExtraction::matchfeachures(Mat mImage) {
 
 
     // draw matches - for debugging
-    /*Mat img_matches5;
+    Mat img_matches5;
     drawMatches( mMarker, vKeyPointsMarker, mImage, vKeyPointImage, matches, img_matches5 );
     imshow("All matches", img_matches5);
-    cv::waitKey();*/
+    cv::waitKey();
 
 
     double max_dist = 0; double min_dist = 100;
@@ -54,8 +55,8 @@ void FeatureExtraction::matchfeachures(Mat mImage) {
         if( dist < min_dist ) min_dist = dist;
         if( dist > max_dist ) max_dist = dist;
     }
-    /*printf("-- Max dist : %f \n", max_dist );
-    printf("-- Min dist : %f \n", min_dist );*/
+    printf("-- Max dist : %f \n", max_dist );
+    printf("-- Min dist : %f \n", min_dist );
     //-- Draw only "good" matches (i.e. whose distance is less than 2*min_dist,
     //-- or a small arbitary value ( 0.02 ) in the event that min_dist is very
     //-- small)
@@ -82,8 +83,42 @@ void FeatureExtraction::matchfeachures(Mat mImage) {
     { printf( "-- Good Match [%d] Keypoint 1: %d  -- Keypoint 2: %d  \n", i, good_matches[i].queryIdx, good_matches[i].trainIdx ); }
 */
 
+
     // use the good matches to finde the homography
+    // solution based on source: https://docs.opencv.org/2.4/doc/tutorials/features2d/feature_homography/feature_homography.html
+    //-- Localize the object
+    std::vector<Point2f> obj;
+    std::vector<Point2f> scene;
 
+    //-- Get the keypoints from the good matches
+    for( int i = 0; i < good_matches.size(); i++ )
+    {
+        obj.push_back( vKeyPointsMarker[ good_matches[i].queryIdx ].pt );
+        scene.push_back( vKeyPointImage[ good_matches[i].trainIdx ].pt );
+    }
 
+    Mat H = findHomography( obj, scene, CV_RANSAC );
+
+    //-- Get the corners from the image_1 ( the object to be "detected" )
+    std::vector<Point2f> obj_corners(4);
+    obj_corners[0] = cvPoint(0,0);
+    obj_corners[1] = cvPoint( mMarker.cols, 0 );
+    obj_corners[2] = cvPoint( mMarker.cols, mMarker.rows );
+    obj_corners[3] = cvPoint( 0, mMarker.rows );
+    std::vector<Point2f> scene_corners(4);
+
+    perspectiveTransform( obj_corners, scene_corners, H);
+
+    //-- Draw lines between the corners (the mapped object in the scene - image_2
+    line( img_matches, scene_corners[0] + Point2f( mMarker.cols, 0), scene_corners[1] + Point2f( mMarker.cols, 0), Scalar(0, 255, 0), 4 );
+    line( img_matches, scene_corners[1] + Point2f( mMarker.cols, 0), scene_corners[2] + Point2f( mMarker.cols, 0), Scalar( 0, 255, 0), 4 );
+    line( img_matches, scene_corners[2] + Point2f( mMarker.cols, 0), scene_corners[3] + Point2f( mMarker.cols, 0), Scalar( 0, 255, 0), 4 );
+    line( img_matches, scene_corners[3] + Point2f( mMarker.cols, 0), scene_corners[0] + Point2f( mMarker.cols, 0), Scalar( 0, 255, 0), 4 );
+
+    //-- Show detected matches
+    imshow( "Good Matches & Object detection", img_matches );
+    waitKey();
+
+    return scene;
 
 }

@@ -19,6 +19,8 @@
 
 #include "ui_SamplePlugin.h"
 
+#include "Marker.hpp"
+
 class SamplePlugin: public rws::RobWorkStudioPlugin, private Ui::SamplePlugin
 {
 Q_OBJECT
@@ -49,6 +51,8 @@ private:
     rw::kinematics::State _state;
     rwlibs::opengl::RenderImage *_textureRender, *_bgRender;
     rwlibs::simulation::GLFrameGrabber* _framegrabber;
+    Marker myMarker;
+
 };
 
 #endif /*RINGONHOOKPLUGIN_HPP_*/

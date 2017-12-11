@@ -9,6 +9,12 @@
 
 #include <functional>
 
+
+
+#define DELTA_T     100         // period in ms
+
+
+
 using namespace rw::common;
 using namespace rw::graphics;
 using namespace rw::kinematics;
@@ -39,6 +45,7 @@ SamplePlugin::SamplePlugin():
 
 	Image textureImage(300,300,Image::GRAY,Image::Depth8U);
 	_textureRender = new RenderImage(textureImage);
+    myMarker = Marker(_textureRender);
 	Image bgImage(0,0,Image::GRAY,Image::Depth8U);
 	_bgRender = new RenderImage(bgImage,2.5/1000.0);
 	_framegrabber = NULL;
@@ -56,12 +63,12 @@ void SamplePlugin::initialize() {
 	getRobWorkStudio()->stateChangedEvent().add(std::bind(&SamplePlugin::stateChangedListener, this, _1), this);
 
 	// Auto load workcell
-	WorkCell::Ptr wc = WorkCellLoader::Factory::load("/home/gunu/Documents/ROVI/workspace/workcells/PA10WorkCell/ScenePA10RoVi1.wc.xml");
+    WorkCell::Ptr wc = WorkCellLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/PA10WorkCell/ScenePA10RoVi1.wc.xml");
 	getRobWorkStudio()->setWorkCell(wc);
 
 	// Load Lena image
 	Mat im, image;
-	im = imread("/home/gunu/Documents/ROVI/workspace/SamplePluginPA10/src/lena.bmp", CV_LOAD_IMAGE_COLOR); // Read the file
+    im = imread("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/lena.bmp", CV_LOAD_IMAGE_COLOR); // Read the file
 	cvtColor(im, image, CV_BGR2RGB); // Switch the red and blue color channels
 	if(! image.data ) {
 		RW_THROW("Could not open or find the image: please modify the file path in the source code!");
@@ -146,16 +153,19 @@ void SamplePlugin::btnPressed() {
 		log().info() << "Button 0\n";
 		// Set a new texture (one pixel = 1 mm)
 		Image::Ptr image;
-		image = ImageLoader::Factory::load("/home/gunu/Documents/ROVI/workspace/SamplePluginPA10/markers/Marker1.ppm");
+        /*image = ImageLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/markers/Marker1.ppm");
 		_textureRender->setImage(*image);
-		image = ImageLoader::Factory::load("/home/gunu/Documents/ROVI/workspace/SamplePluginPA10/backgrounds/color1.ppm");
+        */
+        myMarker.setImage(MARKER3);
+        getRobWorkStudio()->updateAndRepaint();
+        image = ImageLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/backgrounds/color1.ppm");
 		_bgRender->setImage(*image);
 		getRobWorkStudio()->updateAndRepaint();
 	} else if(obj==_btn1){
 		log().info() << "Button 1\n";
 		// Toggle the timer on and off
 		if (!_timer->isActive())
-		    _timer->start(100); // run 10 Hz
+            _timer->start(DELTA_T); // run 10 Hz
 		else
 			_timer->stop();
 	} else if(obj==_spinBox){

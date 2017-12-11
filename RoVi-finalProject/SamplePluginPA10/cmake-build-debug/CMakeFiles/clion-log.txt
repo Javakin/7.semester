@@ -1,4 +1,4 @@
-/home/tera/clion-2017.2.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/tera/Desktop/7.semester.git/RoVi-finalProject/SamplePluginPA10
+/home/student/clion-2017.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10
 -- The C compiler identification is GNU 5.4.0
 -- The CXX compiler identification is GNU 5.4.0
 -- Check for working C compiler: /usr/bin/cc
@@ -15,12 +15,22 @@
 -- Detecting CXX compile features - done
 -- Build type: Debug
 -- RobWork root: 
-CMake Error at /usr/local/share/robwork-0.7/RobWorkConfig.cmake:82 (MESSAGE):
-  Could not find any build of RobWork!
-Call Stack (most recent call first):
-  /usr/local/share/robwork-0.7/RobWorkConfig.cmake:129 (GET_ROBWORK_BUILD_TYPE)
-  CMakeLists.txt:43 (FIND_PACKAGE)
+CMake Error at CMakeLists.txt:43 (FIND_PACKAGE):
+  By not providing "FindRobWork.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "RobWork", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "RobWork" with any
+  of the following names:
+
+    RobWorkConfig.cmake
+    robwork-config.cmake
+
+  Add the installation prefix of "RobWork" to CMAKE_PREFIX_PATH or set
+  "RobWork_DIR" to a directory containing one of the above files.  If
+  "RobWork" provides a separate development package or SDK, be sure it has
+  been installed.
 
 
 -- Configuring incomplete, errors occurred!
-See also "/home/tera/Desktop/7.semester.git/RoVi-finalProject/SamplePluginPA10/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/cmake-build-debug/CMakeFiles/CMakeOutput.log".

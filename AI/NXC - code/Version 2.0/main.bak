@@ -1,0 +1,34 @@
+// Name: main.nxc       Date: 19-11-17
+// Written by: Daniel Haraldson
+//
+// Description: This code is ment to controll the socoban solving
+// robot based on a predefined list of commands called the plan.
+
+
+
+
+// includes
+#include "defines.nxc"
+#include "LightSensors.nxc"
+#include "functions.nxc"
+#include "ExecutePath.nxc"
+
+
+
+// ************************************ Tasks *******************************
+
+
+task main()
+{
+     // inisiate all the sensorts
+     init();
+
+     // setup program tasks/behaviors
+     Precedes(ExecutePath);
+     Precedes(LightSensors);
+
+
+
+
+     
+}

@@ -1,0 +1,34 @@
+// LightSensors task
+
+bool onLine(int sensor){
+  // Detects wether of the sensor is placed over a line or not
+  bool output = false;
+
+  switch(sensor){
+    case(LIGHTBACK):
+      output = Sensor(LIGHTBACK) < sBack + SENSORTHRESHHOLD;
+      break;
+    case(LIGHTRIGHT):
+      output = Sensor(LIGHTRIGHT) < sRight - SENSORTHRESHHOLD;
+      break;
+    case(LIGHTLEFT):
+      output = Sensor(LIGHTLEFT) < sLeft - SENSORTHRESHHOLD;
+      break;
+  }
+    
+  return output;
+
+}
+
+task LightSensors(){
+  // look for a line, when seen set a semaphor 
+
+  while(true){
+    while (!onLine(LIGHTBACK));
+
+    lineFound = 1;
+
+  }
+
+  
+}

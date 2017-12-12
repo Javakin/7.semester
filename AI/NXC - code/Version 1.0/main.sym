@@ -140,99 +140,99 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 137	__constStr0012.__constStr0012_type	1	1	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	23	0	#line 23 "D:\NXC - code\Version 1.0\main.nxc"
+0	23	0	#line 23 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\main.nxc"
 0	24	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	23	2	#line 23 "D:\NXC - code\Version 1.0\main.nxc"
-0	26	2	#line 26 "D:\NXC - code\Version 1.0\main.nxc"
+0	23	2	#line 23 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\main.nxc"
+0	26	2	#line 26 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\main.nxc"
 0	27	2		subcall init, __init_return
-0	26	4	#line 26 "D:\NXC - code\Version 1.0\main.nxc"
-0	33	4	#line 33 "D:\NXC - code\Version 1.0\main.nxc"
-0	33	4	#line 33 "D:\NXC - code\Version 1.0\main.nxc"
+0	26	4	#line 26 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\main.nxc"
+0	33	4	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\main.nxc"
+0	33	4	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\main.nxc"
 0	34	4		exit 0, 0
 1	5476	0		setin __constVal1, __ResetSensorPort, 5
 1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
 1	5480	11		subret ____ResetSensorSubroutine_return
-2	6	0	#line 6 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	6	0	#line 6 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	7	0		set __onLine_7qG2_output_7qG2_000, 0
-2	6	3	#line 6 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	6	3	#line 6 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	6	3	#line 6 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	6	3	#line 6 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	7	3		mov __D0onLine, __onLine_7qG2_sensor_7qG2_000
 2	10	5		brcmp 4, __ASM_Label_609, __constVal1, __D0onLine
 2	11	9		brcmp 4, __ASM_Label_612, __constVal3, __D0onLine
 2	12	13		brcmp 4, __ASM_Label_615, __constVal0, __D0onLine
 2	13	17		jmp __ASM_Label_608
-2	8	19	#line 8 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	8	19	#line 8 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	8	19	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	8	19	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	9	19		getin __signed_stack_001onLine, __constVal1, 4
-2	8	23	#line 8 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	8	23	#line 8 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	8	23	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	8	23	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	9	23		mov __signed_stack_002onLine, sBack
-2	8	25	#line 8 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	9	25	#line 9 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	8	25	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	9	25	#line 9 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	10	25		set __D0onLine, 10
-2	9	28	#line 9 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	9	28	#line 9 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	10	28		add __D0onLine, __signed_stack_002onLine, __D0onLine
-2	9	32	#line 9 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	9	32	#line 9 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	10	32		cmp 0, __D0onLine, __signed_stack_001onLine, __D0onLine
-2	9	36	#line 9 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	9	36	#line 9 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	10	36		mov __onLine_7qG2_output_7qG2_000, __D0onLine
-2	9	38	#line 9 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	9	38	#line 9 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	10	38	#line 10 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	9	38	#line 9 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	9	38	#line 9 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	10	38	#line 10 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	11	38		jmp __ASM_Label_608
-2	10	40	#line 10 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	11	40	#line 11 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	11	40	#line 11 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	10	40	#line 10 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	11	40	#line 11 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	11	40	#line 11 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	12	40		getin __signed_stack_001onLine, __constVal3, 4
-2	11	44	#line 11 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	11	44	#line 11 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	11	44	#line 11 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	11	44	#line 11 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	12	44		mov __signed_stack_002onLine, sRight
-2	11	46	#line 11 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	12	46	#line 12 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	11	46	#line 11 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	12	46	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	13	46		set __D0onLine, 10
-2	12	49	#line 12 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	12	49	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	13	49		sub __D0onLine, __signed_stack_002onLine, __D0onLine
-2	12	53	#line 12 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	12	53	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	13	53		cmp 0, __D0onLine, __signed_stack_001onLine, __D0onLine
-2	12	57	#line 12 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	12	57	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	13	57		mov __onLine_7qG2_output_7qG2_000, __D0onLine
-2	12	59	#line 12 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	12	59	#line 12 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	13	59	#line 13 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	12	59	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	12	59	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	13	59	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	14	59		jmp __ASM_Label_608
-2	13	61	#line 13 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	14	61	#line 14 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	14	61	#line 14 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	13	61	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	14	61	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	14	61	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	15	61		getin __signed_stack_001onLine, __constVal0, 4
-2	14	65	#line 14 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	14	65	#line 14 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	14	65	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	14	65	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	15	65		mov __signed_stack_002onLine, sLeft
-2	14	67	#line 14 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	15	67	#line 15 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	14	67	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	15	67	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	16	67		set __D0onLine, 10
-2	15	70	#line 15 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	15	70	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	16	70		sub __D0onLine, __signed_stack_002onLine, __D0onLine
-2	15	74	#line 15 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	15	74	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	16	74		cmp 0, __D0onLine, __signed_stack_001onLine, __D0onLine
-2	15	78	#line 15 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	15	78	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	16	78		mov __onLine_7qG2_output_7qG2_000, __D0onLine
-2	15	80	#line 15 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	15	80	#line 15 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	16	80	#line 16 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	16	80	#line 16 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	18	80	#line 18 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	20	80	#line 20 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	15	80	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	15	80	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	16	80	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	16	80	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	18	80	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	20	80	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	21	80		mov __DU0onLine, __onLine_7qG2_output_7qG2_000
-2	20	82	#line 20 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	20	82	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	21	82		subret __onLine_return
-2	20	84	#line 20 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
-2	22	84	#line 22 "D:\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	20	84	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
+2	22	84	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc"
 2	23	84		subret __onLine_return
-3	4	0	#line 4 "D:\NXC - code\Version 1.0\.\functions.nxc"
+3	4	0	#line 4 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 3	5	0		set __SetSensorLight_7qG2_port_7qG2_000_inline_init, 1
-3	4	3	#line 4 "D:\NXC - code\Version 1.0\.\functions.nxc"
-3	5	3	#line 5 "D:\NXC - code\Version 1.0\.\functions.nxc"
+3	4	3	#line 4 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+3	5	3	#line 5 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 3	6	3		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_init, __constVal1
 3	4313	5	#line 4313 "NXCDefs.h"
 3	4314	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
@@ -277,11 +277,11 @@ Clump	Line	PC	Source
 3	7169	44	#line 7169 "NXCDefs.h"
 3	4278	44	#line 4278 "NXCDefs.h"
 3	4316	44	#line 4316 "NXCDefs.h"
-3	5	44	#line 5 "D:\NXC - code\Version 1.0\.\functions.nxc"
-3	5	44	#line 5 "D:\NXC - code\Version 1.0\.\functions.nxc"
+3	5	44	#line 5 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+3	5	44	#line 5 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 3	6	44		set __SetSensorLight_7qG2_port_7qG2_000_inline_init, 0
-3	5	47	#line 5 "D:\NXC - code\Version 1.0\.\functions.nxc"
-3	6	47	#line 6 "D:\NXC - code\Version 1.0\.\functions.nxc"
+3	5	47	#line 5 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+3	6	47	#line 6 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 3	7	47		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_init, __constVal1
 3	4313	49	#line 4313 "NXCDefs.h"
 3	4314	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
@@ -326,11 +326,11 @@ Clump	Line	PC	Source
 3	7232	88	#line 7232 "NXCDefs.h"
 3	4278	88	#line 4278 "NXCDefs.h"
 3	4316	88	#line 4316 "NXCDefs.h"
-3	6	88	#line 6 "D:\NXC - code\Version 1.0\.\functions.nxc"
-3	6	88	#line 6 "D:\NXC - code\Version 1.0\.\functions.nxc"
+3	6	88	#line 6 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+3	6	88	#line 6 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 3	7	88		set __SetSensorLight_7qG2_port_7qG2_000_inline_init, 3
-3	6	91	#line 6 "D:\NXC - code\Version 1.0\.\functions.nxc"
-3	7	91	#line 7 "D:\NXC - code\Version 1.0\.\functions.nxc"
+3	6	91	#line 6 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+3	7	91	#line 7 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 3	8	91		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_init, __constVal1
 3	4313	93	#line 4313 "NXCDefs.h"
 3	4314	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init, __SetSensorLight_7qG2_port_7qG2_000_inline_init
@@ -375,1194 +375,1194 @@ Clump	Line	PC	Source
 3	7295	132	#line 7295 "NXCDefs.h"
 3	4278	132	#line 4278 "NXCDefs.h"
 3	4316	132	#line 4316 "NXCDefs.h"
-3	7	132	#line 7 "D:\NXC - code\Version 1.0\.\functions.nxc"
-3	9	132	#line 9 "D:\NXC - code\Version 1.0\.\functions.nxc"
+3	7	132	#line 7 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+3	9	132	#line 9 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 3	10	132		subret __init_return
-4	13	0	#line 13 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	13	0	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	14	0		getout __signed_stack_001angleFollow, __constVal0, 14
-4	13	4	#line 13 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	13	4	#line 13 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	13	4	#line 13 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	13	4	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	13	4	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	13	4	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	14	4		sub __signed_stack_001angleFollow, __signed_stack_001angleFollow, __angleFollow_7qG2_LeftMotor_7qG2_000
-4	13	8	#line 13 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	13	8	#line 13 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	13	8	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	13	8	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	14	8		getout __signed_stack_002angleFollow, __constVal1, 14
-4	13	12	#line 13 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	13	12	#line 13 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	13	12	#line 13 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	13	12	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	13	12	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	13	12	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	14	12		sub __D0angleFollow, __signed_stack_002angleFollow, __angleFollow_7qG2_RightMotor_7qG2_000
-4	14	16	#line 14 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	14	16	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	15	16		add __angleFollow_7qG2_dif_7qG2_000, __signed_stack_001angleFollow, __D0angleFollow
-4	14	20	#line 14 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	14	20	#line 14 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	14	20	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	14	20	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	15	20		mov __signed_stack_001angleFollow, __angleFollow_7qG2_dir_7qG2_000
-4	14	22	#line 14 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	14	22	#line 14 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	14	22	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	14	22	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	15	22		set __D0angleFollow, 1
-4	14	25	#line 14 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	14	25	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	15	25		cmp 4, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	15	29	#line 15 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	15	29	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	16	29		brtst 4, __ASM_Label_646, __D0angleFollow
-4	15	32	#line 15 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	15	32	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	16	32		mov __signed_stack_001angleFollow, __angleFollow_7qG2_speed_7qG2_000
-4	15	34	#line 15 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	15	34	#line 15 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	15	34	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	15	34	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	16	34		mov __signed_stack_002angleFollow, __angleFollow_7qG2_dif_7qG2_000
-4	15	36	#line 15 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	16	36	#line 16 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	15	36	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	16	36	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	17	36		set __D0angleFollow, 3
-4	16	39	#line 16 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	16	39	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	17	39		mul __D0angleFollow, __signed_stack_002angleFollow, __D0angleFollow
-4	16	43	#line 16 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	16	43	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	17	43		sub vLeft, __signed_stack_001angleFollow, __D0angleFollow
-4	16	47	#line 16 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	16	47	#line 16 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	16	47	#line 16 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	16	47	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	16	47	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	16	47	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	17	47		set __signed_stack_001angleFollow, 0
-4	16	50	#line 16 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	16	50	#line 16 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	16	50	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	16	50	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	17	50		mov __D0angleFollow, __angleFollow_7qG2_speed_7qG2_000
-4	16	52	#line 16 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	16	52	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	17	52		sub __signed_stack_001angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	16	56	#line 16 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	16	56	#line 16 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	16	56	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	16	56	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	17	56		mov __signed_stack_002angleFollow, __angleFollow_7qG2_dif_7qG2_000
-4	16	58	#line 16 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	18	58	#line 18 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	16	58	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	18	58	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	19	58		set __D0angleFollow, 3
-4	18	61	#line 18 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	18	61	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	19	61		mul __D0angleFollow, __signed_stack_002angleFollow, __D0angleFollow
-4	18	65	#line 18 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	18	65	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	19	65		add vRight, __signed_stack_001angleFollow, __D0angleFollow
-4	18	69	#line 18 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	18	69	#line 18 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	18	69	#line 18 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	18	69	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	18	69	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	18	69	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	19	69		mov __signed_stack_001angleFollow, vLeft
-4	18	71	#line 18 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	18	71	#line 18 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	18	71	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	18	71	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	19	71		set __D0angleFollow, 100
-4	18	74	#line 18 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	18	74	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	19	74		cmp 1, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	18	78	#line 18 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	18	78	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	19	78		brtst 4, __ASM_Label_653, __D0angleFollow
-4	19	81	#line 19 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	19	81	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	20	81		set vLeft, 100
-4	19	84	#line 19 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	19	84	#line 19 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	19	84	#line 19 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	19	84	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	19	84	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	19	84	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	20	84		jmp __ASM_Label_656
-4	19	86	#line 19 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	19	86	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	20	86		mov __signed_stack_001angleFollow, vLeft
-4	19	88	#line 19 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	19	88	#line 19 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	19	88	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	19	88	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	20	88		set __D0angleFollow, 0
-4	19	91	#line 19 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	19	91	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	20	91		cmp 0, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	19	95	#line 19 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	19	95	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	20	95		brtst 4, __ASM_Label_659, __D0angleFollow
-4	20	98	#line 20 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	20	98	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	21	98		set vLeft, 0
-4	20	101	#line 20 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	20	101	#line 20 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	20	101	#line 20 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	20	101	#line 20 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	20	101	#line 20 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	20	101	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	20	101	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	20	101	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	20	101	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	20	101	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	21	101		mov __signed_stack_001angleFollow, vRight
-4	20	103	#line 20 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	20	103	#line 20 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	20	103	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	20	103	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	21	103		mov __D0angleFollow, __constValNeg100
-4	20	105	#line 20 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	20	105	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	21	105		cmp 0, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	20	109	#line 20 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	20	109	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	21	109		brtst 4, __ASM_Label_664, __D0angleFollow
-4	21	112	#line 21 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	21	112	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	22	112		mov vRight, __constValNeg100
-4	21	114	#line 21 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	21	114	#line 21 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	21	114	#line 21 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	21	114	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	21	114	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	21	114	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	22	114		jmp __ASM_Label_667
-4	21	116	#line 21 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	21	116	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	22	116		mov __signed_stack_001angleFollow, vRight
-4	21	118	#line 21 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	21	118	#line 21 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	21	118	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	21	118	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	22	118		set __D0angleFollow, 0
-4	21	121	#line 21 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	21	121	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	22	121		cmp 1, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	21	125	#line 21 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	21	125	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	22	125		brtst 4, __ASM_Label_670, __D0angleFollow
-4	22	128	#line 22 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	22	128	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	23	128		set vRight, 0
-4	22	131	#line 22 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	22	131	#line 22 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	22	131	#line 22 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	22	131	#line 22 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	23	131	#line 23 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	22	131	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	22	131	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	22	131	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	22	131	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	23	131	#line 23 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	24	131		jmp __ASM_Label_673
-4	23	133	#line 23 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	23	133	#line 23 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	24	133		mov __signed_stack_001angleFollow, __angleFollow_7qG2_speed_7qG2_000
-4	23	135	#line 23 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	23	135	#line 23 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	23	135	#line 23 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	23	135	#line 23 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	24	135		mov __signed_stack_002angleFollow, __angleFollow_7qG2_dif_7qG2_000
-4	23	137	#line 23 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	24	137	#line 24 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	23	137	#line 23 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	24	137	#line 24 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	25	137		set __D0angleFollow, 3
-4	24	140	#line 24 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	24	140	#line 24 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	25	140		mul __D0angleFollow, __signed_stack_002angleFollow, __D0angleFollow
-4	24	144	#line 24 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	24	144	#line 24 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	25	144		add vRight, __signed_stack_001angleFollow, __D0angleFollow
-4	24	148	#line 24 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	24	148	#line 24 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	24	148	#line 24 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	24	148	#line 24 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	24	148	#line 24 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	24	148	#line 24 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	25	148		set __signed_stack_001angleFollow, 0
-4	24	151	#line 24 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	24	151	#line 24 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	24	151	#line 24 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	24	151	#line 24 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	25	151		mov __D0angleFollow, __angleFollow_7qG2_speed_7qG2_000
-4	24	153	#line 24 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	24	153	#line 24 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	25	153		sub __signed_stack_001angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	24	157	#line 24 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	24	157	#line 24 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	24	157	#line 24 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	24	157	#line 24 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	25	157		mov __signed_stack_002angleFollow, __angleFollow_7qG2_dif_7qG2_000
-4	24	159	#line 24 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	26	159	#line 26 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	24	159	#line 24 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	26	159	#line 26 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	27	159		set __D0angleFollow, 3
-4	26	162	#line 26 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	26	162	#line 26 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	27	162		mul __D0angleFollow, __signed_stack_002angleFollow, __D0angleFollow
-4	26	166	#line 26 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	26	166	#line 26 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	27	166		sub vLeft, __signed_stack_001angleFollow, __D0angleFollow
-4	26	170	#line 26 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	26	170	#line 26 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	26	170	#line 26 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	26	170	#line 26 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	26	170	#line 26 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	26	170	#line 26 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	27	170		mov __signed_stack_001angleFollow, vRight
-4	26	172	#line 26 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	26	172	#line 26 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	26	172	#line 26 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	26	172	#line 26 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	27	172		set __D0angleFollow, 100
-4	26	175	#line 26 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	26	175	#line 26 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	27	175		cmp 1, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	26	179	#line 26 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	26	179	#line 26 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	27	179		brtst 4, __ASM_Label_680, __D0angleFollow
-4	27	182	#line 27 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	27	182	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	28	182		set vRight, 100
-4	27	185	#line 27 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	27	185	#line 27 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	27	185	#line 27 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	27	185	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	27	185	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	27	185	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	28	185		jmp __ASM_Label_683
-4	27	187	#line 27 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	27	187	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	28	187		mov __signed_stack_001angleFollow, vRight
-4	27	189	#line 27 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	27	189	#line 27 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	27	189	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	27	189	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	28	189		set __D0angleFollow, 0
-4	27	192	#line 27 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	27	192	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	28	192		cmp 0, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	27	196	#line 27 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	27	196	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	28	196		brtst 4, __ASM_Label_686, __D0angleFollow
-4	28	199	#line 28 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	28	199	#line 28 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	29	199		set vRight, 0
-4	28	202	#line 28 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	28	202	#line 28 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	28	202	#line 28 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	28	202	#line 28 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	28	202	#line 28 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	28	202	#line 28 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	28	202	#line 28 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	28	202	#line 28 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	28	202	#line 28 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	28	202	#line 28 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	29	202		mov __signed_stack_001angleFollow, vLeft
-4	28	204	#line 28 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	28	204	#line 28 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	28	204	#line 28 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	28	204	#line 28 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	29	204		mov __D0angleFollow, __constValNeg100
-4	28	206	#line 28 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	28	206	#line 28 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	29	206		cmp 0, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	28	210	#line 28 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	28	210	#line 28 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	29	210		brtst 4, __ASM_Label_691, __D0angleFollow
-4	29	213	#line 29 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	29	213	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	30	213		mov vLeft, __constValNeg100
-4	29	215	#line 29 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	29	215	#line 29 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	29	215	#line 29 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	29	215	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	29	215	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	29	215	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	30	215		jmp __ASM_Label_694
-4	29	217	#line 29 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	29	217	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	30	217		mov __signed_stack_001angleFollow, vLeft
-4	29	219	#line 29 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	29	219	#line 29 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	29	219	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	29	219	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	30	219		set __D0angleFollow, 0
-4	29	222	#line 29 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	29	222	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	30	222		cmp 1, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	29	226	#line 29 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	29	226	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	30	226		brtst 4, __ASM_Label_697, __D0angleFollow
-4	31	229	#line 31 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	31	229	#line 31 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	32	229		set vLeft, 0
-4	31	232	#line 31 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	31	232	#line 31 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	32	232	#line 32 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	32	232	#line 32 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	32	232	#line 32 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	32	232	#line 32 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	31	232	#line 31 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	31	232	#line 31 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	32	232	#line 32 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	32	232	#line 32 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	32	232	#line 32 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	32	232	#line 32 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	33	232		set __signed_stack_001angleFollow, 0
-4	32	235	#line 32 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	32	235	#line 32 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	32	235	#line 32 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	32	235	#line 32 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	33	235		set __signed_stack_002angleFollow, 0
-4	32	238	#line 32 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	32	238	#line 32 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	32	238	#line 32 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	32	238	#line 32 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	33	238		mov __D0angleFollow, __angleFollow_7qG2_dif_7qG2_000
-4	33	240	#line 33 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	33	240	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	34	240		acquire __TextOutMutex
-4	33	241	#line 33 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	33	241	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	34	241		mov __TextOutArgs.Location.X, __signed_stack_001angleFollow
-4	33	243	#line 33 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	33	243	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	34	243		mov __TextOutArgs.Location.Y, __signed_stack_002angleFollow
-4	33	245	#line 33 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	33	245	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	34	245		set __TextOutArgs.Options, 0
-4	33	248	#line 33 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	33	248	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	34	248		numtostr __TextOutArgs.Text, __D0angleFollow
-4	33	251	#line 33 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	33	251	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	34	251		syscall 13, __TextOutArgs
-4	33	254	#line 33 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	33	254	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	34	254		mov __D0angleFollow, __TextOutArgs.Result
-4	33	256	#line 33 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	33	256	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	34	256		release __TextOutMutex
-4	33	257	#line 33 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	33	257	#line 33 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	33	257	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	33	257	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	34	257		set __signed_stack_001angleFollow, 0
-4	33	260	#line 33 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	33	260	#line 33 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	33	260	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	33	260	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	34	260		set __signed_stack_002angleFollow, 8
-4	33	263	#line 33 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	33	263	#line 33 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	33	263	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	33	263	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	34	263		mov __D0angleFollow, vLeft
-4	34	265	#line 34 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	34	265	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	35	265		acquire __TextOutMutex
-4	34	266	#line 34 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	34	266	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	35	266		mov __TextOutArgs.Location.X, __signed_stack_001angleFollow
-4	34	268	#line 34 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	34	268	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	35	268		mov __TextOutArgs.Location.Y, __signed_stack_002angleFollow
-4	34	270	#line 34 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	34	270	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	35	270		set __TextOutArgs.Options, 0
-4	34	273	#line 34 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	34	273	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	35	273		numtostr __TextOutArgs.Text, __D0angleFollow
-4	34	276	#line 34 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	34	276	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	35	276		syscall 13, __TextOutArgs
-4	34	279	#line 34 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	34	279	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	35	279		mov __D0angleFollow, __TextOutArgs.Result
-4	34	281	#line 34 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	34	281	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	35	281		release __TextOutMutex
-4	34	282	#line 34 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	34	282	#line 34 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	34	282	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	34	282	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	35	282		set __signed_stack_001angleFollow, 0
-4	34	285	#line 34 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	34	285	#line 34 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	34	285	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	34	285	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	35	285		set __signed_stack_002angleFollow, 16
-4	34	288	#line 34 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	34	288	#line 34 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	34	288	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	34	288	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	35	288		mov __D0angleFollow, vRight
-4	35	290	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	290	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	290		acquire __TextOutMutex
-4	35	291	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	291	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	291		mov __TextOutArgs.Location.X, __signed_stack_001angleFollow
-4	35	293	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	293	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	293		mov __TextOutArgs.Location.Y, __signed_stack_002angleFollow
-4	35	295	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	295	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	295		set __TextOutArgs.Options, 0
-4	35	298	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	298	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	298		numtostr __TextOutArgs.Text, __D0angleFollow
-4	35	301	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	301	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	301		syscall 13, __TextOutArgs
-4	35	304	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	304	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	304		mov __D0angleFollow, __TextOutArgs.Result
-4	35	306	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	306	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	306		release __TextOutMutex
-4	35	307	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	35	307	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	307	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	35	307	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	307		mov __signed_stack_001angleFollow, vLeft
-4	35	309	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	35	309	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	309	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	35	309	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	309		set __D0angleFollow, 0
-4	35	312	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	312	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	312		cmp 4, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	35	316	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	316	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	316		brtst 4, __ASM_Label_719, __D0angleFollow
-4	35	319	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	319	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	319		mov __signed_stack_001angleFollow, vRight
-4	35	321	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	35	321	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	321	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	35	321	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	321		set __D0angleFollow, 0
-4	35	324	#line 35 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	35	324	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	36	324		cmp 4, __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	36	328	#line 36 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	36	328	#line 36 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	37	328		brtst 4, __ASM_Label_720, __D0angleFollow
-4	36	331	#line 36 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	36	331	#line 36 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	37	331		mov __signed_stack_001angleFollow, __angleFollow_7qG2_dir_7qG2_000
-4	36	333	#line 36 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	36	333	#line 36 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	36	333	#line 36 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	36	333	#line 36 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	37	333		mov __D0angleFollow, __angleFollow_7qG2_speed_7qG2_000
-4	36	335	#line 36 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	36	335	#line 36 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	37	335		mul __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	37	339	#line 37 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	37	339	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	38	339	#pragma macro 7
 4	38	339		setout __constVal0, 2, __D0angleFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	7811	362	#line 7811 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	37	362	#line 37 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	37	362	#line 37 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	7811	362	#line 7811 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	37	362	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	37	362	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	38	362		set __signed_stack_001angleFollow, 0
-4	37	365	#line 37 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	37	365	#line 37 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	37	365	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	37	365	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	38	365		mov __signed_stack_002angleFollow, __angleFollow_7qG2_speed_7qG2_000
-4	37	367	#line 37 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	37	367	#line 37 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	37	367	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	37	367	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	38	367		mov __D0angleFollow, __angleFollow_7qG2_dir_7qG2_000
-4	37	369	#line 37 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	37	369	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	38	369		mul __D0angleFollow, __signed_stack_002angleFollow, __D0angleFollow
-4	37	373	#line 37 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	37	373	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	38	373		sub __D0angleFollow, __signed_stack_001angleFollow, __D0angleFollow
-4	38	377	#line 38 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	38	377	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	39	377	#pragma macro 7
 4	39	377		setout __constVal1, 2, __D0angleFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	7834	400	#line 7834 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	38	400	#line 38 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	39	400	#line 39 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	7834	400	#line 7834 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	38	400	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	39	400	#line 39 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	40	400		jmp __ASM_Label_725
-4	39	402	#line 39 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	39	402	#line 39 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	40	402		mov __D0angleFollow, vLeft
-4	40	404	#line 40 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	40	404	#line 40 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	41	404	#pragma macro 7
 4	41	404		setout __constVal0, 2, __D0angleFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	7844	427	#line 7844 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	40	427	#line 40 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	40	427	#line 40 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	7844	427	#line 7844 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	40	427	#line 40 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	40	427	#line 40 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	41	427		mov __D0angleFollow, vRight
-4	41	429	#line 41 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	41	429	#line 41 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	42	429	#pragma macro 7
 4	42	429		setout __constVal1, 2, __D0angleFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	7851	452	#line 7851 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	41	452	#line 41 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	43	452	#line 43 "D:\NXC - code\Version 1.0\.\functions.nxc"
-4	43	452	#line 43 "D:\NXC - code\Version 1.0\.\functions.nxc"
+4	7851	452	#line 7851 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	41	452	#line 41 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	43	452	#line 43 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+4	43	452	#line 43 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 4	44	452		subret __angleFollow_return
-5	47	0	#line 47 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	47	0	#line 47 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	48	0		mov __DU0lineFollow, __lineFollow_7qG2_dir_7qG2_000
-5	49	2	#line 49 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	49	2	#line 49 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	50	2		tst 5, __D0lineFollow, __DU0lineFollow
-5	49	5	#line 49 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	49	5	#line 49 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	50	5		brtst 4, __ASM_Label_732, __D0lineFollow
-5	49	8	#line 49 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	49	8	#line 49 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	50	8		getin __signed_stack_001lineFollow, __constVal3, 4
-5	49	12	#line 49 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	49	12	#line 49 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	49	12	#line 49 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	49	12	#line 49 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	50	12		mov __D0lineFollow, sRight
-5	49	14	#line 49 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	49	14	#line 49 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	50	14		sub leftgain, __signed_stack_001lineFollow, __D0lineFollow
-5	50	18	#line 50 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	50	18	#line 50 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	50	18	#line 50 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	50	18	#line 50 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	50	18	#line 50 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	50	18	#line 50 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	50	18	#line 50 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	50	18	#line 50 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	51	18		getin __signed_stack_001lineFollow, __constVal0, 4
-5	50	22	#line 50 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	50	22	#line 50 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	50	22	#line 50 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	50	22	#line 50 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	51	22		mov __D0lineFollow, sLeft
-5	50	24	#line 50 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	50	24	#line 50 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	51	24		sub rightgain, __signed_stack_001lineFollow, __D0lineFollow
-5	64	28	#line 64 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	64	28	#line 64 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	64	28	#line 64 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	64	28	#line 64 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	64	28	#line 64 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	64	28	#line 64 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	64	28	#line 64 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	64	28	#line 64 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	65	28		set __signed_stack_001lineFollow, 100
-5	64	31	#line 64 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	64	31	#line 64 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	64	31	#line 64 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	64	31	#line 64 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	65	31		mov __D0lineFollow, rightgain
-5	64	33	#line 64 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	64	33	#line 64 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	65	33		add __signed_stack_001lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-5	64	37	#line 64 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	65	37	#line 65 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	64	37	#line 64 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	65	37	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	66	37		mov __D0lineFollow, leftgain
-5	65	39	#line 65 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	65	39	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	66	39		sub __lineFollow_7qG2_vLeft_7qG2_001, __signed_stack_001lineFollow, __D0lineFollow
-5	65	43	#line 65 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	65	43	#line 65 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	65	43	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	65	43	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	66	43		set __signed_stack_001lineFollow, 100
-5	65	46	#line 65 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	65	46	#line 65 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	65	46	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	65	46	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	66	46		mov __D0lineFollow, leftgain
-5	65	48	#line 65 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	65	48	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	66	48		add __signed_stack_001lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-5	65	52	#line 65 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	67	52	#line 67 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	65	52	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	67	52	#line 67 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	68	52		mov __D0lineFollow, rightgain
-5	67	54	#line 67 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	67	54	#line 67 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	68	54		sub __lineFollow_7qG2_vRight_7qG2_001, __signed_stack_001lineFollow, __D0lineFollow
-5	67	58	#line 67 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	67	58	#line 67 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	67	58	#line 67 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	67	58	#line 67 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	68	58		mov __signed_stack_001lineFollow, __lineFollow_7qG2_vLeft_7qG2_001
-5	67	60	#line 67 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	67	60	#line 67 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	67	60	#line 67 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	67	60	#line 67 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	68	60		set __D0lineFollow, 100
-5	67	63	#line 67 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	67	63	#line 67 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	68	63		cmp 1, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-5	67	67	#line 67 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	67	67	#line 67 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	68	67		brtst 4, __ASM_Label_747, __D0lineFollow
-5	68	70	#line 68 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	68	70	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	69	70		set __lineFollow_7qG2_vLeft_7qG2_001, 100
-5	68	73	#line 68 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	68	73	#line 68 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	68	73	#line 68 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	68	73	#line 68 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	68	73	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	68	73	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	68	73	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	68	73	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	69	73		mov __signed_stack_001lineFollow, __lineFollow_7qG2_vRight_7qG2_001
-5	68	75	#line 68 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	68	75	#line 68 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	68	75	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	68	75	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	69	75		set __D0lineFollow, 100
-5	68	78	#line 68 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	68	78	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	69	78		cmp 1, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-5	68	82	#line 68 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	68	82	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	69	82		brtst 4, __ASM_Label_752, __D0lineFollow
-5	74	85	#line 74 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	74	85	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	75	85		set __lineFollow_7qG2_vRight_7qG2_001, 100
-5	74	88	#line 74 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	74	88	#line 74 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	74	88	#line 74 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	74	88	#line 74 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	74	88	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	74	88	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	74	88	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	74	88	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	75	88		mov __D0lineFollow, __lineFollow_7qG2_vLeft_7qG2_001
-5	75	90	#line 75 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	75	90	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	76	90	#pragma macro 7
 5	76	90		setout __constVal0, 2, __D0lineFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	8015	113	#line 8015 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	75	113	#line 75 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	75	113	#line 75 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	8015	113	#line 8015 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	75	113	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	75	113	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	76	113		mov __D0lineFollow, __lineFollow_7qG2_vRight_7qG2_001
-5	76	115	#line 76 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	76	115	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	77	115	#pragma macro 7
 5	77	115		setout __constVal1, 2, __D0lineFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	8022	138	#line 8022 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	76	138	#line 76 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	97	138	#line 97 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	8022	138	#line 8022 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	76	138	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	97	138	#line 97 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	98	138		jmp __ASM_Label_759
-5	100	140	#line 100 "D:\NXC - code\Version 1.0\.\functions.nxc"
-5	100	140	#line 100 "D:\NXC - code\Version 1.0\.\functions.nxc"
+5	100	140	#line 100 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+5	100	140	#line 100 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 5	101	140		subret __lineFollow_return
-6	103	0	#line 103 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	103	0	#line 103 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	104	0		gettick __moveFwd_7qG2_StartTime_7qG2_000
-6	103	2	#line 103 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	105	2	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	103	2	#line 103 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	105	2	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	2		set __onLine_7qG2_sensor_7qG2_000, 3
-6	105	5	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	105	5	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	105	5	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	105	5	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	5		subcall onLine, __onLine_return
-6	105	7	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	105	7	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	105	7	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	105	7	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	7		not __DU0moveFwd, __DU0onLine
-6	105	10	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	105	10	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	10		tst 5, __D0moveFwd, __DU0moveFwd
-6	105	13	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	105	13	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	13		brtst 5, __ASM_Label_764, __D0moveFwd
-6	105	16	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	105	16	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	16		set __onLine_7qG2_sensor_7qG2_000, 0
-6	105	19	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	105	19	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	105	19	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	105	19	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	19		subcall onLine, __onLine_return
-6	105	21	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	105	21	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	105	21	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	105	21	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	21		not __DU0moveFwd, __DU0onLine
-6	105	24	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	105	24	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	24		tst 5, __D0moveFwd, __DU0moveFwd
-6	105	27	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	105	27	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	27		brtst 5, __ASM_Label_764, __D0moveFwd
-6	105	30	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	105	30	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	30		mov __unsigned_stack_001moveFwd, __moveFwd_7qG2_StartTime_7qG2_000
-6	105	32	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	105	32	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	105	32	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	105	32	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	32		set __D0moveFwd, 560
-6	105	35	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	105	35	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	35		add __signed_stack_001moveFwd, __unsigned_stack_001moveFwd, __D0moveFwd
-6	105	39	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	105	39	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	105	39	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	105	39	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	39		gettick __DU0moveFwd
-6	105	41	#line 105 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	105	41	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	106	41		cmp 1, __D0moveFwd, __signed_stack_001moveFwd, __DU0moveFwd
-6	106	45	#line 106 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	106	45	#line 106 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	107	45		brtst 4, __ASM_Label_763, __D0moveFwd
-6	106	48	#line 106 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	106	48	#line 106 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	107	48		set __lineFollow_7qG2_dir_7qG2_000, 1
-6	106	51	#line 106 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	107	51	#line 107 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	106	51	#line 106 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	107	51	#line 107 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	108	51		subcall lineFollow, __lineFollow_return
-6	107	53	#line 107 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	111	53	#line 111 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	107	53	#line 107 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	111	53	#line 111 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	112	53		jmp __ASM_Label_762
-6	111	55	#line 111 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	111	55	#line 111 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	111	55	#line 111 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	111	55	#line 111 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	112	55		set __Wait_7qG2_ms_7qG2_000_inline_moveFwd, 100
-6	111	58	#line 111 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	111	58	#line 111 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	8551	58	#line 8551 "NXCDefs.h"
 6	8552	58		waitv __Wait_7qG2_ms_7qG2_000_inline_moveFwd
 6	8551	60	#line 8551 "NXCDefs.h"
-6	113	60	#line 113 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	113	60	#line 113 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	113	60	#line 113 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	113	60	#line 113 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	114	60		set __D0moveFwd, 0
-6	114	63	#line 114 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	114	63	#line 114 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	115	63	#pragma macro 7
 6	115	63		setout __constVal0, 2, __D0moveFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-6	8125	86	#line 8125 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	114	86	#line 114 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	114	86	#line 114 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	8125	86	#line 8125 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	114	86	#line 114 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	114	86	#line 114 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	115	86		set __D0moveFwd, 0
-6	116	89	#line 116 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	116	89	#line 116 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	117	89	#pragma macro 7
 6	117	89		setout __constVal1, 2, __D0moveFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-6	8130	112	#line 8130 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	116	112	#line 116 "D:\NXC - code\Version 1.0\.\functions.nxc"
-6	118	112	#line 118 "D:\NXC - code\Version 1.0\.\functions.nxc"
+6	8130	112	#line 8130 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	116	112	#line 116 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+6	118	112	#line 118 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 6	119	112		subret __moveFwd_return
-7	122	0	#line 122 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	122	0	#line 122 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	123	0		subcall moveFwd, __moveFwd_return
-7	122	2	#line 122 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	122	2	#line 122 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	122	2	#line 122 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	122	2	#line 122 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	123	2		set __D0moveBox, 100
-7	123	5	#line 123 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	123	5	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	124	5	#pragma macro 7
 7	124	5		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	8143	28	#line 8143 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	123	28	#line 123 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	123	28	#line 123 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	8143	28	#line 8143 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	123	28	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	123	28	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	124	28		set __D0moveBox, 100
-7	124	31	#line 124 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	124	31	#line 124 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	125	31	#pragma macro 7
 7	125	31		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	8148	54	#line 8148 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	124	54	#line 124 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	124	54	#line 124 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	8148	54	#line 8148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	124	54	#line 124 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	124	54	#line 124 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	125	54		gettick __moveBox_7qG2_StartTime_7qG2_000
-7	124	56	#line 124 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	125	56	#line 125 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	124	56	#line 124 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	125	56	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	126	56		mov __unsigned_stack_001moveBox, __moveBox_7qG2_StartTime_7qG2_000
-7	125	58	#line 125 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	125	58	#line 125 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	125	58	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	125	58	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	126	58		set __D0moveBox, 560
-7	125	61	#line 125 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	125	61	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	126	61		add __signed_stack_001moveBox, __unsigned_stack_001moveBox, __D0moveBox
-7	125	65	#line 125 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	125	65	#line 125 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	125	65	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	125	65	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	126	65		gettick __DU0moveBox
-7	125	67	#line 125 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	125	67	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	126	67		cmp 1, __D0moveBox, __signed_stack_001moveBox, __DU0moveBox
-7	127	71	#line 127 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	127	71	#line 127 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	128	71		brtst 4, __ASM_Label_789, __D0moveBox
-7	127	74	#line 127 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	127	74	#line 127 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	128	74		set __lineFollow_7qG2_dir_7qG2_000, 1
-7	127	77	#line 127 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	128	77	#line 128 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	127	77	#line 127 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	128	77	#line 128 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	129	77		subcall lineFollow, __lineFollow_return
-7	128	79	#line 128 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	131	79	#line 131 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	128	79	#line 128 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	131	79	#line 131 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	132	79		jmp __ASM_Label_788
-7	131	81	#line 131 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	131	81	#line 131 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	131	81	#line 131 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	131	81	#line 131 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	132	81		mov __D0moveBox, __constValNeg100
-7	132	83	#line 132 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	132	83	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	133	83	#pragma macro 7
 7	133	83		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	8197	106	#line 8197 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	132	106	#line 132 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	132	106	#line 132 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	8197	106	#line 8197 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	132	106	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	132	106	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	133	106		mov __D0moveBox, __constValNeg100
-7	133	108	#line 133 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	133	108	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	134	108	#pragma macro 7
 7	134	108		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	8202	131	#line 8202 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	133	131	#line 133 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	133	131	#line 133 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	8202	131	#line 8202 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	133	131	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	133	131	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	134	131		set __Wait_7qG2_ms_7qG2_000_inline_moveBox, 600
-7	133	134	#line 133 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	133	134	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	8551	134	#line 8551 "NXCDefs.h"
 7	8552	134		waitv __Wait_7qG2_ms_7qG2_000_inline_moveBox
 7	8551	136	#line 8551 "NXCDefs.h"
-7	137	136	#line 137 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	137	136	#line 137 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	137	136	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	137	136	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	138	136		set __D0moveBox, 0
-7	138	139	#line 138 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	138	139	#line 138 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	139	139	#pragma macro 7
 7	139	139		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	8219	162	#line 8219 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	138	162	#line 138 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	138	162	#line 138 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	8219	162	#line 8219 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	138	162	#line 138 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	138	162	#line 138 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	139	162		set __D0moveBox, 0
-7	139	165	#line 139 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	139	165	#line 139 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	140	165	#pragma macro 7
 7	140	165		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	8224	188	#line 8224 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	139	188	#line 139 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	139	188	#line 139 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	8224	188	#line 8224 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	139	188	#line 139 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	139	188	#line 139 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	140	188		set __Wait_7qG2_ms_7qG2_000_inline_moveBox, 150
-7	139	191	#line 139 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	139	191	#line 139 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	8551	191	#line 8551 "NXCDefs.h"
 7	8552	191		waitv __Wait_7qG2_ms_7qG2_000_inline_moveBox
 7	8551	193	#line 8551 "NXCDefs.h"
-7	141	193	#line 141 "D:\NXC - code\Version 1.0\.\functions.nxc"
-7	142	193	#line 142 "D:\NXC - code\Version 1.0\.\functions.nxc"
+7	141	193	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+7	142	193	#line 142 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 7	143	193		subret __moveBox_return
-8	145	0	#line 145 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	145	0	#line 145 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	146	0		getout __rotate_7qG2_RightMotor_7qG2_000, __constVal1, 14
-8	145	4	#line 145 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	147	4	#line 147 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	145	4	#line 145 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	147	4	#line 147 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	148	4		getout __rotate_7qG2_LeftMotor_7qG2_000, __constVal0, 14
-8	147	8	#line 147 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	147	8	#line 147 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	147	8	#line 147 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	147	8	#line 147 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	148	8		set __signed_stack_001rotate, 0
-8	147	11	#line 147 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	147	11	#line 147 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	147	11	#line 147 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	147	11	#line 147 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	148	11		set __signed_stack_002rotate, 32
-8	147	14	#line 147 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	147	14	#line 147 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	147	14	#line 147 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	147	14	#line 147 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	148	14		mov __D0rotate, __rotate_7qG2_LeftMotor_7qG2_000
-8	148	16	#line 148 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	148	16	#line 148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	149	16		acquire __TextOutMutex
-8	148	17	#line 148 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	148	17	#line 148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	149	17		mov __TextOutArgs.Location.X, __signed_stack_001rotate
-8	148	19	#line 148 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	148	19	#line 148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	149	19		mov __TextOutArgs.Location.Y, __signed_stack_002rotate
-8	148	21	#line 148 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	148	21	#line 148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	149	21		set __TextOutArgs.Options, 0
-8	148	24	#line 148 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	148	24	#line 148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	149	24		numtostr __TextOutArgs.Text, __D0rotate
-8	148	27	#line 148 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	148	27	#line 148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	149	27		syscall 13, __TextOutArgs
-8	148	30	#line 148 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	148	30	#line 148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	149	30		mov __D0rotate, __TextOutArgs.Result
-8	148	32	#line 148 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	148	32	#line 148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	149	32		release __TextOutMutex
-8	148	33	#line 148 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	148	33	#line 148 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	148	33	#line 148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	148	33	#line 148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	149	33		set __signed_stack_001rotate, 0
-8	148	36	#line 148 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	148	36	#line 148 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	148	36	#line 148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	148	36	#line 148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	149	36		set __signed_stack_002rotate, 24
-8	148	39	#line 148 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	148	39	#line 148 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	148	39	#line 148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	148	39	#line 148 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	149	39		mov __D0rotate, __rotate_7qG2_RightMotor_7qG2_000
-8	151	41	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	151	41	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	152	41		acquire __TextOutMutex
-8	151	42	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	151	42	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	152	42		mov __TextOutArgs.Location.X, __signed_stack_001rotate
-8	151	44	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	151	44	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	152	44		mov __TextOutArgs.Location.Y, __signed_stack_002rotate
-8	151	46	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	151	46	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	152	46		set __TextOutArgs.Options, 0
-8	151	49	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	151	49	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	152	49		numtostr __TextOutArgs.Text, __D0rotate
-8	151	52	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	151	52	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	152	52		syscall 13, __TextOutArgs
-8	151	55	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	151	55	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	152	55		mov __D0rotate, __TextOutArgs.Result
-8	151	57	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	151	57	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	152	57		release __TextOutMutex
-8	151	58	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	151	58	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	151	58	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	151	58	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	152	58		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
-8	151	60	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	151	60	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	151	60	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	151	60	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	152	60		getout __signed_stack_002rotate, __constVal0, 14
-8	151	64	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	151	64	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	151	64	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	151	64	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	151	64	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	151	64	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	152	64		sub __D0rotate, __signed_stack_002rotate, __rotate_7qG2_LeftMotor_7qG2_000
-8	151	68	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	151	68	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	152	68		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
-8	151	72	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	151	72	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	151	72	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	151	72	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	152	72		set __D0rotate, 175
-8	151	75	#line 151 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	151	75	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	152	75		cmp 0, __D0rotate, __signed_stack_001rotate, __D0rotate
-8	152	79	#line 152 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	152	79	#line 152 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	153	79		brtst 4, __ASM_Label_823, __D0rotate
-8	152	82	#line 152 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	152	82	#line 152 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	153	82		mov __angleFollow_7qG2_dir_7qG2_000, __rotate_7qG2_dir_7qG2_000
-8	152	84	#line 152 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	152	84	#line 152 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	152	84	#line 152 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	152	84	#line 152 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	153	84		mov __angleFollow_7qG2_RightMotor_7qG2_000, __rotate_7qG2_RightMotor_7qG2_000
-8	152	86	#line 152 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	152	86	#line 152 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	152	86	#line 152 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	152	86	#line 152 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	153	86		mov __angleFollow_7qG2_LeftMotor_7qG2_000, __rotate_7qG2_LeftMotor_7qG2_000
-8	152	88	#line 152 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	152	88	#line 152 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	152	88	#line 152 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	152	88	#line 152 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	153	88		set __angleFollow_7qG2_speed_7qG2_000, 100
-8	152	91	#line 152 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	153	91	#line 153 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	152	91	#line 152 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	153	91	#line 153 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	154	91		subcall angleFollow, __angleFollow_return
-8	153	93	#line 153 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	155	93	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	153	93	#line 153 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	155	93	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	156	93		jmp __ASM_Label_822
-8	155	95	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	155	95	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	155	95	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	155	95	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	156	95		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
-8	155	97	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	155	97	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	155	97	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	155	97	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	156	97		set __D0rotate, 1
-8	155	100	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	155	100	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	156	100		cmp 4, __D0rotate, __signed_stack_001rotate, __D0rotate
-8	155	104	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	155	104	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	156	104		mov __signed_stack_001rotate, __D0rotate
-8	155	106	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	155	106	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	156	106		set __D0rotate, 3
-8	155	109	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	155	109	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	156	109		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
-8	155	113	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	155	113	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	155	113	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	155	113	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	156	113		mov __signed_stack_002rotate, __rotate_7qG2_dir_7qG2_000
-8	155	115	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	155	115	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	155	115	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	155	115	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	156	115		mov __D0rotate, __constValNeg1
-8	155	117	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	155	117	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	156	117		cmp 4, __D0rotate, __signed_stack_002rotate, __D0rotate
-8	155	121	#line 155 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	155	121	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	156	121		mov __signed_stack_002rotate, __D0rotate
-8	156	123	#line 156 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	156	123	#line 156 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	157	123		set __D0rotate, 0
-8	156	126	#line 156 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	156	126	#line 156 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	157	126		mul __D0rotate, __signed_stack_002rotate, __D0rotate
-8	156	130	#line 156 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	156	130	#line 156 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	157	130		add __rotate_7qG2_sensor_7qG2_000, __signed_stack_001rotate, __D0rotate
-8	156	134	#line 156 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	156	134	#line 156 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	156	134	#line 156 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	156	134	#line 156 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	157	134		mov __onLine_7qG2_sensor_7qG2_000, __rotate_7qG2_sensor_7qG2_000
-8	156	136	#line 156 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	156	136	#line 156 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	156	136	#line 156 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	156	136	#line 156 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	157	136		subcall onLine, __onLine_return
-8	156	138	#line 156 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	156	138	#line 156 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	156	138	#line 156 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	156	138	#line 156 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	157	138		not __DU0rotate, __DU0onLine
-8	157	141	#line 157 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	157	141	#line 157 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	158	141		tst 5, __D0rotate, __DU0rotate
-8	157	144	#line 157 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	157	144	#line 157 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	158	144		brtst 4, __ASM_Label_843, __D0rotate
-8	157	147	#line 157 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	157	147	#line 157 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	158	147		set __onLine_7qG2_sensor_7qG2_000, 1
-8	157	150	#line 157 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	157	150	#line 157 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	157	150	#line 157 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	157	150	#line 157 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	158	150		subcall onLine, __onLine_return
-8	157	152	#line 157 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	157	152	#line 157 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	158	152		mov __DU0rotate, __DU0onLine
-8	157	154	#line 157 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	157	154	#line 157 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	158	154		tst 5, __D0rotate, __DU0rotate
-8	157	157	#line 157 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	157	157	#line 157 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	158	157		brtst 4, __ASM_Label_852, __D0rotate
-8	158	160	#line 158 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	158	160	#line 158 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	159	160		jmp __ASM_Label_843
-8	158	162	#line 158 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	158	162	#line 158 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	158	162	#line 158 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	158	162	#line 158 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	158	162	#line 158 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	158	162	#line 158 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	159	162		mov __angleFollow_7qG2_dir_7qG2_000, __rotate_7qG2_dir_7qG2_000
-8	158	164	#line 158 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	158	164	#line 158 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	158	164	#line 158 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	158	164	#line 158 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	159	164		mov __angleFollow_7qG2_RightMotor_7qG2_000, __rotate_7qG2_RightMotor_7qG2_000
-8	158	166	#line 158 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	158	166	#line 158 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	158	166	#line 158 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	158	166	#line 158 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	159	166		mov __angleFollow_7qG2_LeftMotor_7qG2_000, __rotate_7qG2_LeftMotor_7qG2_000
-8	158	168	#line 158 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	158	168	#line 158 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	158	168	#line 158 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	158	168	#line 158 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	159	168		set __angleFollow_7qG2_speed_7qG2_000, 100
-8	158	171	#line 158 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	159	171	#line 159 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	158	171	#line 158 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	159	171	#line 159 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	160	171		subcall angleFollow, __angleFollow_return
-8	159	173	#line 159 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	164	173	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	159	173	#line 159 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	164	173	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	165	173		jmp __ASM_Label_842
-8	164	175	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	164	175	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	164	175	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	164	175	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	165	175		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
-8	164	177	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	164	177	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	164	177	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	164	177	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	165	177		mov __D0rotate, __constValNeg1
-8	164	179	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	164	179	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	165	179		cmp 4, __D0rotate, __signed_stack_001rotate, __D0rotate
-8	164	183	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	164	183	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	165	183		mov __signed_stack_001rotate, __D0rotate
-8	164	185	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	164	185	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	165	185		set __D0rotate, 3
-8	164	188	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	164	188	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	165	188		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
-8	164	192	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	164	192	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	164	192	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	164	192	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	165	192		mov __signed_stack_002rotate, __rotate_7qG2_dir_7qG2_000
-8	164	194	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	164	194	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	164	194	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	164	194	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	165	194		set __D0rotate, 1
-8	164	197	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	164	197	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	165	197		cmp 4, __D0rotate, __signed_stack_002rotate, __D0rotate
-8	164	201	#line 164 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	164	201	#line 164 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	165	201		mov __signed_stack_002rotate, __D0rotate
-8	165	203	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	165	203	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	166	203		set __D0rotate, 0
-8	165	206	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	165	206	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	166	206		mul __D0rotate, __signed_stack_002rotate, __D0rotate
-8	165	210	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	165	210	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	166	210		add __rotate_7qG2_sensor_7qG2_000, __signed_stack_001rotate, __D0rotate
-8	165	214	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	165	214	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	165	214	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	165	214	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	165	214	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	165	214	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	166	214		set __onLine_7qG2_sensor_7qG2_000, 1
-8	165	217	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	165	217	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	165	217	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	165	217	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	166	217		subcall onLine, __onLine_return
-8	165	219	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	165	219	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	165	219	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	165	219	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	166	219		not __DU0rotate, __DU0onLine
-8	165	222	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	165	222	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	166	222		tst 5, __D0rotate, __DU0rotate
-8	165	225	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	165	225	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	166	225		brtst 4, __ASM_Label_870, __D0rotate
-8	165	228	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	165	228	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	166	228		mov __onLine_7qG2_sensor_7qG2_000, __rotate_7qG2_sensor_7qG2_000
-8	165	230	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	165	230	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	165	230	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	165	230	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	166	230		subcall onLine, __onLine_return
-8	165	232	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	165	232	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	165	232	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	165	232	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	166	232		not __DU0rotate, __DU0onLine
-8	165	235	#line 165 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	165	235	#line 165 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	166	235		tst 5, __D0rotate, __DU0rotate
-8	167	238	#line 167 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	167	238	#line 167 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	168	238		brtst 4, __ASM_Label_868, __D0rotate
-8	167	241	#line 167 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	167	241	#line 167 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	168	241		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
-8	167	243	#line 167 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	167	243	#line 167 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	167	243	#line 167 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	167	243	#line 167 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	168	243		set __D0rotate, 100
-8	167	246	#line 167 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	167	246	#line 167 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	168	246		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
-8	167	250	#line 167 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	167	250	#line 167 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	167	250	#line 167 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	167	250	#line 167 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	168	250		set __D0rotate, 2
-8	167	253	#line 167 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	167	253	#line 167 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	168	253		div __D0rotate, __signed_stack_001rotate, __D0rotate
-8	168	257	#line 168 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	168	257	#line 168 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	169	257	#pragma macro 7
 8	169	257		setout __constVal0, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-8	8617	280	#line 8617 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	168	280	#line 168 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	168	280	#line 168 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	8617	280	#line 8617 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	168	280	#line 168 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	168	280	#line 168 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	169	280		set __signed_stack_001rotate, 0
-8	168	283	#line 168 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	168	283	#line 168 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	168	283	#line 168 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	168	283	#line 168 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	169	283		set __signed_stack_002rotate, 100
-8	168	286	#line 168 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	168	286	#line 168 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	168	286	#line 168 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	168	286	#line 168 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	169	286		set __D0rotate, 2
-8	168	289	#line 168 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	168	289	#line 168 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	169	289		div __signed_stack_002rotate, __signed_stack_002rotate, __D0rotate
-8	168	293	#line 168 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	168	293	#line 168 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	168	293	#line 168 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	168	293	#line 168 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	169	293		mov __D0rotate, __rotate_7qG2_dir_7qG2_000
-8	168	295	#line 168 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	168	295	#line 168 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	169	295		mul __D0rotate, __signed_stack_002rotate, __D0rotate
-8	168	299	#line 168 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	168	299	#line 168 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	169	299		sub __D0rotate, __signed_stack_001rotate, __D0rotate
-8	169	303	#line 169 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	169	303	#line 169 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	170	303	#pragma macro 7
 8	170	303		setout __constVal1, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-8	8648	326	#line 8648 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	169	326	#line 169 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	171	326	#line 171 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	8648	326	#line 8648 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	169	326	#line 169 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	171	326	#line 171 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	172	326		jmp __ASM_Label_867
-8	171	328	#line 171 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	171	328	#line 171 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	171	328	#line 171 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	171	328	#line 171 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	172	328		set __D0rotate, 0
-8	172	331	#line 172 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	172	331	#line 172 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	173	331	#pragma macro 7
 8	173	331		setout __constVal0, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-8	8657	354	#line 8657 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	172	354	#line 172 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	172	354	#line 172 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	8657	354	#line 8657 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	172	354	#line 172 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	172	354	#line 172 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	173	354		set __D0rotate, 0
-8	174	357	#line 174 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	174	357	#line 174 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	175	357	#pragma macro 7
 8	175	357		setout __constVal1, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-8	8662	380	#line 8662 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	174	380	#line 174 "D:\NXC - code\Version 1.0\.\functions.nxc"
-8	177	380	#line 177 "D:\NXC - code\Version 1.0\.\functions.nxc"
+8	8662	380	#line 8662 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	174	380	#line 174 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
+8	177	380	#line 177 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc"
 8	178	380		subret __rotate_return
-9	7	0	#line 7 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	7	0	#line 7 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	8	0		set __signed_stack_001ExecutePath, 3
-9	7	3	#line 7 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	7	3	#line 7 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	7	3	#line 7 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	7	3	#line 7 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	8	3		set __D0ExecutePath, 1
-9	7	6	#line 7 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	7	6	#line 7 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	8	6		acquire __RBtnMutex
-9	7	7	#line 7 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	7	7	#line 7 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	8	7		mov __RBtnArgs.Index, __signed_stack_001ExecutePath
-9	7	9	#line 7 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	7	9	#line 7 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	8	9		mov __RBtnArgs.Reset, __D0ExecutePath
-9	7	11	#line 7 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	7	11	#line 7 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	8	11		syscall 20, __RBtnArgs
-9	7	14	#line 7 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	7	14	#line 7 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	8	14		mov __D0ExecutePath, __RBtnArgs.Pressed
-9	7	16	#line 7 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	7	16	#line 7 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	8	16		release __RBtnMutex
-9	7	17	#line 7 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	7	17	#line 7 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	8	17		not __D0ExecutePath, __D0ExecutePath
-9	8	20	#line 8 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	8	20	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	9	20		tst 5, __D0ExecutePath, __D0ExecutePath
-9	8	23	#line 8 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	8	23	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	9	23		brtst 4, __ASM_Label_884, __D0ExecutePath
-9	8	26	#line 8 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	8	26	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	9	26		getin sLeft, __constVal0, 4
-9	8	30	#line 8 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	8	30	#line 8 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	8	30	#line 8 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	9	30	#line 9 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	8	30	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	8	30	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	8	30	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	9	30	#line 9 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	10	30		getin sRight, __constVal3, 4
-9	9	34	#line 9 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	9	34	#line 9 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	9	34	#line 9 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	10	34	#line 10 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	9	34	#line 9 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	9	34	#line 9 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	9	34	#line 9 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	10	34	#line 10 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	11	34		getin sBack, __constVal1, 4
-9	10	38	#line 10 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	10	38	#line 10 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	10	38	#line 10 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	11	38	#line 11 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	10	38	#line 10 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	10	38	#line 10 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	10	38	#line 10 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	11	38	#line 11 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	12	38		set __signed_stack_001ExecutePath, 48
-9	11	41	#line 11 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	11	41	#line 11 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	11	41	#line 11 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	11	41	#line 11 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	12	41		set __signed_stack_002ExecutePath, 0
-9	11	44	#line 11 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	11	44	#line 11 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	11	44	#line 11 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	11	44	#line 11 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	12	44		mov __D0ExecutePath, sRight
-9	12	46	#line 12 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	12	46	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	13	46		acquire __TextOutMutex
-9	12	47	#line 12 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	12	47	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	13	47		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
-9	12	49	#line 12 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	12	49	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	13	49		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
-9	12	51	#line 12 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	12	51	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	13	51		set __TextOutArgs.Options, 0
-9	12	54	#line 12 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	12	54	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	13	54		numtostr __TextOutArgs.Text, __D0ExecutePath
-9	12	57	#line 12 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	12	57	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	13	57		syscall 13, __TextOutArgs
-9	12	60	#line 12 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	12	60	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	13	60		mov __D0ExecutePath, __TextOutArgs.Result
-9	12	62	#line 12 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	12	62	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	13	62		release __TextOutMutex
-9	12	63	#line 12 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	12	63	#line 12 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	12	63	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	12	63	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	13	63		set __signed_stack_001ExecutePath, 0
-9	12	66	#line 12 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	12	66	#line 12 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	12	66	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	12	66	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	13	66		set __signed_stack_002ExecutePath, 0
-9	12	69	#line 12 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	12	69	#line 12 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	12	69	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	12	69	#line 12 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	13	69		strcat __strbufExecutePath, __constStr0009
-9	13	73	#line 13 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	13	73	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	14	73		acquire __TextOutMutex
-9	13	74	#line 13 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	13	74	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	14	74		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
-9	13	76	#line 13 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	13	76	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	14	76		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
-9	13	78	#line 13 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	13	78	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	14	78		set __TextOutArgs.Options, 0
-9	13	81	#line 13 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	13	81	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	14	81		mov __TextOutArgs.Text, __strbufExecutePath
-9	13	83	#line 13 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	13	83	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	14	83		syscall 13, __TextOutArgs
-9	13	86	#line 13 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	13	86	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	14	86		mov __D0ExecutePath, __TextOutArgs.Result
-9	13	88	#line 13 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	13	88	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	14	88		release __TextOutMutex
-9	13	89	#line 13 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	13	89	#line 13 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	13	89	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	13	89	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	14	89		set __signed_stack_001ExecutePath, 48
-9	13	92	#line 13 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	13	92	#line 13 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	13	92	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	13	92	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	14	92		set __signed_stack_002ExecutePath, 8
-9	13	95	#line 13 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	13	95	#line 13 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	13	95	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	13	95	#line 13 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	14	95		mov __D0ExecutePath, sLeft
-9	14	97	#line 14 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	14	97	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	15	97		acquire __TextOutMutex
-9	14	98	#line 14 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	14	98	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	15	98		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
-9	14	100	#line 14 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	14	100	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	15	100		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
-9	14	102	#line 14 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	14	102	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	15	102		set __TextOutArgs.Options, 0
-9	14	105	#line 14 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	14	105	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	15	105		numtostr __TextOutArgs.Text, __D0ExecutePath
-9	14	108	#line 14 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	14	108	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	15	108		syscall 13, __TextOutArgs
-9	14	111	#line 14 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	14	111	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	15	111		mov __D0ExecutePath, __TextOutArgs.Result
-9	14	113	#line 14 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	14	113	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	15	113		release __TextOutMutex
-9	14	114	#line 14 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	14	114	#line 14 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	14	114	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	14	114	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	15	114		set __signed_stack_001ExecutePath, 0
-9	14	117	#line 14 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	14	117	#line 14 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	14	117	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	14	117	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	15	117		set __signed_stack_002ExecutePath, 8
-9	14	120	#line 14 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	14	120	#line 14 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	14	120	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	14	120	#line 14 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	15	120		strcat __strbufExecutePath, __constStr0010
-9	15	124	#line 15 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	15	124	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	16	124		acquire __TextOutMutex
-9	15	125	#line 15 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	15	125	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	16	125		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
-9	15	127	#line 15 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	15	127	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	16	127		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
-9	15	129	#line 15 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	15	129	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	16	129		set __TextOutArgs.Options, 0
-9	15	132	#line 15 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	15	132	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	16	132		mov __TextOutArgs.Text, __strbufExecutePath
-9	15	134	#line 15 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	15	134	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	16	134		syscall 13, __TextOutArgs
-9	15	137	#line 15 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	15	137	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	16	137		mov __D0ExecutePath, __TextOutArgs.Result
-9	15	139	#line 15 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	15	139	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	16	139		release __TextOutMutex
-9	15	140	#line 15 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	15	140	#line 15 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	15	140	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	15	140	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	16	140		set __signed_stack_001ExecutePath, 48
-9	15	143	#line 15 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	15	143	#line 15 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	15	143	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	15	143	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	16	143		set __signed_stack_002ExecutePath, 16
-9	15	146	#line 15 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	15	146	#line 15 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	15	146	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	15	146	#line 15 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	16	146		mov __D0ExecutePath, sBack
-9	16	148	#line 16 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	16	148	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	17	148		acquire __TextOutMutex
-9	16	149	#line 16 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	16	149	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	17	149		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
-9	16	151	#line 16 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	16	151	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	17	151		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
-9	16	153	#line 16 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	16	153	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	17	153		set __TextOutArgs.Options, 0
-9	16	156	#line 16 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	16	156	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	17	156		numtostr __TextOutArgs.Text, __D0ExecutePath
-9	16	159	#line 16 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	16	159	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	17	159		syscall 13, __TextOutArgs
-9	16	162	#line 16 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	16	162	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	17	162		mov __D0ExecutePath, __TextOutArgs.Result
-9	16	164	#line 16 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	16	164	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	17	164		release __TextOutMutex
-9	16	165	#line 16 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	16	165	#line 16 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	16	165	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	16	165	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	17	165		set __signed_stack_001ExecutePath, 0
-9	16	168	#line 16 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	16	168	#line 16 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	16	168	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	16	168	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	17	168		set __signed_stack_002ExecutePath, 16
-9	16	171	#line 16 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	16	171	#line 16 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	16	171	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	16	171	#line 16 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	17	171		strcat __strbufExecutePath, __constStr0011
-9	17	175	#line 17 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	17	175	#line 17 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	18	175		acquire __TextOutMutex
-9	17	176	#line 17 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	17	176	#line 17 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	18	176		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
-9	17	178	#line 17 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	17	178	#line 17 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	18	178		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
-9	17	180	#line 17 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	17	180	#line 17 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	18	180		set __TextOutArgs.Options, 0
-9	17	183	#line 17 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	17	183	#line 17 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	18	183		mov __TextOutArgs.Text, __strbufExecutePath
-9	17	185	#line 17 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	17	185	#line 17 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	18	185		syscall 13, __TextOutArgs
-9	17	188	#line 17 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	17	188	#line 17 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	18	188		mov __D0ExecutePath, __TextOutArgs.Result
-9	17	190	#line 17 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	17	190	#line 17 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	18	190		release __TextOutMutex
-9	17	191	#line 17 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	18	191	#line 18 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	17	191	#line 17 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	18	191	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	19	191		jmp __ASM_Label_883
-9	18	193	#line 18 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	18	193	#line 18 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	18	193	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	18	193	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	19	193		set __signed_stack_001ExecutePath, 0
-9	18	196	#line 18 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	18	196	#line 18 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	18	196	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	18	196	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	19	196		set __signed_stack_002ExecutePath, 24
-9	18	199	#line 18 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	18	199	#line 18 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	18	199	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	18	199	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	19	199		strcat __strbufExecutePath, __constStr0012
-9	19	203	#line 19 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	19	203	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	20	203		acquire __TextOutMutex
-9	19	204	#line 19 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	19	204	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	20	204		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
-9	19	206	#line 19 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	19	206	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	20	206		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
-9	19	208	#line 19 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	19	208	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	20	208		set __TextOutArgs.Options, 0
-9	19	211	#line 19 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	19	211	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	20	211		mov __TextOutArgs.Text, __strbufExecutePath
-9	19	213	#line 19 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	19	213	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	20	213		syscall 13, __TextOutArgs
-9	19	216	#line 19 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	19	216	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	20	216		mov __D0ExecutePath, __TextOutArgs.Result
-9	19	218	#line 19 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	19	218	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	20	218		release __TextOutMutex
-9	19	219	#line 19 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	19	219	#line 19 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	19	219	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	19	219	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	20	219		set __signed_stack_001ExecutePath, 0
-9	19	222	#line 19 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	19	222	#line 19 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	19	222	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	19	222	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	20	222		set __signed_stack_002ExecutePath, 32
-9	19	225	#line 19 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	19	225	#line 19 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	19	225	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	19	225	#line 19 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	20	225		strcat __strbufExecutePath, __constStr0013
-9	20	229	#line 20 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	20	229	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	21	229		acquire __TextOutMutex
-9	20	230	#line 20 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	20	230	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	21	230		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
-9	20	232	#line 20 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	20	232	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	21	232		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
-9	20	234	#line 20 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	20	234	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	21	234		set __TextOutArgs.Options, 0
-9	20	237	#line 20 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	20	237	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	21	237		mov __TextOutArgs.Text, __strbufExecutePath
-9	20	239	#line 20 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	20	239	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	21	239		syscall 13, __TextOutArgs
-9	20	242	#line 20 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	20	242	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	21	242		mov __D0ExecutePath, __TextOutArgs.Result
-9	20	244	#line 20 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	20	244	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	21	244		release __TextOutMutex
-9	20	245	#line 20 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	20	245	#line 20 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	20	245	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	20	245	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	21	245		set __signed_stack_001ExecutePath, 0
-9	20	248	#line 20 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	20	248	#line 20 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	20	248	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	20	248	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	21	248		set __signed_stack_002ExecutePath, 40
-9	20	251	#line 20 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	20	251	#line 20 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	20	251	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	20	251	#line 20 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	21	251		strcat __strbufExecutePath, __constStr0014
-9	21	255	#line 21 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	21	255	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	22	255		acquire __TextOutMutex
-9	21	256	#line 21 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	21	256	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	22	256		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
-9	21	258	#line 21 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	21	258	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	22	258		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
-9	21	260	#line 21 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	21	260	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	22	260		set __TextOutArgs.Options, 0
-9	21	263	#line 21 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	21	263	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	22	263		mov __TextOutArgs.Text, __strbufExecutePath
-9	21	265	#line 21 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	21	265	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	22	265		syscall 13, __TextOutArgs
-9	21	268	#line 21 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	21	268	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	22	268		mov __D0ExecutePath, __TextOutArgs.Result
-9	21	270	#line 21 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	21	270	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	22	270		release __TextOutMutex
-9	21	271	#line 21 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	21	271	#line 21 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	21	271	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	21	271	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	22	271		set __signed_stack_001ExecutePath, 0
-9	21	274	#line 21 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	21	274	#line 21 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	21	274	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	21	274	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	22	274		set __signed_stack_002ExecutePath, 48
-9	21	277	#line 21 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	21	277	#line 21 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	21	277	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	21	277	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	22	277		strcat __strbufExecutePath, __constStr0015
-9	22	281	#line 22 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	22	281	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	23	281		acquire __TextOutMutex
-9	22	282	#line 22 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	22	282	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	23	282		mov __TextOutArgs.Location.X, __signed_stack_001ExecutePath
-9	22	284	#line 22 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	22	284	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	23	284		mov __TextOutArgs.Location.Y, __signed_stack_002ExecutePath
-9	22	286	#line 22 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	22	286	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	23	286		set __TextOutArgs.Options, 0
-9	22	289	#line 22 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	22	289	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	23	289		mov __TextOutArgs.Text, __strbufExecutePath
-9	22	291	#line 22 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	22	291	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	23	291		syscall 13, __TextOutArgs
-9	22	294	#line 22 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	22	294	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	23	294		mov __D0ExecutePath, __TextOutArgs.Result
-9	22	296	#line 22 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	22	296	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	23	296		release __TextOutMutex
-9	22	297	#line 22 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	22	297	#line 22 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	6678	297	#line 6678 "NXCDefs.h"
 9	6679	297	#pragma macro 6
 9	6679	297		acquire __PointOutMutex
@@ -1573,207 +1573,207 @@ Clump	Line	PC	Source
 9	6679	307		release __PointOutMutex
 9	9047	308	#line 9047 "NXCDefs.h"
 9	6678	308	#line 6678 "NXCDefs.h"
-9	25	308	#line 25 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	25	308	#line 25 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	25	308	#line 25 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	25	308	#line 25 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	26	308	#pragma macro 9
 9	26	308		acquire __soMutex
 9	26	309		flatten __soTmpBuf, PLAN
 9	26	312		arrsize __D0ExecutePath, __soTmpBuf
 9	26	315		sub __D0ExecutePath, __D0ExecutePath, __constVal1
 9	26	319		release __soMutex
-9	9055	320	#line 9055 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	25	320	#line 25 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	9055	320	#line 9055 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	25	320	#line 25 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	26	320		mov __signed_stack_001ExecutePath, __D0ExecutePath
-9	27	322	#line 27 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	27	322	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	28	322		set __D0ExecutePath, 2
-9	27	325	#line 27 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	27	325	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	28	325		div __ExecutePath_7qG2_pl_7qG2_000, __signed_stack_001ExecutePath, __D0ExecutePath
-9	27	329	#line 27 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	27	329	#line 27 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	27	329	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	27	329	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	28	329		set __ExecutePath_7qG2_i_7qG2_001, 0
-9	27	332	#line 27 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	27	332	#line 27 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	27	332	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	27	332	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	28	332		mov __signed_stack_001ExecutePath, __ExecutePath_7qG2_i_7qG2_001
-9	27	334	#line 27 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	27	334	#line 27 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	27	334	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	27	334	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	28	334		mov __D0ExecutePath, __ExecutePath_7qG2_pl_7qG2_000
-9	27	336	#line 27 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	27	336	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	28	336		cmp 0, __D0ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
-9	27	340	#line 27 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	27	340	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	28	340		brtst 4, __ASM_Label_946, __D0ExecutePath
-9	27	343	#line 27 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	27	343	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	28	343		jmp __ASM_Label_947
-9	27	345	#line 27 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	27	345	#line 27 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	28	345		add __ExecutePath_7qG2_i_7qG2_001, __ExecutePath_7qG2_i_7qG2_001, __constVal1
-9	29	349	#line 29 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	29	349	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	30	349		jmp __ASM_Label_945
-9	29	351	#line 29 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	29	351	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	30	351		mov __signed_stack_001ExecutePath, __ExecutePath_7qG2_i_7qG2_001
-9	29	353	#line 29 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	29	353	#line 29 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	29	353	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	29	353	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	30	353		index __ExecutePath_7qG2_command_7qG2_002, PLAN, __signed_stack_001ExecutePath
-9	29	357	#line 29 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	30	357	#line 30 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	30	357	#line 30 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	29	357	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	30	357	#line 30 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	30	357	#line 30 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	31	357		mov __D0ExecutePath, __ExecutePath_7qG2_command_7qG2_002
 9	34	359		brcmp 4, __ASM_Label_960, __constVal0, __D0ExecutePath
 9	35	363		brcmp 4, __ASM_Label_961, __constVal1, __D0ExecutePath
 9	36	367		brcmp 4, __ASM_Label_974, __constVal2, __D0ExecutePath
 9	37	371		brcmp 4, __ASM_Label_977, __constVal3, __D0ExecutePath
 9	38	375		jmp __ASM_Label_959
-9	32	377	#line 32 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	33	377	#line 33 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	32	377	#line 32 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	33	377	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	34	377		subcall moveFwd, __moveFwd_return
-9	33	379	#line 33 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	36	379	#line 36 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	33	379	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	36	379	#line 36 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	37	379		jmp __ASM_Label_959
-9	36	381	#line 36 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	37	381	#line 37 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	37	381	#line 37 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	36	381	#line 36 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	37	381	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	37	381	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	38	381		mov __signed_stack_001ExecutePath, __ExecutePath_7qG2_i_7qG2_001
-9	37	383	#line 37 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	37	383	#line 37 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	37	383	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	37	383	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	38	383		set __D0ExecutePath, 1
-9	37	386	#line 37 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	37	386	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	38	386		add __signed_stack_001ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
-9	37	390	#line 37 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	37	390	#line 37 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	37	390	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	37	390	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	38	390		mov __D0ExecutePath, __ExecutePath_7qG2_pl_7qG2_000
-9	37	392	#line 37 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	37	392	#line 37 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	38	392		cmp 0, __D0ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
-9	38	396	#line 38 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	38	396	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	39	396		brtst 4, __ASM_Label_966, __D0ExecutePath
-9	38	399	#line 38 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	38	399	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	39	399		mov __signed_stack_001ExecutePath, __ExecutePath_7qG2_i_7qG2_001
-9	38	401	#line 38 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	38	401	#line 38 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	38	401	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	38	401	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	39	401		set __D0ExecutePath, 1
-9	38	404	#line 38 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	38	404	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	39	404		add __signed_stack_001ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
-9	38	408	#line 38 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	38	408	#line 38 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	38	408	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	38	408	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	39	408		index __signed_stack_001ExecutePath, PLAN, __signed_stack_001ExecutePath
-9	38	412	#line 38 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	38	412	#line 38 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	38	412	#line 38 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	38	412	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	38	412	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	38	412	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	39	412		set __D0ExecutePath, 1
-9	38	415	#line 38 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	38	415	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	39	415		cmp 4, __D0ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
-9	39	419	#line 39 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	39	419	#line 39 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	40	419		brtst 4, __ASM_Label_971, __D0ExecutePath
-9	40	422	#line 40 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	40	422	#line 40 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	41	422		subcall moveFwd, __moveFwd_return
-9	40	424	#line 40 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	42	424	#line 42 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	40	424	#line 40 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	42	424	#line 42 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	43	424		jmp __ASM_Label_972
-9	42	426	#line 42 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	42	426	#line 42 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	43	426		subcall moveBox, __moveBox_return
-9	42	428	#line 42 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	43	428	#line 43 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	44	428	#line 44 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	42	428	#line 42 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	43	428	#line 43 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	44	428	#line 44 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	45	428		jmp __ASM_Label_973
-9	44	430	#line 44 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	44	430	#line 44 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	45	430		subcall moveBox, __moveBox_return
-9	44	432	#line 44 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	45	432	#line 45 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	47	432	#line 47 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	44	432	#line 44 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	45	432	#line 45 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	47	432	#line 47 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	48	432		jmp __ASM_Label_959
-9	47	434	#line 47 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	48	434	#line 48 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	48	434	#line 48 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	47	434	#line 47 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	48	434	#line 48 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	48	434	#line 48 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	49	434		set __rotate_7qG2_dir_7qG2_000, 1
-9	48	437	#line 48 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	49	437	#line 49 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	48	437	#line 48 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	49	437	#line 49 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	50	437		subcall rotate, __rotate_return
-9	49	439	#line 49 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	51	439	#line 51 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	49	439	#line 49 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	51	439	#line 51 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	52	439		jmp __ASM_Label_959
-9	51	441	#line 51 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	52	441	#line 52 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	52	441	#line 52 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	51	441	#line 51 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	52	441	#line 52 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	52	441	#line 52 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	53	441		mov __rotate_7qG2_dir_7qG2_000, __constValNeg1
-9	52	443	#line 52 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	53	443	#line 53 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	52	443	#line 52 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	53	443	#line 53 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	54	443		subcall rotate, __rotate_return
-9	53	445	#line 53 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	54	445	#line 54 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	54	445	#line 54 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	63	445	#line 63 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	63	445	#line 63 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	53	445	#line 53 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	54	445	#line 54 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	54	445	#line 54 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	63	445	#line 63 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	63	445	#line 63 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	64	445		jmp __ASM_Label_948
-9	63	447	#line 63 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	63	447	#line 63 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	63	447	#line 63 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	63	447	#line 63 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	64	447		set __D0ExecutePath, 0
-9	64	450	#line 64 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	64	450	#line 64 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	65	450		tst 5, __D0ExecutePath, __D0ExecutePath
-9	64	453	#line 64 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	64	453	#line 64 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	65	453		brtst 4, __ASM_Label_982, __D0ExecutePath
-9	64	456	#line 64 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	64	456	#line 64 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	65	456		strcat __strbufExecutePath, __constStr0016
-9	64	460	#line 64 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	64	460	#line 64 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	65	460		set __signed_stack_001ExecutePath, 4
-9	64	463	#line 64 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	64	463	#line 64 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	64	463	#line 64 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	64	463	#line 64 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	65	463		set __D0ExecutePath, 0
-9	65	466	#line 65 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	65	466	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	66	466		acquire __SPFArgsMutex
-9	65	467	#line 65 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	65	467	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	66	467		mov __SPFArgs.Filename, __strbufExecutePath
-9	65	469	#line 65 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	65	469	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	66	469		mov __SPFArgs.Volume, __signed_stack_001ExecutePath
-9	65	471	#line 65 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	65	471	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	66	471		mov __SPFArgs.Loop, __D0ExecutePath
-9	65	473	#line 65 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	65	473	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	66	473		syscall 9, __SPFArgs
-9	65	476	#line 65 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	65	476	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	66	476		mov __D0ExecutePath, __SPFArgs.Result
-9	65	478	#line 65 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	65	478	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	66	478		release __SPFArgsMutex
-9	65	479	#line 65 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	65	479	#line 65 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	65	479	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	65	479	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	66	479		set __Wait_7qG2_ms_7qG2_000_inline_ExecutePath, 7000
-9	65	482	#line 65 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	65	482	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	8551	482	#line 8551 "NXCDefs.h"
 9	8552	482		waitv __Wait_7qG2_ms_7qG2_000_inline_ExecutePath
 9	8551	484	#line 8551 "NXCDefs.h"
-9	66	484	#line 66 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	67	484	#line 67 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	67	484	#line 67 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	66	484	#line 66 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	67	484	#line 67 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	67	484	#line 67 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	68	484		set __Wait_7qG2_ms_7qG2_000_inline_ExecutePath, 10000
-9	67	487	#line 67 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	67	487	#line 67 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	8551	487	#line 8551 "NXCDefs.h"
 9	8552	487		waitv __Wait_7qG2_ms_7qG2_000_inline_ExecutePath
 9	8551	489	#line 8551 "NXCDefs.h"
-9	68	489	#line 68 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	68	489	#line 68 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	68	489	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	68	489	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	69	489		set __D0ExecutePath, 1
-9	69	492	#line 69 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	69	492	#line 69 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	70	492		tst 5, __D0ExecutePath, __D0ExecutePath
-9	69	495	#line 69 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	69	495	#line 69 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	70	495		brtst 4, __ASM_Label_992, __D0ExecutePath
-9	69	498	#line 69 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
-9	69	498	#line 69 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	69	498	#line 69 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	69	498	#line 69 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	70	498		jmp __ASM_Label_991
-9	69	500	#line 69 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	69	500	#line 69 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	8564	500	#line 8564 "NXCDefs.h"
 9	8565	500		set __D0StopAllTasks_inline_ExecutePath, 1
 9	8564	503	#line 8564 "NXCDefs.h"
 9	8565	503		stop __D0StopAllTasks_inline_ExecutePath
 9	8564	505	#line 8564 "NXCDefs.h"
-9	70	505	#line 70 "D:\NXC - code\Version 1.0\.\ExecutePath.nxc"
+9	70	505	#line 70 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc"
 9	71	505		exit -1, -1
-10	36	0	#line 36 "D:\NXC - code\Version 1.0\main.nxc"
+10	36	0	#line 36 "C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\main.nxc"
 10	37	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	D:\NXC - code\Version 1.0\main.nxc
+0	main	0	C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\main.nxc
 1	__ResetSensorSubroutine	7	NXTDefs.h
-2	onLine	20	D:\NXC - code\Version 1.0\.\LightSensors.nxc
-3	init	106	D:\NXC - code\Version 1.0\.\functions.nxc
-4	angleFollow	240	D:\NXC - code\Version 1.0\.\functions.nxc
-5	lineFollow	694	D:\NXC - code\Version 1.0\.\functions.nxc
-6	moveFwd	836	D:\NXC - code\Version 1.0\.\functions.nxc
-7	moveBox	950	D:\NXC - code\Version 1.0\.\functions.nxc
-8	rotate	1145	D:\NXC - code\Version 1.0\.\functions.nxc
-9	ExecutePath	1527	D:\NXC - code\Version 1.0\.\ExecutePath.nxc
-10	__initialize_global_data	2035	D:\NXC - code\Version 1.0\main.nxc
+2	onLine	20	C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\LightSensors.nxc
+3	init	106	C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc
+4	angleFollow	240	C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc
+5	lineFollow	694	C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc
+6	moveFwd	836	C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc
+7	moveBox	950	C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc
+8	rotate	1145	C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\functions.nxc
+9	ExecutePath	1527	C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\.\ExecutePath.nxc
+10	__initialize_global_data	2035	C:\SmartGit\7.semester\AI\NXC - code\Version 1.0\main.nxc

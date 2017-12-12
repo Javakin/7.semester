@@ -43,21 +43,39 @@ void angleFollow(int dir, long RightMotor, long LeftMotor, int speed ){
       }
 }
 
+long int error_i = 0;
 void lineFollow(bool dir){
      int rightgain = 0;
      int leftgain = 0;
+     int vLeft = 0;
+     int vRight = 0;
+     int speed_gain  = 0;
+     int error = 0;
      // follow the line
      if (dir){
           // move forward
-          leftgain = (Sensor(LIGHTRIGHT)-sRight);//*(GAIN);
+          /*leftgain = (Sensor(LIGHTRIGHT)-sRight);//*(GAIN);
           rightgain = (Sensor(LIGHTLEFT)-sLeft);//*(GAIN);
 
           // add the mean spead
           int vLeft = SPEED + rightgain-leftgain;
-          int vRight = SPEED + leftgain-rightgain;
+          int vRight = SPEED + leftgain-rightgain;*/
+          error = (sRight - Sensor(LIGHTRIGHT)) - (sLeft - Sensor(LIGHTLEFT));
+          error_i+= error;
+          
+          speed_gain = error* GAIN+error_i*GAIN_I ;
+          if(speed_gain<0){
+               vLeft = SPEED+speed_gain;
+               vRight = SPEED;
+          }else{
+               vRight = SPEED-speed_gain;
+               vLeft = SPEED;
+          }
 
           if(vLeft > 100) vLeft = 100;
           if(vRight > 100) vRight = 100;
+          if(vLeft < 0) vLeft = 0;
+          if(vRight < 0) vRight = 0;
 
           OnFwd(MOTORLEFT,vLeft);
           OnFwd(MOTORRIGHT,vRight);
@@ -100,7 +118,7 @@ void moveBox(){
      }
 
 
-     while (!onLine(LIGHTBACK) && (motorAngle + 100 < MotorRotationCount(MOTORLEFT))){
+     while (!onLine(LIGHTBACK) && (motorAngle + 50 < MotorRotationCount(MOTORLEFT))){
            OnFwd(MOTORLEFT,-SPEED);
            OnFwd(MOTORRIGHT,-SPEED);
      }
@@ -108,7 +126,7 @@ void moveBox(){
      // move the robot in possition for the next command
      OnFwd(MOTORLEFT,0);
      OnFwd(MOTORRIGHT,0);
-     Wait(150);
+     Wait(250);
 
 }
 void rotate(int dir){

@@ -1,138 +1,134 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__D0StopAllTasks_inline_ExecutePath	6	1	0	4	2
-1	__DU0SetSensorLight_inline_init	5	1	4	4	15
-2	__D0SetSensorLight_inline_init	6	1	8	4	6
-3	__signed_stack_001ExecutePath	6	1	12	4	32
-4	__signed_stack_002angleFollow	6	1	16	4	18
-5	__signed_stack_001angleFollow	6	1	20	4	48
-6	__DU0rotate	5	1	24	4	8
-7	__DU0moveFwd	5	1	28	4	10
-8	__D0moveFwd	6	1	32	4	18
-9	__DU0moveBox	5	1	36	4	2
-10	__D0rotate	6	1	40	4	60
-11	__DU0onLine	5	1	44	4	15
-12	__D0onLine	6	1	48	4	22
-13	__signed_stack_002rotate	6	1	52	4	14
-14	__signed_stack_001rotate	6	1	56	4	22
-15	__signed_stack_002onLine	6	1	60	4	6
+0	__D0SetSensorLight_inline_init	6	1	0	4	6
+1	__DU0rotate	5	1	4	4	8
+2	__D0rotate	6	1	8	4	60
+3	__signed_stack_001angleFollow	6	1	12	4	48
+4	__D0StopAllTasks_inline_ExecutePath	6	1	16	4	2
+5	__DU0SetSensorLight_inline_init	5	1	20	4	15
+6	__D0moveFwd	6	1	24	4	18
+7	__DU0moveBox	5	1	28	4	2
+8	__D0moveBox	6	1	32	4	26
+9	__DU0onLine	5	1	36	4	15
+10	__D0onLine	6	1	40	4	22
+11	__DU0moveFwd	5	1	44	4	10
+12	__signed_stack_002angleFollow	6	1	48	4	18
+13	__signed_stack_001rotate	6	1	52	4	22
+14	__signed_stack_002onLine	6	1	56	4	6
+15	__signed_stack_001onLine	6	1	60	4	6
 16	__angleFollow_7qG2_RightMotor_7qG2_000	6	1	64	4	3
 17	__angleFollow_7qG2_LeftMotor_7qG2_000	6	1	68	4	3
-18	error_i	6	1	72	4	3
-19	__signed_stack_001onLine	6	1	76	4	6
-20	__signed_stack_002lineFollow	6	1	80	4	2
-21	__signed_stack_001lineFollow	6	1	84	4	22
-22	__signed_stack_002ExecutePath	6	1	88	4	12
-23	__unsigned_stack_001moveFwd	5	1	92	4	4
-24	__signed_stack_001moveFwd	6	1	96	4	4
-25	__signed_stack_001moveBox	6	1	100	4	8
-26	__D0moveBox	6	1	104	4	26
-27	__moveBox_7qG2_motorAngle_7qG2_000	6	1	108	4	3
-28	__PointOutMutex	9	0	112	4	2
-29	__RBtnMutex	9	0	116	4	2
-30	__moveFwd_7qG2_StartTime_7qG2_000	5	1	120	4	3
-31	__Wait_7qG2_ms_7qG2_000_inline_moveFwd	5	1	124	4	2
-32	__rotate_7qG2_LeftMotor_7qG2_000	6	1	128	4	4
-33	__Wait_7qG2_ms_7qG2_000_inline_ExecutePath	5	1	132	4	4
-34	__rotate_7qG2_RightMotor_7qG2_000	6	1	136	4	3
-35	__Wait_7qG2_ms_7qG2_000_inline_moveBox	5	1	140	4	2
-36	__TextOutMutex	9	0	144	4	18
-37	__soMutex	9	0	148	4	2
-38	__D0ExecutePath	6	1	152	4	58
-39	__D0angleFollow	6	1	156	4	89
-40	__DU0lineFollow	5	1	160	4	2
-41	__D0lineFollow	6	1	164	4	40
-42	__constValf0P003	10	0	168	4	1
-43	__DF0lineFollow	10	1	172	4	2
-44	__SPFArgsMutex	9	0	176	4	2
-45	__angleFollow_7qG2_dif_7qG2_000	4	1	180	2	6
-46	__angleFollow_7qG2_vRight_7qG2_000	4	1	182	2	13
-47	__angleFollow_7qG2_vLeft_7qG2_000	4	1	184	2	13
-48	__angleFollow_7qG2_dir_7qG2_000	4	1	186	2	5
-49	__ExecutePath_7qG2_command_7qG2_002	4	1	188	2	2
-50	__angleFollow_7qG2_speed_7qG2_000	4	1	190	2	8
-51	__ExecutePath_7qG2_i_7qG2_001	4	1	192	2	7
-52	__rotate_7qG2_dir_7qG2_000	4	1	194	2	11
-53	__lineFollow_7qG2_speed_gain_7qG2_000	4	1	196	2	5
-54	__lineFollow_7qG2_error_7qG2_000	4	1	198	2	4
-55	__lineFollow_7qG2_vRight_7qG2_000	4	1	200	2	8
-56	__lineFollow_7qG2_vLeft_7qG2_000	4	1	202	2	8
-57	__ExecutePath_7qG2_pl_7qG2_000	4	1	204	2	3
-58	__rotate_7qG2_sensor_7qG2_000	4	1	206	2	4
-59	sBack	4	1	208	2	3
-60	__onLine_7qG2_sensor_7qG2_000	4	1	210	2	9
-61	sRight	4	1	212	2	4
-62	__constVal200	4	0	214	2	2
-63	sLeft	4	1	216	2	4
-64	__constVal2	2	0	218	1	1
-65	__rotate_return	1	1	219	1	4
-66	____ResetSensorSubroutine_return	1	1	220	1	5
-67	__moveBox_return	1	1	221	1	4
-68	__SetSensorLight_7qG2_bActive_7qG2_000_inline_init	1	1	222	1	6
-69	__constValNeg100	2	0	223	1	6
-70	__moveFwd_return	1	1	224	1	5
-71	__ResetSensorTmp	1	1	225	1	2
-72	__constVal1	2	0	226	1	22
-73	__constVal32	2	0	227	1	54
-74	____initialize_global_data_return	1	1	228	1	3
-75	__constVal0	2	1	229	1	74
-76	__ResetSensorPort	1	1	230	1	5
-77	__constValNeg1	2	0	231	1	3
-78	__constVal3	2	0	232	1	23
-79	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init	1	1	233	1	6
-80	__angleFollow_return	1	1	234	1	4
-81	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	235	1	6
-82	__constVal96	2	0	236	1	18
-83	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init	1	1	237	1	6
-84	__SetSensorLight_7qG2_port_7qG2_000_inline_init	1	1	238	1	15
-85	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	239	1	3
-86	__init_return	1	1	240	1	3
-87	__onLine_return	1	1	241	1	11
-88	__onLine_7qG2_output_7qG2_000	1	1	242	1	5
-89	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	243	1	6
-90	__lineFollow_return	1	1	244	1	4
-91	__lineFollow_7qG2_dir_7qG2_000	1	1	245	1	3
-92	__constVal63	2	0	246	1	18
-93	__SPFArgs	8	0	4	12	5
-94	__SPFArgs.Result	2	1	248	1	5
-95	__SPFArgs.Filename	7	0	250	4	5
-96	__SPFArgs.Filename.Filename_type	1	0	0	1	0
-97	__SPFArgs.Loop	1	1	252	1	5
-98	__SPFArgs.Volume	1	1	253	1	5
-99	__TextOutArgs	8	0	4	16	54
-100	__TextOutArgs.Result	2	1	256	1	54
-101	__TextOutArgs.Location	8	0	2	4	54
-102	__TextOutArgs.Location.X	4	1	260	2	54
-103	__TextOutArgs.Location.Y	4	1	262	2	54
-104	__TextOutArgs.Text	7	0	264	4	54
-105	__TextOutArgs.Text.Text_type	1	0	0	1	0
-106	__TextOutArgs.Options	5	1	268	4	54
-107	__RBtnArgs	8	0	5	8	4
-108	__RBtnArgs.Result	2	1	272	1	4
-109	__RBtnArgs.Index	1	1	273	1	4
-110	__RBtnArgs.Pressed	1	1	274	1	4
-111	__RBtnArgs.Count	1	1	275	1	4
-112	__RBtnArgs.Reset	1	1	276	1	4
-113	__PointOutArgs	8	0	3	12	4
-114	__PointOutArgs.Result	2	1	280	1	4
-115	__PointOutArgs.Location	8	0	2	4	4
-116	__PointOutArgs.Location.X	4	1	284	2	4
-117	__PointOutArgs.Location.Y	4	1	286	2	4
-118	__PointOutArgs.Options	5	1	288	4	4
-119	PLAN	7	0	292	4	3
-120	PLAN.PLAN_type	4	0	0	2	0
-121	__strbufExecutePath	7	0	294	4	8
-122	__strbufExecutePath.__strbufExecutePath_type	1	0	0	1	0
-123	__constStr0012	7	0	296	4	1
-124	__constStr0012.__constStr0012_type	1	1	0	1	0
-125	__constStr0009	7	0	298	4	1
-126	__constStr0009.__constStr0009_type	1	1	0	1	0
-127	__soTmpBuf	7	0	300	4	2
-128	__soTmpBuf.__soTmpBuf_type	1	0	0	1	0
-129	__constStr0011	7	0	302	4	1
-130	__constStr0011.__constStr0011_type	1	1	0	1	0
-131	__constStr0010	7	0	304	4	1
-132	__constStr0010.__constStr0010_type	1	1	0	1	0
+18	__signed_stack_002rotate	6	1	72	4	14
+19	__signed_stack_001lineFollow	6	1	76	4	16
+20	__signed_stack_002ExecutePath	6	1	80	4	12
+21	__signed_stack_001ExecutePath	6	1	84	4	32
+22	__unsigned_stack_001moveFwd	5	1	88	4	4
+23	__signed_stack_001moveFwd	6	1	92	4	4
+24	__signed_stack_001moveBox	6	1	96	4	8
+25	__moveBox_7qG2_motorAngle_7qG2_000	6	1	100	4	3
+26	__PointOutMutex	9	0	104	4	2
+27	__RBtnMutex	9	0	108	4	2
+28	__moveFwd_7qG2_StartTime_7qG2_000	5	1	112	4	3
+29	__Wait_7qG2_ms_7qG2_000_inline_moveFwd	5	1	116	4	2
+30	__rotate_7qG2_LeftMotor_7qG2_000	6	1	120	4	4
+31	__Wait_7qG2_ms_7qG2_000_inline_ExecutePath	5	1	124	4	4
+32	__rotate_7qG2_RightMotor_7qG2_000	6	1	128	4	3
+33	__Wait_7qG2_ms_7qG2_000_inline_moveBox	5	1	132	4	2
+34	__TextOutMutex	9	0	136	4	18
+35	__D0ExecutePath	6	1	140	4	58
+36	__D0angleFollow	6	1	144	4	89
+37	__DU0lineFollow	5	1	148	4	2
+38	__D0lineFollow	6	1	152	4	26
+39	__SPFArgsMutex	9	0	156	4	2
+40	__soMutex	9	0	160	4	2
+41	__angleFollow_7qG2_vLeft_7qG2_000	4	1	164	2	13
+42	__angleFollow_7qG2_vRight_7qG2_000	4	1	166	2	13
+43	__angleFollow_7qG2_dif_7qG2_000	4	1	168	2	6
+44	__angleFollow_7qG2_dir_7qG2_000	4	1	170	2	5
+45	__ExecutePath_7qG2_command_7qG2_002	4	1	172	2	2
+46	__angleFollow_7qG2_speed_7qG2_000	4	1	174	2	8
+47	__ExecutePath_7qG2_i_7qG2_001	4	1	176	2	7
+48	__lineFollow_7qG2_vLeft_7qG2_001	4	1	178	2	4
+49	__rotate_7qG2_dir_7qG2_000	4	1	180	2	11
+50	__lineFollow_7qG2_leftgain_7qG2_000	4	1	182	2	4
+51	__lineFollow_7qG2_rightgain_7qG2_000	4	1	184	2	4
+52	__ExecutePath_7qG2_pl_7qG2_000	4	1	186	2	3
+53	__rotate_7qG2_sensor_7qG2_000	4	1	188	2	4
+54	__lineFollow_7qG2_vRight_7qG2_001	4	1	190	2	4
+55	sBack	4	1	192	2	3
+56	__onLine_7qG2_sensor_7qG2_000	4	1	194	2	9
+57	sRight	4	1	196	2	4
+58	__constVal200	4	0	198	2	2
+59	sLeft	4	1	200	2	4
+60	__constVal2	2	0	202	1	1
+61	__rotate_return	1	1	203	1	4
+62	____ResetSensorSubroutine_return	1	1	204	1	5
+63	__moveBox_return	1	1	205	1	4
+64	__init_return	1	1	206	1	3
+65	__constValNeg100	2	0	207	1	6
+66	__moveFwd_return	1	1	208	1	5
+67	__ResetSensorTmp	1	1	209	1	2
+68	__constVal1	2	0	210	1	22
+69	__constVal32	2	0	211	1	54
+70	____initialize_global_data_return	1	1	212	1	3
+71	__constVal0	2	1	213	1	74
+72	__ResetSensorPort	1	1	214	1	5
+73	__constValNeg1	2	0	215	1	3
+74	__constVal3	2	0	216	1	23
+75	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	217	1	6
+76	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_init	1	1	218	1	6
+77	__angleFollow_return	1	1	219	1	4
+78	__SetSensorLight_7qG2_port_7qG2_000_inline_init	1	1	220	1	15
+79	__SetSensorLight_7qG2_bActive_7qG2_000_inline_init	1	1	221	1	6
+80	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_init	1	1	222	1	6
+81	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	223	1	6
+82	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_init	1	1	224	1	3
+83	__onLine_return	1	1	225	1	11
+84	__onLine_7qG2_output_7qG2_000	1	1	226	1	5
+85	__lineFollow_return	1	1	227	1	4
+86	__constVal96	2	0	228	1	18
+87	__constVal63	2	0	229	1	18
+88	__lineFollow_7qG2_dir_7qG2_000	1	1	230	1	3
+89	__SPFArgs	8	0	4	12	5
+90	__SPFArgs.Result	2	1	232	1	5
+91	__SPFArgs.Filename	7	0	234	4	5
+92	__SPFArgs.Filename.Filename_type	1	0	0	1	0
+93	__SPFArgs.Loop	1	1	236	1	5
+94	__SPFArgs.Volume	1	1	237	1	5
+95	__PointOutArgs	8	0	3	12	4
+96	__PointOutArgs.Result	2	1	240	1	4
+97	__PointOutArgs.Location	8	0	2	4	4
+98	__PointOutArgs.Location.X	4	1	244	2	4
+99	__PointOutArgs.Location.Y	4	1	246	2	4
+100	__PointOutArgs.Options	5	1	248	4	4
+101	__TextOutArgs	8	0	4	16	54
+102	__TextOutArgs.Result	2	1	252	1	54
+103	__TextOutArgs.Location	8	0	2	4	54
+104	__TextOutArgs.Location.X	4	1	256	2	54
+105	__TextOutArgs.Location.Y	4	1	258	2	54
+106	__TextOutArgs.Text	7	0	260	4	54
+107	__TextOutArgs.Text.Text_type	1	0	0	1	0
+108	__TextOutArgs.Options	5	1	264	4	54
+109	__RBtnArgs	8	0	5	8	4
+110	__RBtnArgs.Result	2	1	268	1	4
+111	__RBtnArgs.Index	1	1	269	1	4
+112	__RBtnArgs.Pressed	1	1	270	1	4
+113	__RBtnArgs.Count	1	1	271	1	4
+114	__RBtnArgs.Reset	1	1	272	1	4
+115	__constStr0012	7	0	274	4	1
+116	__constStr0012.__constStr0012_type	1	1	0	1	0
+117	__strbufExecutePath	7	0	276	4	8
+118	__strbufExecutePath.__strbufExecutePath_type	1	0	0	1	0
+119	__soTmpBuf	7	0	278	4	2
+120	__soTmpBuf.__soTmpBuf_type	1	0	0	1	0
+121	PLAN	7	0	280	4	3
+122	PLAN.PLAN_type	4	0	0	2	0
+123	__constStr0009	7	0	282	4	1
+124	__constStr0009.__constStr0009_type	1	1	0	1	0
+125	__constStr0011	7	0	284	4	1
+126	__constStr0011.__constStr0011_type	1	1	0	1	0
+127	__constStr0010	7	0	286	4	1
+128	__constStr0010.__constStr0010_type	1	1	0	1	0
 #SOURCES
 Clump	Line	PC	Source
 0	23	0	#line 23 "C:\SmartGit\7.semester\AI\NXC - code\Project\main.nxc"
@@ -728,624 +724,552 @@ Clump	Line	PC	Source
 4	45	452	#line 45 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
 4	45	452	#line 45 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
 4	46	452		subret __angleFollow_return
-5	48	0	#line 48 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	48	0	#line 48 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	49	0	#line 49 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	49	0	#line 49 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	50	0	#line 50 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	51	0		set __lineFollow_7qG2_vLeft_7qG2_000, 0
-5	50	3	#line 50 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	51	3	#line 51 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	52	3		set __lineFollow_7qG2_vRight_7qG2_000, 0
-5	51	6	#line 51 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	52	6	#line 52 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	53	6		set __lineFollow_7qG2_speed_gain_7qG2_000, 0
-5	52	9	#line 52 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	54	9	#line 54 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	55	9		set __lineFollow_7qG2_error_7qG2_000, 0
-5	54	12	#line 54 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	54	12	#line 54 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	55	12		mov __DU0lineFollow, __lineFollow_7qG2_dir_7qG2_000
-5	62	14	#line 62 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	63	14		tst 5, __D0lineFollow, __DU0lineFollow
-5	62	17	#line 62 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	63	17		brtst 4, __ASM_Label_744, __D0lineFollow
-5	62	20	#line 62 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	63	20		mov __signed_stack_001lineFollow, sRight
-5	62	22	#line 62 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	62	22	#line 62 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	63	22		getin __D0lineFollow, __constVal3, 4
-5	62	26	#line 62 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	63	26		sub __signed_stack_001lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-5	62	30	#line 62 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	62	30	#line 62 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	63	30		mov __signed_stack_002lineFollow, sLeft
-5	62	32	#line 62 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	62	32	#line 62 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	63	32		getin __D0lineFollow, __constVal0, 4
-5	62	36	#line 62 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	63	36		sub __D0lineFollow, __signed_stack_002lineFollow, __D0lineFollow
-5	63	40	#line 63 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	64	40		sub __lineFollow_7qG2_error_7qG2_000, __signed_stack_001lineFollow, __D0lineFollow
-5	63	44	#line 63 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	63	44	#line 63 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	63	44	#line 63 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	65	44	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	66	44		mov __D0lineFollow, __lineFollow_7qG2_error_7qG2_000
-5	65	46	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	66	46		add error_i, error_i, __D0lineFollow
-5	65	50	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	65	50	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	66	50		mov __signed_stack_001lineFollow, __lineFollow_7qG2_error_7qG2_000
-5	65	52	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	65	52	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	66	52		set __D0lineFollow, 3
-5	65	55	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	66	55		mul __signed_stack_001lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-5	65	59	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	65	59	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	65	59	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	66	59	#line 66 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	66	59	#line 66 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	67	59		mul __DF0lineFollow, error_i, __constValf0P003
-5	66	63	#line 66 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	67	63		add __lineFollow_7qG2_speed_gain_7qG2_000, __signed_stack_001lineFollow, __DF0lineFollow
-5	66	67	#line 66 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	66	67	#line 66 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	66	67	#line 66 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	67	67		mov __signed_stack_001lineFollow, __lineFollow_7qG2_speed_gain_7qG2_000
-5	66	69	#line 66 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	66	69	#line 66 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	67	69		set __D0lineFollow, 0
-5	66	72	#line 66 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	67	72		cmp 0, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-5	67	76	#line 67 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	68	76		brtst 4, __ASM_Label_757, __D0lineFollow
-5	67	79	#line 67 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	68	79		set __signed_stack_001lineFollow, 100
-5	67	82	#line 67 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	68	82	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	69	82		mov __D0lineFollow, __lineFollow_7qG2_speed_gain_7qG2_000
-5	68	84	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	69	84		add __lineFollow_7qG2_vLeft_7qG2_000, __signed_stack_001lineFollow, __D0lineFollow
-5	68	88	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	68	88	#line 68 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	69	88	#line 69 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	70	88		set __lineFollow_7qG2_vRight_7qG2_000, 100
-5	69	91	#line 69 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	69	91	#line 69 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	70	91	#line 70 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	71	91		jmp __ASM_Label_762
-5	70	93	#line 70 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	71	93		set __signed_stack_001lineFollow, 100
-5	70	96	#line 70 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	71	96	#line 71 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	72	96		mov __D0lineFollow, __lineFollow_7qG2_speed_gain_7qG2_000
-5	71	98	#line 71 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	72	98		sub __lineFollow_7qG2_vRight_7qG2_000, __signed_stack_001lineFollow, __D0lineFollow
-5	71	102	#line 71 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	71	102	#line 71 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	72	102	#line 72 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	73	102		set __lineFollow_7qG2_vLeft_7qG2_000, 100
-5	72	105	#line 72 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	72	105	#line 72 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	74	105	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	74	105	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	75	105		mov __signed_stack_001lineFollow, __lineFollow_7qG2_vLeft_7qG2_000
-5	74	107	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	74	107	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	75	107		set __D0lineFollow, 100
-5	74	110	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	75	110		cmp 1, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-5	74	114	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	75	114		brtst 4, __ASM_Label_769, __D0lineFollow
-5	75	117	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	76	117		set __lineFollow_7qG2_vLeft_7qG2_000, 100
-5	75	120	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	75	120	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	75	120	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	75	120	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	76	120		mov __signed_stack_001lineFollow, __lineFollow_7qG2_vRight_7qG2_000
-5	75	122	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	75	122	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	76	122		set __D0lineFollow, 100
-5	75	125	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	76	125		cmp 1, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-5	75	129	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	76	129		brtst 4, __ASM_Label_774, __D0lineFollow
-5	76	132	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	77	132		set __lineFollow_7qG2_vRight_7qG2_000, 100
-5	76	135	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	76	135	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	76	135	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	76	135	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	77	135		mov __signed_stack_001lineFollow, __lineFollow_7qG2_vLeft_7qG2_000
-5	76	137	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	76	137	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	77	137		set __D0lineFollow, 0
-5	76	140	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	77	140		cmp 0, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-5	76	144	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	77	144		brtst 4, __ASM_Label_779, __D0lineFollow
-5	77	147	#line 77 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	78	147		set __lineFollow_7qG2_vLeft_7qG2_000, 0
-5	77	150	#line 77 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	77	150	#line 77 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	77	150	#line 77 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	77	150	#line 77 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	78	150		mov __signed_stack_001lineFollow, __lineFollow_7qG2_vRight_7qG2_000
-5	77	152	#line 77 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	77	152	#line 77 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	78	152		set __D0lineFollow, 0
-5	77	155	#line 77 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	78	155		cmp 0, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
-5	77	159	#line 77 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	78	159		brtst 4, __ASM_Label_784, __D0lineFollow
-5	79	162	#line 79 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	80	162		set __lineFollow_7qG2_vRight_7qG2_000, 0
-5	79	165	#line 79 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	79	165	#line 79 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	79	165	#line 79 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	79	165	#line 79 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	80	165		mov __D0lineFollow, __lineFollow_7qG2_vLeft_7qG2_000
-5	80	167	#line 80 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	81	167	#pragma macro 7
-5	81	167		setout __constVal0, 2, __D0lineFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	8146	190	#line 8146 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	80	190	#line 80 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	80	190	#line 80 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	81	190		mov __D0lineFollow, __lineFollow_7qG2_vRight_7qG2_000
-5	81	192	#line 81 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	82	192	#pragma macro 7
-5	82	192		setout __constVal1, 2, __D0lineFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	8153	215	#line 8153 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	81	215	#line 81 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	84	215	#line 84 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	85	215		jmp __ASM_Label_791
-5	87	217	#line 87 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	87	217	#line 87 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-5	88	217		subret __lineFollow_return
-6	90	0	#line 90 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	91	0		gettick __moveFwd_7qG2_StartTime_7qG2_000
-6	90	2	#line 90 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	92	2	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	2		set __onLine_7qG2_sensor_7qG2_000, 0
-6	92	5	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	92	5	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	5		subcall onLine, __onLine_return
-6	92	7	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	92	7	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	7		not __DU0moveFwd, __DU0onLine
-6	92	10	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	10		tst 5, __D0moveFwd, __DU0moveFwd
-6	92	13	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	13		brtst 5, __ASM_Label_796, __D0moveFwd
-6	92	16	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	16		set __onLine_7qG2_sensor_7qG2_000, 3
-6	92	19	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	92	19	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	19		subcall onLine, __onLine_return
-6	92	21	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	92	21	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	21		not __DU0moveFwd, __DU0onLine
-6	92	24	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	24		tst 5, __D0moveFwd, __DU0moveFwd
-6	92	27	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	27		brtst 5, __ASM_Label_796, __D0moveFwd
-6	92	30	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	30		mov __unsigned_stack_001moveFwd, __moveFwd_7qG2_StartTime_7qG2_000
-6	92	32	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	92	32	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	32		set __D0moveFwd, 560
-6	92	35	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	35		add __signed_stack_001moveFwd, __unsigned_stack_001moveFwd, __D0moveFwd
-6	92	39	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	92	39	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	39		gettick __DU0moveFwd
-6	92	41	#line 92 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	41		cmp 1, __D0moveFwd, __signed_stack_001moveFwd, __DU0moveFwd
-6	93	45	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	94	45		brtst 4, __ASM_Label_795, __D0moveFwd
-6	93	48	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	94	48		set __onLine_7qG2_sensor_7qG2_000, 1
-6	93	51	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	51	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	94	51		subcall onLine, __onLine_return
-6	93	53	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	94	53		mov __DU0moveFwd, __DU0onLine
-6	93	55	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	94	55		tst 5, __D0moveFwd, __DU0moveFwd
-6	93	58	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	94	58		brtst 4, __ASM_Label_807, __D0moveFwd
-6	93	61	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	94	61		mov __unsigned_stack_001moveFwd, __moveFwd_7qG2_StartTime_7qG2_000
-6	93	63	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	63	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	94	63		set __D0moveFwd, 560
-6	93	66	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	94	66		add __signed_stack_001moveFwd, __unsigned_stack_001moveFwd, __D0moveFwd
-6	93	70	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	93	70	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	94	70		gettick __DU0moveFwd
-6	93	72	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	94	72		cmp 0, __D0moveFwd, __signed_stack_001moveFwd, __DU0moveFwd
-6	93	76	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	94	76		brtst 4, __ASM_Label_812, __D0moveFwd
-6	94	79	#line 94 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	95	79		jmp __ASM_Label_795
-6	94	81	#line 94 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	94	81	#line 94 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	94	81	#line 94 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	95	81		set __lineFollow_7qG2_dir_7qG2_000, 1
-6	94	84	#line 94 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	95	84	#line 95 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	96	84		subcall lineFollow, __lineFollow_return
-6	95	86	#line 95 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	100	86	#line 100 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	101	86		jmp __ASM_Label_794
-6	100	88	#line 100 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	100	88	#line 100 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	101	88		set __Wait_7qG2_ms_7qG2_000_inline_moveFwd, 100
-6	100	91	#line 100 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	47	0	#line 47 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	48	0		set __lineFollow_7qG2_rightgain_7qG2_000, 0
+5	47	3	#line 47 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	49	3	#line 49 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	50	3		set __lineFollow_7qG2_leftgain_7qG2_000, 0
+5	49	6	#line 49 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	49	6	#line 49 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	50	6		mov __DU0lineFollow, __lineFollow_7qG2_dir_7qG2_000
+5	51	8	#line 51 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	52	8		tst 5, __D0lineFollow, __DU0lineFollow
+5	51	11	#line 51 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	52	11		brtst 4, __ASM_Label_736, __D0lineFollow
+5	51	14	#line 51 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	52	14		getin __signed_stack_001lineFollow, __constVal3, 4
+5	51	18	#line 51 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	51	18	#line 51 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	52	18		mov __D0lineFollow, sRight
+5	51	20	#line 51 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	52	20		sub __lineFollow_7qG2_leftgain_7qG2_000, __signed_stack_001lineFollow, __D0lineFollow
+5	52	24	#line 52 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	52	24	#line 52 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	52	24	#line 52 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	52	24	#line 52 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	53	24		getin __signed_stack_001lineFollow, __constVal0, 4
+5	52	28	#line 52 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	52	28	#line 52 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	53	28		mov __D0lineFollow, sLeft
+5	52	30	#line 52 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	53	30		sub __lineFollow_7qG2_rightgain_7qG2_000, __signed_stack_001lineFollow, __D0lineFollow
+5	55	34	#line 55 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	55	34	#line 55 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	55	34	#line 55 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	55	34	#line 55 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	56	34		set __signed_stack_001lineFollow, 100
+5	55	37	#line 55 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	55	37	#line 55 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	56	37		mov __D0lineFollow, __lineFollow_7qG2_rightgain_7qG2_000
+5	55	39	#line 55 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	56	39		add __signed_stack_001lineFollow, __signed_stack_001lineFollow, __D0lineFollow
+5	55	43	#line 55 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	56	43	#line 56 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	57	43		mov __D0lineFollow, __lineFollow_7qG2_leftgain_7qG2_000
+5	56	45	#line 56 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	57	45		sub __lineFollow_7qG2_vLeft_7qG2_001, __signed_stack_001lineFollow, __D0lineFollow
+5	56	49	#line 56 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	56	49	#line 56 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	57	49		set __signed_stack_001lineFollow, 100
+5	56	52	#line 56 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	56	52	#line 56 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	57	52		mov __D0lineFollow, __lineFollow_7qG2_leftgain_7qG2_000
+5	56	54	#line 56 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	57	54		add __signed_stack_001lineFollow, __signed_stack_001lineFollow, __D0lineFollow
+5	56	58	#line 56 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	58	58	#line 58 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	59	58		mov __D0lineFollow, __lineFollow_7qG2_rightgain_7qG2_000
+5	58	60	#line 58 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	59	60		sub __lineFollow_7qG2_vRight_7qG2_001, __signed_stack_001lineFollow, __D0lineFollow
+5	58	64	#line 58 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	58	64	#line 58 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	59	64		mov __signed_stack_001lineFollow, __lineFollow_7qG2_vLeft_7qG2_001
+5	58	66	#line 58 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	58	66	#line 58 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	59	66		set __D0lineFollow, 100
+5	58	69	#line 58 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	59	69		cmp 1, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
+5	58	73	#line 58 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	59	73		brtst 4, __ASM_Label_751, __D0lineFollow
+5	59	76	#line 59 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	60	76		set __lineFollow_7qG2_vLeft_7qG2_001, 100
+5	59	79	#line 59 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	59	79	#line 59 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	59	79	#line 59 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	59	79	#line 59 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	60	79		mov __signed_stack_001lineFollow, __lineFollow_7qG2_vRight_7qG2_001
+5	59	81	#line 59 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	59	81	#line 59 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	60	81		set __D0lineFollow, 100
+5	59	84	#line 59 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	60	84		cmp 1, __D0lineFollow, __signed_stack_001lineFollow, __D0lineFollow
+5	59	88	#line 59 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	60	88		brtst 4, __ASM_Label_756, __D0lineFollow
+5	61	91	#line 61 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	62	91		set __lineFollow_7qG2_vRight_7qG2_001, 100
+5	61	94	#line 61 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	61	94	#line 61 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	61	94	#line 61 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	61	94	#line 61 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	62	94		mov __D0lineFollow, __lineFollow_7qG2_vLeft_7qG2_001
+5	62	96	#line 62 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	63	96	#pragma macro 7
+5	63	96		setout __constVal0, 2, __D0lineFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	8023	119	#line 8023 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	62	119	#line 62 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	62	119	#line 62 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	63	119		mov __D0lineFollow, __lineFollow_7qG2_vRight_7qG2_001
+5	63	121	#line 63 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	64	121	#pragma macro 7
+5	64	121		setout __constVal1, 2, __D0lineFollow, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	8030	144	#line 8030 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	63	144	#line 63 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	66	144	#line 66 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	67	144		jmp __ASM_Label_763
+5	69	146	#line 69 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	69	146	#line 69 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+5	70	146		subret __lineFollow_return
+6	72	0	#line 72 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	73	0		gettick __moveFwd_7qG2_StartTime_7qG2_000
+6	72	2	#line 72 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	74	2	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	2		set __onLine_7qG2_sensor_7qG2_000, 0
+6	74	5	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	74	5	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	5		subcall onLine, __onLine_return
+6	74	7	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	74	7	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	7		not __DU0moveFwd, __DU0onLine
+6	74	10	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	10		tst 5, __D0moveFwd, __DU0moveFwd
+6	74	13	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	13		brtst 5, __ASM_Label_768, __D0moveFwd
+6	74	16	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	16		set __onLine_7qG2_sensor_7qG2_000, 3
+6	74	19	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	74	19	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	19		subcall onLine, __onLine_return
+6	74	21	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	74	21	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	21		not __DU0moveFwd, __DU0onLine
+6	74	24	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	24		tst 5, __D0moveFwd, __DU0moveFwd
+6	74	27	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	27		brtst 5, __ASM_Label_768, __D0moveFwd
+6	74	30	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	30		mov __unsigned_stack_001moveFwd, __moveFwd_7qG2_StartTime_7qG2_000
+6	74	32	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	74	32	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	32		set __D0moveFwd, 560
+6	74	35	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	35		add __signed_stack_001moveFwd, __unsigned_stack_001moveFwd, __D0moveFwd
+6	74	39	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	74	39	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	39		gettick __DU0moveFwd
+6	74	41	#line 74 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	41		cmp 1, __D0moveFwd, __signed_stack_001moveFwd, __DU0moveFwd
+6	75	45	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	76	45		brtst 4, __ASM_Label_767, __D0moveFwd
+6	75	48	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	76	48		set __onLine_7qG2_sensor_7qG2_000, 1
+6	75	51	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	51	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	76	51		subcall onLine, __onLine_return
+6	75	53	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	76	53		mov __DU0moveFwd, __DU0onLine
+6	75	55	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	76	55		tst 5, __D0moveFwd, __DU0moveFwd
+6	75	58	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	76	58		brtst 4, __ASM_Label_779, __D0moveFwd
+6	75	61	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	76	61		mov __unsigned_stack_001moveFwd, __moveFwd_7qG2_StartTime_7qG2_000
+6	75	63	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	63	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	76	63		set __D0moveFwd, 560
+6	75	66	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	76	66		add __signed_stack_001moveFwd, __unsigned_stack_001moveFwd, __D0moveFwd
+6	75	70	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	75	70	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	76	70		gettick __DU0moveFwd
+6	75	72	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	76	72		cmp 0, __D0moveFwd, __signed_stack_001moveFwd, __DU0moveFwd
+6	75	76	#line 75 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	76	76		brtst 4, __ASM_Label_784, __D0moveFwd
+6	76	79	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	77	79		jmp __ASM_Label_767
+6	76	81	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	76	81	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	76	81	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	77	81		set __lineFollow_7qG2_dir_7qG2_000, 1
+6	76	84	#line 76 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	77	84	#line 77 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	78	84		subcall lineFollow, __lineFollow_return
+6	77	86	#line 77 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	82	86	#line 82 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	83	86		jmp __ASM_Label_766
+6	82	88	#line 82 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	82	88	#line 82 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	83	88		set __Wait_7qG2_ms_7qG2_000_inline_moveFwd, 100
+6	82	91	#line 82 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
 6	8551	91	#line 8551 "NXCDefs.h"
 6	8552	91		waitv __Wait_7qG2_ms_7qG2_000_inline_moveFwd
 6	8551	93	#line 8551 "NXCDefs.h"
-6	102	93	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	102	93	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	103	93		set __D0moveFwd, 0
-6	103	96	#line 103 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	104	96	#pragma macro 7
-6	104	96		setout __constVal0, 2, __D0moveFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-6	8297	119	#line 8297 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	103	119	#line 103 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	103	119	#line 103 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	104	119		set __D0moveFwd, 0
-6	105	122	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	106	122	#pragma macro 7
-6	106	122		setout __constVal1, 2, __D0moveFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-6	8302	145	#line 8302 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	105	145	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	107	145	#line 107 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-6	108	145		subret __moveFwd_return
-7	111	0	#line 111 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	112	0		subcall moveFwd, __moveFwd_return
-7	111	2	#line 111 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	111	2	#line 111 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	112	2		set __D0moveBox, 100
-7	112	5	#line 112 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	113	5	#pragma macro 7
-7	113	5		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	8315	28	#line 8315 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	112	28	#line 112 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	112	28	#line 112 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	113	28		set __D0moveBox, 100
-7	113	31	#line 113 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	114	31	#pragma macro 7
-7	114	31		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	8320	54	#line 8320 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	113	54	#line 113 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	114	54	#line 114 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	115	54		getout __moveBox_7qG2_motorAngle_7qG2_000, __constVal0, 14
-7	114	58	#line 114 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	114	58	#line 114 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	115	58		mov __signed_stack_001moveBox, __moveBox_7qG2_motorAngle_7qG2_000
-7	114	60	#line 114 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	114	60	#line 114 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	115	60		set __D0moveBox, 400
-7	114	63	#line 114 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	115	63		add __signed_stack_001moveBox, __signed_stack_001moveBox, __D0moveBox
-7	114	67	#line 114 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	114	67	#line 114 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	115	67		getout __D0moveBox, __constVal0, 14
-7	114	71	#line 114 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	115	71		cmp 1, __D0moveBox, __signed_stack_001moveBox, __D0moveBox
-7	116	75	#line 116 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	117	75		brtst 4, __ASM_Label_828, __D0moveBox
-7	116	78	#line 116 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	117	78		set __lineFollow_7qG2_dir_7qG2_000, 1
-7	116	81	#line 116 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	117	81	#line 117 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	118	81		subcall lineFollow, __lineFollow_return
-7	117	83	#line 117 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	120	83	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	121	83		jmp __ASM_Label_827
-7	120	85	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	120	85	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	121	85		set __onLine_7qG2_sensor_7qG2_000, 1
-7	120	88	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	120	88	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	121	88		subcall onLine, __onLine_return
-7	120	90	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	120	90	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	121	90		not __DU0moveBox, __DU0onLine
-7	120	93	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	121	93		tst 5, __D0moveBox, __DU0moveBox
-7	120	96	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	121	96		brtst 4, __ASM_Label_836, __D0moveBox
-7	120	99	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	121	99		mov __signed_stack_001moveBox, __moveBox_7qG2_motorAngle_7qG2_000
-7	120	101	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	120	101	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	121	101		set __D0moveBox, 50
-7	120	104	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	121	104		add __signed_stack_001moveBox, __signed_stack_001moveBox, __D0moveBox
-7	120	108	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	120	108	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	121	108		getout __D0moveBox, __constVal0, 14
-7	120	112	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	121	112		cmp 0, __D0moveBox, __signed_stack_001moveBox, __D0moveBox
-7	121	116	#line 121 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	122	116		brtst 4, __ASM_Label_834, __D0moveBox
-7	121	119	#line 121 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	122	119		mov __D0moveBox, __constValNeg100
-7	122	121	#line 122 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	123	121	#pragma macro 7
-7	123	121		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	8408	144	#line 8408 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	122	144	#line 122 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	122	144	#line 122 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	123	144		mov __D0moveBox, __constValNeg100
-7	123	146	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	124	146	#pragma macro 7
-7	124	146		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	8413	169	#line 8413 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	123	169	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	126	169	#line 126 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	127	169		jmp __ASM_Label_833
-7	126	171	#line 126 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	126	171	#line 126 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	127	171		set __D0moveBox, 0
-7	127	174	#line 127 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	128	174	#pragma macro 7
-7	128	174		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	8422	197	#line 8422 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	127	197	#line 127 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	127	197	#line 127 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	128	197		set __D0moveBox, 0
-7	128	200	#line 128 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	129	200	#pragma macro 7
-7	129	200		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	8427	223	#line 8427 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	128	223	#line 128 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	128	223	#line 128 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	129	223		set __Wait_7qG2_ms_7qG2_000_inline_moveBox, 250
-7	128	226	#line 128 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	84	93	#line 84 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	84	93	#line 84 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	85	93		set __D0moveFwd, 0
+6	85	96	#line 85 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	86	96	#pragma macro 7
+6	86	96		setout __constVal0, 2, __D0moveFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	8174	119	#line 8174 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	85	119	#line 85 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	85	119	#line 85 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	86	119		set __D0moveFwd, 0
+6	87	122	#line 87 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	88	122	#pragma macro 7
+6	88	122		setout __constVal1, 2, __D0moveFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	8179	145	#line 8179 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	87	145	#line 87 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	89	145	#line 89 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+6	90	145		subret __moveFwd_return
+7	93	0	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	94	0		subcall moveFwd, __moveFwd_return
+7	93	2	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	93	2	#line 93 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	94	2		set __D0moveBox, 100
+7	94	5	#line 94 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	95	5	#pragma macro 7
+7	95	5		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	8192	28	#line 8192 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	94	28	#line 94 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	94	28	#line 94 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	95	28		set __D0moveBox, 100
+7	95	31	#line 95 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	96	31	#pragma macro 7
+7	96	31		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	8197	54	#line 8197 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	95	54	#line 95 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	96	54	#line 96 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	97	54		getout __moveBox_7qG2_motorAngle_7qG2_000, __constVal0, 14
+7	96	58	#line 96 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	96	58	#line 96 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	97	58		mov __signed_stack_001moveBox, __moveBox_7qG2_motorAngle_7qG2_000
+7	96	60	#line 96 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	96	60	#line 96 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	97	60		set __D0moveBox, 400
+7	96	63	#line 96 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	97	63		add __signed_stack_001moveBox, __signed_stack_001moveBox, __D0moveBox
+7	96	67	#line 96 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	96	67	#line 96 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	97	67		getout __D0moveBox, __constVal0, 14
+7	96	71	#line 96 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	97	71		cmp 1, __D0moveBox, __signed_stack_001moveBox, __D0moveBox
+7	98	75	#line 98 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	99	75		brtst 4, __ASM_Label_800, __D0moveBox
+7	98	78	#line 98 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	99	78		set __lineFollow_7qG2_dir_7qG2_000, 1
+7	98	81	#line 98 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	99	81	#line 99 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	100	81		subcall lineFollow, __lineFollow_return
+7	99	83	#line 99 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	102	83	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	103	83		jmp __ASM_Label_799
+7	102	85	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	102	85	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	103	85		set __onLine_7qG2_sensor_7qG2_000, 1
+7	102	88	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	102	88	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	103	88		subcall onLine, __onLine_return
+7	102	90	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	102	90	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	103	90		not __DU0moveBox, __DU0onLine
+7	102	93	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	103	93		tst 5, __D0moveBox, __DU0moveBox
+7	102	96	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	103	96		brtst 4, __ASM_Label_808, __D0moveBox
+7	102	99	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	103	99		mov __signed_stack_001moveBox, __moveBox_7qG2_motorAngle_7qG2_000
+7	102	101	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	102	101	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	103	101		set __D0moveBox, 50
+7	102	104	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	103	104		add __signed_stack_001moveBox, __signed_stack_001moveBox, __D0moveBox
+7	102	108	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	102	108	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	103	108		getout __D0moveBox, __constVal0, 14
+7	102	112	#line 102 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	103	112		cmp 0, __D0moveBox, __signed_stack_001moveBox, __D0moveBox
+7	103	116	#line 103 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	104	116		brtst 4, __ASM_Label_806, __D0moveBox
+7	103	119	#line 103 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	104	119		mov __D0moveBox, __constValNeg100
+7	104	121	#line 104 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	105	121	#pragma macro 7
+7	105	121		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	8285	144	#line 8285 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	104	144	#line 104 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	104	144	#line 104 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	105	144		mov __D0moveBox, __constValNeg100
+7	105	146	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	106	146	#pragma macro 7
+7	106	146		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	8290	169	#line 8290 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	105	169	#line 105 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	108	169	#line 108 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	109	169		jmp __ASM_Label_805
+7	108	171	#line 108 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	108	171	#line 108 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	109	171		set __D0moveBox, 0
+7	109	174	#line 109 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	110	174	#pragma macro 7
+7	110	174		setout __constVal0, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	8299	197	#line 8299 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	109	197	#line 109 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	109	197	#line 109 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	110	197		set __D0moveBox, 0
+7	110	200	#line 110 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	111	200	#pragma macro 7
+7	111	200		setout __constVal1, 2, __D0moveBox, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	8304	223	#line 8304 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	110	223	#line 110 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	110	223	#line 110 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	111	223		set __Wait_7qG2_ms_7qG2_000_inline_moveBox, 150
+7	110	226	#line 110 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
 7	8551	226	#line 8551 "NXCDefs.h"
 7	8552	226		waitv __Wait_7qG2_ms_7qG2_000_inline_moveBox
 7	8551	228	#line 8551 "NXCDefs.h"
-7	130	228	#line 130 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	131	228	#line 131 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-7	132	228		subret __moveBox_return
-8	134	0	#line 134 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	135	0		getout __rotate_7qG2_RightMotor_7qG2_000, __constVal1, 14
-8	134	4	#line 134 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	137	4	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	138	4		getout __rotate_7qG2_LeftMotor_7qG2_000, __constVal0, 14
-8	137	8	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	137	8	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	138	8		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
-8	137	10	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	137	10	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	138	10		getout __signed_stack_002rotate, __constVal0, 14
-8	137	14	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	137	14	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	137	14	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	138	14		sub __D0rotate, __signed_stack_002rotate, __rotate_7qG2_LeftMotor_7qG2_000
-8	137	18	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	138	18		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
-8	137	22	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	137	22	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	138	22		set __D0rotate, 175
-8	137	25	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	138	25		cmp 0, __D0rotate, __signed_stack_001rotate, __D0rotate
-8	138	29	#line 138 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	139	29		brtst 4, __ASM_Label_856, __D0rotate
-8	138	32	#line 138 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	139	32		mov __angleFollow_7qG2_dir_7qG2_000, __rotate_7qG2_dir_7qG2_000
-8	138	34	#line 138 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	138	34	#line 138 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	139	34		mov __angleFollow_7qG2_RightMotor_7qG2_000, __rotate_7qG2_RightMotor_7qG2_000
-8	138	36	#line 138 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	138	36	#line 138 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	139	36		mov __angleFollow_7qG2_LeftMotor_7qG2_000, __rotate_7qG2_LeftMotor_7qG2_000
-8	138	38	#line 138 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	138	38	#line 138 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	139	38		set __angleFollow_7qG2_speed_7qG2_000, 75
-8	138	41	#line 138 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	139	41	#line 139 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	140	41		subcall angleFollow, __angleFollow_return
-8	139	43	#line 139 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	141	43	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	142	43		jmp __ASM_Label_855
-8	141	45	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	141	45	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	142	45		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
-8	141	47	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	141	47	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	142	47		set __D0rotate, 1
-8	141	50	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	142	50		cmp 4, __D0rotate, __signed_stack_001rotate, __D0rotate
-8	141	54	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	142	54		mov __signed_stack_001rotate, __D0rotate
-8	141	56	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	142	56		set __D0rotate, 3
-8	141	59	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	142	59		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
-8	141	63	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	141	63	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	142	63		mov __signed_stack_002rotate, __rotate_7qG2_dir_7qG2_000
-8	141	65	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	141	65	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	142	65		mov __D0rotate, __constValNeg1
-8	141	67	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	142	67		cmp 4, __D0rotate, __signed_stack_002rotate, __D0rotate
-8	141	71	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	142	71		mov __signed_stack_002rotate, __D0rotate
-8	142	73	#line 142 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	143	73		set __D0rotate, 0
-8	142	76	#line 142 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	143	76		mul __D0rotate, __signed_stack_002rotate, __D0rotate
-8	142	80	#line 142 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	143	80		add __rotate_7qG2_sensor_7qG2_000, __signed_stack_001rotate, __D0rotate
-8	142	84	#line 142 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	142	84	#line 142 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	143	84		mov __onLine_7qG2_sensor_7qG2_000, __rotate_7qG2_sensor_7qG2_000
-8	142	86	#line 142 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	142	86	#line 142 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	143	86		subcall onLine, __onLine_return
-8	142	88	#line 142 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	142	88	#line 142 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	143	88		not __DU0rotate, __DU0onLine
-8	143	91	#line 143 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	144	91		tst 5, __D0rotate, __DU0rotate
-8	143	94	#line 143 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	144	94		brtst 4, __ASM_Label_876, __D0rotate
-8	143	97	#line 143 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	144	97		set __onLine_7qG2_sensor_7qG2_000, 1
-8	143	100	#line 143 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	143	100	#line 143 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	144	100		subcall onLine, __onLine_return
-8	143	102	#line 143 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	144	102		mov __DU0rotate, __DU0onLine
-8	143	104	#line 143 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	144	104		tst 5, __D0rotate, __DU0rotate
-8	143	107	#line 143 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	144	107		brtst 4, __ASM_Label_885, __D0rotate
-8	144	110	#line 144 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	145	110		jmp __ASM_Label_876
-8	144	112	#line 144 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	144	112	#line 144 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	144	112	#line 144 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	145	112		mov __angleFollow_7qG2_dir_7qG2_000, __rotate_7qG2_dir_7qG2_000
-8	144	114	#line 144 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	144	114	#line 144 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	145	114		mov __angleFollow_7qG2_RightMotor_7qG2_000, __rotate_7qG2_RightMotor_7qG2_000
-8	144	116	#line 144 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	144	116	#line 144 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	145	116		mov __angleFollow_7qG2_LeftMotor_7qG2_000, __rotate_7qG2_LeftMotor_7qG2_000
-8	144	118	#line 144 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	144	118	#line 144 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	145	118		set __angleFollow_7qG2_speed_7qG2_000, 75
-8	144	121	#line 144 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	145	121	#line 145 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	146	121		subcall angleFollow, __angleFollow_return
-8	145	123	#line 145 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	150	123	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	123		jmp __ASM_Label_875
-8	150	125	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	150	125	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	125		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
-8	150	127	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	150	127	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	127		mov __D0rotate, __constValNeg1
-8	150	129	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	129		cmp 4, __D0rotate, __signed_stack_001rotate, __D0rotate
-8	150	133	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	133		mov __signed_stack_001rotate, __D0rotate
-8	150	135	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	135		set __D0rotate, 3
-8	150	138	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	138		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
-8	150	142	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	150	142	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	142		mov __signed_stack_002rotate, __rotate_7qG2_dir_7qG2_000
-8	150	144	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	150	144	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	144		set __D0rotate, 1
-8	150	147	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	147		cmp 4, __D0rotate, __signed_stack_002rotate, __D0rotate
-8	150	151	#line 150 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	151		mov __signed_stack_002rotate, __D0rotate
-8	151	153	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	152	153		set __D0rotate, 0
-8	151	156	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	152	156		mul __D0rotate, __signed_stack_002rotate, __D0rotate
-8	151	160	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	152	160		add __rotate_7qG2_sensor_7qG2_000, __signed_stack_001rotate, __D0rotate
-8	151	164	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	164	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	164	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	152	164		set __onLine_7qG2_sensor_7qG2_000, 1
-8	151	167	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	167	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	152	167		subcall onLine, __onLine_return
-8	151	169	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	169	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	152	169		not __DU0rotate, __DU0onLine
-8	151	172	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	152	172		tst 5, __D0rotate, __DU0rotate
-8	151	175	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	152	175		brtst 4, __ASM_Label_903, __D0rotate
-8	151	178	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	152	178		mov __onLine_7qG2_sensor_7qG2_000, __rotate_7qG2_sensor_7qG2_000
-8	151	180	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	180	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	152	180		subcall onLine, __onLine_return
-8	151	182	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	151	182	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	152	182		not __DU0rotate, __DU0onLine
-8	151	185	#line 151 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	152	185		tst 5, __D0rotate, __DU0rotate
-8	153	188	#line 153 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	154	188		brtst 4, __ASM_Label_901, __D0rotate
-8	153	191	#line 153 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	154	191		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
-8	153	193	#line 153 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	153	193	#line 153 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	154	193		set __D0rotate, 75
-8	153	196	#line 153 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	154	196		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
-8	153	200	#line 153 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	153	200	#line 153 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	154	200		set __D0rotate, 2
-8	153	203	#line 153 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	154	203		div __D0rotate, __signed_stack_001rotate, __D0rotate
-8	154	207	#line 154 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	155	207	#pragma macro 7
-8	155	207		setout __constVal0, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-8	8758	230	#line 8758 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	154	230	#line 154 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	154	230	#line 154 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	155	230		set __signed_stack_001rotate, 0
-8	154	233	#line 154 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	154	233	#line 154 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	155	233		set __signed_stack_002rotate, 75
-8	154	236	#line 154 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	154	236	#line 154 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	155	236		set __D0rotate, 2
-8	154	239	#line 154 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	155	239		div __signed_stack_002rotate, __signed_stack_002rotate, __D0rotate
-8	154	243	#line 154 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	154	243	#line 154 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	155	243		mov __D0rotate, __rotate_7qG2_dir_7qG2_000
-8	154	245	#line 154 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	155	245		mul __D0rotate, __signed_stack_002rotate, __D0rotate
-8	154	249	#line 154 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	155	249		sub __D0rotate, __signed_stack_001rotate, __D0rotate
-8	155	253	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	156	253	#pragma macro 7
-8	156	253		setout __constVal1, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-8	8789	276	#line 8789 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	155	276	#line 155 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	157	276	#line 157 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	158	276		jmp __ASM_Label_900
-8	157	278	#line 157 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	157	278	#line 157 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	158	278		set __D0rotate, 0
-8	158	281	#line 158 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	159	281	#pragma macro 7
-8	159	281		setout __constVal0, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-8	8798	304	#line 8798 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	158	304	#line 158 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	158	304	#line 158 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	159	304		set __D0rotate, 0
-8	159	307	#line 159 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	160	307	#pragma macro 7
-8	160	307		setout __constVal1, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-8	8803	330	#line 8803 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	159	330	#line 159 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	162	330	#line 162 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
-8	163	330		subret __rotate_return
+7	112	228	#line 112 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	113	228	#line 113 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+7	114	228		subret __moveBox_return
+8	116	0	#line 116 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	117	0		getout __rotate_7qG2_RightMotor_7qG2_000, __constVal1, 14
+8	116	4	#line 116 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	119	4	#line 119 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	120	4		getout __rotate_7qG2_LeftMotor_7qG2_000, __constVal0, 14
+8	119	8	#line 119 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	119	8	#line 119 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	120	8		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
+8	119	10	#line 119 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	119	10	#line 119 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	120	10		getout __signed_stack_002rotate, __constVal0, 14
+8	119	14	#line 119 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	119	14	#line 119 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	119	14	#line 119 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	120	14		sub __D0rotate, __signed_stack_002rotate, __rotate_7qG2_LeftMotor_7qG2_000
+8	119	18	#line 119 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	120	18		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
+8	119	22	#line 119 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	119	22	#line 119 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	120	22		set __D0rotate, 175
+8	119	25	#line 119 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	120	25		cmp 0, __D0rotate, __signed_stack_001rotate, __D0rotate
+8	120	29	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	121	29		brtst 4, __ASM_Label_828, __D0rotate
+8	120	32	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	121	32		mov __angleFollow_7qG2_dir_7qG2_000, __rotate_7qG2_dir_7qG2_000
+8	120	34	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	120	34	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	121	34		mov __angleFollow_7qG2_RightMotor_7qG2_000, __rotate_7qG2_RightMotor_7qG2_000
+8	120	36	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	120	36	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	121	36		mov __angleFollow_7qG2_LeftMotor_7qG2_000, __rotate_7qG2_LeftMotor_7qG2_000
+8	120	38	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	120	38	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	121	38		set __angleFollow_7qG2_speed_7qG2_000, 100
+8	120	41	#line 120 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	121	41	#line 121 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	122	41		subcall angleFollow, __angleFollow_return
+8	121	43	#line 121 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	123	43	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	124	43		jmp __ASM_Label_827
+8	123	45	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	123	45	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	124	45		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
+8	123	47	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	123	47	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	124	47		set __D0rotate, 1
+8	123	50	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	124	50		cmp 4, __D0rotate, __signed_stack_001rotate, __D0rotate
+8	123	54	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	124	54		mov __signed_stack_001rotate, __D0rotate
+8	123	56	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	124	56		set __D0rotate, 3
+8	123	59	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	124	59		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
+8	123	63	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	123	63	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	124	63		mov __signed_stack_002rotate, __rotate_7qG2_dir_7qG2_000
+8	123	65	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	123	65	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	124	65		mov __D0rotate, __constValNeg1
+8	123	67	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	124	67		cmp 4, __D0rotate, __signed_stack_002rotate, __D0rotate
+8	123	71	#line 123 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	124	71		mov __signed_stack_002rotate, __D0rotate
+8	124	73	#line 124 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	125	73		set __D0rotate, 0
+8	124	76	#line 124 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	125	76		mul __D0rotate, __signed_stack_002rotate, __D0rotate
+8	124	80	#line 124 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	125	80		add __rotate_7qG2_sensor_7qG2_000, __signed_stack_001rotate, __D0rotate
+8	124	84	#line 124 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	124	84	#line 124 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	125	84		mov __onLine_7qG2_sensor_7qG2_000, __rotate_7qG2_sensor_7qG2_000
+8	124	86	#line 124 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	124	86	#line 124 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	125	86		subcall onLine, __onLine_return
+8	124	88	#line 124 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	124	88	#line 124 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	125	88		not __DU0rotate, __DU0onLine
+8	125	91	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	126	91		tst 5, __D0rotate, __DU0rotate
+8	125	94	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	126	94		brtst 4, __ASM_Label_848, __D0rotate
+8	125	97	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	126	97		set __onLine_7qG2_sensor_7qG2_000, 1
+8	125	100	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	125	100	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	126	100		subcall onLine, __onLine_return
+8	125	102	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	126	102		mov __DU0rotate, __DU0onLine
+8	125	104	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	126	104		tst 5, __D0rotate, __DU0rotate
+8	125	107	#line 125 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	126	107		brtst 4, __ASM_Label_857, __D0rotate
+8	126	110	#line 126 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	127	110		jmp __ASM_Label_848
+8	126	112	#line 126 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	126	112	#line 126 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	126	112	#line 126 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	127	112		mov __angleFollow_7qG2_dir_7qG2_000, __rotate_7qG2_dir_7qG2_000
+8	126	114	#line 126 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	126	114	#line 126 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	127	114		mov __angleFollow_7qG2_RightMotor_7qG2_000, __rotate_7qG2_RightMotor_7qG2_000
+8	126	116	#line 126 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	126	116	#line 126 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	127	116		mov __angleFollow_7qG2_LeftMotor_7qG2_000, __rotate_7qG2_LeftMotor_7qG2_000
+8	126	118	#line 126 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	126	118	#line 126 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	127	118		set __angleFollow_7qG2_speed_7qG2_000, 100
+8	126	121	#line 126 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	127	121	#line 127 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	128	121		subcall angleFollow, __angleFollow_return
+8	127	123	#line 127 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	132	123	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	123		jmp __ASM_Label_847
+8	132	125	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	132	125	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	125		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
+8	132	127	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	132	127	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	127		mov __D0rotate, __constValNeg1
+8	132	129	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	129		cmp 4, __D0rotate, __signed_stack_001rotate, __D0rotate
+8	132	133	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	133		mov __signed_stack_001rotate, __D0rotate
+8	132	135	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	135		set __D0rotate, 3
+8	132	138	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	138		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
+8	132	142	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	132	142	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	142		mov __signed_stack_002rotate, __rotate_7qG2_dir_7qG2_000
+8	132	144	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	132	144	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	144		set __D0rotate, 1
+8	132	147	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	147		cmp 4, __D0rotate, __signed_stack_002rotate, __D0rotate
+8	132	151	#line 132 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	151		mov __signed_stack_002rotate, __D0rotate
+8	133	153	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	134	153		set __D0rotate, 0
+8	133	156	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	134	156		mul __D0rotate, __signed_stack_002rotate, __D0rotate
+8	133	160	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	134	160		add __rotate_7qG2_sensor_7qG2_000, __signed_stack_001rotate, __D0rotate
+8	133	164	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	164	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	164	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	134	164		set __onLine_7qG2_sensor_7qG2_000, 1
+8	133	167	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	167	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	134	167		subcall onLine, __onLine_return
+8	133	169	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	169	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	134	169		not __DU0rotate, __DU0onLine
+8	133	172	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	134	172		tst 5, __D0rotate, __DU0rotate
+8	133	175	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	134	175		brtst 4, __ASM_Label_875, __D0rotate
+8	133	178	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	134	178		mov __onLine_7qG2_sensor_7qG2_000, __rotate_7qG2_sensor_7qG2_000
+8	133	180	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	180	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	134	180		subcall onLine, __onLine_return
+8	133	182	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	133	182	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	134	182		not __DU0rotate, __DU0onLine
+8	133	185	#line 133 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	134	185		tst 5, __D0rotate, __DU0rotate
+8	135	188	#line 135 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	136	188		brtst 4, __ASM_Label_873, __D0rotate
+8	135	191	#line 135 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	136	191		mov __signed_stack_001rotate, __rotate_7qG2_dir_7qG2_000
+8	135	193	#line 135 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	135	193	#line 135 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	136	193		set __D0rotate, 100
+8	135	196	#line 135 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	136	196		mul __signed_stack_001rotate, __signed_stack_001rotate, __D0rotate
+8	135	200	#line 135 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	135	200	#line 135 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	136	200		set __D0rotate, 2
+8	135	203	#line 135 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	136	203		div __D0rotate, __signed_stack_001rotate, __D0rotate
+8	136	207	#line 136 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	137	207	#pragma macro 7
+8	137	207		setout __constVal0, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	8635	230	#line 8635 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	136	230	#line 136 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	136	230	#line 136 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	137	230		set __signed_stack_001rotate, 0
+8	136	233	#line 136 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	136	233	#line 136 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	137	233		set __signed_stack_002rotate, 100
+8	136	236	#line 136 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	136	236	#line 136 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	137	236		set __D0rotate, 2
+8	136	239	#line 136 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	137	239		div __signed_stack_002rotate, __signed_stack_002rotate, __D0rotate
+8	136	243	#line 136 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	136	243	#line 136 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	137	243		mov __D0rotate, __rotate_7qG2_dir_7qG2_000
+8	136	245	#line 136 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	137	245		mul __D0rotate, __signed_stack_002rotate, __D0rotate
+8	136	249	#line 136 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	137	249		sub __D0rotate, __signed_stack_001rotate, __D0rotate
+8	137	253	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	138	253	#pragma macro 7
+8	138	253		setout __constVal1, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	8666	276	#line 8666 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	137	276	#line 137 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	139	276	#line 139 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	140	276		jmp __ASM_Label_872
+8	139	278	#line 139 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	139	278	#line 139 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	140	278		set __D0rotate, 0
+8	140	281	#line 140 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	141	281	#pragma macro 7
+8	141	281		setout __constVal0, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	8675	304	#line 8675 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	140	304	#line 140 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	140	304	#line 140 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	141	304		set __D0rotate, 0
+8	141	307	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	142	307	#pragma macro 7
+8	142	307		setout __constVal1, 2, __D0rotate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	8680	330	#line 8680 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	141	330	#line 141 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	144	330	#line 144 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc"
+8	145	330		subret __rotate_return
 9	7	0	#line 7 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	8	0		set __signed_stack_001ExecutePath, 3
 9	7	3	#line 7 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
@@ -1368,7 +1292,7 @@ Clump	Line	PC	Source
 9	8	20	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	9	20		tst 5, __D0ExecutePath, __D0ExecutePath
 9	8	23	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	9	23		brtst 4, __ASM_Label_917, __D0ExecutePath
+9	9	23		brtst 4, __ASM_Label_889, __D0ExecutePath
 9	8	26	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	9	26		getin sLeft, __constVal0, 4
 9	8	30	#line 8 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
@@ -1535,7 +1459,7 @@ Clump	Line	PC	Source
 9	18	190		release __TextOutMutex
 9	17	191	#line 17 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	18	191	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	19	191		jmp __ASM_Label_916
+9	19	191		jmp __ASM_Label_888
 9	18	193	#line 18 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	6678	193	#line 6678 "NXCDefs.h"
 9	6679	193	#pragma macro 6
@@ -1545,7 +1469,7 @@ Clump	Line	PC	Source
 9	6679	198		mov __PointOutArgs.Options, __constVal1
 9	6679	200		syscall 14, __PointOutArgs
 9	6679	203		release __PointOutMutex
-9	9064	204	#line 9064 "NXCDefs.h"
+9	8941	204	#line 8941 "NXCDefs.h"
 9	6678	204	#line 6678 "NXCDefs.h"
 9	21	204	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	21	204	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
@@ -1555,7 +1479,7 @@ Clump	Line	PC	Source
 9	22	208		arrsize __D0ExecutePath, __soTmpBuf
 9	22	211		sub __D0ExecutePath, __D0ExecutePath, __constVal1
 9	22	215		release __soMutex
-9	9072	216	#line 9072 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
+9	8949	216	#line 8949 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	21	216	#line 21 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	22	216		mov __signed_stack_001ExecutePath, __D0ExecutePath
 9	23	218	#line 23 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
@@ -1574,13 +1498,13 @@ Clump	Line	PC	Source
 9	23	232	#line 23 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	24	232		cmp 0, __D0ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
 9	23	236	#line 23 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	24	236		brtst 4, __ASM_Label_963, __D0ExecutePath
+9	24	236		brtst 4, __ASM_Label_935, __D0ExecutePath
 9	23	239	#line 23 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	24	239		jmp __ASM_Label_964
+9	24	239		jmp __ASM_Label_936
 9	23	241	#line 23 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	24	241		add __ExecutePath_7qG2_i_7qG2_001, __ExecutePath_7qG2_i_7qG2_001, __constVal1
 9	25	245	#line 25 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	26	245		jmp __ASM_Label_962
+9	26	245		jmp __ASM_Label_934
 9	25	247	#line 25 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	26	247		mov __signed_stack_001ExecutePath, __ExecutePath_7qG2_i_7qG2_001
 9	25	249	#line 25 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
@@ -1590,17 +1514,17 @@ Clump	Line	PC	Source
 9	26	253	#line 26 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	26	253	#line 26 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	27	253		mov __D0ExecutePath, __ExecutePath_7qG2_command_7qG2_002
-9	30	255		brcmp 4, __ASM_Label_977, __constVal0, __D0ExecutePath
-9	31	259		brcmp 4, __ASM_Label_978, __constVal1, __D0ExecutePath
-9	32	263		brcmp 4, __ASM_Label_991, __constVal2, __D0ExecutePath
-9	33	267		brcmp 4, __ASM_Label_994, __constVal3, __D0ExecutePath
-9	34	271		jmp __ASM_Label_976
+9	30	255		brcmp 4, __ASM_Label_949, __constVal0, __D0ExecutePath
+9	31	259		brcmp 4, __ASM_Label_950, __constVal1, __D0ExecutePath
+9	32	263		brcmp 4, __ASM_Label_963, __constVal2, __D0ExecutePath
+9	33	267		brcmp 4, __ASM_Label_966, __constVal3, __D0ExecutePath
+9	34	271		jmp __ASM_Label_948
 9	28	273	#line 28 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	29	273	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	30	273		subcall moveFwd, __moveFwd_return
 9	29	275	#line 29 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	32	275	#line 32 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	33	275		jmp __ASM_Label_976
+9	33	275		jmp __ASM_Label_948
 9	32	277	#line 32 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	33	277	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	33	277	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
@@ -1616,7 +1540,7 @@ Clump	Line	PC	Source
 9	33	288	#line 33 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	34	288		cmp 0, __D0ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
 9	34	292	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	35	292		brtst 4, __ASM_Label_983, __D0ExecutePath
+9	35	292		brtst 4, __ASM_Label_955, __D0ExecutePath
 9	34	295	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	35	295		mov __signed_stack_001ExecutePath, __ExecutePath_7qG2_i_7qG2_001
 9	34	297	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
@@ -1634,24 +1558,24 @@ Clump	Line	PC	Source
 9	34	311	#line 34 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	35	311		cmp 4, __D0ExecutePath, __signed_stack_001ExecutePath, __D0ExecutePath
 9	35	315	#line 35 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	36	315		brtst 4, __ASM_Label_988, __D0ExecutePath
+9	36	315		brtst 4, __ASM_Label_960, __D0ExecutePath
 9	36	318	#line 36 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	37	318		subcall moveFwd, __moveFwd_return
 9	36	320	#line 36 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	38	320	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	39	320		jmp __ASM_Label_989
+9	39	320		jmp __ASM_Label_961
 9	38	322	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	39	322		subcall moveBox, __moveBox_return
 9	38	324	#line 38 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	39	324	#line 39 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	40	324	#line 40 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	41	324		jmp __ASM_Label_990
+9	41	324		jmp __ASM_Label_962
 9	40	326	#line 40 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	41	326		subcall moveBox, __moveBox_return
 9	40	328	#line 40 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	41	328	#line 41 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	43	328	#line 43 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	44	328		jmp __ASM_Label_976
+9	44	328		jmp __ASM_Label_948
 9	43	330	#line 43 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	44	330	#line 44 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	44	330	#line 44 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
@@ -1661,7 +1585,7 @@ Clump	Line	PC	Source
 9	46	333		subcall rotate, __rotate_return
 9	45	335	#line 45 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	47	335	#line 47 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	48	335		jmp __ASM_Label_976
+9	48	335		jmp __ASM_Label_948
 9	47	337	#line 47 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	48	337	#line 48 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	48	337	#line 48 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
@@ -1674,14 +1598,14 @@ Clump	Line	PC	Source
 9	50	341	#line 50 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	59	341	#line 59 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	59	341	#line 59 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	60	341		jmp __ASM_Label_965
+9	60	341		jmp __ASM_Label_937
 9	59	343	#line 59 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	59	343	#line 59 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	60	343		set __D0ExecutePath, 1
 9	60	346	#line 60 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	61	346		tst 5, __D0ExecutePath, __D0ExecutePath
 9	60	349	#line 60 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	61	349		brtst 4, __ASM_Label_999, __D0ExecutePath
+9	61	349		brtst 4, __ASM_Label_971, __D0ExecutePath
 9	60	352	#line 60 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	61	352		strcat __strbufExecutePath, __constStr0012
 9	60	356	#line 60 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
@@ -1724,10 +1648,10 @@ Clump	Line	PC	Source
 9	65	388	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	66	388		tst 5, __D0ExecutePath, __D0ExecutePath
 9	65	391	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	66	391		brtst 4, __ASM_Label_1009, __D0ExecutePath
+9	66	391		brtst 4, __ASM_Label_981, __D0ExecutePath
 9	65	394	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	65	394	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
-9	66	394		jmp __ASM_Label_1008
+9	66	394		jmp __ASM_Label_980
 9	65	396	#line 65 "C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc"
 9	8564	396	#line 8564 "NXCDefs.h"
 9	8565	396		set __D0StopAllTasks_inline_ExecutePath, 1
@@ -1746,8 +1670,8 @@ Clump	Name	Offset	File
 3	init	106	C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc
 4	angleFollow	240	C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc
 5	lineFollow	694	C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc
-6	moveFwd	913	C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc
-7	moveBox	1060	C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc
-8	rotate	1290	C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc
-9	ExecutePath	1622	C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc
-10	__initialize_global_data	2026	C:\SmartGit\7.semester\AI\NXC - code\Project\main.nxc
+6	moveFwd	842	C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc
+7	moveBox	989	C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc
+8	rotate	1219	C:\SmartGit\7.semester\AI\NXC - code\Project\.\functions.nxc
+9	ExecutePath	1551	C:\SmartGit\7.semester\AI\NXC - code\Project\.\ExecutePath.nxc
+10	__initialize_global_data	1955	C:\SmartGit\7.semester\AI\NXC - code\Project\main.nxc

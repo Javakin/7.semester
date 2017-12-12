@@ -39,6 +39,7 @@ public:
 private slots:
     void btnPressed();
     void timer();
+    void markerTimer();
   
     void stateChangedListener(const rw::kinematics::State& state);
 
@@ -46,12 +47,13 @@ private:
     static cv::Mat toOpenCVImage(const rw::sensor::Image& img);
 
     QTimer* _timer;
+    QTimer* _markerMover;
 
     rw::models::WorkCell::Ptr _wc;
     rw::kinematics::State _state;
     rwlibs::opengl::RenderImage *_textureRender, *_bgRender;
     rwlibs::simulation::GLFrameGrabber* _framegrabber;
-    Marker myMarker;
+    Marker* myMarker;
 
 };
 

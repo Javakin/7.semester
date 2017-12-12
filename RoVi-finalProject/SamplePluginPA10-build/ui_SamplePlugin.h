@@ -13,13 +13,10 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QCalendarWidget>
-#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QDockWidget>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QSlider>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -34,17 +31,15 @@ public:
     QVBoxLayout *verticalLayout;
     QPushButton *_btn0;
     QPushButton *_btn1;
-    QCheckBox *_checkBox;
+    QPushButton *pushButton;
     QSpinBox *_spinBox;
-    QSlider *_slider;
     QLabel *_label;
-    QCalendarWidget *_calendar;
 
     void setupUi(QDockWidget *SamplePlugin)
     {
         if (SamplePlugin->objectName().isEmpty())
             SamplePlugin->setObjectName(QStringLiteral("SamplePlugin"));
-        SamplePlugin->resize(428, 479);
+        SamplePlugin->resize(508, 479);
         dockWidgetContents = new QWidget();
         dockWidgetContents->setObjectName(QStringLiteral("dockWidgetContents"));
         verticalLayout_2 = new QVBoxLayout(dockWidgetContents);
@@ -61,31 +56,20 @@ public:
 
         verticalLayout->addWidget(_btn1);
 
-        _checkBox = new QCheckBox(dockWidgetContents);
-        _checkBox->setObjectName(QStringLiteral("_checkBox"));
+        pushButton = new QPushButton(dockWidgetContents);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
 
-        verticalLayout->addWidget(_checkBox);
+        verticalLayout->addWidget(pushButton);
 
         _spinBox = new QSpinBox(dockWidgetContents);
         _spinBox->setObjectName(QStringLiteral("_spinBox"));
 
         verticalLayout->addWidget(_spinBox);
 
-        _slider = new QSlider(dockWidgetContents);
-        _slider->setObjectName(QStringLiteral("_slider"));
-        _slider->setOrientation(Qt::Horizontal);
-
-        verticalLayout->addWidget(_slider);
-
         _label = new QLabel(dockWidgetContents);
         _label->setObjectName(QStringLiteral("_label"));
 
         verticalLayout->addWidget(_label);
-
-        _calendar = new QCalendarWidget(dockWidgetContents);
-        _calendar->setObjectName(QStringLiteral("_calendar"));
-
-        verticalLayout->addWidget(_calendar);
 
 
         verticalLayout_2->addLayout(verticalLayout);
@@ -100,9 +84,9 @@ public:
     void retranslateUi(QDockWidget *SamplePlugin)
     {
         SamplePlugin->setWindowTitle(QApplication::translate("SamplePlugin", "DockWidget", 0));
-        _btn0->setText(QApplication::translate("SamplePlugin", "PushButton0", 0));
-        _btn1->setText(QApplication::translate("SamplePlugin", "PushButton1", 0));
-        _checkBox->setText(QApplication::translate("SamplePlugin", "CheckBox", 0));
+        _btn0->setText(QApplication::translate("SamplePlugin", "SetImages", 0));
+        _btn1->setText(QApplication::translate("SamplePlugin", "StartTimer", 0));
+        pushButton->setText(QApplication::translate("SamplePlugin", "PushButton", 0));
         _label->setText(QApplication::translate("SamplePlugin", "Label", 0));
     } // retranslateUi
 

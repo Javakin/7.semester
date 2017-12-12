@@ -6,12 +6,15 @@
 
 #include <rw/loaders/ImageLoader.hpp>
 #include <rw/loaders/WorkCellFactory.hpp>
+#include <rw/kinematics/MovableFrame.hpp>
 
 #include <functional>
 
 
 
 #define DELTA_T     100         // period in ms
+#define Z           0.5         // the debth of the image in meters
+#define FOCALLENGTH  823        // focal lehgth of the camera
 
 
 
@@ -36,7 +39,9 @@ SamplePlugin::SamplePlugin():
 	setupUi(this);
 
 	_timer = new QTimer(this);
+    _markerMover = new QTimer(this);
     connect(_timer, SIGNAL(timeout()), this, SLOT(timer()));
+    connect(_markerMover, SIGNAL(timeout()), this, SLOT(markerTimer()));
 
 	// now connect stuff from the ui component
 	connect(_btn0    ,SIGNAL(pressed()), this, SLOT(btnPressed()) );
@@ -45,7 +50,12 @@ SamplePlugin::SamplePlugin():
 
 	Image textureImage(300,300,Image::GRAY,Image::Depth8U);
 	_textureRender = new RenderImage(textureImage);
-    myMarker = Marker(_textureRender);
+
+    // setup markerhandle
+    myMarker = new Marker(_textureRender,log().info());
+    myMarker->importPath(FASTSEQ);
+
+
 	Image bgImage(0,0,Image::GRAY,Image::Depth8U);
 	_bgRender = new RenderImage(bgImage,2.5/1000.0);
 	_framegrabber = NULL;
@@ -55,6 +65,7 @@ SamplePlugin::~SamplePlugin()
 {
     delete _textureRender;
     delete _bgRender;
+    delete myMarker;
 }
 
 void SamplePlugin::initialize() {
@@ -86,33 +97,37 @@ void SamplePlugin::open(WorkCell* workcell)
     log().info() << workcell->getFilename() << "\n";
 
     if (_wc != NULL) {
-	// Add the texture render to this workcell if there is a frame for texture
-	Frame* textureFrame = _wc->findFrame("MarkerTexture");
-	if (textureFrame != NULL) {
-		getRobWorkStudio()->getWorkCellScene()->addRender("TextureImage",_textureRender,textureFrame);
-	}
-	// Add the background render to this workcell if there is a frame for texture
-	Frame* bgFrame = _wc->findFrame("Background");
-	if (bgFrame != NULL) {
-		getRobWorkStudio()->getWorkCellScene()->addRender("BackgroundImage",_bgRender,bgFrame);
-	}
+        // Add the texture render to this workcell if there is a frame for texture
+        Frame* textureFrame = _wc->findFrame("MarkerTexture");
+        myMarker->setMarker(_wc);
+        myMarker->setState(&_state);
+        if (textureFrame != NULL) {
+            getRobWorkStudio()->getWorkCellScene()->addRender("TextureImage",_textureRender,textureFrame);
+        }
 
-	// Create a GLFrameGrabber if there is a camera frame with a Camera property set
-	Frame* cameraFrame = _wc->findFrame("CameraSim");
-	if (cameraFrame != NULL) {
-		if (cameraFrame->getPropertyMap().has("Camera")) {
-			// Read the dimensions and field of view
-			double fovy;
-			int width,height;
-			std::string camParam = cameraFrame->getPropertyMap().get<std::string>("Camera");
-			std::istringstream iss (camParam, std::istringstream::in);
-			iss >> fovy >> width >> height;
-			// Create a frame grabber
-			_framegrabber = new GLFrameGrabber(width,height,fovy);
-			SceneViewer::Ptr gldrawer = getRobWorkStudio()->getView()->getSceneViewer();
-			_framegrabber->init(gldrawer);
-		}
-	}
+
+        // Add the background render to this workcell if there is a frame for texture
+        Frame* bgFrame = _wc->findFrame("Background");
+        if (bgFrame != NULL) {
+            getRobWorkStudio()->getWorkCellScene()->addRender("BackgroundImage",_bgRender,bgFrame);
+        }
+
+        // Create a GLFrameGrabber if there is a camera frame with a Camera property set
+        Frame* cameraFrame = _wc->findFrame("CameraSim");
+        if (cameraFrame != NULL) {
+            if (cameraFrame->getPropertyMap().has("Camera")) {
+                // Read the dimensions and field of view
+                double fovy;
+                int width,height;
+                std::string camParam = cameraFrame->getPropertyMap().get<std::string>("Camera");
+                std::istringstream iss (camParam, std::istringstream::in);
+                iss >> fovy >> width >> height;
+                // Create a frame grabber
+                _framegrabber = new GLFrameGrabber(width,height,fovy);
+                SceneViewer::Ptr gldrawer = getRobWorkStudio()->getView()->getSceneViewer();
+                _framegrabber->init(gldrawer);
+            }
+        }
     }
 }
 
@@ -156,7 +171,7 @@ void SamplePlugin::btnPressed() {
         /*image = ImageLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/markers/Marker1.ppm");
 		_textureRender->setImage(*image);
         */
-        myMarker.setImage(MARKER3);
+        myMarker->setImage(MARKER3);
         getRobWorkStudio()->updateAndRepaint();
         image = ImageLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/backgrounds/color1.ppm");
 		_bgRender->setImage(*image);
@@ -164,7 +179,12 @@ void SamplePlugin::btnPressed() {
 	} else if(obj==_btn1){
 		log().info() << "Button 1\n";
 		// Toggle the timer on and off
-		if (!_timer->isActive())
+        if (!_markerMover->isActive())
+            _markerMover->start(DELTA_T); // run 10 Hz
+        else
+            _markerMover->stop();
+
+        if (!_timer->isActive())
             _timer->start(DELTA_T); // run 10 Hz
 		else
 			_timer->stop();
@@ -192,6 +212,17 @@ void SamplePlugin::timer() {
 		unsigned int maxH = 800;
 		_label->setPixmap(p.scaled(maxW,maxH,Qt::KeepAspectRatio));
 	}
+
+
+
+}
+
+void SamplePlugin::markerTimer(){
+    // mover the marker
+    myMarker->moveMarker();
+    getRobWorkStudio()->setState(_state);
+
+    log().info() << myMarker->getPosition().P() << endl;
 }
 
 void SamplePlugin::stateChangedListener(const State& state) {

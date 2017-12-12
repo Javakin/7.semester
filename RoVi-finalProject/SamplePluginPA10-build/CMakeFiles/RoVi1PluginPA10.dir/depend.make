@@ -6,6 +6,7 @@ CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.o: qrc_resources.cpp
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/Marker.hpp
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.cpp
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.hpp
+CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/VisualServoing.hpp
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /home/student/RobWork/RobWork/cmake/../ext/boostbindings/boost/numeric/bindings/lapack/geev.hpp
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /home/student/RobWork/RobWork/cmake/../ext/boostbindings/boost/numeric/bindings/lapack/gesvd.hpp
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /home/student/RobWork/RobWork/cmake/../ext/boostbindings/boost/numeric/bindings/lapack/lapack.h
@@ -735,6 +736,7 @@ CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: ui_SamplePlugin.h
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: src/moc_SamplePlugin.cpp
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/Marker.hpp
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.hpp
+CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/VisualServoing.hpp
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /home/student/RobWork/RobWork/cmake/../ext/boostbindings/boost/numeric/bindings/lapack/geev.hpp
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /home/student/RobWork/RobWork/cmake/../ext/boostbindings/boost/numeric/bindings/lapack/gesvd.hpp
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /home/student/RobWork/RobWork/cmake/../ext/boostbindings/boost/numeric/bindings/lapack/lapack.h

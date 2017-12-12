@@ -12,8 +12,8 @@
 
 
 
-#define DELTA_T     100         // period in ms
-#define Z           0.5         // the debth of the image in meters
+#define DELTA_T      100         // period in ms
+#define Z_COORDINAT  0.5         // the debth of the image in meters
 #define FOCALLENGTH  823        // focal lehgth of the camera
 
 
@@ -66,6 +66,7 @@ SamplePlugin::~SamplePlugin()
     delete _textureRender;
     delete _bgRender;
     delete myMarker;
+	delete myViscServ;
 }
 
 void SamplePlugin::initialize() {
@@ -93,6 +94,10 @@ void SamplePlugin::open(WorkCell* workcell)
     log().info() << "OPEN" << "\n";
     _wc = workcell;
     _state = _wc->getDefaultState();
+	myViscServ = new VisualServoing(log().info(), _wc, _state);
+    //double U_vals[] = {0,0,0};
+    //double V_vals[] = {0,0,0};
+    myViscServ->setImageJacobian1(FOCALLENGTH, Z_COORDINAT);
 
     log().info() << workcell->getFilename() << "\n";
 
@@ -213,16 +218,36 @@ void SamplePlugin::timer() {
 		_label->setPixmap(p.scaled(maxW,maxH,Qt::KeepAspectRatio));
 	}
 
+    // mover the marker
+    myMarker->moveMarker();
+    Transform3D<> FramePose = myMarker->getPosition();
+    VelocityScrew6D<> dU(FramePose);
+
+    // setup devise
+    Device::Ptr device;
+    device = _wc->findDevice("PA10");
+    if (device == NULL){
+        log().info() << "read of device failed\n";
+    }
+
+
+    Q next(7,1,1,1,1,1,1,1);
+    device->setQ(next, _state);
+
+
+    getRobWorkStudio()->setState(_state);
+
+
+
+
 
 
 }
 
 void SamplePlugin::markerTimer(){
-    // mover the marker
-    myMarker->moveMarker();
-    getRobWorkStudio()->setState(_state);
 
-    log().info() << myMarker->getPosition().P() << endl;
+
+    //log().info() << myMarker->getPosition().P() << endl;
 }
 
 void SamplePlugin::stateChangedListener(const State& state) {

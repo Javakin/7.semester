@@ -20,6 +20,7 @@
 #include "ui_SamplePlugin.h"
 
 #include "Marker.hpp"
+#include "VisualServoing.hpp"
 
 class SamplePlugin: public rws::RobWorkStudioPlugin, private Ui::SamplePlugin
 {
@@ -53,7 +54,9 @@ private:
     rw::kinematics::State _state;
     rwlibs::opengl::RenderImage *_textureRender, *_bgRender;
     rwlibs::simulation::GLFrameGrabber* _framegrabber;
+
     Marker* myMarker;
+    VisualServoing* myViscServ;
 
 };
 

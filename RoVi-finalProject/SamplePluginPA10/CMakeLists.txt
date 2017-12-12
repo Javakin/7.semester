@@ -73,7 +73,7 @@ QT5_WRAP_CPP(MocSrcFiles src/SamplePlugin.hpp)
 QT5_ADD_RESOURCES(RccSrcFiles src/resources.qrc)
 
 # Add the source files to build
-SET(SrcFiles src/SamplePlugin.cpp ${UIS_OUT_H} src/Marker.hpp)
+SET(SrcFiles src/SamplePlugin.cpp ${UIS_OUT_H} src/Marker.hpp src/VisualServoing.hpp)
 
 
 

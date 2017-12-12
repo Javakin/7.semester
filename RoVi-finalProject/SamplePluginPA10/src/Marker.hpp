@@ -14,6 +14,13 @@
 #include <rw/math/RPY.hpp>
 #include <rw/math/Vector3D.hpp>
 #include <rw/math/EAA.hpp>
+#include <rw/loaders/ImageLoader.hpp>
+#include <rw/loaders/WorkCellFactory.hpp>
+
+
+//#include <rw/rw.hpp>
+
+
 
 // RobWorkStudio includes
 #include <RobWorkStudioConfig.hpp> // For RWS_USE_QT5 definition
@@ -21,8 +28,7 @@
 
 #include <rws/RobWorkStudio.hpp>
 
-#include <rw/loaders/ImageLoader.hpp>
-#include <rw/loaders/WorkCellFactory.hpp>
+
 
 // OpenCV 3
 #include <opencv2/opencv.hpp>

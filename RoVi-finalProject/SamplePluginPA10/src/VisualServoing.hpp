@@ -104,6 +104,46 @@ public:
         log  << "2x2 jacobian\n" << J << endl;
     }
 
+    Q nextQ(VelocityScrew6D<> points){
+
+
+        Frame* cameraFrame = _wc->findFrame("CameraSim");
+        Device::Ptr device;
+        device = _wc->findDevice("PA10");
+        if (device == NULL){
+            log << "read of device failed\n";
+        }
+
+        Transform3D<> baseToTool = device->baseTframe(cameraFrame, *_state);
+
+        Jacobian S_q(Rotation3D<>(baseToTool.R().e().transpose()));
+
+        Jacobian J_q = device->baseJframe(cameraFrame, *_state);
+
+        Jacobian J = *jImageJacobian*S_q*J_q;
+        J = Jacobian(J.e()*J.e().transpose());
+        Jacobian jInv(J.e().inverse()*J.e());
+
+
+
+
+        log << "J_p output: \n" << jInv << endl;
+
+
+        return (jInv*points)+device->getQ(*_state);
+
+    }
+
+    Jacobian vecTJac(vector<double> src){
+        // bla
+        Jacobian J(src.size(), 1);
+        for (unsigned int i  = 0; i<src.size(); i++){
+            J(i,0) = src[i];
+        }
+
+        return J;
+    }
+
 
 
 

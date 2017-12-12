@@ -95,9 +95,9 @@ void SamplePlugin::open(WorkCell* workcell)
     _wc = workcell;
     _state = _wc->getDefaultState();
 	myViscServ = new VisualServoing(log().info(), _wc, _state);
-    //double U_vals[] = {0,0,0};
-    //double V_vals[] = {0,0,0};
-    myViscServ->setImageJacobian1(FOCALLENGTH, Z_COORDINAT);
+    double U_vals[] = {2,1,2};
+    double V_vals[] = {1,2,2};
+    myViscServ->setImageJacobian(FOCALLENGTH, Z_COORDINAT, U_vals, V_vals);
 
     log().info() << workcell->getFilename() << "\n";
 
@@ -182,6 +182,27 @@ void SamplePlugin::btnPressed() {
 		_bgRender->setImage(*image);
 		getRobWorkStudio()->updateAndRepaint();
 	} else if(obj==_btn1){
+        // mover the marker
+        myMarker->moveMarker();
+        Transform3D<> FramePose = myMarker->getPosition();
+        VelocityScrew6D<> dU(FramePose);
+
+        Q next = myViscServ->nextQ(VelocityScrew6D<>({0,1,0,-1,1,1}));
+        log().info() << "Q: " << next << endl;
+        // setup devise
+
+        Device::Ptr device;
+        device = _wc->findDevice("PA10");
+
+        if (device == NULL){
+            log().info() << "read of device failed\n";
+        }
+
+        device->setQ(next, _state);
+
+
+        getRobWorkStudio()->setState(_state);
+
 		log().info() << "Button 1\n";
 		// Toggle the timer on and off
         if (!_markerMover->isActive())
@@ -217,29 +238,6 @@ void SamplePlugin::timer() {
 		unsigned int maxH = 800;
 		_label->setPixmap(p.scaled(maxW,maxH,Qt::KeepAspectRatio));
 	}
-
-    // mover the marker
-    myMarker->moveMarker();
-    Transform3D<> FramePose = myMarker->getPosition();
-    VelocityScrew6D<> dU(FramePose);
-
-    // setup devise
-    Device::Ptr device;
-    device = _wc->findDevice("PA10");
-    if (device == NULL){
-        log().info() << "read of device failed\n";
-    }
-
-
-    Q next(7,1,1,1,1,1,1,1);
-    device->setQ(next, _state);
-
-
-    getRobWorkStudio()->setState(_state);
-
-
-
-
 
 
 }

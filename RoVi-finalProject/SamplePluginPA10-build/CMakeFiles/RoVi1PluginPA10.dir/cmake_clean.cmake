@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "src/moc_SamplePlugin.cpp"
   "qrc_resources.cpp"
   "CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o"
+  "CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.o"
   "CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o"
   "CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.o"
   "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/libs/Release/libRoVi1PluginPA10.pdb"

@@ -138,6 +138,12 @@
          </MakeCommands>
       </Target>
       </Build>
+      <Unit filename="/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/FeatureExtraction.cpp">
+         <Option target="RoVi1PluginPA10"/>
+      </Unit>
+      <Unit filename="/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/FeatureExtraction.h">
+         <Option target="RoVi1PluginPA10"/>
+      </Unit>
       <Unit filename="/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/Marker.hpp">
          <Option target="RoVi1PluginPA10"/>
       </Unit>

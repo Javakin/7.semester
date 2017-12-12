@@ -150,6 +150,33 @@ qrc_resources.cpp.s:
 	$(MAKE) -f CMakeFiles/RoVi1PluginPA10.dir/build.make CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.s
 .PHONY : qrc_resources.cpp.s
 
+src/FeatureExtraction.o: src/FeatureExtraction.cpp.o
+
+.PHONY : src/FeatureExtraction.o
+
+# target to build an object file
+src/FeatureExtraction.cpp.o:
+	$(MAKE) -f CMakeFiles/RoVi1PluginPA10.dir/build.make CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.o
+.PHONY : src/FeatureExtraction.cpp.o
+
+src/FeatureExtraction.i: src/FeatureExtraction.cpp.i
+
+.PHONY : src/FeatureExtraction.i
+
+# target to preprocess a source file
+src/FeatureExtraction.cpp.i:
+	$(MAKE) -f CMakeFiles/RoVi1PluginPA10.dir/build.make CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.i
+.PHONY : src/FeatureExtraction.cpp.i
+
+src/FeatureExtraction.s: src/FeatureExtraction.cpp.s
+
+.PHONY : src/FeatureExtraction.s
+
+# target to generate assembly for a file
+src/FeatureExtraction.cpp.s:
+	$(MAKE) -f CMakeFiles/RoVi1PluginPA10.dir/build.make CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.s
+.PHONY : src/FeatureExtraction.cpp.s
+
 src/SamplePlugin.o: src/SamplePlugin.cpp.o
 
 .PHONY : src/SamplePlugin.o
@@ -216,6 +243,9 @@ help:
 	@echo "... qrc_resources.o"
 	@echo "... qrc_resources.i"
 	@echo "... qrc_resources.s"
+	@echo "... src/FeatureExtraction.o"
+	@echo "... src/FeatureExtraction.i"
+	@echo "... src/FeatureExtraction.s"
 	@echo "... src/SamplePlugin.o"
 	@echo "... src/SamplePlugin.i"
 	@echo "... src/SamplePlugin.s"

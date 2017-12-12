@@ -12,6 +12,7 @@
 
 
 
+
 #define DELTA_T      100         // period in ms
 #define Z_COORDINAT  0.5         // the debth of the image in meters
 #define FOCALLENGTH  823        // focal lehgth of the camera
@@ -34,7 +35,7 @@ using namespace cv;
 using namespace std::placeholders;
 
 SamplePlugin::SamplePlugin():
-    RobWorkStudioPlugin("SamplePluginUI", QIcon(":/pa_icon.png"))
+    RobWorkStudioPlugin("SamplePluginUI", QIcon(":/pa_icon.png")),SURFObj(400)
 {
 	setupUi(this);
 
@@ -95,9 +96,7 @@ void SamplePlugin::open(WorkCell* workcell)
     _wc = workcell;
     _state = _wc->getDefaultState();
 	myViscServ = new VisualServoing(log().info(), _wc, _state);
-    double U_vals[] = {2,1,2};
-    double V_vals[] = {1,2,2};
-    myViscServ->setImageJacobian(FOCALLENGTH, Z_COORDINAT, U_vals, V_vals);
+
 
     log().info() << workcell->getFilename() << "\n";
 
@@ -134,6 +133,18 @@ void SamplePlugin::open(WorkCell* workcell)
             }
         }
     }
+
+    // Load image
+    Mat Marker = cv::imread(MARKER3);
+
+    if (Marker.empty()) {
+        std::cout << "Input image not found at '" << "'\n";
+        return;
+    }
+
+    // initialize vision part
+    FeatureExtraction SURFObj(400);     // setup the feachure extraciton class
+    SURFObj.setMarker(Marker);
 }
 
 
@@ -181,27 +192,88 @@ void SamplePlugin::btnPressed() {
         image = ImageLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/backgrounds/color1.ppm");
 		_bgRender->setImage(*image);
 		getRobWorkStudio()->updateAndRepaint();
-	} else if(obj==_btn1){
-        // mover the marker
-        myMarker->moveMarker();
-        Transform3D<> FramePose = myMarker->getPosition();
-        VelocityScrew6D<> dU(FramePose);
 
-        Q next = myViscServ->nextQ(VelocityScrew6D<>({0,1,0,-1,1,1}));
-        log().info() << "Q: " << next << endl;
-        // setup devise
+        // set up image jacobian
+        // Get the image as a RW image
+        Frame* cameraFrame = _wc->findFrame("CameraSim");
+        _framegrabber->grab(cameraFrame, _state);
+        const Image& image0 = _framegrabber->getImage();
 
-        Device::Ptr device;
-        device = _wc->findDevice("PA10");
+        // Convert to OpenCV image
+        Mat im = toOpenCVImage(image0);
+        Mat imflip;
+        cv::flip(im, imflip, 0);
 
-        if (device == NULL){
-            log().info() << "read of device failed\n";
+        // Show in QLabel
+        QImage img(imflip.data, imflip.cols, imflip.rows, imflip.step, QImage::Format_RGB888);
+        QPixmap p = QPixmap::fromImage(img);
+        unsigned int maxW = 400;
+        unsigned int maxH = 800;
+        _label->setPixmap(p.scaled(maxW,maxH,Qt::KeepAspectRatio));
+
+        // get points from feachure extraction
+        vector<Point2f> test = SURFObj.matchfeachures(imflip);
+        double U_vals[] = {2,1,2};
+        double V_vals[] = {1,2,2};
+        for(int i = 0;i < 3; i++){
+            U_vals[i] = test[i].x;
+            V_vals[i] = test[i].y;
         }
 
-        device->setQ(next, _state);
+        // calculate the image jacobian
+        myViscServ->setImageJacobian(FOCALLENGTH, Z_COORDINAT, U_vals, V_vals);
 
 
-        getRobWorkStudio()->setState(_state);
+	} else if(obj==_btn1){
+
+        if (_framegrabber != NULL) {
+            // Get the image as a RW image
+            Frame* cameraFrame = _wc->findFrame("CameraSim");
+            _framegrabber->grab(cameraFrame, _state);
+            const Image& image = _framegrabber->getImage();
+
+            // Convert to OpenCV image
+            Mat im = toOpenCVImage(image);
+            Mat imflip;
+            cv::flip(im, imflip, 0);
+
+            // Show in QLabel
+            QImage img(imflip.data, imflip.cols, imflip.rows, imflip.step, QImage::Format_RGB888);
+            QPixmap p = QPixmap::fromImage(img);
+            unsigned int maxW = 400;
+            unsigned int maxH = 800;
+            _label->setPixmap(p.scaled(maxW,maxH,Qt::KeepAspectRatio));
+
+            // get points from feachure extraction
+            vector<Point2f> test = SURFObj.matchfeachures(imflip);
+            VelocityScrew6D<> imgPoints;
+            for(int i = 0;i < 3; i++){
+                imgPoints[i*2] = test[i].x;
+                imgPoints[i*2+1] = test[i].y;
+            }
+
+            // mover the marker
+            myMarker->moveMarker();
+            Transform3D<> FramePose = myMarker->getPosition();
+            VelocityScrew6D<> dU(FramePose);
+
+            Q next = myViscServ->nextQ(imgPoints);
+            log().info() << "Q: " << next << endl;
+            // setup devise
+
+            Device::Ptr device;
+            device = _wc->findDevice("PA10");
+
+            if (device == NULL){
+                log().info() << "read of device failed\n";
+            }
+
+            device->setQ(next, _state);
+
+
+            getRobWorkStudio()->setState(_state);
+        }
+
 
 		log().info() << "Button 1\n";
 		// Toggle the timer on and off

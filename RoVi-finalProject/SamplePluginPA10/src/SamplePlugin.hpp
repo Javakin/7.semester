@@ -21,6 +21,7 @@
 
 #include "Marker.hpp"
 #include "VisualServoing.hpp"
+#include "FeatureExtraction.h"
 
 class SamplePlugin: public rws::RobWorkStudioPlugin, private Ui::SamplePlugin
 {
@@ -57,7 +58,7 @@ private:
 
     Marker* myMarker;
     VisualServoing* myViscServ;
-
+    FeatureExtraction SURFObj;
 };
 
 #endif /*RINGONHOOKPLUGIN_HPP_*/

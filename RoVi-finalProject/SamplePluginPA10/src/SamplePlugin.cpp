@@ -303,6 +303,7 @@ void SamplePlugin::btnPressed() {
 }
 
 void SamplePlugin::timer() {
+    myMarker->moveMarker();
 	if (_framegrabber != NULL) {
 		// Get the image as a RW image
 		takePicture();
@@ -321,6 +322,7 @@ void SamplePlugin::timer() {
         device->setQ(next, _state);
         getRobWorkStudio()->setState(_state);
 	}
+
 
 
 }

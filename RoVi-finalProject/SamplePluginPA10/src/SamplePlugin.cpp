@@ -16,6 +16,7 @@
 #define DELTA_T      100         // period in ms
 #define Z_COORDINAT  0.5         // the debth of the image in meters
 #define FOCALLENGTH  823        // focal lehgth of the camera
+#define POINTS       3
 
 
 
@@ -53,7 +54,7 @@ SamplePlugin::SamplePlugin():
 	_textureRender = new RenderImage(textureImage);
 
     // setup markerhandle
-    myMarker = new Marker(_textureRender,log().info());
+    myMarker = new Marker(_textureRender,log().info(),(double)FOCALLENGTH);
     myMarker->importPath(FASTSEQ);
 
 
@@ -176,6 +177,7 @@ Mat SamplePlugin::toOpenCVImage(const Image& img) {
 	return res;
 }
 Mat SamplePlugin::takePicture() {
+    VelocityScrew6D<> imgPoints = myMarker->getMarkerPoints(POINTS);
     Frame* cameraFrame = _wc->findFrame("CameraSim");
     _framegrabber->grab(cameraFrame, _state);
     const Image& image = _framegrabber->getImage();
@@ -187,18 +189,36 @@ Mat SamplePlugin::takePicture() {
     imflip.copyTo(im);
     cvtColor(im, im, CV_RGB2BGR);
 
+    for(unsigned int i = 0;i <POINTS; i++){
+        cv::circle(imflip,Point(imgPoints[i*2] + imflip.cols/2,imgPoints[i*2+1] + imflip.rows/2),5,Scalar(0,0,255),3);
+        cv::circle(imflip,Point(TargetPoints[i*2] + imflip.cols/2,TargetPoints[i*2+1] + imflip.rows/2),8,Scalar(255,0,255),3);
+
+        //log().info() << "changed" << imgPoints[i*2] + imflip.cols/2 << " " << imgPoints[i*2+1] + imflip.rows/2 << endl;
+
+    }
+
+
+
+    /*imshow("imflip: ", imflip);
+    waitKey();*/
     // Show in QLabel
     QImage img(imflip.data, imflip.cols, imflip.rows, imflip.step, QImage::Format_RGB888);
     QPixmap p = QPixmap::fromImage(img);
     unsigned int maxW = 400;
     unsigned int maxH = 800;
     _label->setPixmap(p.scaled(maxW,maxH,Qt::KeepAspectRatio));
+
+    // mark the targetpoints in green
+
+    // mark the actual points in red
+
     return im;
 }
 
 
 void SamplePlugin::btnPressed() {
     QObject *obj = sender();
+    VelocityScrew6D<> imgPoints = myMarker->getMarkerPoints(POINTS);
 	if(obj==_btn0){
 		log().info() << "Button 0\n";
 		// Set a new texture (one pixel = 1 mm)
@@ -213,23 +233,39 @@ void SamplePlugin::btnPressed() {
 		getRobWorkStudio()->updateAndRepaint();
 
         // get points from feachure extraction
-        vector<Point2f> test = SURFObj.matchfeachures(takePicture());
+        /*vector<Point2f> test = SURFObj.matchfeachures(takePicture());
         VelocityScrew6D<> imgPoints;
         for(int i = 0;i < 3; i++){
             imgPoints[i*2] = test[i].x;
             imgPoints[i*2+1] = test[i].y;
-        }
+        }*/
 
         // calculate the image jacobian
         myViscServ->setImageJacobian(FOCALLENGTH, Z_COORDINAT, imgPoints);
-
+        TargetPoints = imgPoints;
+        takePicture();
 
 	} else if(obj==_btn1){
 
-        if (_framegrabber != NULL) {
+        /*Q next = myViscServ->nextQ(imgPoints, DELTA_T);
+        log().info() << "Q: " << next << endl;
+        // setup devise
+
+        Device::Ptr device;
+        device = _wc->findDevice("PA10");
+
+        if (device == NULL) {
+            log().info() << "read of device failed\n";
+        }
+
+        device->setQ(next, _state);
+        getRobWorkStudio()->setState(_state);
+*/
+        /*if (_framegrabber != NULL) {
             // get points from feachure extraction
             vector<Point2f> test = SURFObj.matchfeachures(takePicture());
             log().info() << " Looking for marker ->";
+
             if(test.size() == 4) {
                 log().info() << " marker found: \n";
                 VelocityScrew6D<> imgPoints;
@@ -243,26 +279,15 @@ void SamplePlugin::btnPressed() {
                 Transform3D<> FramePose = myMarker->getPosition();
                 VelocityScrew6D<> dU(FramePose);
 
-                Q next = myViscServ->nextQ(imgPoints, DELTA_T);
-                log().info() << "Q: " << next << endl;
-                // setup devise
 
-                Device::Ptr device;
-                device = _wc->findDevice("PA10");
-
-                if (device == NULL) {
-                    log().info() << "read of device failed\n";
-                }
-
-                device->setQ(next, _state);
 
             }
-            getRobWorkStudio()->setState(_state);
-        }
+
+        }*/
 
 
 		log().info() << "Button 1\n";
-		// Toggle the timer on and off
+		// Toggle the timer on and offs
         if (!_markerMover->isActive())
             _markerMover->start(DELTA_T); // run 10 Hz
         else
@@ -270,8 +295,8 @@ void SamplePlugin::btnPressed() {
 
         if (!_timer->isActive())
             _timer->start(DELTA_T); // run 10 Hz
-		//else
-			//_timer->stop();
+		else
+			_timer->stop();
 	} else if(obj==_spinBox){
 		log().info() << "spin value:" << _spinBox->value() << "\n";
 	}
@@ -281,6 +306,20 @@ void SamplePlugin::timer() {
 	if (_framegrabber != NULL) {
 		// Get the image as a RW image
 		takePicture();
+        VelocityScrew6D<> imgPoints = myMarker->getMarkerPoints(POINTS);
+        Q next = myViscServ->nextQ(imgPoints, DELTA_T);
+        log().info() << "Q: " << next << endl;
+        // setup devise
+
+        Device::Ptr device;
+        device = _wc->findDevice("PA10");
+
+        if (device == NULL) {
+            log().info() << "read of device failed\n";
+        }
+
+        device->setQ(next, _state);
+        getRobWorkStudio()->setState(_state);
 	}
 
 

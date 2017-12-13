@@ -107,39 +107,57 @@ public:
     }
 
     Q nextQ(VelocityScrew6D<> points, double dt){
+        log << "________________________________________________________" << endl;
         dt= dt/1000;
-        points = points-UV;
-        Frame* cameraFrame = _wc->findFrame("CameraSim");
+        log << "Points: " << points << endl;
+        points = UV-points;
+        log << "UV: " << UV << endl;
+
+        Frame* cameraFrame = _wc->findFrame("Camera");
         Device::Ptr device;
         device = _wc->findDevice("PA10");
         if (device == NULL){
             log << "read of device failed\n";
         }
+        log << "Pixel error: " << points << endl;
 
         Transform3D<> baseToTool = device->baseTframe(cameraFrame, *_state);
 
+
+        // -------- CALCULATE dU -----
+        Q dU = Jacobian(jImageJacobian->e().inverse())*points;
+
+        log << "dU: " << dU << endl;
+
+        // -------- CALCULATE dUbase -----
         Jacobian S_q(Rotation3D<>(baseToTool.R().e().transpose()));
 
+        VelocityScrew6D<> duBase = Jacobian(S_q.e().inverse())*dU;
+
+        log << "dUbase: " << duBase << endl;
+
+
+        // -------- CALCULATE dq -----
         Jacobian J_q = device->baseJframe(cameraFrame, *_state);
 
-        Jacobian J = *jImageJacobian*S_q*Jacobian(J_q.e()*J_q.e().transpose());
+        Jacobian J_q_inverse = Jacobian(J_q.e()*J_q.e().transpose());
 
-        Jacobian jInv = Jacobian(J.e().inverse()*J_q.e());
+        J_q_inverse = Jacobian(J_q_inverse.e().inverse()*J_q.e());
 
-
-
-
-        //log << "J_p output: \n" << jInv << endl;
+        Q dq = Jacobian(J_q_inverse.e().transpose())*duBase;
 
 
-        Q dq = (Jacobian(jInv.e().transpose())*points);
+
+
+        // -------- GET q0 -----
         Q q0 = device->getQ(*_state);
 
 
 
 
-        log << "dQ: " << dq << endl;
+        /*log << "dQ: " << dq << endl;
         log << "q0: " << q0 << endl;
+        log << "du_base: " << J_q*dq<< endl;
 
         // Positional limit
         Q v_limit = device->getVelocityLimits();
@@ -184,22 +202,10 @@ public:
             }
 
         }
-        log << "q_max: " << q_max << endl;
-        log << "q_min: " << q_min << endl;
-        log << "Scale: " << scale << endl;
-        log << "q_new: " << q0+(dq*scale) << endl;
-
         // cap speeds
 
-
-
-
-
-
-
-        Q qOutPut = q0+dq;
-
-        log << "outputQ; "<< qOutPut << endl;
+        Q qOutPut = q0+dq*scale*0.1;
+*/      Q qOutPut = q0+dq;
 
         qOld = qOutPut;
 

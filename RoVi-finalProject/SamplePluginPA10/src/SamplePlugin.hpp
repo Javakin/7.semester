@@ -60,6 +60,7 @@ private:
     Marker* myMarker;
     VisualServoing* myViscServ;
     FeatureExtraction SURFObj;
+    VelocityScrew6D<> TargetPoints;
 };
 
 #endif /*RINGONHOOKPLUGIN_HPP_*/

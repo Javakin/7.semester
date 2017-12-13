@@ -70,8 +70,8 @@ using namespace cv;
 
 class Marker{
 public:
-    Marker(rw::common::LogWriter &lout):log(lout){}
-    Marker(rwlibs::opengl::RenderImage *_textureRender,rw::common::LogWriter &lout):log(lout){
+    Marker(rw::common::LogWriter &lout, double f):log(lout),focal(f){}
+    Marker(rwlibs::opengl::RenderImage *_textureRender,rw::common::LogWriter &lout,double f):log(lout),focal(f){
         //setup texture render
         this->_textureRender = _textureRender;
         //lout << "I am here" << endl;
@@ -85,14 +85,13 @@ public:
     }
     void setMarker(rw::models::WorkCell::Ptr _wc){
         MarkerFrame = _wc->findFrame<MovableFrame>("Marker");
+        this->_wc = _wc;
 
     }
     void setState(State* worldState){
         _state = worldState;
     }
-    void setLout(){
 
-    }
 
     void moveMarker(){
         // move the market to the position given the position number
@@ -124,6 +123,54 @@ public:
         log << "importing path finished." << endl;
     }
 
+    VelocityScrew6D<> getMarkerPoints(int points = 0){
+        // return three points from the marker frame seen from the camera
+        Frame* cam = _wc->findFrame("Camera");
+        //Transform3D<> MarkerTCam = MarkerFrame->fTf(cam,*_state);
+        Transform3D<> CamTMarker = cam->fTf(MarkerFrame,*_state);
+        //Transform3D<> CamT = cam->wTf(*_state);
+        //Transform3D<> MarkerT = MarkerFrame->wTf(*_state);
+
+
+
+        //log << "Marker transform: " <<  MarkerT << endl << MarkerT.P() << endl;
+
+        // generate 3 points in the marker frame
+        Vector3D<> point0(0,0,0);
+        Vector3D<> point1(0.15,0.15,0);
+        Vector3D<> point2(-0.15,0.15,0);
+        Vector3D<> point3(0.15,-0.15,0);
+
+        //log << "test stufff: " <<  MarkerTCam*point0 << endl;
+
+        // transform to camera frame
+        if(points != 3){
+            point0 = CamTMarker*point0;
+        }else{
+            point1 = CamTMarker*point1;
+            point2 = CamTMarker*point2;
+            point3 = CamTMarker*point3;
+
+        }
+
+        // transform to camera frame
+        VelocityScrew6D<> imgPoints;
+        if(points != 3){
+            imgPoints[0] = focal*point0[0]/point0[2];
+            imgPoints[1] = focal*point0[1]/point0[2];
+        }else{
+            imgPoints[0] = focal*point1[0]/point1[2];
+            imgPoints[1] = focal*point1[1]/point1[2];
+            imgPoints[2] = focal*point2[0]/point2[2];
+            imgPoints[3] = focal*point2[1]/point2[2];
+            imgPoints[4] = focal*point3[0]/point3[2];
+            imgPoints[5] = focal*point3[1]/point3[2];
+
+        }
+        return imgPoints;
+
+    }
+
     Transform3D<> getPosition(){
         // return the imeage transform
         return MarkerPath[iPosNum];
@@ -137,6 +184,8 @@ private:
     rw::kinematics::State* _state;
     unsigned int iPosNum;
     rw::common::LogWriter &log;
+    rw::models::WorkCell::Ptr _wc;
+    double focal;
 
 };
 

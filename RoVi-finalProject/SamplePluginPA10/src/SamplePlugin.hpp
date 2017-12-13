@@ -47,6 +47,7 @@ private slots:
 
 private:
     static cv::Mat toOpenCVImage(const rw::sensor::Image& img);
+    cv::Mat takePicture();
 
     QTimer* _timer;
     QTimer* _markerMover;

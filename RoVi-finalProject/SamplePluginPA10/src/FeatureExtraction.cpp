@@ -102,6 +102,7 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
         scene.push_back( vKeyPointImage[ good_matches[i].trainIdx ].pt );
     }
 
+    if (good_matches.size() < 4) return std::vector<Point2f>();
     Mat H = findHomography( obj, scene, CV_RANSAC );
 
     //-- Get the corners from the image_1 ( the object to be "detected" )
@@ -121,9 +122,9 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
     line( img_matches, scene_corners[3] + Point2f( mMarker.cols, 0), scene_corners[0] + Point2f( mMarker.cols, 0), Scalar( 0, 255, 0), 4 );
 
     //-- Show detected matches
-    imshow( "Good Matches & Object detection", img_matches );
-    waitKey(10);
+    /*imshow( "Good Matches & Object detection", img_matches );
+    waitKey(10);*/
 
-    return scene;
+    return scene_corners;
 
 }

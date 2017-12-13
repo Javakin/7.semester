@@ -135,16 +135,15 @@ void SamplePlugin::open(WorkCell* workcell)
     }
 
     // Load image
-    Mat Marker = cv::imread(MARKER3);
+    Mat CvMarker = cv::imread(MARKER3);
 
-    if (Marker.empty()) {
-        std::cout << "Input image not found at '" << "'\n";
+    if (CvMarker.empty()) {
+        log().info() << "Input image not found at '" << MARKER3 << "'\n";
         return;
     }
 
     // initialize vision part
-    FeatureExtraction SURFObj(400);     // setup the feachure extraciton class
-    SURFObj.setMarker(Marker);
+    SURFObj.setMarker(CvMarker);
 }
 
 
@@ -172,9 +171,29 @@ void SamplePlugin::close() {
 }
 
 Mat SamplePlugin::toOpenCVImage(const Image& img) {
-	Mat res(img.getHeight(),img.getWidth(), CV_8SC3);
+	Mat res(img.getHeight(),img.getWidth(), CV_8UC3);
 	res.data = (uchar*)img.getImageData();
 	return res;
+}
+Mat SamplePlugin::takePicture() {
+    Frame* cameraFrame = _wc->findFrame("CameraSim");
+    _framegrabber->grab(cameraFrame, _state);
+    const Image& image = _framegrabber->getImage();
+
+    // Convert to OpenCV image
+    Mat im = toOpenCVImage(image);
+    Mat imflip;
+    cv::flip(im, imflip, 0);
+    imflip.copyTo(im);
+    cvtColor(im, im, CV_RGB2BGR);
+
+    // Show in QLabel
+    QImage img(imflip.data, imflip.cols, imflip.rows, imflip.step, QImage::Format_RGB888);
+    QPixmap p = QPixmap::fromImage(img);
+    unsigned int maxW = 400;
+    unsigned int maxH = 800;
+    _label->setPixmap(p.scaled(maxW,maxH,Qt::KeepAspectRatio));
+    return im;
 }
 
 
@@ -185,92 +204,59 @@ void SamplePlugin::btnPressed() {
 		// Set a new texture (one pixel = 1 mm)
 		Image::Ptr image;
         /*image = ImageLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/markers/Marker1.ppm");
-		_textureRender->setImage(*image);
-        */
+		_textureRender->setImage(*image);*/
+
         myMarker->setImage(MARKER3);
-        getRobWorkStudio()->updateAndRepaint();
-        image = ImageLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/backgrounds/color1.ppm");
+
+        image = ImageLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/backgrounds/color2.ppm");
 		_bgRender->setImage(*image);
 		getRobWorkStudio()->updateAndRepaint();
 
-        // set up image jacobian
-        // Get the image as a RW image
-        Frame* cameraFrame = _wc->findFrame("CameraSim");
-        _framegrabber->grab(cameraFrame, _state);
-        const Image& image0 = _framegrabber->getImage();
-
-        // Convert to OpenCV image
-        Mat im = toOpenCVImage(image0);
-        Mat imflip;
-        cv::flip(im, imflip, 0);
-
-        // Show in QLabel
-        QImage img(imflip.data, imflip.cols, imflip.rows, imflip.step, QImage::Format_RGB888);
-        QPixmap p = QPixmap::fromImage(img);
-        unsigned int maxW = 400;
-        unsigned int maxH = 800;
-        _label->setPixmap(p.scaled(maxW,maxH,Qt::KeepAspectRatio));
-
         // get points from feachure extraction
-        vector<Point2f> test = SURFObj.matchfeachures(imflip);
-        double U_vals[] = {2,1,2};
-        double V_vals[] = {1,2,2};
+        vector<Point2f> test = SURFObj.matchfeachures(takePicture());
+        VelocityScrew6D<> imgPoints;
         for(int i = 0;i < 3; i++){
-            U_vals[i] = test[i].x;
-            V_vals[i] = test[i].y;
+            imgPoints[i*2] = test[i].x;
+            imgPoints[i*2+1] = test[i].y;
         }
 
         // calculate the image jacobian
-        myViscServ->setImageJacobian(FOCALLENGTH, Z_COORDINAT, U_vals, V_vals);
+        myViscServ->setImageJacobian(FOCALLENGTH, Z_COORDINAT, imgPoints);
 
 
 	} else if(obj==_btn1){
 
         if (_framegrabber != NULL) {
-            // Get the image as a RW image
-            Frame* cameraFrame = _wc->findFrame("CameraSim");
-            _framegrabber->grab(cameraFrame, _state);
-            const Image& image = _framegrabber->getImage();
-
-            // Convert to OpenCV image
-            Mat im = toOpenCVImage(image);
-            Mat imflip;
-            cv::flip(im, imflip, 0);
-
-            // Show in QLabel
-            QImage img(imflip.data, imflip.cols, imflip.rows, imflip.step, QImage::Format_RGB888);
-            QPixmap p = QPixmap::fromImage(img);
-            unsigned int maxW = 400;
-            unsigned int maxH = 800;
-            _label->setPixmap(p.scaled(maxW,maxH,Qt::KeepAspectRatio));
-
             // get points from feachure extraction
-            vector<Point2f> test = SURFObj.matchfeachures(imflip);
-            VelocityScrew6D<> imgPoints;
-            for(int i = 0;i < 3; i++){
-                imgPoints[i*2] = test[i].x;
-                imgPoints[i*2+1] = test[i].y;
+            vector<Point2f> test = SURFObj.matchfeachures(takePicture());
+            log().info() << " Looking for marker ->";
+            if(test.size() == 4) {
+                log().info() << " marker found: \n";
+                VelocityScrew6D<> imgPoints;
+                for (int i = 0; i < 3; i++) {
+                    imgPoints[i * 2] = test[i].x;
+                    imgPoints[i * 2 + 1] = test[i].y;
+                }
+
+                // mover the marker
+                //myMarker->moveMarker();
+                Transform3D<> FramePose = myMarker->getPosition();
+                VelocityScrew6D<> dU(FramePose);
+
+                Q next = myViscServ->nextQ(imgPoints, DELTA_T);
+                log().info() << "Q: " << next << endl;
+                // setup devise
+
+                Device::Ptr device;
+                device = _wc->findDevice("PA10");
+
+                if (device == NULL) {
+                    log().info() << "read of device failed\n";
+                }
+
+                device->setQ(next, _state);
+
             }
-
-            // mover the marker
-            myMarker->moveMarker();
-            Transform3D<> FramePose = myMarker->getPosition();
-            VelocityScrew6D<> dU(FramePose);
-
-            Q next = myViscServ->nextQ(imgPoints);
-            log().info() << "Q: " << next << endl;
-            // setup devise
-
-            Device::Ptr device;
-            device = _wc->findDevice("PA10");
-
-            if (device == NULL){
-                log().info() << "read of device failed\n";
-            }
-
-            device->setQ(next, _state);
-
-
             getRobWorkStudio()->setState(_state);
         }
 
@@ -284,8 +270,8 @@ void SamplePlugin::btnPressed() {
 
         if (!_timer->isActive())
             _timer->start(DELTA_T); // run 10 Hz
-		else
-			_timer->stop();
+		//else
+			//_timer->stop();
 	} else if(obj==_spinBox){
 		log().info() << "spin value:" << _spinBox->value() << "\n";
 	}
@@ -294,21 +280,7 @@ void SamplePlugin::btnPressed() {
 void SamplePlugin::timer() {
 	if (_framegrabber != NULL) {
 		// Get the image as a RW image
-		Frame* cameraFrame = _wc->findFrame("CameraSim");
-		_framegrabber->grab(cameraFrame, _state);
-		const Image& image = _framegrabber->getImage();
-
-		// Convert to OpenCV image
-		Mat im = toOpenCVImage(image);
-		Mat imflip;
-		cv::flip(im, imflip, 0);
-
-		// Show in QLabel
-		QImage img(imflip.data, imflip.cols, imflip.rows, imflip.step, QImage::Format_RGB888);
-		QPixmap p = QPixmap::fromImage(img);
-		unsigned int maxW = 400;
-		unsigned int maxH = 800;
-		_label->setPixmap(p.scaled(maxW,maxH,Qt::KeepAspectRatio));
+		takePicture();
 	}
 
 

@@ -15,12 +15,13 @@
 
 #define DELTA_T_MAR  1000       // period in ms
 #define DELTA_T_BOT  1000         // period in ms
-#define DELTA_T_SIM  1000
-#define DELTA_T_CAMPROCESSING   400
+#define DELTA_T_SIM  0
+#define DELTA_T_CAMPROCESSING   800
 #define Z_COORDINAT  0.5        // the debth of the image in meters
 #define FOCALLENGTH  823        // focal lehgth of the camera
 #define POINTS       3
 #define ENABLE_VI_SER   1
+#define SEQUENCE     FASTSEQ
 
 
 
@@ -41,7 +42,7 @@ using namespace cv;
 using namespace std::placeholders;
 
 SamplePlugin::SamplePlugin():
-    RobWorkStudioPlugin("SamplePluginUI", QIcon(":/pa_icon.png")),SURFObj(400)
+    RobWorkStudioPlugin("SamplePluginUI", QIcon(":/pa_icon.png")),SURFObj(400,log().info())
 {
 	setupUi(this);
 
@@ -60,7 +61,7 @@ SamplePlugin::SamplePlugin():
 
     // setup markerhandle
     myMarker = new Marker(_textureRender,log().info(),(double)FOCALLENGTH);
-    myMarker->importPath(SLOWSEQ);
+    myMarker->importPath(SEQUENCE);
 
 
 	Image bgImage(0,0,Image::GRAY,Image::Depth8U);
@@ -152,6 +153,29 @@ void SamplePlugin::open(WorkCell* workcell)
     SURFObj.setMarker(CvMarker);
 }
 
+bool SamplePlugin::getPoints(Mat im){
+    // return the three points to follow
+    if(ENABLE_VI_SER == 0) {
+        DetectedPoints = myMarker->getMarkerPoints(POINTS);
+    }
+    else {
+        // get points from feachure extraction
+        vector <Point2f> test = SURFObj.matchfeachures(im);
+        if (test.size() == 4){
+            for (int i = 0; i < 3; i++) {
+                // Marker found - update Detected points
+                DetectedPoints[i * 2] = test[i].x - im.cols/2;
+                DetectedPoints[i * 2 + 1] = test[i].y - im.rows/2;
+            }
+        }else {
+            // protocol for handling failed reads - do not move
+            DetectedPoints = TargetPoints;
+            return 0;
+        }
+
+    }
+    return 1;
+}
 
 void SamplePlugin::close() {
     log().info() << "CLOSE" << "\n";
@@ -181,6 +205,7 @@ Mat SamplePlugin::toOpenCVImage(const Image& img) {
 	res.data = (uchar*)img.getImageData();
 	return res;
 }
+
 Mat SamplePlugin::takePicture() {
     Frame* cameraFrame = _wc->findFrame("CameraSim");
     _framegrabber->grab(cameraFrame, _state);
@@ -194,26 +219,16 @@ Mat SamplePlugin::takePicture() {
     cvtColor(im, im, CV_RGB2BGR);
 
 
-    VelocityScrew6D<> imgPoints;
-
     // get the detected marker points
-    if(ENABLE_VI_SER == 0)   imgPoints = myMarker->getMarkerPoints(POINTS);
-    else {
-        // get points from feachure extraction
-        vector <Point2f> test = SURFObj.matchfeachures(im);
-
-        for (int i = 0; i < 3; i++) {
-            imgPoints[i * 2] = test[i].x;
-            imgPoints[i * 2 + 1] = test[i].y;
-        }
-    }
+    getPoints( im );
+    VelocityScrew6D<> imgPoints = DetectedPoints;
 
 
     for(unsigned int i = 0;i <POINTS; i++){
         cv::circle(imflip,Point(imgPoints[i*2] + imflip.cols/2,imgPoints[i*2+1] + imflip.rows/2),5,Scalar(0,0,255),3);
         cv::circle(imflip,Point(TargetPoints[i*2] + imflip.cols/2,TargetPoints[i*2+1] + imflip.rows/2),8,Scalar(255,0,255),3);
 
-        //log().info() << "changed" << imgPoints[i*2] + imflip.cols/2 << " " << imgPoints[i*2+1] + imflip.rows/2 << endl;
+        //log().info() << "changed: " << imgPoints[i*2] + imflip.cols/2 << " " << imgPoints[i*2+1] + imflip.rows/2 << endl;
 
     }
 
@@ -254,10 +269,12 @@ void SamplePlugin::reset() {
     myMarker->moveMarker(0);
     device->setQ(Q(7,0,-0.65,0,1.80,0,0.42,0), _state);
     getRobWorkStudio()->setState(_state);
-    VelocityScrew6D<> imgPoints;
+
+    getPoints(takePicture());
+    VelocityScrew6D<> imgPoints = DetectedPoints;
 
     // get the detected marker points
-    if(ENABLE_VI_SER == 0)   imgPoints = myMarker->getMarkerPoints(POINTS);
+    /*if(ENABLE_VI_SER == 0)   imgPoints = myMarker->getMarkerPoints(POINTS);
     else {
         // get points from feachure extraction
         vector<Point2f> test = SURFObj.matchfeachures(takePicture());
@@ -266,7 +283,7 @@ void SamplePlugin::reset() {
             imgPoints[i*2] = test[i].x;
             imgPoints[i*2+1] = test[i].y;
         }
-    }
+    }*/
 
 
     // calculate the image jacobian
@@ -333,9 +350,12 @@ void SamplePlugin::timer() {
     if (_framegrabber != NULL) {
         // Get the image as a RW image
         Mat img = takePicture();
-        // get the detected marker points
-        VelocityScrew6D<> imgPoints;
-        if(ENABLE_VI_SER == 0)   imgPoints = myMarker->getMarkerPoints(POINTS);
+
+        // Update the detected points
+        getPoints(img);
+        VelocityScrew6D<> imgPoints = DetectedPoints;
+
+        /*if(ENABLE_VI_SER == 0)   imgPoints = myMarker->getMarkerPoints(POINTS);
         else {
             // get points from feachure extraction
             vector<Point2f> test = SURFObj.matchfeachures(img);
@@ -344,16 +364,16 @@ void SamplePlugin::timer() {
                 imgPoints[i*2] = test[i].x;
                 imgPoints[i*2+1] = test[i].y;
             }
-        }
+        }*/
 
         Q next;
         if(POINTS ==3) next= myViscServ->nextQ(imgPoints, dT-DELTA_T_CAMPROCESSING);
         else next= myViscServ->nextQ1(imgPoints, dT-DELTA_T_CAMPROCESSING);
 
         // calculate eucleadian distance
-        VelocityScrew6D<> error_dist= (TargetPoints-imgPoints);
+        //VelocityScrew6D<> error_dist= (TargetPoints-imgPoints);
 
-        log().info() << error_dist.norm2() << ", ";
+        //log().info() << error_dist.norm2() << ", ";
         // setup devise
 
         Device::Ptr device;
@@ -365,6 +385,21 @@ void SamplePlugin::timer() {
 
         device->setQ(next, _state);
         getRobWorkStudio()->setState(_state);
+        log().info() << "" << next[0];
+        for (unsigned int i = 1; i< 7; i++){
+            log().info() << ", "<< next[i];
+        }
+        Frame *cameraFrame = _wc->findFrame("Camera");
+        Transform3D<> baseToTool = device->baseTframe(cameraFrame, _state);
+        VelocityScrew6D<> toolPose(baseToTool);
+        for (unsigned int i = 0; i< 6; i++){
+            log().info() << ", "<< toolPose[i];
+        }
+        log().info() << ";\n";
+
+        /*getPoints(takePicture());
+        VelocityScrew6D<> error_dist= (TargetPoints-DetectedPoints);
+        log().info() << error_dist.norm2() << ", ";*/
     }
 
 

@@ -6,15 +6,15 @@
 #include "FeatureExtraction.h"
 
 
-FeatureExtraction::FeatureExtraction() {
+/*FeatureExtraction::FeatureExtraction() {
 
     // Constrct the SURF detector
     int minHessian = 400;
     detector = SURF::create();
     detector->setHessianThreshold(minHessian);
-}
+}*/
 
-FeatureExtraction::FeatureExtraction(int iHassanThreshhold) {
+FeatureExtraction::FeatureExtraction(int iHassanThreshhold,rw::common::LogWriter &log):log(log) {
 
     // Constrct the SURF detector
     detector = SURF::create();
@@ -58,35 +58,39 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
     /*printf("-- Max dist : %f \n", max_dist );
     printf("-- Min dist : %f \n", min_dist );*/
     //-- Draw only "good" matches (i.e. whose distance is less than 2*min_dist,
-    //-- or a small arbitary value ( 0.02 ) in the event that min_dist is very
+    //-- or a small arbitary value ( 0.2 ) in the event that min_dist is very
     //-- small)
     //-- PS.- radiusMatch can also be used here.
     std::vector< DMatch > good_matches;
     for( int i = 0; i < mDescriptorsMaker.rows; i++ )
-    { if( matches[i].distance <= max(2*min_dist, 0.02) )
+    { if( matches[i].distance <= max(2*min_dist, 0.15) )
         { good_matches.push_back( matches[i]); }
     }
 
 
     //-- Draw only "good" matches
-    Mat img_matches;
-    drawMatches( mMarker, vKeyPointsMarker, mImage, vKeyPointImage,
+    //Mat img_matches;
+    /*drawMatches( mMarker, vKeyPointsMarker, mImage, vKeyPointImage,
                  good_matches, img_matches, Scalar::all(-1), Scalar::all(-1),
                  vector<char>(), DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS );
 
 
     //-- Show detected matches
-    //imshow( "Good Matches", img_matches );
-    //waitKey(10);
+    imshow( "Good Matches", img_matches );
+    waitKey(0);*/
 
-/*    for( int i = 0; i < (int)matches.size(); i++ )
-    { printf( "-- Good Match [%d] Keypoint 1: %d  -- Keypoint 2: %d -- distance: %f \n", i, matches[i].queryIdx, matches[i].trainIdx, matches[i].distance ); }
+    /*
+    for( int i = 0; i < (int)matches.size(); i++ )
+    {
+        log << "-- Good Match [" << i <<  "] Keypoint 1: " << matches[i].queryIdx <<  "-- Keypoint 2: " << matches[i].trainIdx << " -- distance: " << matches[i].distance << endl;
+    }
 
     cout << "**********************good matches************************" << endl;
 
     for( int i = 0; i < (int)good_matches.size(); i++ )
-    { printf( "-- Good Match [%d] Keypoint 1: %d  -- Keypoint 2: %d -- distance: %f \n", i, good_matches[i].queryIdx, good_matches[i].trainIdx, good_matches[i].distance ); }
-*/
+    {
+        log << "-- Good Match [" << i <<  "] Keypoint 1: " << good_matches[i].queryIdx <<  "-- Keypoint 2: " << good_matches[i].trainIdx << " -- distance: " << good_matches[i].distance << endl;
+    }*/
 
 
     // use the good matches to finde the homography
@@ -96,13 +100,13 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
     std::vector<Point2f> scene;
 
     //-- Get the keypoints from the good matches
-    for( int i = 0; i < good_matches.size(); i++ )
+    for( unsigned int i = 0; i < good_matches.size(); i++ )
     {
         obj.push_back( vKeyPointsMarker[ good_matches[i].queryIdx ].pt );
         scene.push_back( vKeyPointImage[ good_matches[i].trainIdx ].pt );
     }
 
-    if (good_matches.size() < 4) return std::vector<Point2f>();
+    if (good_matches.size() < 10) return std::vector<Point2f>();
     Mat H = findHomography( obj, scene, CV_RANSAC );
 
     //-- Get the corners from the image_1 ( the object to be "detected" )
@@ -116,14 +120,14 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
     perspectiveTransform( obj_corners, scene_corners, H);
 
     //-- Draw lines between the corners (the mapped object in the scene - image_2
-    line( img_matches, scene_corners[0] + Point2f( mMarker.cols, 0), scene_corners[1] + Point2f( mMarker.cols, 0), Scalar(0, 255, 0), 4 );
+    /*line( img_matches, scene_corners[0] + Point2f( mMarker.cols, 0), scene_corners[1] + Point2f( mMarker.cols, 0), Scalar(0, 255, 0), 4 );
     line( img_matches, scene_corners[1] + Point2f( mMarker.cols, 0), scene_corners[2] + Point2f( mMarker.cols, 0), Scalar( 0, 255, 0), 4 );
     line( img_matches, scene_corners[2] + Point2f( mMarker.cols, 0), scene_corners[3] + Point2f( mMarker.cols, 0), Scalar( 0, 255, 0), 4 );
     line( img_matches, scene_corners[3] + Point2f( mMarker.cols, 0), scene_corners[0] + Point2f( mMarker.cols, 0), Scalar( 0, 255, 0), 4 );
 
     //-- Show detected matches
-    /*imshow( "Good Matches & Object detection", img_matches );
-    waitKey(10);*/
+    imshow( "Good Matches & Object detection", img_matches );
+    waitKey(0);*/
 
     return scene_corners;
 

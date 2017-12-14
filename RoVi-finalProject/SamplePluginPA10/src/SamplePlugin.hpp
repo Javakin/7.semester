@@ -44,6 +44,7 @@ private slots:
     void markerTimer();
     void reset();
     void run();
+    bool getPoints(Mat im);
   
     void stateChangedListener(const rw::kinematics::State& state);
 
@@ -65,6 +66,7 @@ private:
     VisualServoing* myViscServ;
     FeatureExtraction SURFObj;
     VelocityScrew6D<> TargetPoints;
+    VelocityScrew6D<> DetectedPoints;
 };
 
 #endif /*RINGONHOOKPLUGIN_HPP_*/

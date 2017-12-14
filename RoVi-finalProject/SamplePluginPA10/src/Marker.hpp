@@ -107,8 +107,10 @@ public:
     void moveMarker(unsigned int iPosNum){
         // move the market to the position given the position number
         if (MarkerPath.size()>iPosNum)
+        {
             MarkerFrame->setTransform(MarkerPath[iPosNum], *_state);
-
+            this->iPosNum = iPosNum;
+        }
     }
 
     void importPath(string aFilePath){

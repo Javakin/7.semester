@@ -16,7 +16,7 @@
 #define DELTA_T_MAR  1000       // period in ms
 #define DELTA_T_BOT  1000         // period in ms
 #define DELTA_T_SIM  0
-#define DELTA_T_CAMPROCESSING   800
+#define DELTA_T_CAMPROCESSING   850
 #define Z_COORDINAT  0.5        // the debth of the image in meters
 #define FOCALLENGTH  823        // focal lehgth of the camera
 #define POINTS       3
@@ -385,7 +385,8 @@ void SamplePlugin::timer() {
 
         device->setQ(next, _state);
         getRobWorkStudio()->setState(_state);
-        log().info() << "" << next[0];
+
+        /*log().info() << "" << next[0];
         for (unsigned int i = 1; i< 7; i++){
             log().info() << ", "<< next[i];
         }
@@ -394,7 +395,9 @@ void SamplePlugin::timer() {
         VelocityScrew6D<> toolPose(baseToTool);
         for (unsigned int i = 0; i< 6; i++){
             log().info() << ", "<< toolPose[i];
-        }
+        }*/
+
+
         log().info() << ";\n";
 
         /*getPoints(takePicture());

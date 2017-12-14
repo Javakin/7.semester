@@ -33,6 +33,7 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
+#include <cmath>
 
 #ifndef VISUALSERVOING
 #define VISUALSERVOING
@@ -94,7 +95,7 @@ public:
         UV=U;
 
     }
-    void setImageJacobian1(double F, double Z){
+    void setImageJacobian1(double F, double Z, VelocityScrew6D<> U){
         // calculate and set the image Jacobian for three points
         jImageJacobian = new Jacobian(2,2);
         Jacobian &J(*jImageJacobian);
@@ -104,37 +105,59 @@ public:
 
         J(1, 0) = 0;
         J(1, 1) = -F / Z;
+        UV=U;
     }
 
-    Q nextQ(VelocityScrew6D<> points, double dt){
-        log << "________________________________________________________" << endl;
-        dt= dt/1000;
-        log << "Points: " << points << endl;
-        points = UV-points;
-        log << "UV: " << UV << endl;
+    Q nextQ(VelocityScrew6D<> points, double dt) {
+        //log << "________________________________________________________" << endl;
+        dt = dt / 1000;
+        points = UV - points;
 
-        Frame* cameraFrame = _wc->findFrame("Camera");
+        // -------- CALCULATE dU -----
+        Q dU = Jacobian(jImageJacobian->e().inverse()) * points;
+
+        return dU2dq(dU,dt);
+    }
+
+    Q nextQ1(VelocityScrew6D<> points, double dt){
+        //log << "________________________________________________________" << endl;
+        dt = dt / 1000;
+        points = UV - points;
+
+        Jacobian imgPoints(1,2);
+        imgPoints(0,0) = points[0];
+        imgPoints(0,1) = points[1];
+
+        Jacobian dUxy = Jacobian(jImageJacobian->e().inverse())*imgPoints;
+
+        Q dU(6,0,0,0,0,0,0);
+
+        dU[0] = dUxy(0,0);
+        dU[1] = dUxy(0,1);
+
+
+
+        return dU2dq(dU,dt);
+    }
+
+    Q dU2dq(Q dU, double dt){
+        Frame *cameraFrame = _wc->findFrame("Camera");
         Device::Ptr device;
         device = _wc->findDevice("PA10");
-        if (device == NULL){
+        if (device == NULL) {
             log << "read of device failed\n";
         }
-        log << "Pixel error: " << points << endl;
+        //log << "Pixel error: " << points << endl;
 
         Transform3D<> baseToTool = device->baseTframe(cameraFrame, *_state);
 
-
-        // -------- CALCULATE dU -----
-        Q dU = Jacobian(jImageJacobian->e().inverse())*points;
-
-        log << "dU: " << dU << endl;
 
         // -------- CALCULATE dUbase -----
         Jacobian S_q(Rotation3D<>(baseToTool.R().e().transpose()));
 
         VelocityScrew6D<> duBase = Jacobian(S_q.e().inverse())*dU;
 
-        log << "dUbase: " << duBase << endl;
+        //log << "dUbase: " << duBase << endl;
 
 
         // -------- CALCULATE dq -----
@@ -155,9 +178,9 @@ public:
 
 
 
-        /*log << "dQ: " << dq << endl;
-        log << "q0: " << q0 << endl;
-        log << "du_base: " << J_q*dq<< endl;
+        //log << "dQ: " << dq << endl;
+        //log << "q0: " << q0 << endl;
+        //log << "du_base: " << J_q*dq<< endl;
 
         // Positional limit
         Q v_limit = device->getVelocityLimits();
@@ -190,22 +213,22 @@ public:
             if(q_max[i] > 0.5*a_limit[i]*dt*(2*dt)+q0[i] + (q0[i]-qOld[i])){
                 q_max[i] = 0.5*a_limit[i]*dt*(2*dt)+q0[i] + (q0[i]-qOld[i]);
             }
-            if(dq[i]>0) {
+            if(dq[i] > 0) {
                 if (scale > (q_max[i] - q0[i]) / (dq[i])) {
                     scale = (q_max[i] - q0[i]) / (dq[i]);
                 }
             }
             else if(dq[i]<0){
                 if (scale > (q_min[i] - q0[i]) / (dq[i])) {
-                    scale = (q_min[i] - q0[i]) / (-dq[i]);
+                    scale = (q_min[i] - q0[i]) / (dq[i]);
                 }
             }
 
         }
         // cap speeds
 
-        Q qOutPut = q0+dq*scale*0.1;
-*/      Q qOutPut = q0+dq;
+        Q qOutPut = q0+dq*scale;
+      //Q qOutPut = q0+dq;
 
         qOld = qOutPut;
 

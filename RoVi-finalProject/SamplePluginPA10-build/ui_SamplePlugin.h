@@ -84,8 +84,8 @@ public:
     void retranslateUi(QDockWidget *SamplePlugin)
     {
         SamplePlugin->setWindowTitle(QApplication::translate("SamplePlugin", "DockWidget", 0));
-        _btn0->setText(QApplication::translate("SamplePlugin", "SetImages", 0));
-        _btn1->setText(QApplication::translate("SamplePlugin", "StartTimer", 0));
+        _btn0->setText(QApplication::translate("SamplePlugin", "Initialize", 0));
+        _btn1->setText(QApplication::translate("SamplePlugin", "Run", 0));
         pushButton->setText(QApplication::translate("SamplePlugin", "PushButton", 0));
         _label->setText(QApplication::translate("SamplePlugin", "Label", 0));
     } // retranslateUi

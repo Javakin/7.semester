@@ -93,11 +93,21 @@ public:
     }
 
 
-    void moveMarker(){
+    bool moveMarker(){
         // move the market to the position given the position number
         if (MarkerPath.size()>iPosNum)
             MarkerFrame->setTransform(MarkerPath[iPosNum++], *_state);
-        else iPosNum = 0;
+        else {
+            iPosNum = 0;
+            return 0;
+        }
+        return 1;
+
+    }
+    void moveMarker(unsigned int iPosNum){
+        // move the market to the position given the position number
+        if (MarkerPath.size()>iPosNum)
+            MarkerFrame->setTransform(MarkerPath[iPosNum], *_state);
 
     }
 

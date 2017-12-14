@@ -13,10 +13,15 @@
 
 
 
-#define DELTA_T      100         // period in ms
-#define Z_COORDINAT  0.5         // the debth of the image in meters
+#define DELTA_T_MAR  1000       // period in ms
+#define DELTA_T_BOT  1000         // period in ms
+#define DELTA_T_SIM  1000
+#define DELTA_T_CAMPROCESSING   400
+#define Z_COORDINAT  0.5        // the debth of the image in meters
 #define FOCALLENGTH  823        // focal lehgth of the camera
 #define POINTS       3
+#define ENABLE_VI_SER   1
+
 
 
 
@@ -55,7 +60,7 @@ SamplePlugin::SamplePlugin():
 
     // setup markerhandle
     myMarker = new Marker(_textureRender,log().info(),(double)FOCALLENGTH);
-    myMarker->importPath(FASTSEQ);
+    myMarker->importPath(SLOWSEQ);
 
 
 	Image bgImage(0,0,Image::GRAY,Image::Depth8U);
@@ -177,7 +182,6 @@ Mat SamplePlugin::toOpenCVImage(const Image& img) {
 	return res;
 }
 Mat SamplePlugin::takePicture() {
-    VelocityScrew6D<> imgPoints = myMarker->getMarkerPoints(POINTS);
     Frame* cameraFrame = _wc->findFrame("CameraSim");
     _framegrabber->grab(cameraFrame, _state);
     const Image& image = _framegrabber->getImage();
@@ -188,6 +192,22 @@ Mat SamplePlugin::takePicture() {
     cv::flip(im, imflip, 0);
     imflip.copyTo(im);
     cvtColor(im, im, CV_RGB2BGR);
+
+
+    VelocityScrew6D<> imgPoints;
+
+    // get the detected marker points
+    if(ENABLE_VI_SER == 0)   imgPoints = myMarker->getMarkerPoints(POINTS);
+    else {
+        // get points from feachure extraction
+        vector <Point2f> test = SURFObj.matchfeachures(im);
+
+        for (int i = 0; i < 3; i++) {
+            imgPoints[i * 2] = test[i].x;
+            imgPoints[i * 2 + 1] = test[i].y;
+        }
+    }
+
 
     for(unsigned int i = 0;i <POINTS; i++){
         cv::circle(imflip,Point(imgPoints[i*2] + imflip.cols/2,imgPoints[i*2+1] + imflip.rows/2),5,Scalar(0,0,255),3);
@@ -214,41 +234,126 @@ Mat SamplePlugin::takePicture() {
 
     return im;
 }
+void SamplePlugin::reset() {
+        Image::Ptr image;
+    /*image = ImageLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/markers/Marker1.ppm");
+    _textureRender->setImage(*image);*/
 
+    myMarker->setImage(MARKER3);
 
-void SamplePlugin::btnPressed() {
-    QObject *obj = sender();
-    VelocityScrew6D<> imgPoints = myMarker->getMarkerPoints(POINTS);
-	if(obj==_btn0){
-		log().info() << "Button 0\n";
-		// Set a new texture (one pixel = 1 mm)
-		Image::Ptr image;
-        /*image = ImageLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/markers/Marker1.ppm");
-		_textureRender->setImage(*image);*/
+    image = ImageLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/backgrounds/color2.ppm");
+    _bgRender->setImage(*image);
+    getRobWorkStudio()->updateAndRepaint();
 
-        myMarker->setImage(MARKER3);
+    Device::Ptr device;
+    device = _wc->findDevice("PA10");
 
-        image = ImageLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/backgrounds/color2.ppm");
-		_bgRender->setImage(*image);
-		getRobWorkStudio()->updateAndRepaint();
+    if (device == NULL) {
+        log().info() << "read of device failed\n";
+    }
+    myMarker->moveMarker(0);
+    device->setQ(Q(7,0,-0.65,0,1.80,0,0.42,0), _state);
+    getRobWorkStudio()->setState(_state);
+    VelocityScrew6D<> imgPoints;
 
+    // get the detected marker points
+    if(ENABLE_VI_SER == 0)   imgPoints = myMarker->getMarkerPoints(POINTS);
+    else {
         // get points from feachure extraction
-        /*vector<Point2f> test = SURFObj.matchfeachures(takePicture());
-        VelocityScrew6D<> imgPoints;
+        vector<Point2f> test = SURFObj.matchfeachures(takePicture());
+
         for(int i = 0;i < 3; i++){
             imgPoints[i*2] = test[i].x;
             imgPoints[i*2+1] = test[i].y;
-        }*/
+        }
+    }
 
-        // calculate the image jacobian
-        myViscServ->setImageJacobian(FOCALLENGTH, Z_COORDINAT, imgPoints);
-        TargetPoints = imgPoints;
-        takePicture();
+
+    // calculate the image jacobian
+    if (POINTS == 3)    myViscServ->setImageJacobian(FOCALLENGTH, Z_COORDINAT, imgPoints);
+    else myViscServ->setImageJacobian1(FOCALLENGTH, Z_COORDINAT, imgPoints);
+    TargetPoints = imgPoints;
+    takePicture();
+
+
+}
+
+void SamplePlugin::run() {
+    /*if (!_markerMover->isActive())
+        _markerMover->start(DELTA_T_MAR);
+    else
+        _markerMover->stop();
+*/
+    if (!_timer->isActive())
+        _timer->start(DELTA_T_SIM);
+    else
+        _timer->stop();
+
+
+}
+
+void SamplePlugin::btnPressed() {
+    QObject *obj = sender();
+
+	if(obj==_btn0){
+		log().info() << "Button 0\n";
+		// Set a new texture (one pixel = 1 mm)
+		reset();
 
 	} else if(obj==_btn1){
+        log().info() << "Button 1\n";
+		// Toggle the timer on and offs
+        run();
+	} else if(obj==_spinBox){
+		log().info() << "spin value:" << _spinBox->value() << "\n";
+	}
+}
 
-        /*Q next = myViscServ->nextQ(imgPoints, DELTA_T);
-        log().info() << "Q: " << next << endl;
+void SamplePlugin::timer() {
+
+    if(!myMarker->moveMarker()){
+        //_markerMover->stop();
+        //_timer->stop();
+        dT-=50;
+        if(dT-DELTA_T_CAMPROCESSING> 0){
+            reset();
+            //run();
+            log().info() << endl << endl<< dT << endl;
+        }else{
+            dT = 1000;
+            _timer->stop();
+            log().info() << endl <<"I AM DONE" << endl;
+
+
+        }
+
+
+    }
+
+    if (_framegrabber != NULL) {
+        // Get the image as a RW image
+        Mat img = takePicture();
+        // get the detected marker points
+        VelocityScrew6D<> imgPoints;
+        if(ENABLE_VI_SER == 0)   imgPoints = myMarker->getMarkerPoints(POINTS);
+        else {
+            // get points from feachure extraction
+            vector<Point2f> test = SURFObj.matchfeachures(img);
+
+            for(int i = 0;i < 3; i++){
+                imgPoints[i*2] = test[i].x;
+                imgPoints[i*2+1] = test[i].y;
+            }
+        }
+
+        Q next;
+        if(POINTS ==3) next= myViscServ->nextQ(imgPoints, dT-DELTA_T_CAMPROCESSING);
+        else next= myViscServ->nextQ1(imgPoints, dT-DELTA_T_CAMPROCESSING);
+
+        // calculate eucleadian distance
+        VelocityScrew6D<> error_dist= (TargetPoints-imgPoints);
+
+        log().info() << error_dist.norm2() << ", ";
         // setup devise
 
         Device::Ptr device;
@@ -260,8 +365,11 @@ void SamplePlugin::btnPressed() {
 
         device->setQ(next, _state);
         getRobWorkStudio()->setState(_state);
-*/
-        /*if (_framegrabber != NULL) {
+    }
+
+
+
+    /*if (_framegrabber != NULL) {
             // get points from feachure extraction
             vector<Point2f> test = SURFObj.matchfeachures(takePicture());
             log().info() << " Looking for marker ->";
@@ -286,49 +394,12 @@ void SamplePlugin::btnPressed() {
         }*/
 
 
-		log().info() << "Button 1\n";
-		// Toggle the timer on and offs
-        if (!_markerMover->isActive())
-            _markerMover->start(DELTA_T); // run 10 Hz
-        else
-            _markerMover->stop();
-
-        if (!_timer->isActive())
-            _timer->start(DELTA_T); // run 10 Hz
-		else
-			_timer->stop();
-	} else if(obj==_spinBox){
-		log().info() << "spin value:" << _spinBox->value() << "\n";
-	}
-}
-
-void SamplePlugin::timer() {
-    myMarker->moveMarker();
-	if (_framegrabber != NULL) {
-		// Get the image as a RW image
-		takePicture();
-        VelocityScrew6D<> imgPoints = myMarker->getMarkerPoints(POINTS);
-        Q next = myViscServ->nextQ(imgPoints, DELTA_T);
-        log().info() << "Q: " << next << endl;
-        // setup devise
-
-        Device::Ptr device;
-        device = _wc->findDevice("PA10");
-
-        if (device == NULL) {
-            log().info() << "read of device failed\n";
-        }
-
-        device->setQ(next, _state);
-        getRobWorkStudio()->setState(_state);
-	}
-
-
 
 }
 
 void SamplePlugin::markerTimer(){
 
+    getRobWorkStudio()->setState(_state);
 
     //log().info() << myMarker->getPosition().P() << endl;
 }

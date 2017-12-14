@@ -42,12 +42,16 @@ private slots:
     void btnPressed();
     void timer();
     void markerTimer();
+    void reset();
+    void run();
   
     void stateChangedListener(const rw::kinematics::State& state);
 
 private:
     static cv::Mat toOpenCVImage(const rw::sensor::Image& img);
     cv::Mat takePicture();
+
+    int dT = 1000;
 
     QTimer* _timer;
     QTimer* _markerMover;

@@ -69,12 +69,12 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
 
 
     //-- Draw only "good" matches
-    Mat img_matches;
+    /*Mat img_matches;
     drawMatches( mMarker, vKeyPointsMarker, mImage, vKeyPointImage,
                  good_matches, img_matches, Scalar::all(-1), Scalar::all(-1),
                  vector<char>(), DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS );
 
-
+*/
     //-- Show detected matches
     //imshow( "Good Matches", img_matches );
     //waitKey(10);
@@ -114,6 +114,7 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
 
     perspectiveTransform( obj_corners, scene_corners, H);
 
+    /*
     //-- Draw lines between the corners (the mapped object in the scene - image_2
     line( img_matches, scene_corners[0] + Point2f( mMarker.cols, 0), scene_corners[1] + Point2f( mMarker.cols, 0), Scalar(0, 255, 0), 4 );
     line( img_matches, scene_corners[1] + Point2f( mMarker.cols, 0), scene_corners[2] + Point2f( mMarker.cols, 0), Scalar( 0, 255, 0), 4 );
@@ -122,7 +123,7 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
 
     //-- Show detected matches
     imshow( "Good Matches & Object detection", img_matches );
-    waitKey(10);
+    waitKey(10);*/
 
     return scene;
 

@@ -1,0 +1,98 @@
+clear all
+close all
+clc
+
+% Import formatted data
+load('data.mat');
+
+
+% Robotics data Treatment
+
+% 1 Point - Error
+% Errors
+%plotGraphError(SlowMarker50Error_1P, MediMarker100Error_1P, FastMarker200Error_1P_1, 2,3,3, 'Single Point Tracking Error');
+
+% 3 Point - Pose
+sL = 2;
+mL = 3; 
+fL = 3;
+FigureTitle = 'Single Point ';
+
+% Remove preplaced zeros
+S = SlowMarker50Pose_1P(sL:end, :);
+M = MediMarker100Pose_1P(mL:end, :);
+F = FastMarker150Pose_1P(fL:end, :);
+
+% Split up the data in Q vectors and U vectors
+SQ = S(:, 1:7)';
+SU = S(:, 8:end);
+MQ = M(:, 1:7)';
+MU = M(:, 8:end);
+FQ = F(:, 1:7)';
+FU = F(:, 8:end);
+
+
+% Plot the Statevector
+figure('rend','painters','pos',[150 150 1000 400])
+hold on
+for int = 1:7
+    plot((1:length(SQ))/length(SQ), SQ(int, :),'b')
+    plot((1:length(MQ))/length(MQ), MQ(int, :),'r')
+    plot((1:length(FQ))/length(FQ),FQ(int, :), 'g')
+end
+
+legend('Slow Sequence', 'Medium Sequence', 'Fast Sequence')
+
+title([FigureTitle, 'Joint Configuration'])
+xlabel('Map Completion [%]')
+ylabel('Joint Configuration [rad]')
+hold off
+
+% plot dU xyz
+figure('rend','painters','pos',[150 (150+400) 1000 400])
+hold on
+for int = 1:7
+    plot((1:length(SU))/length(SU), SQ(int, :),'b')
+    plot((1:length(MQ))/length(MQ), MQ(int, :),'r')
+    plot((1:length(FQ))/length(FQ),FQ(int, :), 'g')
+end
+
+legend('Slow Sequence', 'Medium Sequence', 'Fast Sequence')
+
+title([FigureTitle, 'Joint Configuration'])
+xlabel('Map Completion [%]')
+ylabel('Joint Configuration [rad]')
+hold off
+
+% plot dU eaa
+
+
+y = 0;
+
+
+
+%% 3 Point - Error
+plotGraphError(SlowMarker50Error_3P, MediMarker100Error_3P, FastMarker200Error_3P_1, 2,2,1, 'Three Point Tracking Error');
+
+% 3 Point - Pose
+
+
+%% Vision data Treatment 
+
+% Errors
+SlowMarker450Error_Vis = SlowMarker450Error_Vis(4:end);
+MediMarker500Error_Vis = MediMarker500Error_Vis(2:end);
+FastMarker550Error_Vis = FastMarker550Error_Vis(4:end);
+
+figure()
+hold on
+plot((1:length(SlowMarker450Error_Vis))/length(SlowMarker450Error_Vis), SlowMarker450Error_Vis)
+plot((1:length(MediMarker500Error_Vis))/length(MediMarker500Error_Vis), MediMarker500Error_Vis)
+plot((1:length(FastMarker550Error_Vis))/length(FastMarker550Error_Vis),FastMarker550Error_Vis)
+
+% Positional Limits
+
+% Velocity Limits
+
+
+

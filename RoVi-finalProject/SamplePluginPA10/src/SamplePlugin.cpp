@@ -17,7 +17,7 @@
 #define DELTA_T_MAR  1000       // period in ms
 #define DELTA_T_BOT  1000         // period in ms
 #define DELTA_T_SIM  0
-#define DELTA_T_CAMPROCESSING   850
+#define DELTA_T_CAMPROCESSING   400
 #define Z_COORDINAT  0.5        // the debth of the image in meters
 #define FOCALLENGTH  823        // focal lehgth of the camera
 #define POINTS       3

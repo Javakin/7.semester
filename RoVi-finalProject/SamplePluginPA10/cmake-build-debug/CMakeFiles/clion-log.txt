@@ -19,4 +19,3 @@ CMake Error at CMakeLists.txt:43 (FIND_PACKAGE):
 
 
 -- Configuring incomplete, errors occurred!
-See also "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/cmake-build-debug/CMakeFiles/CMakeOutput.log".

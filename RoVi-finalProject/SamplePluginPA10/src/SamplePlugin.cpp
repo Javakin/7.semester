@@ -23,7 +23,7 @@
 #define POINTS       3
 #define ENABLE_VI_SER   1
 #define SEQUENCE     FASTSEQ
-string PATH_TO_PROJECT = "/home/student/Desktop/RoVi-finalProject/";
+string PATH_TO_PROJECT = "/home/student/Desktop/7.semester/RoVi-finalProject/";
 
 
 

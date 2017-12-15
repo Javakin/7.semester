@@ -1109,7 +1109,6 @@ CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
-CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
@@ -1136,7 +1135,6 @@ CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h
-CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qspinbox.h
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h
@@ -1847,7 +1845,6 @@ CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-l
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
-CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
@@ -1874,7 +1871,6 @@ CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-l
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h
-CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qspinbox.h
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h

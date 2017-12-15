@@ -17,7 +17,6 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -31,8 +30,6 @@ public:
     QVBoxLayout *verticalLayout;
     QPushButton *_btn0;
     QPushButton *_btn1;
-    QPushButton *pushButton;
-    QSpinBox *_spinBox;
     QLabel *_label;
 
     void setupUi(QDockWidget *SamplePlugin)
@@ -56,16 +53,6 @@ public:
 
         verticalLayout->addWidget(_btn1);
 
-        pushButton = new QPushButton(dockWidgetContents);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-
-        verticalLayout->addWidget(pushButton);
-
-        _spinBox = new QSpinBox(dockWidgetContents);
-        _spinBox->setObjectName(QStringLiteral("_spinBox"));
-
-        verticalLayout->addWidget(_spinBox);
-
         _label = new QLabel(dockWidgetContents);
         _label->setObjectName(QStringLiteral("_label"));
 
@@ -86,7 +73,6 @@ public:
         SamplePlugin->setWindowTitle(QApplication::translate("SamplePlugin", "DockWidget", 0));
         _btn0->setText(QApplication::translate("SamplePlugin", "Initialize", 0));
         _btn1->setText(QApplication::translate("SamplePlugin", "Run", 0));
-        pushButton->setText(QApplication::translate("SamplePlugin", "PushButton", 0));
         _label->setText(QApplication::translate("SamplePlugin", "Label", 0));
     } // retranslateUi
 

@@ -9,6 +9,7 @@
 #include <rw/kinematics/MovableFrame.hpp>
 
 #include <functional>
+#include <string>
 
 
 
@@ -22,6 +23,7 @@
 #define POINTS       3
 #define ENABLE_VI_SER   1
 #define SEQUENCE     FASTSEQ
+string PATH_TO_PROJECT = "/home/student/Desktop/7.semester/RoVi-finalProject/";
 
 
 
@@ -54,7 +56,7 @@ SamplePlugin::SamplePlugin():
 	// now connect stuff from the ui component
 	connect(_btn0    ,SIGNAL(pressed()), this, SLOT(btnPressed()) );
 	connect(_btn1    ,SIGNAL(pressed()), this, SLOT(btnPressed()) );
-	connect(_spinBox  ,SIGNAL(valueChanged(int)), this, SLOT(btnPressed()) );
+
 
 	Image textureImage(300,300,Image::GRAY,Image::Depth8U);
 	_textureRender = new RenderImage(textureImage);
@@ -321,9 +323,7 @@ void SamplePlugin::btnPressed() {
         log().info() << "Button 1\n";
 		// Toggle the timer on and offs
         run();
-	} else if(obj==_spinBox){
-		log().info() << "spin value:" << _spinBox->value() << "\n";
-	}
+	} 
 }
 
 void SamplePlugin::timer() {

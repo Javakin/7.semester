@@ -135,6 +135,8 @@ rw/kinematics/MovableFrame.hpp
 -
 functional
 -
+string
+-
 
 /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.hpp
 rw/models/WorkCell.hpp
@@ -4238,10 +4240,6 @@ qmainwindow.h
 qpushbutton.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox
-qspinbox.h
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qspinbox.h
-
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout
 qboxlayout.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h
@@ -4408,10 +4406,6 @@ QtCore/qobject.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h
 QtWidgets/qabstractslider.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qspinbox.h
-QtWidgets/qabstractspinbox.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h
@@ -5906,8 +5900,6 @@ QtWidgets/QHeaderView
 QtWidgets/QLabel
 -
 QtWidgets/QPushButton
--
-QtWidgets/QSpinBox
 -
 QtWidgets/QVBoxLayout
 -

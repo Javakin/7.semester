@@ -32,16 +32,6 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
-        <property name="text">
-         <string>PushButton</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QSpinBox" name="_spinBox"/>
-      </item>
-      <item>
        <widget class="QLabel" name="_label">
         <property name="text">
          <string>Label</string>

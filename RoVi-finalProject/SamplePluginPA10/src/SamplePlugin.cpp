@@ -23,7 +23,7 @@
 #define POINTS       3
 #define ENABLE_VI_SER   1
 #define SEQUENCE     FASTSEQ
-string PATH_TO_PROJECT = "/home/student/Desktop/7.semester/RoVi-finalProject/";
+string PATH_TO_PROJECT = "/home/student/Desktop/RoVi-finalProject/";
 
 
 
@@ -63,7 +63,7 @@ SamplePlugin::SamplePlugin():
 
     // setup markerhandle
     myMarker = new Marker(_textureRender,log().info(),(double)FOCALLENGTH);
-    myMarker->importPath(SEQUENCE);
+    myMarker->importPath(PATH_TO_PROJECT + SEQUENCE);
 
 
 	Image bgImage(0,0,Image::GRAY,Image::Depth8U);
@@ -85,12 +85,12 @@ void SamplePlugin::initialize() {
 	getRobWorkStudio()->stateChangedEvent().add(std::bind(&SamplePlugin::stateChangedListener, this, _1), this);
 
 	// Auto load workcell
-    WorkCell::Ptr wc = WorkCellLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/PA10WorkCell/ScenePA10RoVi1.wc.xml");
+    WorkCell::Ptr wc = WorkCellLoader::Factory::load(PATH_TO_PROJECT + "PA10WorkCell/ScenePA10RoVi1.wc.xml");
 	getRobWorkStudio()->setWorkCell(wc);
 
 	// Load Lena image
 	Mat im, image;
-    im = imread("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/lena.bmp", CV_LOAD_IMAGE_COLOR); // Read the file
+    im = imread(PATH_TO_PROJECT + "SamplePluginPA10/src/lena.bmp", CV_LOAD_IMAGE_COLOR); // Read the file
 	cvtColor(im, image, CV_BGR2RGB); // Switch the red and blue color channels
 	if(! image.data ) {
 		RW_THROW("Could not open or find the image: please modify the file path in the source code!");
@@ -144,10 +144,10 @@ void SamplePlugin::open(WorkCell* workcell)
     }
 
     // Load image
-    Mat CvMarker = cv::imread(MARKER3);
+    Mat CvMarker = cv::imread(PATH_TO_PROJECT + MARKER3);
 
     if (CvMarker.empty()) {
-        log().info() << "Input image not found at '" << MARKER3 << "'\n";
+        log().info() << "Input image not found at '" << PATH_TO_PROJECT + MARKER3 << "'\n";
         return;
     }
 
@@ -252,13 +252,12 @@ Mat SamplePlugin::takePicture() {
     return im;
 }
 void SamplePlugin::reset() {
-        Image::Ptr image;
-    /*image = ImageLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/markers/Marker1.ppm");
-    _textureRender->setImage(*image);*/
+    Image::Ptr image;
 
-    myMarker->setImage(MARKER3);
 
-    image = ImageLoader::Factory::load("/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/backgrounds/color2.ppm");
+    myMarker->setImage(PATH_TO_PROJECT + MARKER3);
+
+    image = ImageLoader::Factory::load(PATH_TO_PROJECT + "SamplePluginPA10/backgrounds/color2.ppm");
     _bgRender->setImage(*image);
     getRobWorkStudio()->updateAndRepaint();
 
@@ -323,7 +322,7 @@ void SamplePlugin::btnPressed() {
         log().info() << "Button 1\n";
 		// Toggle the timer on and offs
         run();
-	} 
+	}
 }
 
 void SamplePlugin::timer() {

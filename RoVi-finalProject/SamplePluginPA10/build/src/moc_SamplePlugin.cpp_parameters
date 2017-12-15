@@ -43,10 +43,10 @@
 -I/home/student/RobWork/RobWork/cmake/../ext/unzip
 -I/home/student/RobWork/RobWork/cmake/../ext/assimp/include
 -I/home/student/RobWork/RobWorkStudio/cmake/../ext/qtpropertybrowser/src
--I/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build
+-I/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build
 -DBOOST_DISABLE_ASSERTS
 -DBOOST_DISABLE_ASSERTS
 -DQT_NO_DEBUG
 -o
-/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/src/moc_SamplePlugin.cpp
-/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.hpp
+/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/src/moc_SamplePlugin.cpp
+/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.hpp

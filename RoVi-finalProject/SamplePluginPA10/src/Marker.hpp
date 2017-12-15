@@ -41,15 +41,15 @@
 #ifndef MARKER
 #define MARKER
 
-#define MARKER1     "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/markers/Marker1.ppm"
+#define MARKER1     "SamplePluginPA10/markers/Marker1.ppm"
 
-#define MARKER2A    "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/markers/Marker2a.ppm"
-#define MARKER2B    "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/markers/Marker2b.ppm"
-#define MARKER3     "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/markers/Marker3.ppm"
+#define MARKER2A    "SamplePluginPA10/markers/Marker2a.ppm"
+#define MARKER2B    "SamplePluginPA10/markers/Marker2b.ppm"
+#define MARKER3     "SamplePluginPA10/markers/Marker3.ppm"
 
-#define SLOWSEQ     "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/motions/MarkerMotionSlow.txt"
-#define MEDISEQ     "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/motions/MarkerMotionMedium.txt"
-#define FASTSEQ     "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/motions/MarkerMotionFast.txt"
+#define SLOWSEQ     "SamplePluginPA10/motions/MarkerMotionSlow.txt"
+#define MEDISEQ     "SamplePluginPA10/motions/MarkerMotionMedium.txt"
+#define FASTSEQ     "SamplePluginPA10/motions/MarkerMotionFast.txt"
 
 
 

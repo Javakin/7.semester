@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10
+CMAKE_SOURCE_DIR = /home/student/Desktop/RoVi-finalProject/SamplePluginPA10
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build
+CMAKE_BINARY_DIR = /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ qrc_resources.cpp.s:
 	$(MAKE) -f CMakeFiles/RoVi1PluginPA10.dir/build.make CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.s
 .PHONY : qrc_resources.cpp.s
 
+src/FeatureExtraction.o: src/FeatureExtraction.cpp.o
+
+.PHONY : src/FeatureExtraction.o
+
+# target to build an object file
+src/FeatureExtraction.cpp.o:
+	$(MAKE) -f CMakeFiles/RoVi1PluginPA10.dir/build.make CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.o
+.PHONY : src/FeatureExtraction.cpp.o
+
+src/FeatureExtraction.i: src/FeatureExtraction.cpp.i
+
+.PHONY : src/FeatureExtraction.i
+
+# target to preprocess a source file
+src/FeatureExtraction.cpp.i:
+	$(MAKE) -f CMakeFiles/RoVi1PluginPA10.dir/build.make CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.i
+.PHONY : src/FeatureExtraction.cpp.i
+
+src/FeatureExtraction.s: src/FeatureExtraction.cpp.s
+
+.PHONY : src/FeatureExtraction.s
+
+# target to generate assembly for a file
+src/FeatureExtraction.cpp.s:
+	$(MAKE) -f CMakeFiles/RoVi1PluginPA10.dir/build.make CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.s
+.PHONY : src/FeatureExtraction.cpp.s
+
 src/SamplePlugin.o: src/SamplePlugin.cpp.o
 
 .PHONY : src/SamplePlugin.o
@@ -216,6 +243,9 @@ help:
 	@echo "... qrc_resources.o"
 	@echo "... qrc_resources.i"
 	@echo "... qrc_resources.s"
+	@echo "... src/FeatureExtraction.o"
+	@echo "... src/FeatureExtraction.i"
+	@echo "... src/FeatureExtraction.s"
 	@echo "... src/SamplePlugin.o"
 	@echo "... src/SamplePlugin.i"
 	@echo "... src/SamplePlugin.s"

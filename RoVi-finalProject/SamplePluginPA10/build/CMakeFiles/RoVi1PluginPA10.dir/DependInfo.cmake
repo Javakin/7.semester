@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/qrc_resources.cpp" "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.o"
-  "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.cpp" "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o"
-  "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/src/moc_SamplePlugin.cpp" "/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o"
+  "/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/qrc_resources.cpp" "/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.o"
+  "/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/src/FeatureExtraction.cpp" "/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.o"
+  "/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.cpp" "/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o"
+  "/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/src/moc_SamplePlugin.cpp" "/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

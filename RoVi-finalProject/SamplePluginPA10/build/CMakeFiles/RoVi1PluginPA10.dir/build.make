@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/RoVi-finalProject/SamplePluginPA10
+CMAKE_SOURCE_DIR = /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build
+CMAKE_BINARY_DIR = /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RoVi1PluginPA10.dir/depend.make
@@ -58,30 +58,30 @@ include CMakeFiles/RoVi1PluginPA10.dir/progress.make
 include CMakeFiles/RoVi1PluginPA10.dir/flags.make
 
 ui_SamplePlugin.h: ../src/SamplePlugin.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ui_SamplePlugin.h"
-	/usr/lib/x86_64-linux-gnu/qt5/bin/uic -o /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/ui_SamplePlugin.h /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ui_SamplePlugin.h"
+	/usr/lib/x86_64-linux-gnu/qt5/bin/uic -o /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/ui_SamplePlugin.h /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.ui
 
 src/moc_SamplePlugin.cpp: ../src/SamplePlugin.hpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating src/moc_SamplePlugin.cpp"
-	cd /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/src && /usr/lib/x86_64-linux-gnu/qt5/bin/moc @/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/src/moc_SamplePlugin.cpp_parameters
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating src/moc_SamplePlugin.cpp"
+	cd /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/src && /usr/lib/x86_64-linux-gnu/qt5/bin/moc @/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/src/moc_SamplePlugin.cpp_parameters
 
 qrc_resources.cpp: ../src/pa_icon.png
 qrc_resources.cpp: ../src/resources.qrc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating qrc_resources.cpp"
-	/usr/lib/x86_64-linux-gnu/qt5/bin/rcc --name resources --output /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/qrc_resources.cpp /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/src/resources.qrc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating qrc_resources.cpp"
+	/usr/lib/x86_64-linux-gnu/qt5/bin/rcc --name resources --output /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/qrc_resources.cpp /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/resources.qrc
 
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: CMakeFiles/RoVi1PluginPA10.dir/flags.make
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o: ../src/SamplePlugin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o -c /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o -c /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.cpp
 
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.cpp > CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.cpp > CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.i
 
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.cpp -o CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/SamplePlugin.cpp -o CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.s
 
 CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o.requires:
 
@@ -96,16 +96,16 @@ CMakeFiles/RoVi1PluginPA10.dir/src/SamplePlugin.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.o: CMakeFiles/RoVi1PluginPA10.dir/flags.make
 CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.o: ../src/FeatureExtraction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.o -c /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/src/FeatureExtraction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.o -c /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/FeatureExtraction.cpp
 
 CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/src/FeatureExtraction.cpp > CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/FeatureExtraction.cpp > CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.i
 
 CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/src/FeatureExtraction.cpp -o CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/src/FeatureExtraction.cpp -o CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.s
 
 CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.o.requires:
 
@@ -120,16 +120,16 @@ CMakeFiles/RoVi1PluginPA10.dir/src/FeatureExtraction.cpp.o.provides.build: CMake
 
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: CMakeFiles/RoVi1PluginPA10.dir/flags.make
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o: src/moc_SamplePlugin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o -c /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/src/moc_SamplePlugin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o -c /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/src/moc_SamplePlugin.cpp
 
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/src/moc_SamplePlugin.cpp > CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/src/moc_SamplePlugin.cpp > CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.i
 
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/src/moc_SamplePlugin.cpp -o CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/src/moc_SamplePlugin.cpp -o CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.s
 
 CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o.requires:
 
@@ -144,16 +144,16 @@ CMakeFiles/RoVi1PluginPA10.dir/src/moc_SamplePlugin.cpp.o.provides.build: CMakeF
 
 CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.o: CMakeFiles/RoVi1PluginPA10.dir/flags.make
 CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.o: qrc_resources.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.o -c /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/qrc_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.o -c /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/qrc_resources.cpp
 
 CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/qrc_resources.cpp > CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/qrc_resources.cpp > CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.i
 
 CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/qrc_resources.cpp -o CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/qrc_resources.cpp -o CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.s
 
 CMakeFiles/RoVi1PluginPA10.dir/qrc_resources.cpp.o.requires:
 
@@ -307,7 +307,7 @@ RoVi1PluginPA10_EXTERNAL_OBJECTS =
 ../libs/Release/libRoVi1PluginPA10.so: /opt/ros/kinetic/lib/libopencv_imgproc3.so.3.2.0
 ../libs/Release/libRoVi1PluginPA10.so: /opt/ros/kinetic/lib/libopencv_core3.so.3.2.0
 ../libs/Release/libRoVi1PluginPA10.so: CMakeFiles/RoVi1PluginPA10.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared module ../libs/Release/libRoVi1PluginPA10.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared module ../libs/Release/libRoVi1PluginPA10.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RoVi1PluginPA10.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -329,6 +329,6 @@ CMakeFiles/RoVi1PluginPA10.dir/clean:
 CMakeFiles/RoVi1PluginPA10.dir/depend: ui_SamplePlugin.h
 CMakeFiles/RoVi1PluginPA10.dir/depend: src/moc_SamplePlugin.cpp
 CMakeFiles/RoVi1PluginPA10.dir/depend: qrc_resources.cpp
-	cd /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/RoVi-finalProject/SamplePluginPA10 /home/student/Desktop/RoVi-finalProject/SamplePluginPA10 /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build /home/student/Desktop/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles/RoVi1PluginPA10.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10 /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10 /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build /home/student/Desktop/7.semester/RoVi-finalProject/SamplePluginPA10/build/CMakeFiles/RoVi1PluginPA10.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/RoVi1PluginPA10.dir/depend
 

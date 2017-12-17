@@ -26,8 +26,8 @@ int main()
     NewMarker.getReference(Marker, MARKER3);
 
     // Show the image
-    /*cv::imshow("Marker3", Marker);
-    cv::waitKey();*/
+    cv::imshow("Marker3", Marker);
+    cv::waitKey();
 
 
     //Finde the marker in all images

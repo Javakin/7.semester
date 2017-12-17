@@ -229,7 +229,7 @@ public:
         Q qOutPut = q0+dq*scale;
 
       //Q qOutPut = q0+dq;
-        unsigned int i =0;
+       /* unsigned int i =0;
         if (dq[i]<0){
             log << dq[i]/(bounds.first[i]-q0[i]);
         }else if (dq[i]>0){
@@ -255,7 +255,7 @@ public:
             }else{
                 log << ", 0";
             }
-        }
+        }*/
 
 
 

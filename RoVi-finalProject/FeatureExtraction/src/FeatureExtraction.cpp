@@ -27,7 +27,7 @@ void FeatureExtraction::setMarker(Mat aMarker) {
 }
 
 vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
-    // solution based on source: https://docs.opencv.org/master/d5/d6f/tutorial_feature_flann_matcher.html
+    // solution based on the following source: https://docs.opencv.org/master/d5/d6f/tutorial_feature_flann_matcher.html
 
     //-- Setep 1 set up descriptors and keypoints for the target image
     vector<KeyPoint> vKeyPointImage;
@@ -41,10 +41,10 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
 
 
     // draw matches - for debugging
-    /*Mat img_matches5;
+    Mat img_matches5;
     drawMatches( mMarker, vKeyPointsMarker, mImage, vKeyPointImage, matches, img_matches5 );
     imshow("All matches", img_matches5);
-    cv::waitKey();*/
+    cv::waitKey();
 
 
     double max_dist = 0; double min_dist = 100;
@@ -69,15 +69,15 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
 
 
     //-- Draw only "good" matches
-    /*Mat img_matches;
+    /Mat img_matches;
     drawMatches( mMarker, vKeyPointsMarker, mImage, vKeyPointImage,
                  good_matches, img_matches, Scalar::all(-1), Scalar::all(-1),
                  vector<char>(), DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS );
 
-*/
+
     //-- Show detected matches
-    //imshow( "Good Matches", img_matches );
-    //waitKey(10);
+    imshow( "Good Matches", img_matches );
+    waitKey();
 
 /*    for( int i = 0; i < (int)matches.size(); i++ )
     { printf( "-- Good Match [%d] Keypoint 1: %d  -- Keypoint 2: %d -- distance: %f \n", i, matches[i].queryIdx, matches[i].trainIdx, matches[i].distance ); }
@@ -114,7 +114,7 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
 
     perspectiveTransform( obj_corners, scene_corners, H);
 
-    /*
+
     //-- Draw lines between the corners (the mapped object in the scene - image_2
     line( img_matches, scene_corners[0] + Point2f( mMarker.cols, 0), scene_corners[1] + Point2f( mMarker.cols, 0), Scalar(0, 255, 0), 4 );
     line( img_matches, scene_corners[1] + Point2f( mMarker.cols, 0), scene_corners[2] + Point2f( mMarker.cols, 0), Scalar( 0, 255, 0), 4 );
@@ -123,7 +123,7 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
 
     //-- Show detected matches
     imshow( "Good Matches & Object detection", img_matches );
-    waitKey(10);*/
+    waitKey();
 
     return scene;
 

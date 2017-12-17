@@ -21,7 +21,7 @@
 #define Z_COORDINAT  0.5        // the debth of the image in meters
 #define FOCALLENGTH  823        // focal lehgth of the camera
 #define POINTS       3
-#define ENABLE_VI_SER   1
+#define ENABLE_VI_SER   0
 #define SEQUENCE     FASTSEQ
 string PATH_TO_PROJECT = "/home/student/Desktop/7.semester/RoVi-finalProject/";
 
@@ -385,19 +385,21 @@ void SamplePlugin::timer() {
         device->setQ(next, _state);
         getRobWorkStudio()->setState(_state);
 
-        /*log().info() << "" << next[0];
+        log().info() << "" << next[0];
         for (unsigned int i = 1; i< 7; i++){
             log().info() << ", "<< next[i];
         }
         Frame *cameraFrame = _wc->findFrame("Camera");
-        Transform3D<> baseToTool = device->baseTframe(cameraFrame, _state);
+        Transform3D<> baseToTool = cameraFrame->wTf(_state);
+
+                //device->baseTframe(cameraFrame, _state);
         VelocityScrew6D<> toolPose(baseToTool);
         for (unsigned int i = 0; i< 6; i++){
             log().info() << ", "<< toolPose[i];
-        }*/
+        }
 
 
-        log().info() << ";\n";
+        log().info() << ";" << endl;
 
         /*getPoints(takePicture());
         VelocityScrew6D<> error_dist= (TargetPoints-DetectedPoints);
@@ -405,30 +407,6 @@ void SamplePlugin::timer() {
     }
 
 
-
-    /*if (_framegrabber != NULL) {
-            // get points from feachure extraction
-            vector<Point2f> test = SURFObj.matchfeachures(takePicture());
-            log().info() << " Looking for marker ->";
-
-            if(test.size() == 4) {
-                log().info() << " marker found: \n";
-                VelocityScrew6D<> imgPoints;
-                for (int i = 0; i < 3; i++) {
-                    imgPoints[i * 2] = test[i].x;
-                    imgPoints[i * 2 + 1] = test[i].y;
-                }
-
-                // mover the marker
-                //myMarker->moveMarker();
-                Transform3D<> FramePose = myMarker->getPosition();
-                VelocityScrew6D<> dU(FramePose);
-
-
-
-            }
-
-        }*/
 
 
 

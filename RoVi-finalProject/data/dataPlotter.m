@@ -20,7 +20,7 @@ plotGraphPose(SlowMarker50Pose_1P, MediMarker100Pose_1P, FastMarker150Pose_1P, 2
 plotGraphError(SlowMarker50Error_3P, MediMarker100Error_3P, FastMarker200Error_3P_1, 2,2,1, 'Three Point Tracking Error');
 
 % 3 Point - Pose
-plotGraphPose(SlowMarker50Pose_1P, MediMarker100Pose_1P, FastMarker150Pose_1P, 2,3,3,'Three Point');
+plotGraphPose(SlowMarker50Pose_3P, MediMarker100Pose_3P, FastMarker150Pose_3P, 2,3,3,'Three Point');
 
 %% Vision data Treatment 
 

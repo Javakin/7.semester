@@ -17,12 +17,12 @@
 #define DELTA_T_MAR  1000       // period in ms
 #define DELTA_T_BOT  1000         // period in ms
 #define DELTA_T_SIM  0
-#define DELTA_T_CAMPROCESSING   400
+#define DELTA_T_CAMPROCESSING   950
 #define Z_COORDINAT  0.5        // the debth of the image in meters
 #define FOCALLENGTH  823        // focal lehgth of the camera
 #define POINTS       3
 #define ENABLE_VI_SER   0
-#define SEQUENCE     FASTSEQ
+#define SEQUENCE     SLOWSEQ
 string PATH_TO_PROJECT = "/home/student/Desktop/7.semester/RoVi-finalProject/";
 
 

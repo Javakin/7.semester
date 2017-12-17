@@ -24,6 +24,13 @@ FeatureExtraction::FeatureExtraction(int iHassanThreshhold) {
 void FeatureExtraction::setMarker(Mat aMarker) {
     detector->detectAndCompute( aMarker, Mat(), vKeyPointsMarker, mDescriptorsMaker);
     aMarker.copyTo(mMarker);
+
+    Mat outImage;
+    drawKeypoints(aMarker, vKeyPointsMarker, outImage);
+    imshow("keypoint", outImage);
+    waitKey();
+
+
 }
 
 vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
@@ -41,10 +48,10 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
 
 
     // draw matches - for debugging
-    Mat img_matches5;
+    /*Mat img_matches5;
     drawMatches( mMarker, vKeyPointsMarker, mImage, vKeyPointImage, matches, img_matches5 );
     imshow("All matches", img_matches5);
-    cv::waitKey();
+    cv::waitKey();*/
 
 
     double max_dist = 0; double min_dist = 100;
@@ -55,29 +62,29 @@ vector<Point2f> FeatureExtraction::matchfeachures(Mat mImage) {
         if( dist < min_dist ) min_dist = dist;
         if( dist > max_dist ) max_dist = dist;
     }
-    /*printf("-- Max dist : %f \n", max_dist );
-    printf("-- Min dist : %f \n", min_dist );*/
+    //printf("-- Max dist : %f \n", max_dist );
+    //printf("-- Min dist : %f \n", min_dist );
     //-- Draw only "good" matches (i.e. whose distance is less than 2*min_dist,
     //-- or a small arbitary value ( 0.02 ) in the event that min_dist is very
     //-- small)
     //-- PS.- radiusMatch can also be used here.
     std::vector< DMatch > good_matches;
     for( int i = 0; i < mDescriptorsMaker.rows; i++ )
-    { if( matches[i].distance <= max(2*min_dist, 0.02) )
+    { if( matches[i].distance <= max(2*min_dist, 0.20) )
         { good_matches.push_back( matches[i]); }
     }
 
 
     //-- Draw only "good" matches
-    /Mat img_matches;
+    Mat img_matches;
     drawMatches( mMarker, vKeyPointsMarker, mImage, vKeyPointImage,
                  good_matches, img_matches, Scalar::all(-1), Scalar::all(-1),
                  vector<char>(), DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS );
 
 
     //-- Show detected matches
-    imshow( "Good Matches", img_matches );
-    waitKey();
+    /*imshow( "Good Matches", img_matches );
+    waitKey();*/
 
 /*    for( int i = 0; i < (int)matches.size(); i++ )
     { printf( "-- Good Match [%d] Keypoint 1: %d  -- Keypoint 2: %d -- distance: %f \n", i, matches[i].queryIdx, matches[i].trainIdx, matches[i].distance ); }

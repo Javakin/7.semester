@@ -39,8 +39,8 @@ int main()
 
     gettimeofday(&start,NULL);
 
-    for(int i = 1; i<=52; i++) {
-        NewMarker.getMarker(img, MARKER3, HARD, i);
+    for(int i = 1; i<=30; i++) {
+        NewMarker.getMarker(img, MARKER3, EASY, i);
 
         vector<Point2f> test = SURFObj.matchfeachures(img);
 

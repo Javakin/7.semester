@@ -20,7 +20,9 @@ task ExecutePath(){
      
 
      int pl = SizeOf(PLAN)/2;
-
+     int numOfRep = 0;
+     while (true){
+     
      for (int i=0; i<pl; i++){
          // perform switch case
          int command = PLAN[i];
@@ -49,8 +51,13 @@ task ExecutePath(){
                  rotate(-1);
                  break;
          }
-         while(!ButtonPressed(BTNCENTER,true));
+         //while(!ButtonPressed(BTNCENTER,true));
 
+     }
+
+     TextOut(0, LCD_LINE1,NumToStr(numOfRep));
+     numOfRep++;
+     
      }
 
 
